@@ -1,6 +1,7 @@
 import serviceIcons from "@/assets/service-icons.png";
 import PyPIPackages from "@/components/PyPIPackages";
 import Layout from "../components/layout/Layout";
+import me from "@/assets/me.jpg";
 
 
 const About = () => {
@@ -37,7 +38,7 @@ const About = () => {
                 <div className="space-y-6">
                   <div className="w-32 h-32 bg-wireframe-light border-2 border-accent mx-auto overflow-hidden">
                     <img 
-                      src="/src/assets/me.jpg" 
+                      src={me} 
                       alt="Krishna Bajpai" 
                       className="w-full h-full object-cover"
                     />

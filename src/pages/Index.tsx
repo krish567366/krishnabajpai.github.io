@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import me from "@/assets/me.jpg";
 
 const Index = () => {
   return (
@@ -221,7 +222,7 @@ const Index = () => {
               {/* Profile image */}
               <div className="w-48 h-48 bg-wireframe-light border-2 border-accent overflow-hidden rounded-full flex items-center justify-center">
                 <img 
-                  src="/src/assets/me.jpg" 
+                  src={me} 
                   alt="Krishna Bajpai" 
                   className="w-full h-full object-cover"
                 />
