@@ -1,0 +1,256 @@
+import serviceIcons from "@/assets/service-icons.png";
+import PyPIPackages from "@/components/PyPIPackages";
+import Layout from "../components/layout/Layout";
+
+
+const About = () => {
+  return (
+  <Layout>
+    <div className="min-h-screen bg-background font-body pt-16">
+      <div className="container mx-auto px-6 lg:px-8 py-20">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h1 className="text-5xl font-light text-foreground mb-6">
+              Meet{" "}
+              <span className="font-sketch font-bold relative">
+                Krishna Bajpai
+                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform rotate-1"></div>
+              </span>
+            </h1>
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+              An experienced AI/ML expert who focuses on creating practical and impactful solutions. 
+              I combine deep technical expertise with a clear understanding of business objectives 
+              to ensure AI implementations drive tangible results.
+            </p>
+          </div>
+
+          {/* Profile Card */}
+          <div className="grid lg:grid-cols-3 gap-12 mb-20">
+            <div className="lg:col-span-1">
+              <div className="bg-card border border-border p-8 relative">
+                {/* Handwritten accent */}
+                <div className="absolute -top-3 -right-3 bg-accent text-accent-foreground px-3 py-1 text-xs font-sketch transform rotate-3">
+                  The Expert
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="w-32 h-32 bg-wireframe-light border-2 border-accent mx-auto overflow-hidden">
+                    <img 
+                      src="/src/assets/me.jpg" 
+                      alt="Krishna Bajpai" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  
+                  <div className="text-center space-y-2">
+                    <h2 className="text-2xl font-light text-foreground">Krishna Bajpai</h2>
+                    <p className="text-muted-foreground">AI/ML & Quantum Optimization Expert</p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-between py-2 border-b border-border">
+                      <span className="text-sm text-muted-foreground">Python Libraries</span>
+                      <span className="font-medium text-foreground">22+</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2 border-b border-border">
+                      <span className="text-sm text-muted-foreground">Research Papers</span>
+                      <span className="font-medium text-foreground">23+</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2 border-b border-border">
+                      <span className="text-sm text-muted-foreground">Years Experience</span>
+                      <span className="font-medium text-foreground">8+</span>
+                    </div>
+                    <div className="flex items-center justify-between py-2">
+                      <span className="text-sm text-muted-foreground">Active Projects</span>
+                      <span className="font-medium text-foreground">5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-2 space-y-8">
+              {/* About Krishna */}
+              <div className="bg-secondary p-8 border border-border">
+                <h3 className="text-xl font-medium text-foreground mb-4">
+                  The Journey{" "}
+                  <span className="font-sketch text-sketch">(so far)</span>
+                </h3>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    I've developed over 22 Python libraries that underpin highly accurate and robust 
+                    machine learning models used by companies worldwide. My approach isn't just about 
+                    building models—it's about creating solutions that actually work in production.
+                  </p>
+                  <p>
+                    With 23+ published research papers in AI, ML, and quantum optimization, I bridge 
+                    the gap between cutting-edge research and practical business applications. Every 
+                    project I take on is designed to deliver measurable ROI from day one.
+                  </p>
+                  <p>
+                    My expertise spans predictive modeling, quantum-enhanced optimization, MLOps 
+                    infrastructure, and AI automation. I only work with 5 clients at a time to 
+                    ensure each project gets the attention it deserves.
+                  </p>
+                </div>
+              </div>
+
+              {/* Research Highlight */}
+              <div className="bg-background border border-border p-8 relative">
+                <div className="absolute -top-3 -left-3 bg-sketch text-sketch-foreground px-3 py-1 text-xs font-sketch transform -rotate-3">
+                  Latest Research
+                </div>
+                <h4 className="font-medium text-foreground mb-3">Recent Publications</h4>
+                <div className="space-y-3 text-sm">
+                  <div className="border-l-2 border-accent pl-4">
+                    <div className="font-medium text-foreground">"Quantum-Enhanced Ensemble Methods for Industrial Optimization"</div>
+                    <div className="text-muted-foreground">Journal of Quantum Machine Learning, 2025</div>
+                  </div>
+                  <div className="border-l-2 border-wireframe-medium pl-4">
+                    <div className="font-medium text-foreground">"Hybrid Classical-Quantum Algorithms for Supply Chain Management"</div>
+                    <div className="text-muted-foreground">IEEE Transactions on Quantum Engineering, 2025</div>
+                  </div>
+                  <div className="border-l-2 border-wireframe-medium pl-4">
+                    <div className="font-medium text-foreground">"Scalable MLOps for Production AI Systems"</div>
+                    <div className="text-muted-foreground">MLSys Conference, 2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Expertise Areas */}
+          <div className="mb-20">
+            <h2 className="text-3xl font-light text-center text-foreground mb-12">
+              Core Expertise{" "}
+              <span className="font-sketch text-sketch">(what I actually do)</span>
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="border-l-2 border-accent pl-6">
+                  <h3 className="text-xl font-medium text-foreground mb-2">ML & AI Model Development</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Custom predictive models, neural networks, and AI systems built with 22+ 
+                    open-source libraries. Every model is production-ready and optimized for your 
+                    specific business requirements.
+                  </p>
+                </div>
+                
+                <div className="border-l-2 border-wireframe-medium pl-6">
+                  <h3 className="text-xl font-medium text-foreground mb-2">Quantum-Classical Hybrid Optimization</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Quantum-enhanced algorithms for complex optimization problems that classical 
+                    computers struggle with. Published research in hybrid quantum-classical methods.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="border-l-2 border-wireframe-medium pl-6">
+                  <h3 className="text-xl font-medium text-foreground mb-2">Data Pipelines & MLOps</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    End-to-end MLOps pipelines, automated model training, and scalable deployment 
+                    infrastructure. Built with enterprise-grade reliability and monitoring.
+                  </p>
+                </div>
+                
+                <div className="border-l-2 border-accent pl-6">
+                  <h3 className="text-xl font-medium text-foreground mb-2">AI-Powered Workflow Automation</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Intelligent automation systems that learn from your processes and continuously 
+                    improve efficiency. Real-world implementations saving millions in operational costs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+          {/* PyPI Packages Section */}
+          <PyPIPackages />
+
+          {/* Recognition */}
+          <div className="mt-20 text-center">
+            <h3 className="text-2xl font-light text-foreground mb-8">
+              Trusted By{" "}
+              <span className="font-sketch text-sketch">(companies that matter)</span>
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+              {[
+                {
+                  name: "Fortune 500 Manufacturing",
+                  icon: (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-wireframe-dark">
+                        <path d="M10 30V15M20 30V10M30 30V20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 2"/>
+                        <path d="M5 10L35 10M5 30L35 30" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                        <path d="M8 25C9.5 22 13 19 16 23C19 27 21 20 23 17C25 14 28 15 32 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                      </svg>
+                    </div>
+                  )
+                },
+                {
+                  name: "FinTech Unicorn",
+                  icon: (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-wireframe-dark">
+                        <path d="M12 15L28 15" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                        <path d="M15 21L25 21" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                        <path d="M18 27L22 27" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                        <circle cx="20" cy="20" r="14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="3 3"/>
+                        <path d="M15 10L20 5L25 10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                      </svg>
+                    </div>
+                  )
+                },
+                {
+                  name: "Global Supply Chain",
+                  icon: (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-wireframe-dark">
+                        <path d="M8 20H32" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="1 2"/>
+                        <rect x="10" y="15" width="6" height="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <rect x="22" y="15" width="6" height="10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <path d="M16 20H22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <path d="M7 27C10 30 17 33 20 27" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                        <path d="M28 13C25 10 18 7 15 13" stroke="currentColor" strokeWidth="1" strokeLinecap="round"/>
+                      </svg>
+                    </div>
+                  )
+                },
+                {
+                  name: "Healthcare AI Leader",
+                  icon: (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-wireframe-dark">
+                        <path d="M15 10V30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <path d="M25 10V30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <path d="M10 15H30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <path d="M10 25H30" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                        <circle cx="20" cy="20" r="3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeDasharray="2 1"/>
+                        <path d="M17 13L23 27" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeDasharray="1 1"/>
+                      </svg>
+                    </div>
+                  )
+                }
+              ].map((company, index) => (
+                <div key={index} className="text-center">
+                  <div className="w-16 h-16 bg-wireframe-light border border-wireframe-medium mx-auto mb-2 flex items-center justify-center">
+                    {company.icon}
+                  </div>
+                  <div className="text-xs text-muted-foreground">{company.name}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Layout>
+  );
+};
+
+export default About;
