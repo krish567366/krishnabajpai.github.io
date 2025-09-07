@@ -215,7 +215,7 @@ const Contact = () => {
                   </Button>
                   <Button variant="outline" size="lg" className="w-full justify-start" asChild>
                     <a href="https://wa.me/+919118425114?text=I'm%20interested%20in%20discussing%20the%20machine-learning%20task" target="_blank" rel="noopener noreferrer">
-                      📱 WhatsApp: +91 9118425114
+                      📱 WhatsApp: +91 Expert
                     </a>
                   </Button>
                 </div>
