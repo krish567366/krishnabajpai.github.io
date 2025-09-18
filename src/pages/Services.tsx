@@ -235,7 +235,7 @@ const Services = () => {
               <span className="font-sketch text-sketch">(let's talk)</span>
             </h3>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              I'm currently booking projects for Q1 2025. Every project starts with a free 
+              I'm currently booking projects for 2025. Every project starts with a free 
               30-minute strategy call to understand your needs and determine if we're a good fit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -249,7 +249,7 @@ const Services = () => {
             
             <div className="mt-8 inline-block bg-wireframe-light px-6 py-3 border border-border">
               <p className="text-sm text-foreground font-sketch">
-                → Currently booking: 2 spots available for Q1 2025
+                → Currently booking: 2 spots available for  2025
               </p>
             </div>
           </div>

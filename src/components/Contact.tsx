@@ -24,7 +24,7 @@ const Contact = () => {
             {/* Scarcity note */}
             <div className="inline-block bg-secondary px-6 py-3 border border-border">
               <p className="text-sm text-foreground font-sketch">
-                → Currently booking for Q1 2025
+                → Currently booking for 2025
               </p>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import Layout from "../components/layout/Layout";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const CaseStudies = () => {
   const cases = [
@@ -76,29 +77,82 @@ const CaseStudies = () => {
   ];
 
   return (
-    <Layout>
-      <div className="min-h-screen bg-background font-body">
+    <>
+      {/* SEO Meta Tags & Structured Data */}
+      <Helmet>
+        <title>Case Studies | AI & ML Consulting | Krishna Bajpai</title>
+        <meta name="description" content="Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai. Verified results, client testimonials, and business impact." />
+        <meta name="keywords" content="Case studies, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, MLOps, Automation, Krishna Bajpai" />
+        <link rel="canonical" href="https://krishnabajpai.me/case-studies" />
+        <meta property="og:title" content="Case Studies | AI & ML Consulting | Krishna Bajpai" />
+        <meta property="og:description" content="Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai. Verified results, client testimonials, and business impact." />
+        <meta property="og:url" content="https://krishnabajpai.me/case-studies" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Case Studies | AI & ML Consulting | Krishna Bajpai" />
+        <meta name="twitter:description" content="Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai. Verified results, client testimonials, and business impact." />
+        <link rel="alternate" href="https://krishnabajpai.me/case-studies" hrefLang="en" />
+        {/* Structured Data: CollectionPage */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Case Studies | Krishna Bajpai",
+            "url": "https://krishnabajpai.me/case-studies",
+            "description": "Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai.",
+            "hasPart": [
+              {
+                "@type": "CreativeWork",
+                "name": "Manufacturing Predictive Maintenance",
+                "about": "Predictive maintenance for manufacturing, 87% downtime reduction, $2.4M savings."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "FinTech Fraud Detection",
+                "about": "99.7% fraud detection accuracy, $1.2M saved."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Supply Chain Optimization",
+                "about": "Quantum optimization, 31% cost reduction, $5M inventory optimized."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Healthcare Automation",
+                "about": "NLP automation, 92% time reduction, 98.5% accuracy."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Retail Personalization",
+                "about": "Deep learning recommendations, 340% conversion increase, $4.7M revenue."
+              }
+            ]
+          }
+        `}</script>
+      </Helmet>
+      <Layout>
       <div className="container mx-auto px-6 lg:px-8 py-20">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-light text-foreground mb-6">
-              Case Studies{" "}
-              <span className="font-sketch font-bold relative">
-                That Actually Happened
-                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real projects, real problems, real impact on the bottom line. Every case study 
-              includes verified results and client testimonials.
-            </p>
+            <header>
+              <h1 className="text-5xl font-light text-foreground mb-6">
+                Case Studies
+                <span className="font-sketch font-bold relative">
+                  That Actually Happened
+                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
+                </span>
+              </h1>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Real projects, real problems, real impact on the bottom line. Every case study includes verified results and client testimonials.
+              </p>
+            </header>
           </div>
 
           {/* Case Studies */}
           <div className="space-y-16">
             {cases.map((case_, index) => (
-              <div key={case_.id} className="bg-card border border-border p-8 lg:p-12 relative">
+              <article key={case_.id} className="bg-card border border-border p-8 lg:p-12 relative" aria-labelledby={`case-title-${index}`}> 
                 {/* Sketchy corner accent */}
                 <div className="absolute top-4 right-4 font-sketch text-xs text-sketch rotate-12">
                   Case #{index + 1}
@@ -649,6 +703,7 @@ const CaseStudies = () => {
                       </div>
                       
                       <div>
+                        <h2 id={`case-title-${index}`} className="text-xl font-medium text-accent mb-2 uppercase tracking-wide">{case_.client} - {case_.industry}</h2>
                         <h3 className="text-sm font-medium text-accent mb-2 uppercase tracking-wide">My Approach</h3>
                         <p className="text-muted-foreground leading-relaxed">{case_.approach}</p>
                       </div>
@@ -663,7 +718,7 @@ const CaseStudies = () => {
                         <h3 className="text-sm font-medium text-accent mb-2 uppercase tracking-wide">Technologies Used</h3>
                         <div className="flex flex-wrap gap-2">
                           {case_.technologies.map((tech, techIndex) => (
-                            <span key={techIndex} className="text-xs bg-wireframe-light text-foreground px-2 py-1 border border-wireframe-medium">
+                            <span key={techIndex} className="text-xs bg-wireframe-light text-foreground px-2 py-1 border border-wireframe-medium" aria-label={tech}>
                               {tech}
                             </span>
                           ))}
@@ -673,7 +728,7 @@ const CaseStudies = () => {
 
                     {/* Testimonial */}
                     <div className="bg-secondary p-6 border-l-4 border-accent">
-                      <blockquote className="text-muted-foreground italic mb-3">
+                      <blockquote className="text-muted-foreground italic mb-3" aria-label="Client testimonial">
                         "{case_.testimonial}"
                       </blockquote>
                       <div className="text-sm">
@@ -687,46 +742,49 @@ const CaseStudies = () => {
                       <Link 
                         to={`/case-studies/${case_.id}`} 
                         className="text-accent hover:text-foreground transition-colors font-medium"
+                        aria-label={`View detailed case study for ${case_.client}`}
                       >
                         View detailed case study →
                       </Link>
                     </div>
                   </div>
                 </div>
-              </div>
+              </article>
             ))}
           </div>
 
           {/* Bottom CTA */}
           <div className="text-center mt-16 bg-secondary p-12 border border-border">
-            <h3 className="text-2xl font-light text-foreground mb-4">
-              Ready for Your Success Story?{" "}
-              <span className="font-sketch text-sketch">(let's make it happen)</span>
-            </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Every case study started with a conversation. I only take 5 clients at a time 
-              to ensure results like these are possible for your project.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-primary-foreground px-8 py-3 hover:bg-accent transition-colors">
-                Book Strategy Call
-              </button>
-              <button className="border border-border bg-background text-foreground px-8 py-3 hover:bg-secondary transition-colors">
-                View Detailed Case Studies
-              </button>
-            </div>
+            <section aria-labelledby="cta-heading" className="text-center mt-16 bg-secondary p-12 border border-border">
+              <h2 id="cta-heading" className="text-2xl font-light text-foreground mb-4">
+                Ready for Your Success Story? <span className="font-sketch text-sketch">(let's make it happen)</span>
+              </h2>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Every case study started with a conversation. I only take 5 clients at a time to ensure results like these are possible for your project.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/contact" className="bg-primary text-primary-foreground px-8 py-3 hover:bg-accent transition-colors" aria-label="Book Strategy Call">
+                  Book Strategy Call
+                </Link>
+                <Link to="/case-studies" className="border border-border bg-background text-foreground px-8 py-3 hover:bg-secondary transition-colors" aria-label="View Detailed Case Studies">
+                  View Detailed Case Studies
+                </Link>
+              </div>
+            </section>
           </div>
 
           {/* Results annotation */}
           <div className="text-center mt-8">
-            <p className="font-sketch text-sm text-sketch">
-              ↑ All results verified by independent third-party audits
-            </p>
+            <div className="text-center mt-8">
+              <p className="font-sketch text-sm text-sketch" aria-label="Results annotation">
+                ↑ All results verified by independent third-party audits
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </Layout>
+      </Layout>
+    </>
   );
 };
 

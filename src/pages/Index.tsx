@@ -1,91 +1,86 @@
-import Navigation from "@/components/Navigation";
+
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import me from "@/assets/me.jpg";
+import Layout from "@/components/layout/Layout";
+import { Helmet } from "react-helmet";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background font-body">
-      <Navigation />
-      
-      <main>
+    <>
+      <Helmet>
+        <title>AI & ML Consulting | Krishna Bajpai</title>
+        <meta name="description" content="AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth." />
+        <meta name="keywords" content="AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, Retail AI, E-Commerce AI, MLOps, Automation, Business intelligence, Data science, Case studies, Authority content, Krishna Bajpai" />
+        <link rel="canonical" href="https://krishnabajpai.me/" />
+        <meta property="og:title" content="AI & ML Consulting | Krishna Bajpai" />
+        <meta property="og:description" content="AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth." />
+        <meta property="og:url" content="https://krishnabajpai.me/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="AI & ML Consulting | Krishna Bajpai" />
+        <meta name="twitter:description" content="AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth." />
+      </Helmet>
+      <Layout>
         <div id="hero">
           <Hero />
         </div>
-        
         {/* Expertise Preview Section */}
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-light text-foreground mb-6">
-                What I{" "}
-                <span className="font-sketch font-bold relative">
-                  Do
-                  <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform rotate-1"></div>
-                </span>
+              <h1 className="text-5xl font-light text-foreground mb-6">
+                AI & ML Consulting Services
+              </h1>
+              <h2 className="text-3xl font-light text-foreground mb-6">
+                What I <span className="font-sketch font-bold relative">Do<div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform rotate-1"></div></span>
               </h2>
             </div>
-            
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Card 1 */}
               <div className="bg-background border border-border p-6 relative">
                 <div className="w-12 h-12 mb-4 opacity-80">
-                  {/* Sketchy icon placeholder */}
                   <div className="w-full h-full border border-dashed border-foreground rounded-full flex items-center justify-center">
-                    <span className="font-sketch">📊</span>
+                    <span className="font-sketch" role="img" aria-label="Predictive Modeling">📊</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-medium text-foreground mb-2">Predictive Modeling</h3>
-                <p className="text-sm text-muted-foreground mb-4">Reduce costs & improve forecasting</p>
-                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">
-                  Learn More →
-                </Link>
+                <h2 className="text-xl font-medium text-foreground mb-2">Predictive Modeling</h2>
+                <p className="text-sm text-muted-foreground mb-4">Reduce costs & improve forecasting. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
-              
               {/* Card 2 */}
               <div className="bg-secondary border border-border p-6 relative">
                 <div className="w-12 h-12 mb-4 opacity-80">
-                  {/* Sketchy icon placeholder */}
                   <div className="w-full h-full border border-dashed border-foreground rounded-full flex items-center justify-center">
-                    <span className="font-sketch">🔄</span>
+                    <span className="font-sketch" role="img" aria-label="Quantum Hybrid Optimization">🔄</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-medium text-foreground mb-2">Quantum Hybrid Optimization</h3>
-                <p className="text-sm text-muted-foreground mb-4">Solve problems classical methods can't</p>
-                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">
-                  Learn More →
-                </Link>
+                <h2 className="text-xl font-medium text-foreground mb-2">Quantum Hybrid Optimization</h2>
+                <p className="text-sm text-muted-foreground mb-4">Solve problems classical methods can't. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
-              
               {/* Card 3 */}
               <div className="bg-background border border-border p-6 relative">
                 <div className="w-12 h-12 mb-4 opacity-80">
-                  {/* Sketchy icon placeholder */}
                   <div className="w-full h-full border border-dashed border-foreground rounded-full flex items-center justify-center">
-                    <span className="font-sketch">⚙️</span>
+                    <span className="font-sketch" role="img" aria-label="AI Automation">⚙️</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-medium text-foreground mb-2">AI Automation</h3>
-                <p className="text-sm text-muted-foreground mb-4">Streamline workflows & decision-making</p>
-                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">
-                  Learn More →
-                </Link>
+                <h2 className="text-xl font-medium text-foreground mb-2">AI Automation</h2>
+                <p className="text-sm text-muted-foreground mb-4">Streamline workflows & decision-making. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
-              
               {/* Card 4 */}
               <div className="bg-secondary border border-border p-6 relative">
                 <div className="w-12 h-12 mb-4 opacity-80">
-                  {/* Sketchy icon placeholder */}
                   <div className="w-full h-full border border-dashed border-foreground rounded-full flex items-center justify-center">
-                    <span className="font-sketch">🔌</span>
+                    <span className="font-sketch" role="img" aria-label="Custom ML Pipelines">🔌</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-medium text-foreground mb-2">Custom ML Pipelines</h3>
-                <p className="text-sm text-muted-foreground mb-4">End-to-end deployment with measurable ROI</p>
-                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">
-                  Learn More →
-                </Link>
+                <h2 className="text-xl font-medium text-foreground mb-2">Custom ML Pipelines</h2>
+                <p className="text-sm text-muted-foreground mb-4">End-to-end deployment with measurable ROI. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
             </div>
           </div>
@@ -292,7 +287,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-      </main>
 
       {/* Footer */}
       <footer className="py-8 bg-secondary border-t border-border">
@@ -309,7 +303,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
+    </Layout>
+      </>
   );
 };
 

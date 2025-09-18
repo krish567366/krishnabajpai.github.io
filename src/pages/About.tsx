@@ -1,30 +1,39 @@
+
 import serviceIcons from "@/assets/service-icons.png";
 import PyPIPackages from "@/components/PyPIPackages";
 import Layout from "../components/layout/Layout";
 import me from "@/assets/me.jpg";
+import { Helmet } from "react-helmet";
 
 
 const About = () => {
   return (
-  <Layout>
-    <div className="min-h-screen bg-background font-body pt-16">
-      <div className="container mx-auto px-6 lg:px-8 py-20">
-        <div className="max-w-6xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-light text-foreground mb-6">
-              Meet{" "}
-              <span className="font-sketch font-bold relative">
-                Krishna Bajpai
-                <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform rotate-1"></div>
-              </span>
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-              An experienced AI/ML expert who focuses on creating practical and impactful solutions. 
-              I combine deep technical expertise with a clear understanding of business objectives 
-              to ensure AI implementations drive tangible results.
-            </p>
-          </div>
+    <>
+      <Helmet>
+        <title>About Krishna Bajpai | AI/ML & Quantum Expert</title>
+        <meta name="description" content="Meet Krishna Bajpai, an AI/ML & Quantum Optimization expert with 23+ research papers, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta name="keywords" content="AI expert, ML expert, Quantum optimization, Python libraries, Research papers, Fortune 500, FinTech, Healthcare, Supply Chain, MLOps, Automation, Krishna Bajpai" />
+        <link rel="canonical" href="https://krishnabajpai.me/about" />
+        <meta property="og:title" content="About Krishna Bajpai | AI/ML & Quantum Expert" />
+        <meta property="og:description" content="Meet Krishna Bajpai, an AI/ML & Quantum Optimization expert with 23+ research papers, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta property="og:url" content="https://krishnabajpai.me/about" />
+        <meta property="og:type" content="profile" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Krishna Bajpai | AI/ML & Quantum Expert" />
+        <meta name="twitter:description" content="Meet Krishna Bajpai, an AI/ML & Quantum Optimization expert with 23+ research papers, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+      </Helmet>
+      <Layout>
+        <div className="min-h-screen bg-background font-body pt-16">
+          <div className="container mx-auto px-6 lg:px-8 py-20">
+            <div className="max-w-6xl mx-auto">
+              {/* Header */}
+              <div className="text-center mb-16">
+                <h1 className="text-5xl font-light text-foreground mb-6">About Krishna Bajpai</h1>
+                <h2 className="text-3xl font-light text-foreground mb-6">AI/ML & Quantum Optimization Expert</h2>
+                <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+                  An experienced AI/ML expert who focuses on creating practical and impactful solutions. I combine deep technical expertise with a clear understanding of business objectives to ensure AI implementations drive tangible results.
+                </p>
+              </div>
 
           {/* Profile Card */}
           <div className="grid lg:grid-cols-3 gap-12 mb-20">
@@ -251,6 +260,7 @@ const About = () => {
       </div>
     </div>
   </Layout>
+   </>
   );
 };
 

@@ -15,7 +15,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-sm text-muted-foreground">
-                <a href="https://linkedin.com/in/krishna-bajpai" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+                <a href="https://www.linkedin.com/in/bajpai-krishna/" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
                   LinkedIn Profile
                 </a>
               </li>
@@ -68,7 +68,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-medium text-foreground mb-4">Availability</h3>
             <div className="text-sm text-muted-foreground mb-3">
-              Currently booking projects for Q1 2026
+              Currently booking projects for 2026
             </div>
             <div className="text-sm font-sketch text-foreground">
               I only work with 5 clients at a time to ensure exceptional results
