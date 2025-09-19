@@ -37,4 +37,4 @@ User-agent: LinkedInBot
 Allow: /
 
 # Sitemap
-Sitemap: https://krishnabajpai.com/sitemap.xml
+Sitemap: https://krishnabajpai.me/sitemap.xml
