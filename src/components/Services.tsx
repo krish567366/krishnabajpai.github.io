@@ -67,17 +67,21 @@ const Services = () => {
   return (
     <>
       <Head>
-        <title>AI & ML Consulting Services | Krishna Bajpai</title>
-        <meta name="description" content="Healthcare AI solutions, Fintech AI solutions, Supply chain optimization, Retail AI, Predictive analytics, MLOps, Quantum ML, Business process AI integration, and more. Expert SRE/SEO/Edge/AI integration." />
+        <title>Krishna Bajpai - AI & ML Consulting Services | Healthcare, Fintech, Supply Chain AI</title>
+        <meta name="description" content="Krishna Bajpai - Healthcare AI solutions, Fintech AI solutions, Supply chain optimization, Retail AI, Predictive analytics, MLOps, Quantum ML, Business process AI integration, and more. Expert SRE/SEO/Edge/AI integration." />
         <meta name="keywords" content="Healthcare AI solutions, Predictive patient analytics, Medical ML models, AI for diagnostics & triage, Clinical data modeling, Fintech AI solutions, Fraud detection ML models, Predictive risk analytics, Algorithmic trading optimization, Credit scoring ML models, Supply chain optimization AI, Predictive maintenance ML, Industrial AI automation, Production efficiency AI, Resource allocation ML, Customer behavior prediction AI, Recommendation engine ML, Demand forecasting models, Inventory optimization AI, Personalized marketing AI, Machine intelligence consulting, Data-driven decision making, AI workflow automation, Predictive analytics solutions, Hybrid AI-quantum algorithms, Scalable MLOps infrastructure, Business process AI integration" />
         <link rel="canonical" href="https://krishnabajpai.me/services" />
-        <meta property="og:title" content="AI & ML Consulting Services | Krishna Bajpai" />
-        <meta property="og:description" content="Healthcare, Fintech, Manufacturing, Retail, and E-Commerce AI solutions. Predictive analytics, automation, and quantum ML for business growth." />
+        <meta property="og:title" content="Krishna Bajpai - AI & ML Consulting Services | Healthcare, Fintech, Supply Chain AI" />
+        <meta property="og:description" content="Krishna Bajpai - Healthcare, Fintech, Manufacturing, Retail, and E-Commerce AI solutions. Predictive analytics, automation, and quantum ML for business growth." />
         <meta property="og:url" content="https://krishnabajpai.me/services" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consulting Services" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI & ML Consulting Services | Krishna Bajpai" />
-        <meta name="twitter:description" content="Healthcare, Fintech, Manufacturing, Retail, and E-Commerce AI solutions. Predictive analytics, automation, and quantum ML for business growth." />
+        <meta name="twitter:title" content="Krishna Bajpai - AI & ML Consulting Services | Healthcare, Fintech, Supply Chain AI" />
+        <meta name="twitter:description" content="Krishna Bajpai - Healthcare, Fintech, Manufacturing, Retail, and E-Commerce AI solutions. Predictive analytics, automation, and quantum ML for business growth." />
         {/* International SEO: hreflang tags */}
         <link rel="alternate" href="https://krishnabajpai.me/services" hrefLang="en" />
         <link rel="alternate" href="https://krishnabajpai.me/services?lang=hi" hrefLang="hi" />

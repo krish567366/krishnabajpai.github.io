@@ -213,7 +213,7 @@ const Services = () => {
               </div>
               <div>
                 <div className="text-3xl font-light text-foreground mb-2">23+</div>
-                <div className="text-sm text-muted-foreground mb-4">Research papers</div>
+                <div className="text-sm text-muted-foreground mb-4">Research Projects</div>
                 <p className="text-xs text-muted-foreground">
                   Published research in top venues. You get cutting-edge methods that actually work.
                 </p>

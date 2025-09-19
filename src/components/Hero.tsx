@@ -9,15 +9,15 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h1 className="text-5xl lg:text-6xl font-light leading-tight text-foreground">
+              <h2 className="text-5xl lg:text-6xl font-light leading-tight text-foreground">
                 AI, ML & Quantum Optimization That Actually{" "}
                 <span className="font-sketch font-bold relative">
                   Moves Your Business Forward
                   <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
                 </span>
-              </h1>
+              </h2>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mt-4">
-                I build predictive models, optimization engines, and quantum-powered AI solutions 
+                As Krishna Bajpai, I build predictive models, optimization engines, and quantum-powered AI solutions 
                 that save cost, boost revenue, and give you a competitive edge.
               </p>
             </div>

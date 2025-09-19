@@ -4,23 +4,104 @@ import PyPIPackages from "@/components/PyPIPackages";
 import Layout from "../components/layout/Layout";
 import me from "@/assets/me.jpg";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 
 const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Krishna Bajpai | AI/ML & Quantum Expert</title>
-        <meta name="description" content="Meet Krishna Bajpai, an AI/ML & Quantum Optimization expert with 23+ research papers, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
-        <meta name="keywords" content="AI expert, ML expert, Quantum optimization, Python libraries, Research papers, Fortune 500, FinTech, Healthcare, Supply Chain, MLOps, Automation, Krishna Bajpai" />
+        <title>Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 22+ Python Libraries</title>
+        <meta name="description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta name="keywords" content="Krishna Bajpai, AI expert, ML expert, Quantum optimization, Python libraries, Research Projects, Fortune 500, FinTech, Healthcare, Supply Chain, MLOps, Automation" />
         <link rel="canonical" href="https://krishnabajpai.me/about" />
-        <meta property="og:title" content="About Krishna Bajpai | AI/ML & Quantum Expert" />
-        <meta property="og:description" content="Meet Krishna Bajpai, an AI/ML & Quantum Optimization expert with 23+ research papers, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta property="og:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 22+ Python Libraries" />
+        <meta property="og:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
         <meta property="og:url" content="https://krishnabajpai.me/about" />
         <meta property="og:type" content="profile" />
+        <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consultant & Quantum Optimization Expert" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Krishna Bajpai | AI/ML & Quantum Expert" />
-        <meta name="twitter:description" content="Meet Krishna Bajpai, an AI/ML & Quantum Optimization expert with 23+ research papers, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta name="twitter:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 22+ Python Libraries" />
+        <meta name="twitter:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <link rel="alternate" href="https://krishnabajpai.me/about" hrefLang="en" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            "mainEntity": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
+              "description": "AI/ML expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies.",
+              "url": "https://krishnabajpai.me/about",
+              "sameAs": [
+                "https://linkedin.com/in/krishnabajpai"
+              ],
+              "knowsAbout": [
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Quantum Optimization",
+                "Predictive Analytics",
+                "Healthcare AI",
+                "Fintech AI",
+                "Supply Chain AI",
+                "Retail AI Solutions",
+                "MLOps",
+                "Python Programming",
+                "Data Science",
+                "Automation Solutions"
+              ],
+              "hasOccupation": {
+                "@type": "Occupation",
+                "name": "AI/ML Consultant",
+                "occupationLocation": {
+                  "@type": "Country",
+                  "name": "Global"
+                },
+                "experienceRequirements": "8+ years in AI/ML consulting",
+                "responsibilities": [
+                  "Developing AI/ML solutions for Fortune 500 companies",
+                  "Quantum optimization implementations",
+                  "Predictive modeling and analytics",
+                  "Healthcare AI solutions",
+                  "Fintech AI implementations",
+                  "Supply chain optimization",
+                  "Retail AI solutions",
+                  "MLOps and automation"
+                ]
+              },
+              "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Research Institution"
+              },
+              "award": [
+                "23+ Research Projects Published",
+                "22+ Python Libraries Developed",
+                "Fortune 500 Client Experience"
+              ]
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://krishnabajpai.me/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://krishnabajpai.me/about"
+                }
+              ]
+            }
+          }
+        `}</script>
       </Helmet>
       <Layout>
         <div className="min-h-screen bg-background font-body pt-16">
@@ -64,7 +145,7 @@ const About = () => {
                       <span className="font-medium text-foreground">22+</span>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-border">
-                      <span className="text-sm text-muted-foreground">Research Papers</span>
+                      <span className="text-sm text-muted-foreground">Research Projects</span>
                       <span className="font-medium text-foreground">23+</span>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-border">
@@ -94,13 +175,12 @@ const About = () => {
                     building models—it's about creating solutions that actually work in production.
                   </p>
                   <p>
-                    With 23+ published research papers in AI, ML, and quantum optimization, I bridge 
+                    With 23+ published research Projects in AI, ML, and quantum optimization, I bridge 
                     the gap between cutting-edge research and practical business applications. Every 
                     project I take on is designed to deliver measurable ROI from day one.
                   </p>
                   <p>
-                    My expertise spans predictive modeling, quantum-enhanced optimization, MLOps 
-                    infrastructure, and AI automation. I only work with 5 clients at a time to 
+                    My expertise spans <Link to="/services" className="text-accent hover:text-foreground underline">predictive modeling</Link>, <Link to="/services" className="text-accent hover:text-foreground underline">quantum-enhanced optimization</Link>, <Link to="/services" className="text-accent hover:text-foreground underline">MLOps infrastructure</Link>, and <Link to="/services" className="text-accent hover:text-foreground underline">AI automation</Link>. I only work with 5 clients at a time to 
                     ensure each project gets the attention it deserves.
                   </p>
                 </div>
@@ -142,7 +222,7 @@ const About = () => {
                 <div className="border-l-2 border-accent pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">ML & AI Model Development</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Custom predictive models, neural networks, and AI systems built with 22+ 
+                    Custom <Link to="/services" className="text-accent hover:text-foreground underline">predictive models</Link>, neural networks, and AI systems built with 22+ 
                     open-source libraries. Every model is production-ready and optimized for your 
                     specific business requirements.
                   </p>
@@ -151,7 +231,7 @@ const About = () => {
                 <div className="border-l-2 border-wireframe-medium pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">Quantum-Classical Hybrid Optimization</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Quantum-enhanced algorithms for complex optimization problems that classical 
+                    <Link to="/services" className="text-accent hover:text-foreground underline">Quantum-enhanced algorithms</Link> for complex optimization problems that classical 
                     computers struggle with. Published research in hybrid quantum-classical methods.
                   </p>
                 </div>
@@ -161,7 +241,7 @@ const About = () => {
                 <div className="border-l-2 border-wireframe-medium pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">Data Pipelines & MLOps</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    End-to-end MLOps pipelines, automated model training, and scalable deployment 
+                    End-to-end <Link to="/services" className="text-accent hover:text-foreground underline">MLOps pipelines</Link>, automated model training, and scalable deployment 
                     infrastructure. Built with enterprise-grade reliability and monitoring.
                   </p>
                 </div>
@@ -169,8 +249,8 @@ const About = () => {
                 <div className="border-l-2 border-accent pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">AI-Powered Workflow Automation</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Intelligent automation systems that learn from your processes and continuously 
-                    improve efficiency. Real-world implementations saving millions in operational costs.
+                    Intelligent <Link to="/services" className="text-accent hover:text-foreground underline">automation systems</Link> that learn from your processes and continuously 
+                    improve efficiency. <Link to="/case-studies" className="text-accent hover:text-foreground underline">Real-world implementations</Link> saving millions in operational costs.
                   </p>
                 </div>
               </div>

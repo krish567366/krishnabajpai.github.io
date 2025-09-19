@@ -10,17 +10,72 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>AI & ML Consulting | Krishna Bajpai</title>
-        <meta name="description" content="AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth." />
-        <meta name="keywords" content="AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, Retail AI, E-Commerce AI, MLOps, Automation, Business intelligence, Data science, Case studies, Authority content, Krishna Bajpai" />
+        <title>Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert</title>
+        <meta name="description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
+        <meta name="keywords" content="Krishna Bajpai, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, Retail AI, E-Commerce AI, MLOps, Automation, Business intelligence, Data science, Case studies, Authority content" />
         <link rel="canonical" href="https://krishnabajpai.me/" />
-        <meta property="og:title" content="AI & ML Consulting | Krishna Bajpai" />
-        <meta property="og:description" content="AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth." />
+        <meta property="og:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />
+        <meta property="og:description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
         <meta property="og:url" content="https://krishnabajpai.me/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consultant & Quantum Optimization Expert" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI & ML Consulting | Krishna Bajpai" />
-        <meta name="twitter:description" content="AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth." />
+        <meta name="twitter:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />
+        <meta name="twitter:description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
+        <link rel="alternate" href="https://krishnabajpai.me/" hrefLang="en" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "AI & ML Consulting | Krishna Bajpai",
+            "description": "AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth.",
+            "url": "https://krishnabajpai.me/",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Krishna Bajpai AI/ML Consulting",
+              "description": "Expert AI/ML consulting services specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, and Retail AI solutions.",
+              "url": "https://krishnabajpai.me/",
+              "founder": {
+                "@type": "Person",
+                "name": "Krishna Bajpai",
+                "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
+                "description": "AI/ML expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies."
+              },
+              "serviceType": [
+                "AI Consulting",
+                "Machine Learning Consulting",
+                "Quantum Optimization",
+                "Predictive Analytics",
+                "Healthcare AI Solutions",
+                "Fintech AI Solutions",
+                "Supply Chain AI",
+                "Retail AI Solutions",
+                "MLOps",
+                "Automation Solutions"
+              ],
+              "areaServed": "Global",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "url": "https://krishnabajpai.me/contact"
+              }
+            },
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://krishnabajpai.me/"
+                }
+              ]
+            }
+          }
+        `}</script>
       </Helmet>
       <Layout>
         <div id="hero">
@@ -31,7 +86,7 @@ const Index = () => {
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
               <h1 className="text-5xl font-light text-foreground mb-6">
-                AI & ML Consulting Services
+                Krishna Bajpai - AI & ML Consulting Expert
               </h1>
               <h2 className="text-3xl font-light text-foreground mb-6">
                 What I <span className="font-sketch font-bold relative">Do<div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform rotate-1"></div></span>
@@ -46,7 +101,7 @@ const Index = () => {
                   </div>
                 </div>
                 <h2 className="text-xl font-medium text-foreground mb-2">Predictive Modeling</h2>
-                <p className="text-sm text-muted-foreground mb-4">Reduce costs & improve forecasting. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <p className="text-sm text-muted-foreground mb-4">Krishna Bajpai specializes in AI predictive modeling to reduce costs & improve forecasting accuracy. <Link to="/case-studies" className="underline">See case studies</Link></p>
                 <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
               {/* Card 2 */}
@@ -57,7 +112,7 @@ const Index = () => {
                   </div>
                 </div>
                 <h2 className="text-xl font-medium text-foreground mb-2">Quantum Hybrid Optimization</h2>
-                <p className="text-sm text-muted-foreground mb-4">Solve problems classical methods can't. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <p className="text-sm text-muted-foreground mb-4">Krishna Bajpai's quantum optimization solves complex problems classical methods can't handle. <Link to="/case-studies" className="underline">See case studies</Link></p>
                 <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
               {/* Card 3 */}
@@ -68,7 +123,7 @@ const Index = () => {
                   </div>
                 </div>
                 <h2 className="text-xl font-medium text-foreground mb-2">AI Automation</h2>
-                <p className="text-sm text-muted-foreground mb-4">Streamline workflows & decision-making. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <p className="text-sm text-muted-foreground mb-4">Krishna Bajpai streamlines workflows & AI-powered decision-making systems. <Link to="/case-studies" className="underline">See case studies</Link></p>
                 <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
               {/* Card 4 */}
@@ -79,7 +134,7 @@ const Index = () => {
                   </div>
                 </div>
                 <h2 className="text-xl font-medium text-foreground mb-2">Custom ML Pipelines</h2>
-                <p className="text-sm text-muted-foreground mb-4">End-to-end deployment with measurable ROI. <Link to="/case-studies" className="underline">See case studies</Link></p>
+                <p className="text-sm text-muted-foreground mb-4">Krishna Bajpai builds end-to-end ML pipelines with measurable ROI. <Link to="/case-studies" className="underline">See case studies</Link></p>
                 <Link to="/services" className="text-sm text-accent hover:text-foreground transition-colors">Learn More →</Link>
               </div>
             </div>

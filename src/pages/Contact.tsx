@@ -65,16 +65,20 @@ const Contact = () => {
     <>
       {/* SEO Meta Tags & Structured Data */}
       <Helmet>
-        <title>Contact | AI & ML Consulting | Krishna Bajpai</title>
+        <title>Contact Krishna Bajpai - AI & ML Consultant | Book Strategy Call</title>
         <meta name="description" content="Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more. Book a strategy call to discuss your business challenges and project needs." />
         <meta name="keywords" content="Contact, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, MLOps, Automation, Krishna Bajpai" />
         <link rel="canonical" href="https://krishnabajpai.me/contact" />
-        <meta property="og:title" content="Contact | AI & ML Consulting | Krishna Bajpai" />
+        <meta property="og:title" content="Contact Krishna Bajpai - AI & ML Consultant | Book Strategy Call" />
         <meta property="og:description" content="Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more. Book a strategy call to discuss your business challenges and project needs." />
         <meta property="og:url" content="https://krishnabajpai.me/contact" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Contact Krishna Bajpai - AI/ML Consultant" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact | AI & ML Consulting | Krishna Bajpai" />
+        <meta name="twitter:title" content="Contact Krishna Bajpai - AI & ML Consultant | Book Strategy Call" />
         <meta name="twitter:description" content="Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more. Book a strategy call to discuss your business challenges and project needs." />
         <link rel="alternate" href="https://krishnabajpai.me/contact" hrefLang="en" />
         {/* Structured Data: ContactPage */}

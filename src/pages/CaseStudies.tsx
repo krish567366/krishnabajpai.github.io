@@ -80,17 +80,21 @@ const CaseStudies = () => {
     <>
       {/* SEO Meta Tags & Structured Data */}
       <Helmet>
-        <title>Case Studies | AI & ML Consulting | Krishna Bajpai</title>
-        <meta name="description" content="Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai. Verified results, client testimonials, and business impact." />
+        <title>Krishna Bajpai - AI & ML Case Studies | Real-World Results & Client Testimonials</title>
+        <meta name="description" content="Krishna Bajpai - Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies. Verified results, client testimonials, and business impact from Fortune 500 companies." />
         <meta name="keywords" content="Case studies, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, MLOps, Automation, Krishna Bajpai" />
         <link rel="canonical" href="https://krishnabajpai.me/case-studies" />
-        <meta property="og:title" content="Case Studies | AI & ML Consulting | Krishna Bajpai" />
-        <meta property="og:description" content="Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai. Verified results, client testimonials, and business impact." />
+        <meta property="og:title" content="Krishna Bajpai - AI & ML Case Studies | Real-World Results & Client Testimonials" />
+        <meta property="og:description" content="Krishna Bajpai - Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies. Verified results, client testimonials, and business impact from Fortune 500 companies." />
         <meta property="og:url" content="https://krishnabajpai.me/case-studies" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Case Studies" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Case Studies | AI & ML Consulting | Krishna Bajpai" />
-        <meta name="twitter:description" content="Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies by Krishna Bajpai. Verified results, client testimonials, and business impact." />
+        <meta name="twitter:title" content="Krishna Bajpai - AI & ML Case Studies | Real-World Results & Client Testimonials" />
+        <meta name="twitter:description" content="Krishna Bajpai - Real-world AI, ML, Quantum, Automation, and Predictive Modeling case studies. Verified results, client testimonials, and business impact from Fortune 500 companies." />
         <link rel="alternate" href="https://krishnabajpai.me/case-studies" hrefLang="en" />
         {/* Structured Data: CollectionPage */}
         <script type="application/ld+json">{`
