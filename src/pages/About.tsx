@@ -38,7 +38,7 @@ const About = () => {
               "description": "AI/ML expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies.",
               "url": "https://krishnabajpai.me/about",
               "sameAs": [
-                "https://linkedin.com/in/krishnabajpai"
+                "https://linkedin.com/in/bajpai-krishna"
               ],
               "knowsAbout": [
                 "Artificial Intelligence",
