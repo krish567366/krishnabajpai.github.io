@@ -10,8 +10,8 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert</title>
-        <meta name="description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
+        <title>Krishna Bajpai - Elite AI/ML & Quantum Computing Solutions | Top AI Consultant</title>
+        <meta name="description" content="Transform your business with Krishna Bajpai's elite AI solutions. 23+ Python libraries, enterprise AI architecture, and quantum optimization expertise. Trusted by Fortune 500 companies. Contact for consultation." />
         <meta name="keywords" content="Krishna Bajpai, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, Retail AI, E-Commerce AI, MLOps, Automation, Business intelligence, Data science, Case studies, Authority content" />
         <link rel="canonical" href="https://krishnabajpai.me/" />
         <meta property="og:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />
