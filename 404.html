@@ -4,9 +4,14 @@
     <meta charset="utf-8">
     <title>Krishna Bajpai - Redirecting...</title>
     <script type="text/javascript">
-      // Store the current path in sessionStorage
-      sessionStorage.redirect = window.location.pathname + window.location.search + window.location.hash;
-
+      (function() {
+        // Save the current path
+        const path = window.location.pathname + window.location.search + window.location.hash;
+        // Only store if it's not the root path
+        if (path !== '/') {
+          sessionStorage.redirect = path;
+        }
+      })();
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages
