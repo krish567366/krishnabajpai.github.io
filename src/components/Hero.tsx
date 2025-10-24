@@ -54,6 +54,11 @@ const Hero = () => {
               src={heroFlow} 
               alt="Data to AI Model to Business Impact flow diagram"
               className="w-full h-auto"
+              width={600}
+              height={400}
+              fetchPriority="high"
+              decoding="sync"
+              srcSet={`${heroFlow} 1x, ${heroFlow} 2x`}
             />
             {/* Handwritten annotation */}
             <div className="absolute -top-4 -right-4 font-sketch text-sm text-sketch rotate-12">

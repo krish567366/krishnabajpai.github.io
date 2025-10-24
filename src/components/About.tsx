@@ -1,5 +1,17 @@
 import serviceIcons from "@/assets/service-icons.png";
 
+const ServiceIcons = () => (
+  <img 
+    src={serviceIcons}
+    alt="AI and ML Services Icons"
+    className="w-full h-auto"
+    loading="lazy"
+    width={400}
+    height={300}
+    srcSet={`${serviceIcons} 1x, ${serviceIcons} 2x`}
+  />
+);
+
 const About = () => {
   return (
     <section className="py-20 bg-secondary">

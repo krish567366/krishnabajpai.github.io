@@ -239,10 +239,14 @@ const Services = () => {
               30-minute strategy call to understand your needs and determine if we're a good fit.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-primary text-primary-foreground px-8 py-3 hover:bg-accent transition-colors">
+              <button 
+                aria-label="Book a free 30-minute strategy call"
+                className="bg-primary text-primary-foreground px-8 py-3 hover:bg-accent transition-colors">
                 Book Strategy Call
               </button>
-              <button className="border border-border bg-background text-foreground px-8 py-3 hover:bg-secondary transition-colors">
+              <button 
+                aria-label="Request a custom project quote"
+                className="border border-border bg-background text-foreground px-8 py-3 hover:bg-secondary transition-colors">
                 Get Custom Quote
               </button>
             </div>

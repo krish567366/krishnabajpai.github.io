@@ -273,8 +273,13 @@ const Index = () => {
               <div className="w-48 h-48 bg-wireframe-light border-2 border-accent overflow-hidden rounded-full flex items-center justify-center">
                 <img 
                   src={me} 
-                  alt="Krishna Bajpai" 
+                  alt="Krishna Bajpai"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  width={192}
+                  height={192}
+                  srcSet={`${me} 1x, ${me} 2x`}
+                  fetchPriority="high"
                 />
               </div>
               

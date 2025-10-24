@@ -1,6 +1,7 @@
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
+import { useGitHubPagesRouting } from "@/hooks/useGitHubPagesRouting";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -22,19 +23,22 @@ const queryClient = new QueryClient();
 
 // Handle GitHub Pages routing
 const handleGitHubPagesRouting = () => {
-  // Get the path from the query parameter that 404.html creates
-  const path = window.location.search.slice(1);
-  if (path) {
-    // Replace the current URL with the clean path
-    window.history.replaceState(null, '', path.replace(/~and~/g, '&'));
+  const redirect = sessionStorage.redirect;
+  if (redirect) {
+    delete sessionStorage.redirect;
+    const cleanRedirect = redirect.replace(window.location.origin, '');
+    if (cleanRedirect !== window.location.pathname) {
+      window.history.replaceState(null, '', cleanRedirect);
+    }
   }
 };
 
+const GitHubPagesRouter = ({ children }: { children: React.ReactNode }) => {
+  useGitHubPagesRouting();
+  return <>{children}</>;
+};
+
 const App = () => {
-  // Handle routing for GitHub Pages
-  React.useEffect(() => {
-    handleGitHubPagesRouting();
-  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -42,7 +46,8 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <Routes>
+          <GitHubPagesRouter>
+            <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/case-studies" element={<CaseStudies />} />
@@ -58,6 +63,7 @@ const App = () => {
             
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </GitHubPagesRouter>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

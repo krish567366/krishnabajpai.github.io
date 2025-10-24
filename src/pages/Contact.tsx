@@ -246,6 +246,7 @@ const Contact = () => {
                       name="budget_range" 
                       className="w-full px-3 py-2 border border-input bg-background text-foreground rounded-md"
                       disabled={formStatus === "submitting" || formStatus === "success"}
+                      aria-label="Select your expected budget range"
                     >
                       <option>$15k - $25k</option>
                       <option>$25k - $50k</option>
@@ -262,6 +263,7 @@ const Contact = () => {
                       name="timeline" 
                       className="w-full px-3 py-2 border border-input bg-background text-foreground rounded-md"
                       disabled={formStatus === "submitting" || formStatus === "success"}
+                      aria-label="Select your preferred project timeline"
                     >
                       <option>ASAP (rush project)</option>
                       <option>2-3 months</option>
