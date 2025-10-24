@@ -11,12 +11,12 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 22+ Python Libraries</title>
-        <meta name="description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
-        <meta name="keywords" content="Krishna Bajpai, AI expert, ML expert, Quantum optimization, Python libraries, Research Projects, Fortune 500, FinTech, Healthcare, Supply Chain, MLOps, Automation" />
+        <title>About Krishna Bajpai | ML Engineering Portfolio & Technical Expertise</title>
+        <meta name="description" content="Explore Krishna Bajpai's machine learning engineering portfolio, featuring deep learning projects, MLOps implementations, and technical ML solutions. Specialist in TensorFlow, PyTorch, and scalable AI architectures." />
+        <meta name="keywords" content="Krishna Bajpai ML portfolio, machine learning projects, deep learning implementations, MLOps architecture, TensorFlow projects, PyTorch solutions, ML system design, AI engineering, technical ML lead, Krishna Bajpai engineer" />
         <link rel="canonical" href="https://krishnabajpai.me/about" />
-        <meta property="og:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 22+ Python Libraries" />
-        <meta property="og:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta property="og:title" content="About Krishna Bajpai | ML Engineering Portfolio & Technical Expertise" />
+        <meta property="og:description" content="Explore Krishna Bajpai's machine learning engineering portfolio, featuring deep learning projects, MLOps implementations, and technical ML solutions. Specialist in TensorFlow, PyTorch, and scalable AI architectures." />
         <meta property="og:url" content="https://krishnabajpai.me/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />

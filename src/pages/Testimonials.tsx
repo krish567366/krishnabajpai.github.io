@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 const Testimonials = () => {
   const testimonials = [
@@ -62,6 +63,49 @@ const Testimonials = () => {
       rating: 5
     }
   ];
+
+  // Add schema.org markup for testimonials
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": testimonials.map((t, index) => ({
+      "@type": "Review",
+      "position": index + 1,
+      "author": {
+        "@type": "Person",
+        "name": t.author
+      },
+      "itemReviewed": {
+        "@type": "Service",
+        "name": "AI Consulting Services by Krishna Bajpai",
+        "provider": {
+          "@type": "Person",
+          "@id": "https://krishnabajpai.com/#person",
+          "name": "Krishna Bajpai"
+        }
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": t.rating,
+        "bestRating": "5"
+      },
+      "reviewBody": t.quote,
+      "publisher": {
+        "@type": "Organization",
+        "name": t.company
+      }
+    }))
+  };
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schemaData);
+    document.head.appendChild(script);
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
 
   const stats = [
     { metric: "98%", label: "Client satisfaction rate", description: "Based on post-project surveys" },

@@ -9,16 +9,15 @@ const Hero = () => {
           {/* Content */}
           <div className="space-y-6">
             <div className="space-y-3">
-              <h2 className="text-5xl lg:text-6xl font-light leading-tight text-foreground">
-                AI, ML & Quantum Optimization That Actually{" "}
-                <span className="font-sketch font-bold relative">
-                  Moves Your Business Forward
-                  <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
-                </span>
+              <h1 className="text-5xl lg:text-6xl font-light leading-tight text-foreground">
+                Krishna Bajpai
+              </h1>
+              <h2 className="text-3xl lg:text-4xl font-sketch font-bold relative mt-2">
+                Machine Learning Engineer & AI Solutions Architect
+                <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mt-4">
-                As Krishna Bajpai, I build predictive models, optimization engines, and quantum-powered AI solutions 
-                that save cost, boost revenue, and give you a competitive edge.
+                Expert in building production-grade machine learning systems with TensorFlow and PyTorch. Specializing in MLOps, deep learning architectures, and scalable AI solutions for enterprise applications.
               </p>
             </div>
 
