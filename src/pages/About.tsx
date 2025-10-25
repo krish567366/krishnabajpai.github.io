@@ -24,8 +24,8 @@ const About = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consultant & Quantum Optimization Expert" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 22+ Python Libraries" />
-        <meta name="twitter:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta name="twitter:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 29+ Python Libraries" />
+        <meta name="twitter:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 29+ Python libraries, 8+ years experience, and 5+ active projects. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
         <link rel="alternate" href="https://krishnabajpai.me/about" hrefLang="en" />
         <script type="application/ld+json">{`
           {
@@ -35,7 +35,7 @@ const About = () => {
               "@type": "Person",
               "name": "Krishna Bajpai",
               "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
-              "description": "AI/ML expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies.",
+              "description": "AI/ML expert with 23+ research Projects, 29+ Python libraries, 8+ years experience, and 5+ active projects in AI consulting for Fortune 500 companies.",
               "url": "https://krishnabajpai.me/about",
               "sameAs": [
                 "https://linkedin.com/in/bajpai-krishna"
@@ -79,7 +79,7 @@ const About = () => {
               },
               "award": [
                 "23+ Research Projects Published",
-                "22+ Python Libraries Developed",
+                "29+ Python Libraries Developed",
                 "Fortune 500 Client Experience"
               ]
             },
@@ -142,7 +142,7 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="flex items-center justify-between py-2 border-b border-border">
                       <span className="text-sm text-muted-foreground">Python Libraries</span>
-                      <span className="font-medium text-foreground">22+</span>
+                      <span className="font-medium text-foreground">29+</span>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-border">
                       <span className="text-sm text-muted-foreground">Research Projects</span>
@@ -222,7 +222,7 @@ const About = () => {
                 <div className="border-l-2 border-accent pl-6">
                   <h3 className="text-xl font-medium text-foreground mb-2">ML & AI Model Development</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Custom <Link to="/services" className="text-accent hover:text-foreground underline">predictive models</Link>, neural networks, and AI systems built with 22+ 
+                    Custom <Link to="/services" className="text-accent hover:text-foreground underline">predictive models</Link>, neural networks, and AI systems built with 29+ 
                     open-source libraries. Every model is production-ready and optimized for your 
                     specific business requirements.
                   </p>

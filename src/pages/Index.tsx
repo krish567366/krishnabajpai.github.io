@@ -10,9 +10,9 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai - Elite AI/ML & Quantum Computing Solutions | Top AI Consultant</title>
-        <meta name="description" content="Transform your business with Krishna Bajpai's elite AI solutions. 23+ Python libraries, enterprise AI architecture, and quantum optimization expertise. Trusted by Fortune 500 companies. Contact for consultation." />
-        <meta name="keywords" content="Krishna Bajpai, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, Retail AI, E-Commerce AI, MLOps, Automation, Business intelligence, Data science, Case studies, Authority content" />
+        <title>Krishna Bajpai - Leading AI/ML Consulting Expert | Quantum Computing & Algorithmic Trading Specialist</title>
+        <meta name="description" content="Transform your business with Krishna Bajpai's advanced AI/ML solutions. Expert in Quantum Hybrid Optimization, Custom ML Pipelines, and Enterprise AI Architecture. Harvard-educated consultant trusted by Fortune 500 companies. Schedule a consultation today." />
+        <meta name="keywords" content="AI/ML Consulting Expert, Quantum Hybrid Optimization Specialist, Custom ML Pipeline Architect, Enterprise AI Solutions, Algorithmic Trading Systems, Advanced ML Infrastructure, Krishna Bajpai, MLOps Architecture, Quantum Computing Innovation, Fortune 500 AI Consultant, Technical ML Architecture, AI/ML Strategy Consultant" />
         <link rel="canonical" href="https://krishnabajpai.me/" />
         <meta property="og:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />
         <meta property="og:description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
@@ -42,7 +42,7 @@ const Index = () => {
                 "@type": "Person",
                 "name": "Krishna Bajpai",
                 "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
-                "description": "AI/ML expert with 23+ research Projects, 22+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies."
+                "description": "AI/ML expert with 23+ research Projects, 29+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies."
               },
               "serviceType": [
                 "AI Consulting",

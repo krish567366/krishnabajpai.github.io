@@ -205,7 +205,7 @@ const Services = () => {
             
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div className="text-3xl font-light text-foreground mb-2">22+</div>
+                <div className="text-3xl font-light text-foreground mb-2">29+</div>
                 <div className="text-sm text-muted-foreground mb-4">Open source libraries</div>
                 <p className="text-xs text-muted-foreground">
                   My code powers ML systems at companies worldwide. You get battle-tested solutions.

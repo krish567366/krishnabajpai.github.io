@@ -1,5 +1,13 @@
 import { useState, useEffect, useMemo } from "react";
+import React from "react";
+  
 import { Button } from "@/components/ui/button";
+
+// Cache interface
+interface CacheEntry<T> {
+  data: T;
+  timestamp: number;
+}
 
 interface PyPIPackage {
   name: string;
@@ -14,6 +22,67 @@ const PyPIPackages = () => {
   const [packages, setPackages] = useState<PyPIPackage[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [lastUpdate, setLastUpdate] = useState<Date | null>(null);
+
+  // Cache configuration
+  const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+  const RETRY_ATTEMPTS = 3;
+  const RETRY_DELAY = 1000; // 1 second
+  const REFRESH_INTERVAL = 15 * 60 * 1000; // 15 minutes
+
+  // In-memory cache
+  const cache = useMemo(() => new Map<string, CacheEntry<PyPIPackage>>(), []);
+
+  // Helper function to delay execution
+  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+  // Function to check if cache entry is valid
+  const isCacheValid = (entry: CacheEntry<PyPIPackage> | undefined): entry is CacheEntry<PyPIPackage> => {
+    if (!entry) return false;
+    const now = Date.now();
+    return now - entry.timestamp < CACHE_DURATION;
+  };
+
+  // Function to fetch package data from PyPI with retry logic
+  const fetchPackageData = async (packageName: string, attempt = 1): Promise<PyPIPackage | null> => {
+    try {
+      const response = await fetch(`https://pypi.org/pypi/${packageName}/json`);
+      if (!response.ok) throw new Error(`Failed to fetch ${packageName}`);
+      const data = await response.json();
+      return {
+        name: data.info.name,
+        version: data.info.version,
+        summary: data.info.summary || packageDescriptions[packageName], // Fallback to our description if PyPI summary is empty
+        author: data.info.author,
+        project_url: data.info.project_url || `https://pypi.org/project/${packageName}/`,
+        release_date: data.releases[data.info.version]?.[0]?.upload_time?.split('T')[0] || releaseDates[packageName]
+      };
+    } catch (error) {
+      console.error(`Error fetching ${packageName}:`, error);
+      return null;
+    }
+  };
+
+  // Fetch all packages data when component mounts
+  useEffect(() => {
+    const fetchAllPackages = async () => {
+      setLoading(true);
+      try {
+        const packagePromises = krishnaPackages.map(pkg => fetchPackageData(pkg));
+        const results = await Promise.all(packagePromises);
+        const validResults = results.filter((pkg): pkg is PyPIPackage => pkg !== null);
+        setPackages(validResults);
+        setError(null);
+      } catch (error) {
+        setError('Failed to fetch package data');
+        console.error('Error fetching packages:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAllPackages();
+  }, []);
 
   // Use useMemo to avoid recreating these arrays/objects on every render
   const krishnaPackages = useMemo(() => [
@@ -189,7 +258,7 @@ const PyPIPackages = () => {
       <div className="bg-secondary p-8 border border-border">
         <h3 className="text-xl font-medium text-foreground mb-4">
           Python Libraries{" "}
-          <span className="font-sketch text-sketch">(22+ packages)</span>
+          <span className="font-sketch text-sketch">(29+ packages)</span>
         </h3>
         <p className="text-muted-foreground mb-4">{error}</p>
         <Button 
