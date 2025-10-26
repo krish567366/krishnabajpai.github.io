@@ -20,6 +20,8 @@ import FintechFraudCaseStudy from "./pages/case-studies/FintechFraudCaseStudy";
 import SupplyChainCaseStudy from "./pages/case-studies/SupplyChainCaseStudy";
 import HealthcareAutomationCaseStudy from "./pages/case-studies/HealthcareAutomationCaseStudy";
 import RealEstateConsortium from "./pages/RealEstateConsortium";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 const queryClient = new QueryClient();
 
@@ -63,6 +65,8 @@ const App = () => {
             <Route path="/case-studies/supply-chain" element={<SupplyChainCaseStudy />} />
             <Route path="/case-studies/healthcare-automation" element={<HealthcareAutomationCaseStudy />} />
             <Route path="/real-estate-consortium" element={<RealEstateConsortium />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>

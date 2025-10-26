@@ -87,9 +87,9 @@ const Footer = () => {
             Krishna Bajpai © 2025
           </div>
           <div className="flex space-x-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-            <a href="#" className="hover:text-foreground transition-colors">Sitemap</a>
+            <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
+            <a href="/sitemap.xml" className="hover:text-foreground transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

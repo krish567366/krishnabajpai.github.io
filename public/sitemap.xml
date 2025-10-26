@@ -44,4 +44,12 @@
     <loc>https://krishnabajpai.me/case-studies/supply-chain</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://krishnabajpai.me/privacy</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/terms</loc>
+    <priority>0.5</priority>
+  </url>
 </urlset>
