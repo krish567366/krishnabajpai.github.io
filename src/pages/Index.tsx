@@ -42,7 +42,7 @@ const Index = () => {
                 "@type": "Person",
                 "name": "Krishna Bajpai",
                 "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
-                "description": "AI/ML expert with 23+ research Projects, 29+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies."
+                "description": "AI/ML expert with 28+ research Projects, 28+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies."
               },
               "serviceType": [
                 "AI Consulting",
@@ -286,7 +286,7 @@ const Index = () => {
               <div className="space-y-6">
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   "I'm Krishna Bajpai, a AI/ML & Quantum Optimization contractor. 
-                  I've published 23 Python libraries and help enterprises turn advanced tech 
+                  I've published 28+ Python libraries and help enterprises turn advanced tech 
                   into measurable business results."
                 </p>
                 <Link to="/about">

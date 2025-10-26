@@ -24,8 +24,8 @@ const About = () => {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consultant & Quantum Optimization Expert" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 23+ Research Projects, 29+ Python Libraries" />
-        <meta name="twitter:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 23+ research Projects, 29+ Python libraries, 8+ years experience, and 5+ active projects. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta name="twitter:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 28+ Research Projects, 28+ Python Libraries" />
+        <meta name="twitter:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 28+ research Projects, 28+ Python libraries, 8+ years experience, and 5+ active projects. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
         <link rel="alternate" href="https://krishnabajpai.me/about" hrefLang="en" />
         <script type="application/ld+json">{`
           {
@@ -35,7 +35,7 @@ const About = () => {
               "@type": "Person",
               "name": "Krishna Bajpai",
               "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
-              "description": "AI/ML expert with 23+ research Projects, 29+ Python libraries, 8+ years experience, and 5+ active projects in AI consulting for Fortune 500 companies.",
+              "description": "AI/ML expert with 28+ research Projects, 28+ Python libraries, 8+ years experience, and 5+ active projects in AI consulting for Fortune 500 companies.",
               "url": "https://krishnabajpai.me/about",
               "sameAs": [
                 "https://linkedin.com/in/bajpai-krishna"
@@ -78,8 +78,8 @@ const About = () => {
                 "name": "Research Institution"
               },
               "award": [
-                "23+ Research Projects Published",
-                "29+ Python Libraries Developed",
+                "28+ Research Projects Published",
+                "28+ Python Libraries Developed",
                 "Fortune 500 Client Experience"
               ]
             },
@@ -146,7 +146,7 @@ const About = () => {
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-border">
                       <span className="text-sm text-muted-foreground">Research Projects</span>
-                      <span className="font-medium text-foreground">23+</span>
+                      <span className="font-medium text-foreground">28+</span>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-border">
                       <span className="text-sm text-muted-foreground">Years Experience</span>
