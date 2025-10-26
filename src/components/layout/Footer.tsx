@@ -56,6 +56,11 @@ const Footer = () => {
                   Testimonials
                 </Link>
               </li>
+                            <li className="text-sm text-muted-foreground">
+                <Link to="/real-estate-consortium" className="hover:text-foreground transition-colors">
+                  The Consortium
+                </Link>
+              </li>
               <li className="text-sm text-muted-foreground">
                 <Link to="/contact" className="hover:text-foreground transition-colors">
                   Contact

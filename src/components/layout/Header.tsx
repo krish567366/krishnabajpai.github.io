@@ -66,6 +66,12 @@ const Header = () => {
               >
                 Testimonials
               </Link>
+                            <Link 
+                to="/real-estate-consortium" 
+                className={`text-sm ${isActive('/real-estate-consortium') ? 'text-foreground font-medium' : 'text-muted-foreground'} hover:text-foreground transition-colors`}
+              >
+                The Consortium
+              </Link>
               <Link to="/contact">
                 <Button size="sm">Book Consultation</Button>
               </Link>

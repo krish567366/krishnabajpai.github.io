@@ -1,5 +1,6 @@
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
+import "@/styles/animations.css";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { useGitHubPagesRouting } from "@/hooks/useGitHubPagesRouting";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -18,6 +19,7 @@ import ManufacturingCaseStudy from "./pages/case-studies/ManufacturingCaseStudy"
 import FintechFraudCaseStudy from "./pages/case-studies/FintechFraudCaseStudy";
 import SupplyChainCaseStudy from "./pages/case-studies/SupplyChainCaseStudy";
 import HealthcareAutomationCaseStudy from "./pages/case-studies/HealthcareAutomationCaseStudy";
+import RealEstateConsortium from "./pages/RealEstateConsortium";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +62,7 @@ const App = () => {
             <Route path="/case-studies/fintech-fraud" element={<FintechFraudCaseStudy />} />
             <Route path="/case-studies/supply-chain" element={<SupplyChainCaseStudy />} />
             <Route path="/case-studies/healthcare-automation" element={<HealthcareAutomationCaseStudy />} />
+            <Route path="/real-estate-consortium" element={<RealEstateConsortium />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>

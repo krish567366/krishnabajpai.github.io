@@ -44,6 +44,12 @@ const Navigation = () => {
             >
               Testimonials
             </Link>
+            <Link 
+              to="/real-estate-consortium"
+              className={`transition-colors ${isActive('/real-estate-consortium') ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'}`}
+            >
+              Consortium
+            </Link>
             <Button size="sm" asChild>
               <Link to="/contact">Get Started</Link>
             </Button>
