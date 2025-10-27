@@ -1,55 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Primary Pages -->
   <url>
     <loc>https://krishnabajpai.me/</loc>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
+
+  <!-- Main Service Pages -->
   <url>
     <loc>https://krishnabajpai.me/services</loc>
     <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/real-estate-consortium</loc>
     <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/about</loc>
     <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
   </url>
+
+  <!-- Key Conversion Pages -->
   <url>
     <loc>https://krishnabajpai.me/contact</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://krishnabajpai.me/consortium-application</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/consortium-process</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Portfolio & Testimonial Pages -->
   <url>
     <loc>https://krishnabajpai.me/case-studies</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/testimonials</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
+
+  <!-- Individual Case Studies -->
   <url>
     <loc>https://krishnabajpai.me/case-studies/fintech-fraud</loc>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/case-studies/healthcare-automation</loc>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/case-studies/manufacturing</loc>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/case-studies/supply-chain</loc>
     <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
+
+  <!-- Legal & Policy Pages -->
   <url>
     <loc>https://krishnabajpai.me/privacy</loc>
     <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://krishnabajpai.me/terms</loc>
     <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
