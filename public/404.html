@@ -2,37 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Krishna Bajpai - Redirecting...</title>
-    <script type="text/javascript">
-      (function() {
-        var redirect = window.location.pathname + window.location.search + window.location.hash;
-        
-        // Don't redirect sitemap.xml, robots.txt, or root path requests
-        if (redirect !== '/' && 
-            !redirect.includes('sitemap.xml') && 
-            !redirect.includes('robots.txt') && 
-            !redirect.includes('.xml') &&  // Cover any XML files
-            !redirect.includes('.txt')) {   // Cover any TXT files
-          
-          // Save the path for the index.html to use
-          sessionStorage.redirect = redirect;
-          
-          var l = window.location;
-          var pathSegmentsToKeep = 0;
-          
-          l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-            l.hash
-          );
-        }
-      })();
-    </script>
+    <title>Page Not Found - Krishna Bajpai</title>
   </head>
   <body>
-    <p>Redirecting to the main page...</p>
-    <p>If you are not redirected automatically, please <a href="/">click here</a>.</p>
+    <div style="text-align: center; padding: 50px; font-family: system-ui, -apple-system, sans-serif;">
+      <h1>Page Not Found</h1>
+      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <p><a href="/" style="color: #0070f3; text-decoration: none;">Return to Homepage</a></p>
+    </div>
   </body>
 </html>
