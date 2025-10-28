@@ -3,32 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "reactSnap": {
-    "source": "dist",
-    "destination": "dist",
-    "include": [
-      "/",
-      "/about",
-      "/services",
-      "/case-studies",
-      "/contact",
-      "/real-estate-consortium",
-      "/consortium-application",
-      "/consortium-process",
-      "/case-studies/fintech-fraud-case-study",
-      "/case-studies/healthcare-automation-case-study",
-      "/case-studies/manufacturing-case-study",
-      "/case-studies/supply-chain-case-study"
-    ],
-    "minifyHtml": {
-      "collapseWhitespace": false,
-      "removeComments": false
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "react-snap",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "predeploy": "npm run build",
