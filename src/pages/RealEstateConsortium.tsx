@@ -286,10 +286,10 @@ const RealEstateConsortium = () => {
                     </div>
 
                     <div className="flex flex-col gap-4 sm:flex-row">
-                      <Link to="/contact" className="w-full sm:w-auto">
+                      <Link to="/consortium-application" className="w-full sm:w-auto">
                         <Button size="lg" variant="default" className="relative overflow-hidden group w-full">
                           <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-accent/50 to-primary/50 opacity-50 group-hover:opacity-100 transition-opacity"></div>
-                          <span className="relative">Contact for Membership</span>
+                          <span className="relative">Apply for Membership</span>
                         </Button>
                       </Link>
                       <Button 
@@ -565,9 +565,9 @@ const RealEstateConsortium = () => {
                         ))}
                       </ul>
 
-                      <Link to="/contact" className="w-full mt-auto">
+                      <Link to="/consortium-process" className="w-full">
                         <Button className="w-full" variant="default">
-                          {tier.cta}
+                          Know The Process
                         </Button>
                       </Link>
                     </div>
@@ -598,14 +598,14 @@ const RealEstateConsortium = () => {
                   Join an elite network of institutional investors, family offices, and real estate leaders leveraging quantum-enhanced AI for unprecedented returns.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link to="/contact">
-                    <Button size="lg" variant="default" className="w-full sm:w-auto">
-                      Request Membership Invitation
+                  <Link to="/consortium-application" className="w-full sm:w-auto">
+                    <Button size="lg" variant="default" className="w-full">
+                      Request Invitation
                     </Button>
                   </Link>
-                  <Link to="/contact">
-                    <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                      Schedule Consultation
+                  <Link to="/consortium-process" className="w-full sm:w-auto">
+                    <Button size="lg" variant="outline" className="w-full">
+                      Know The Process
                     </Button>
                   </Link>
                 </div>
@@ -618,7 +618,7 @@ const RealEstateConsortium = () => {
             <div className="container">
               <div className="max-w-4xl mx-auto text-center">
                 <p className="text-muted-foreground">
-                  Have questions? <Link to="/contact" className="text-primary hover:text-primary/80 transition-colors">Contact our team</Link> to discuss membership opportunities.
+                  Have questions? <Link to="/consortium-process" className="text-primary hover:text-primary/80 transition-colors">Learn about our process</Link> or <Link to="/consortium-application" className="text-primary hover:text-primary/80 transition-colors">apply for membership</Link>.
                 </p>
               </div>
             </div>

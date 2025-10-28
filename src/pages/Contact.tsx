@@ -6,9 +6,13 @@ import { useState } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { AlertCircle, CheckCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { useForm as useFormspree, ValidationError } from '@formspree/react';
+import { useIpGeolocation } from "@/hooks/useIpGeolocation";
 
 const Contact = () => {
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [formspreeState, handleFormspreeSubmit] = useFormspree("mzzaygeb");
+  const { geolocationData } = useIpGeolocation();
   
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -18,22 +22,26 @@ const Contact = () => {
       const form = e.currentTarget;
       const formData = new FormData(form);
       
-      // Use AJAX submission to prevent page redirect
-      const response = await fetch("https://formspree.io/f/mzzaygeb", {
-        method: "POST",
-        body: formData,
-        headers: {
-          "Accept": "application/json"
-          // Removing Content-Type header as it causes issues with FormData
-        },
-      });
+      // Add geolocation data
+      const geoLocationString = geolocationData 
+        ? `IP: ${geolocationData.ip}\nLocation: ${geolocationData.city}, ${geolocationData.region}, ${geolocationData.country}\nTimezone: ${geolocationData.timezone}\nCoordinates: ${geolocationData.latitude},${geolocationData.longitude}`
+        : 'Geolocation data not available';
       
-      if (response.ok) {
+      formData.append('_geolocation', geoLocationString);
+      
+      await handleFormspreeSubmit({
+        name: formData.get('name')?.toString() || '',
+        email: formData.get('email')?.toString() || '',
+        message: formData.get('message')?.toString() || '',
+        _geolocation: geoLocationString
+      });
+
+      if (formspreeState.succeeded) {
         console.log("Form submitted successfully");
         setFormStatus("success");
         form.reset();
       } else {
-        console.error("Form submission failed:", await response.text());
+        console.error("Form submission failed");
         setFormStatus("error");
       }
     } catch (error) {

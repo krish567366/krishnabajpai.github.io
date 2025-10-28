@@ -7,6 +7,9 @@ Disallow: /private/
 Disallow: /tmp/
 Disallow: /cache/
 
+# Sitemap
+Sitemap: https://krishnabajpai.me/sitemap.xml
+
 # Allow all major search engines
 User-agent: Googlebot
 Allow: /

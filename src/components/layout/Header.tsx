@@ -66,7 +66,7 @@ const Header = () => {
               >
                 Testimonials
               </Link>
-                            <Link 
+              <Link 
                 to="/real-estate-consortium" 
                 className={`text-sm ${isActive('/real-estate-consortium') ? 'text-foreground font-medium' : 'text-muted-foreground'} hover:text-foreground transition-colors`}
               >
@@ -110,6 +110,15 @@ const Header = () => {
             >
               Testimonials
             </Link>
+            <div className="space-y-2 border-t border-border pt-2">
+              <Link 
+                to="/real-estate-consortium" 
+                className={`text-sm block ${isActive('/real-estate-consortium') ? 'text-foreground font-medium' : 'text-muted-foreground'}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                The Consortium
+              </Link>
+            </div>
             <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
               <Button size="sm" className="w-full">Book Consultation</Button>
             </Link>

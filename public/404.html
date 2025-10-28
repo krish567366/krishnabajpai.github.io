@@ -5,38 +5,29 @@
     <title>Krishna Bajpai - Redirecting...</title>
     <script type="text/javascript">
       (function() {
-        // Save the current path
-        const path = window.location.pathname + window.location.search + window.location.hash;
-        // Only store if it's not the root path
-        if (path !== '/') {
-          sessionStorage.redirect = path;
+        var redirect = window.location.pathname + window.location.search + window.location.hash;
+        
+        // Don't redirect sitemap.xml, robots.txt, or root path requests
+        if (redirect !== '/' && 
+            !redirect.includes('sitemap.xml') && 
+            !redirect.includes('robots.txt') && 
+            !redirect.includes('.xml') &&  // Cover any XML files
+            !redirect.includes('.txt')) {   // Cover any TXT files
+          
+          // Save the path for the index.html to use
+          sessionStorage.redirect = redirect;
+          
+          var l = window.location;
+          var pathSegmentsToKeep = 0;
+          
+          l.replace(
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+            l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+            l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+            (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            l.hash
+          );
         }
-      })();
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment
-
-      // This is to handle SPA routing on GitHub Pages
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
-      // This way the code will only replace the route part and not the real directory.
-      // For example, if your repository is 'my-app', and you're using
-      // https://username.github.io/my-app/, then set pathSegmentsToKeep to 1.
-      // Otherwise, leave pathSegmentsToKeep as 0.
-      var pathSegmentsToKeep = 0;
-
-      (function() {
-        var l = window.location;
-        l.replace(
-          l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-          l.hash
-        );
       })();
     </script>
   </head>

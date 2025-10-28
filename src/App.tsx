@@ -22,6 +22,8 @@ import HealthcareAutomationCaseStudy from "./pages/case-studies/HealthcareAutoma
 import RealEstateConsortium from "./pages/RealEstateConsortium";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import ConsortiumApplication from "./pages/ConsortiumApplication";
+import ConsortiumProcess from "./pages/ConsortiumProcess";
 
 const queryClient = new QueryClient();
 
@@ -65,6 +67,8 @@ const App = () => {
             <Route path="/case-studies/supply-chain" element={<SupplyChainCaseStudy />} />
             <Route path="/case-studies/healthcare-automation" element={<HealthcareAutomationCaseStudy />} />
             <Route path="/real-estate-consortium" element={<RealEstateConsortium />} />
+            <Route path="/consortium-application" element={<ConsortiumApplication />} />
+            <Route path="/consortium-process" element={<ConsortiumProcess />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             
