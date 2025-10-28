@@ -1,6 +1,21 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
+import { viteStaticCopy } from 'vite-plugin-static-copy';
+
+const routes = [
+  'about',
+  'services',
+  'case-studies',
+  'contact',
+  'real-estate-consortium',
+  'consortium-application',
+  'consortium-process',
+  'case-studies/fintech-fraud-case-study',
+  'case-studies/healthcare-automation-case-study',
+  'case-studies/manufacturing-case-study',
+  'case-studies/supply-chain-case-study'
+];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -9,7 +24,25 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [react()].filter(Boolean),
+  plugins: [
+    react(),
+    viteStaticCopy({
+      targets: [
+        ...routes.map(route => ({
+          src: 'index.html',
+          dest: route,
+          rename: 'index.html',
+          transform: (content: string | Buffer) => {
+            // Add prerender meta tag for Cloudflare
+            return content.toString().replace(
+              '</head>',
+              '<meta name="prerender-status-code" content="200"></head>'
+            );
+          }
+        }))
+      ]
+    })
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -18,6 +51,9 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist",
     rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      },
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
