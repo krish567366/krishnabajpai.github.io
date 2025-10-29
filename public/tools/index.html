@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools — Krishna Bajpai</title>
+    <meta name="description" content="Explore Krishna Bajpai's collection of open-source Python tools and libraries for AI, ML, and quantum computing">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #06b6d4;
+            --secondary-color: #0891b2;
+            --background-color: #0f172a;
+            --text-color: #e2e8f0;
+            --border-color: #1e293b;
+            --card-background: #1e293b;
+            --card-hover: #334155;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            --heading-color: #f8fafc;
+            --tag-background: #334155;
+            --tag-color: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-section {
+            margin-bottom: 4rem;
+        }
+
+        .category-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .tool-card {
+            background: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            box-shadow: var(--card-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                45deg,
+                var(--primary-color) 0%,
+                var(--secondary-color) 100%
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        .tool-card h3 {
+            font-size: 1.25rem;
+            margin: 0 0 1rem;
+            color: var(--primary-color);
+        }
+
+        .tool-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background: #f3f4f6;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: var(--secondary-color);
+        }
+
+        .tool-details {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tool-header {
+            margin-bottom: 2rem;
+        }
+
+        .version {
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .tool-category {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+
+        .tool-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .button.primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .button.secondary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tool-links {
+                flex-direction: column;
+            }
+
+            .button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="tools-container">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="/assets/js/tools.js"></script>
+</body>
+</html>

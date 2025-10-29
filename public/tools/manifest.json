@@ -1,0 +1,275 @@
+{
+  "tools": [
+    {
+      "slug": "mrce-plus",
+      "name": "mrce-plus",
+      "version": "1.0.0",
+      "description": "Meta-Recursive Cognitive Engine Plus - A triple-loop cognitive system with multi-tiered memory and LLM integration",
+      "pypi": "https://pypi.org/project/mrce-plus/",
+      "github": "https://github.com/krish567366/mrce-plus",
+      "category": "AI/ML",
+      "tags": ["cognitive-systems", "llm", "memory-systems"],
+      "lastReleased": "Oct 16, 2025"
+    },
+    {
+      "slug": "tinyedgellm",
+      "name": "tinyedgellm",
+      "version": "1.0.0",
+      "description": "A modular framework for LLM quantization, structured pruning, and edge deployment",
+      "pypi": "https://pypi.org/project/tinyedgellm/",
+      "github": "https://github.com/krish567366/tinyedgellm",
+      "category": "Edge AI",
+      "tags": ["llm", "edge-computing", "quantization"],
+      "lastReleased": "Oct 9, 2025"
+    },
+    {
+      "slug": "decentralized-ai",
+      "name": "decentralized-ai",
+      "version": "1.0.0",
+      "description": "Decentralized AI Training Platform",
+      "pypi": "https://pypi.org/project/decentralized-ai/",
+      "github": "https://github.com/krish567366/decentralized-ai",
+      "category": "AI Infrastructure",
+      "tags": ["distributed-systems", "blockchain", "ai-training"],
+      "lastReleased": "Sep 19, 2025"
+    },
+    {
+      "slug": "cognito-sim-engine",
+      "name": "cognito-sim-engine",
+      "version": "1.0.0",
+      "description": "A modular cognitive simulation engine for modeling and testing advanced AI cognitive architectures",
+      "pypi": "https://pypi.org/project/cognito-sim-engine/",
+      "github": "https://github.com/krish567366/cognito-sim-engine",
+      "category": "AI/ML",
+      "tags": ["cognitive-architectures", "simulation", "ai-testing"],
+      "lastReleased": "Sep 19, 2025"
+    },
+    {
+      "slug": "automl-self-improvement",
+      "name": "automl-self-improvement",
+      "version": "1.0.0",
+      "description": "Autonomous AI model optimization framework with meta-learning and hybrid tuning",
+      "pypi": "https://pypi.org/project/automl-self-improvement/",
+      "github": "https://github.com/krish567366/automl-self-improvement",
+      "category": "AI/ML",
+      "tags": ["automl", "meta-learning", "optimization"],
+      "lastReleased": "Sep 19, 2025"
+    },
+    {
+      "slug": "openmlcrawler",
+      "name": "openmlcrawler",
+      "version": "1.0.0",
+      "description": "A unified framework for crawling and preparing ML-ready datasets",
+      "pypi": "https://pypi.org/project/openmlcrawler/",
+      "github": "https://github.com/krish567366/openmlcrawler",
+      "category": "Data Science",
+      "tags": ["data-collection", "ml-datasets", "crawling"],
+      "lastReleased": "Sep 18, 2025"
+    },
+    {
+      "slug": "hmai",
+      "name": "hmai",
+      "version": "1.0.0",
+      "description": "AI framework for inventing new classes of matter through generative quantum field theory",
+      "pypi": "https://pypi.org/project/hmai/",
+      "github": "https://github.com/krish567366/hmai",
+      "category": "Quantum Computing",
+      "tags": ["quantum-field-theory", "generative-ai", "materials-science"],
+      "lastReleased": "Sep 1, 2025"
+    },
+    {
+      "slug": "alphaforge",
+      "name": "alphaforge",
+      "version": "1.0.0",
+      "description": "High-performance algorithmic trading platform",
+      "pypi": "https://pypi.org/project/alphaforge/",
+      "github": "https://github.com/krish567366/alphaforge",
+      "category": "Finance",
+      "tags": ["algorithmic-trading", "machine-learning", "finance"],
+      "lastReleased": "Aug 31, 2025"
+    },
+    {
+      "slug": "evosphere",
+      "name": "evosphere",
+      "version": "1.0.0",
+      "description": "The Evolutionary Bio-Compiler: A living engine for programming biology through evolution itself",
+      "pypi": "https://pypi.org/project/evosphere/",
+      "github": "https://github.com/krish567366/evosphere",
+      "category": "Bio AI",
+      "tags": ["bio-computing", "evolution", "genetic-algorithms"],
+      "lastReleased": "Aug 31, 2025"
+    },
+    {
+      "slug": "vision-agent-framework",
+      "name": "vision-agent-framework",
+      "version": "1.0.0",
+      "description": "World-Class Multi-Modal AI Agent Framework with Revolutionary Performance Features",
+      "pypi": "https://pypi.org/project/vision-agent-framework/",
+      "github": "https://github.com/krish567366/vision-agent-framework",
+      "category": "Computer Vision",
+      "tags": ["computer-vision", "multi-modal", "ai-agents"],
+      "lastReleased": "Aug 31, 2025"
+    },
+    {
+      "slug": "pan-omic-consciousness-engine",
+      "name": "pan-omic-consciousness-engine",
+      "version": "1.0.0",
+      "description": "Pan-Omics Consciousness Engine - A computational framework for modeling consciousness emergence",
+      "pypi": "https://pypi.org/project/pan-omic-consciousness-engine/",
+      "github": "https://github.com/krish567366/pan-omic-consciousness-engine",
+      "category": "Cognitive Science",
+      "tags": ["consciousness", "omics", "cognitive-modeling"],
+      "lastReleased": "Aug 30, 2025"
+    },
+    {
+      "slug": "topological-quantum-compiler",
+      "name": "topological-quantum-compiler",
+      "version": "1.0.0",
+      "description": "A universal compiler for quantum computers based on topological principles and anyonic braiding",
+      "pypi": "https://pypi.org/project/topological-quantum-compiler/",
+      "github": "https://github.com/krish567366/topological-quantum-compiler",
+      "category": "Quantum Computing",
+      "tags": ["quantum-computing", "topology", "compiler"],
+      "lastReleased": "Aug 29, 2025"
+    },
+    {
+      "slug": "trading-bot-ml",
+      "name": "trading-bot-ml",
+      "version": "1.0.0",
+      "description": "Advanced ML-powered trading bot with real-time market analysis",
+      "pypi": "https://pypi.org/project/trading-bot-ml/",
+      "github": "https://github.com/krish567366/trading-bot-ml",
+      "category": "Finance",
+      "tags": ["trading", "machine-learning", "market-analysis"],
+      "lastReleased": "Aug 25, 2025"
+    },
+    {
+      "slug": "qmemetic-ai",
+      "name": "qmemetic-ai",
+      "version": "1.0.0",
+      "description": "Quantum-inspired AI system for evolving, mutating, and entangling memes across users, systems, and timelines",
+      "pypi": "https://pypi.org/project/qmemetic-ai/",
+      "github": "https://github.com/krish567366/qmemetic-ai",
+      "category": "Quantum Computing",
+      "tags": ["quantum-computing", "meme-evolution", "ai-systems"],
+      "lastReleased": "Jul 21, 2025"
+    },
+    {
+      "slug": "quantumlangchain",
+      "name": "quantumlangchain",
+      "version": "1.0.0",
+      "description": "A composable framework for quantum-inspired reasoning, entangled memory systems, and multi-agent cooperation",
+      "pypi": "https://pypi.org/project/quantumlangchain/",
+      "github": "https://github.com/krish567366/quantumlangchain",
+      "category": "Quantum Computing",
+      "tags": ["quantum-computing", "language-models", "agents"],
+      "lastReleased": "Jul 19, 2025"
+    },
+    {
+      "slug": "entropic-ai",
+      "name": "entropic-ai",
+      "version": "1.0.0",
+      "description": "Entropic AI: Generative Intelligence through Thermodynamic Self-Organization",
+      "pypi": "https://pypi.org/project/entropic-ai/",
+      "github": "https://github.com/krish567366/entropic-ai",
+      "category": "AI/ML",
+      "tags": ["generative-ai", "thermodynamics", "self-organization"],
+      "lastReleased": "Jul 18, 2025"
+    },
+    {
+      "slug": "quantum-data-embedding-suite",
+      "name": "quantum-data-embedding-suite",
+      "version": "1.0.0",
+      "description": "Advanced classical-to-quantum data embedding techniques for quantum machine learning",
+      "pypi": "https://pypi.org/project/quantum-data-embedding-suite/",
+      "github": "https://github.com/krish567366/quantum-data-embedding-suite",
+      "category": "Quantum Computing",
+      "tags": ["quantum-computing", "data-embedding", "machine-learning"],
+      "lastReleased": "Jul 16, 2025"
+    },
+    {
+      "slug": "quantum-entangled-knowledge-graphs",
+      "name": "quantum-entangled-knowledge-graphs",
+      "version": "1.0.0",
+      "description": "World's first open-source library for quantum-enhanced knowledge graph reasoning using entanglement principles",
+      "pypi": "https://pypi.org/project/quantum-entangled-knowledge-graphs/",
+      "github": "https://github.com/krish567366/quantum-entangled-knowledge-graphs",
+      "category": "Quantum Computing",
+      "tags": ["knowledge-graphs", "quantum-computing", "reasoning"],
+      "lastReleased": "Jul 16, 2025"
+    },
+    {
+      "slug": "entanglement-enhanced-nlp",
+      "name": "entanglement-enhanced-nlp",
+      "version": "1.0.0",
+      "description": "Quantum entanglement-inspired Natural Language Processing framework",
+      "pypi": "https://pypi.org/project/entanglement-enhanced-nlp/",
+      "github": "https://github.com/krish567366/entanglement-enhanced-nlp",
+      "category": "NLP",
+      "tags": ["nlp", "quantum-computing", "language-processing"],
+      "lastReleased": "Jul 16, 2025"
+    },
+    {
+      "slug": "tinyedgellm",
+      "name": "tinyedgellm",
+      "version": "1.0.0",
+      "description": "A modular framework for LLM quantization, structured pruning, and edge deployment",
+      "pypi": "https://pypi.org/project/tinyedgellm/",
+      "github": "https://github.com/krish567366/tinyedgellm",
+      "category": "Edge AI",
+      "tags": ["llm", "edge-computing", "optimization"]
+    },
+    {
+      "slug": "decentralized-ai",
+      "name": "decentralized-ai",
+      "version": "1.0.0",
+      "description": "Decentralized AI Training Platform",
+      "pypi": "https://pypi.org/project/decentralized-ai/",
+      "github": "https://github.com/krish567366/decentralized-ai",
+      "category": "AI Infrastructure",
+      "tags": ["distributed-systems", "blockchain", "ai-training"]
+    },
+    {
+      "slug": "alphaforge",
+      "name": "alphaforge",
+      "version": "1.0.0",
+      "description": "High-performance algorithmic trading platform",
+      "pypi": "https://pypi.org/project/alphaforge/",
+      "github": "https://github.com/krish567366/alphaforge",
+      "category": "Finance",
+      "tags": ["trading", "machine-learning", "algorithms"]
+    },
+    {
+      "slug": "quantumlangchain",
+      "name": "quantumlangchain",
+      "version": "1.0.0",
+      "description": "A composable framework for quantum-inspired reasoning, entangled memory systems, and multi-agent cooperation",
+      "pypi": "https://pypi.org/project/quantumlangchain/",
+      "github": "https://github.com/krish567366/quantumlangchain",
+      "category": "Quantum Computing",
+      "tags": ["quantum-computing", "nlp", "agents"]
+    },
+    {
+      "slug": "quantum-metalearn",
+      "name": "quantum-metalearn",
+      "version": "1.0.0",
+      "description": "A project for meta-learning experiments in quantum computing",
+      "pypi": "https://pypi.org/project/quantum-metalearn/",
+      "github": "https://github.com/krish567366/quantum-metalearn",
+      "category": "Quantum Computing",
+      "tags": ["meta-learning", "quantum-computing", "machine-learning"]
+    }
+  ],
+  "categories": [
+    "AI/ML",
+    "Edge AI",
+    "AI Infrastructure",
+    "Finance",
+    "Quantum Computing",
+    "Data Science",
+    "Bio AI",
+    "Computer Vision",
+    "Cognitive Science",
+    "NLP"
+  ]
+}

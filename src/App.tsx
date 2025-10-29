@@ -13,6 +13,7 @@ import Services from "./pages/Services";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Tools from "./pages/Tools";
 
 // Import individual case study pages
 import ManufacturingCaseStudy from "./pages/case-studies/ManufacturingCaseStudy";
@@ -58,6 +59,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/tools" element={<Tools />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             
