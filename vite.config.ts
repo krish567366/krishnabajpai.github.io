@@ -11,6 +11,7 @@ const routes = [
   'real-estate-consortium',
   'consortium-application',
   'consortium-process',
+  'tools',
   'case-studies/fintech-fraud-case-study',
   'case-studies/healthcare-automation-case-study',
   'case-studies/manufacturing-case-study',
