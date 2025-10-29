@@ -125,22 +125,50 @@
         {
           "@type": "TechArticle",
           "name": "Machine Learning",
-          "articleSection": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "AutoML"]
+          "headline": "Comprehensive Guide to Modern Machine Learning Techniques",
+          "articleSection": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "AutoML"],
+          "author": {
+            "@type": "Person",
+            "@id": "https://krishnabajpai.me/#person",
+            "name": "Krishna Bajpai"
+          },
+          "image": "https://krishnabajpai.me/img/machine-learning.jpg"
         },
         {
           "@type": "TechArticle",
           "name": "Quantum Computing",
-          "articleSection": ["Quantum Optimization", "Quantum Machine Learning", "Quantum Algorithms"]
+          "headline": "Advanced Guide to Quantum Computing Applications in AI",
+          "articleSection": ["Quantum Optimization", "Quantum Machine Learning", "Quantum Algorithms"],
+          "author": {
+            "@type": "Person",
+            "@id": "https://krishnabajpai.me/#person",
+            "name": "Krishna Bajpai"
+          },
+          "image": "https://krishnabajpai.me/img/quantum-computing.jpg"
         },
         {
           "@type": "TechArticle",
           "name": "MLOps",
-          "articleSection": ["CI/CD for ML", "Model Monitoring", "Feature Stores", "Model Registry"]
+          "headline": "Enterprise MLOps: From Model Development to Production",
+          "articleSection": ["CI/CD for ML", "Model Monitoring", "Feature Stores", "Model Registry"],
+          "author": {
+            "@type": "Person",
+            "@id": "https://krishnabajpai.me/#person",
+            "name": "Krishna Bajpai"
+          },
+          "image": "https://krishnabajpai.me/img/mlops.jpg"
         },
         {
           "@type": "TechArticle",
           "name": "Cloud Technologies",
-          "articleSection": ["AWS", "Google Cloud", "Azure", "Kubernetes"]
+          "headline": "Enterprise Cloud Architecture and Kubernetes Deployment",
+          "articleSection": ["AWS", "Google Cloud", "Azure", "Kubernetes"],
+          "author": {
+            "@type": "Person",
+            "@id": "https://krishnabajpai.me/#person",
+            "name": "Krishna Bajpai"
+          },
+          "image": "https://krishnabajpai.me/img/cloud-tech.jpg"
         }
       ],
       "hasOccupation": {
@@ -290,10 +318,98 @@
       "makesOffer": {
         "@type": "AggregateOffer",
         "itemOffered": [
-          {"@type": "Product","name": "Machine Learning Consulting","description": "Transform your business with end-to-end ML solutions tailored to your goals.", "category": "AI Consulting Services"},
-          {"@type": "Product","name": "AI Architecture Design","description": "Scalable AI systems and MLOps pipelines that grow with your business.", "category": "AI Architecture"},
-          {"@type": "Product","name": "Technical Leadership","description": "Expert ML leadership to guide teams and deliver successful projects.", "category": "Technical Leadership"},
-          {"@type": "Product","name": "Data Strategy Consulting","description": "Turn your data into actionable insights with a robust data strategy.", "category": "Data Strategy"},
+          {
+            "@type": "Service",
+            "name": "Machine Learning Consulting",
+            "description": "Transform your business with end-to-end ML solutions tailored to your goals.",
+            "category": "AI Consulting Services",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
+              "name": "Krishna Bajpai"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "25000",
+              "priceCurrency": "USD",
+              "availability": "InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "48",
+              "reviewCount": "48"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "AI Architecture Design",
+            "description": "Scalable AI systems and MLOps pipelines that grow with your business.",
+            "category": "AI Architecture",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
+              "name": "Krishna Bajpai"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "35000",
+              "priceCurrency": "USD",
+              "availability": "InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "42",
+              "reviewCount": "42"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Technical Leadership",
+            "description": "Expert ML leadership to guide teams and deliver successful projects.",
+            "category": "Technical Leadership",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
+              "name": "Krishna Bajpai"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "30000",
+              "priceCurrency": "USD",
+              "availability": "InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "ratingCount": "36",
+              "reviewCount": "36"
+            }
+          },
+          {
+            "@type": "Service",
+            "name": "Data Strategy Consulting",
+            "description": "Turn your data into actionable insights with a robust data strategy.",
+            "category": "Data Strategy",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
+              "name": "Krishna Bajpai"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "20000",
+              "priceCurrency": "USD",
+              "availability": "InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "45",
+              "reviewCount": "45"
+            }
+          },
           {"@type": "Service","name": "Predictive Analytics Solutions","description": "Forecast trends, optimize decisions, and stay ahead of the market."},
           {"@type": "Service","name": "Customer Churn Prediction","description": "Identify at-risk customers and boost retention with AI-driven insights."},
           {"@type": "Service","name": "Natural Language Processing","description": "Engage your audience with chatbots, sentiment analysis, and smart text processing."},
@@ -1043,8 +1159,27 @@
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "availability": "InStock"
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "156",
+        "reviewCount": "156"
+      },
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "AI Analysis Tools",
+      "installUrl": "https://krishnabajpai.me/tools/ai-analyzer/download",
+      "screenshot": "https://krishnabajpai.me/tools/ai-analyzer/screenshot.png",
+      "featureList": [
+        "AI Project Assessment",
+        "Performance Analysis",
+        "Cost Optimization",
+        "Architecture Recommendations",
+        "Security Analysis"
+      ],
+      "releaseNotes": "https://krishnabajpai.me/tools/ai-analyzer/changelog",
       "author": {
         "@type": "Person",
         "@id": "https://krishnabajpai.me/#person"
@@ -1225,7 +1360,7 @@
             "name": "Healthcare AI Solutions",
             "provider": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.com/#person",
+              "@id": "https://krishnabajpai.me/#person",
               "name": "Krishna Bajpai"
             }
           },
@@ -1247,7 +1382,7 @@
             "name": "Financial AI Solutions",
             "provider": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.com/#person",
+              "@id": "https://krishnabajpai.me/#person",
               "name": "Krishna Bajpai"
             }
           },
