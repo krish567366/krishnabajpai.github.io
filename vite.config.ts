@@ -29,21 +29,10 @@ export default defineConfig(({ mode }) => ({
     react(),
     viteStaticCopy({
       targets: [
-        {
-          src: 'public/_redirects',
-          dest: '',
-        },
         ...routes.map(route => ({
           src: 'index.html',
           dest: route,
           rename: 'index.html',
-          transform: (content: string | Buffer) => {
-            // Add prerender meta tag for Cloudflare
-            return content.toString().replace(
-              '</head>',
-              '<meta name="prerender-status-code" content="200"></head>'
-            );
-          }
         }))
       ]
     })
@@ -58,6 +47,12 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+        ...Object.fromEntries(
+          routes.map(route => [
+            route.replace(/\//g, '-'),
+            path.resolve(__dirname, 'index.html')
+          ])
+        )
       },
       output: {
         manualChunks: {
