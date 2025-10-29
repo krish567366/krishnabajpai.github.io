@@ -281,12 +281,12 @@
         ]
       },
       "makesOffer": {
-        "@type": "Offer",
+        "@type": "AggregateOffer",
         "itemOffered": [
-          {"@type": "Service","name": "Machine Learning Consulting","description": "Transform your business with end-to-end ML solutions tailored to your goals."},
-          {"@type": "Service","name": "AI Architecture Design","description": "Scalable AI systems and MLOps pipelines that grow with your business."},
-          {"@type": "Service","name": "Technical Leadership","description": "Expert ML leadership to guide teams and deliver successful projects."},
-          {"@type": "Service","name": "Data Strategy Consulting","description": "Turn your data into actionable insights with a robust data strategy."},
+          {"@type": "Product","name": "Machine Learning Consulting","description": "Transform your business with end-to-end ML solutions tailored to your goals.", "category": "AI Consulting Services"},
+          {"@type": "Product","name": "AI Architecture Design","description": "Scalable AI systems and MLOps pipelines that grow with your business.", "category": "AI Architecture"},
+          {"@type": "Product","name": "Technical Leadership","description": "Expert ML leadership to guide teams and deliver successful projects.", "category": "Technical Leadership"},
+          {"@type": "Product","name": "Data Strategy Consulting","description": "Turn your data into actionable insights with a robust data strategy.", "category": "Data Strategy"},
           {"@type": "Service","name": "Predictive Analytics Solutions","description": "Forecast trends, optimize decisions, and stay ahead of the market."},
           {"@type": "Service","name": "Customer Churn Prediction","description": "Identify at-risk customers and boost retention with AI-driven insights."},
           {"@type": "Service","name": "Natural Language Processing","description": "Engage your audience with chatbots, sentiment analysis, and smart text processing."},
@@ -712,7 +712,7 @@
             "@type": "Person",
             "@id": "https://krishnabajpai.me/#person"
           },
-          "datePublished": "2025-09-15",
+          "datePublished": "2025-09-15T00:00:00Z",
           "image": "https://krishnabajpai.me/assets/blog/quantum-ai.jpg",
           "articleBody": "Preview: In this article, we explore the convergence of quantum computing and enterprise AI..."
         },
@@ -724,7 +724,7 @@
             "@type": "Person",
             "@id": "https://krishnabajpai.me/#person"
           },
-          "datePublished": "2025-08-20",
+          "datePublished": "2025-08-20T00:00:00Z",
           "image": "https://krishnabajpai.me/assets/blog/mlops.jpg",
           "articleBody": "Preview: Drawing from my experience with Fortune 500 clients..."
         }
@@ -802,7 +802,7 @@
           "name": "Enterprise AI Architecture Masterclass",
           "description": "Krishna Bajpai explains advanced enterprise AI architecture patterns and best practices",
           "thumbnailUrl": "https://krishnabajpai.me/videos/masterclass-thumb.jpg",
-          "uploadDate": "2025-09-01",
+          "uploadDate": "2025-09-01T00:00:00Z",
           "duration": "PT1H30M",
           "contentUrl": "https://krishnabajpai.me/videos/enterprise-ai-masterclass",
           "embedUrl": "https://krishnabajpai.me/videos/embed/enterprise-ai-masterclass",
@@ -818,7 +818,7 @@
           "name": "Quantum Computing in AI: Future Trends",
           "description": "Deep dive into quantum computing applications in modern AI systems",
           "thumbnailUrl": "https://krishnabajpai.me/videos/quantum-thumb.jpg",
-          "uploadDate": "2025-08-15",
+          "uploadDate": "2025-08-15T00:00:00Z",
           "duration": "PT45M",
           "contentUrl": "https://krishnabajpai.me/videos/quantum-computing-ai",
           "embedUrl": "https://krishnabajpai.me/videos/embed/quantum-computing-ai",
@@ -904,7 +904,7 @@
             "@type": "Person",
             "@id": "https://krishnabajpai.me/#person"
           },
-          "datePublished": "2025-09",
+          "datePublished": "2025-09-01T00:00:00Z",
           "industry": "Retail",
           "successMetrics": ["300% ROI", "$50M Annual Savings", "40% Efficiency Increase"],
           "image": "https://krishnabajpai.me/case-studies/retail-supply-chain.jpg"
@@ -919,7 +919,7 @@
             "@type": "Person",
             "@id": "https://krishnabajpai.me/#person"
           },
-          "datePublished": "2025-08",
+          "datePublished": "2025-08-01T00:00:00Z",
           "industry": "Healthcare",
           "successMetrics": ["99.9% Accuracy", "75% Time Reduction", "500,000 Patients Served"],
           "image": "https://krishnabajpai.me/case-studies/healthcare-ai.jpg"
@@ -934,7 +934,7 @@
             "@type": "Person",
             "@id": "https://krishnabajpai.me/#person"
           },
-          "datePublished": "2025-07",
+          "datePublished": "2025-07-01T00:00:00Z",
           "industry": "Finance",
           "successMetrics": ["90% Time Reduction", "45% Cost Savings", "99.99% Accuracy"],
           "image": "https://krishnabajpai.me/case-studies/finance-risk.jpg"
@@ -986,8 +986,8 @@
       "@type": "JobPosting",
       "title": "Senior AI Engineer - Remote Position",
       "description": "Looking for exceptional AI engineers to join our elite consulting team",
-      "datePosted": "2025-10-01",
-      "validThrough": "2025-12-31",
+      "datePosted": "2025-10-01T00:00:00Z",
+      "validThrough": "2025-12-31T23:59:59Z",
       "employmentType": "CONTRACTOR",
       "hiringOrganization": {
         "@type": "Organization",
@@ -998,7 +998,11 @@
         "@type": "Place",
         "address": {
           "@type": "PostalAddress",
-          "addressCountry": "Remote"
+          "addressCountry": "Remote",
+          "addressRegion": "Worldwide",
+          "addressLocality": "Remote Work",
+          "postalCode": "00000",
+          "streetAddress": "Remote Position"
         }
       },
       "baseSalary": {
@@ -1116,7 +1120,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Service",
+      "@type": "LocalBusiness",
       "name": "Elite ML Consulting Services - Krishna Bajpai",
       "serviceType": "Machine Learning Consulting",
       "provider": {
@@ -1146,83 +1150,92 @@
           "name": "Premium ML Consulting"
         }
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "150",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
+      "testimonial": [
         {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+          "@type": "CreativeWork",
+          "about": {
+            "@type": "Product",
+            "name": "Enterprise AI Solutions",
+            "category": "AI Consulting",
+            "brand": {
+              "@type": "Organization",
+              "name": "Krishna Bajpai Consulting",
+              "founder": {
+                "@type": "Person",
+                "@id": "https://krishnabajpai.com/#person",
+                "name": "Krishna Bajpai"
+              }
+            }
           },
+          "text": "Outstanding AI consulting services. Krishna's expertise in quantum computing and enterprise AI solutions delivered exceptional results.",
           "author": {
             "@type": "Person",
             "name": "Fortune 500 CTO"
           },
-          "reviewBody": "Outstanding AI consulting services. Krishna's expertise in quantum computing and enterprise AI solutions delivered exceptional results.",
           "publisher": {
             "@type": "Organization",
             "name": "Global Technology Review"
-          }
+          },
+          "keywords": ["Enterprise AI", "Quantum Computing", "AI Solutions"]
         },
         {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+          "@type": "CreativeWork",
+          "about": {
+            "@type": "Service",
+            "name": "Healthcare AI Solutions",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.com/#person",
+              "name": "Krishna Bajpai"
+            }
           },
+          "text": "Krishna's AI solutions revolutionized our healthcare operations. His expertise in MLOps and AI architecture is unmatched.",
           "author": {
             "@type": "Person",
             "name": "Healthcare Industry Leader"
           },
-          "reviewBody": "Krishna's AI solutions revolutionized our healthcare operations. His expertise in MLOps and AI architecture is unmatched.",
           "publisher": {
             "@type": "Organization",
             "name": "Healthcare Innovation Magazine"
-          }
+          },
+          "keywords": ["Healthcare AI", "MLOps", "AI Architecture"]
         },
         {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
+          "@type": "CreativeWork",
+          "about": {
+            "@type": "Service",
+            "name": "Financial AI Solutions",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.com/#person",
+              "name": "Krishna Bajpai"
+            }
           },
+          "text": "Exceptional quantum computing expertise. Krishna's innovative solutions helped us achieve unprecedented optimization in our financial models.",
           "author": {
             "@type": "Person",
             "name": "Financial Services Executive"
           },
-          "reviewBody": "Exceptional quantum computing expertise. Krishna's innovative solutions helped us achieve unprecedented optimization in our financial models.",
           "publisher": {
             "@type": "Organization",
             "name": "FinTech Weekly"
-          }
+          },
+          "keywords": ["Financial AI", "Quantum Computing", "Optimization"]
         }
       ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "AI & ML Consulting Services",
-        "itemListElement": [
+      "offers": {
+        "@type": "AggregateOffer",
+        "name": "AI & ML Consulting Solutions",
+        "itemOffered": [
           {
-            "@type": "OfferCatalog",
-            "name": "Enterprise AI Solutions",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "AI Architecture Design",
-                  "description": "Enterprise-grade AI system architecture and implementation"
-                }
-              }
-            ]
+            "@type": "Product",
+            "name": "Enterprise AI Solutions Package",
+            "description": "Enterprise-grade AI system architecture and implementation",
+            "category": "Enterprise Solutions",
+            "brand": {
+              "@type": "Organization",
+              "name": "Krishna Bajpai Consulting"
+            }
           }
         ]
       }

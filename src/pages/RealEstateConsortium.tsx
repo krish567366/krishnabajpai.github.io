@@ -168,38 +168,50 @@ const RealEstateConsortium = () => {
                 "Market Intelligence",
                 "Portfolio Optimization"
               ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Real Estate Consortium Services",
-                "itemListElement": [
+              "offers": {
+                "@type": "AggregateOffer",
+                "name": "Real Estate Consortium Memberships",
+                "itemOffered": [
                   {
-                    "@type": "Service",
+                    "@type": "Product",
                     "name": "Elite Partnership",
                     "description": "For institutional investors and development firms",
-                    "serviceType": "Premium Consulting",
-                    "provider": {
-                      "@type": "Person",
-                      "name": "Krishna Bajpai"
+                    "category": "Premium Real Estate Consulting",
+                    "brand": {
+                      "@type": "Organization",
+                      "name": "Krishna Bajpai Real Estate Consortium",
+                      "founder": {
+                        "@type": "Person",
+                        "name": "Krishna Bajpai"
+                      }
                     }
                   },
                   {
-                    "@type": "Service",
+                    "@type": "Product",
                     "name": "Strategic Advisory",
                     "description": "For portfolio managers and family offices",
-                    "serviceType": "Advisory Services",
-                    "provider": {
-                      "@type": "Person",
-                      "name": "Krishna Bajpai"
+                    "category": "Real Estate Advisory Services",
+                    "brand": {
+                      "@type": "Organization",
+                      "name": "Krishna Bajpai Real Estate Consortium",
+                      "founder": {
+                        "@type": "Person",
+                        "name": "Krishna Bajpai"
+                      }
                     }
                   },
                   {
-                    "@type": "Service",
+                    "@type": "Product",
                     "name": "Enterprise Solutions",
                     "description": "For large real estate corporations",
-                    "serviceType": "Enterprise Consulting",
-                    "provider": {
-                      "@type": "Person",
-                      "name": "Krishna Bajpai"
+                    "category": "Enterprise Real Estate Consulting",
+                    "brand": {
+                      "@type": "Organization",
+                      "name": "Krishna Bajpai Real Estate Consortium",
+                      "founder": {
+                        "@type": "Person",
+                        "name": "Krishna Bajpai"
+                      }
                     }
                   }
                 ]

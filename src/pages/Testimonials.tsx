@@ -69,13 +69,9 @@ const Testimonials = () => {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "itemListElement": testimonials.map((t, index) => ({
-      "@type": "Review",
+      "@type": "CreativeWork",
       "position": index + 1,
-      "author": {
-        "@type": "Person",
-        "name": t.author
-      },
-      "itemReviewed": {
+      "about": {
         "@type": "Service",
         "name": "AI Consulting Services by Krishna Bajpai",
         "provider": {
@@ -84,16 +80,17 @@ const Testimonials = () => {
           "name": "Krishna Bajpai"
         }
       },
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": t.rating,
-        "bestRating": "5"
+      "text": t.quote,
+      "author": {
+        "@type": "Person",
+        "name": t.author
       },
-      "reviewBody": t.quote,
       "publisher": {
         "@type": "Organization",
         "name": t.company
-      }
+      },
+      "keywords": [t.industry, t.project, "AI Consulting", "Machine Learning"],
+      "datePublished": new Date().toISOString().split('T')[0] // Current date in YYYY-MM-DD
     }))
   };
 
