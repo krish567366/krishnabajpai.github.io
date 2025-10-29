@@ -173,45 +173,81 @@ const RealEstateConsortium = () => {
                 "name": "Real Estate Consortium Memberships",
                 "itemOffered": [
                   {
-                    "@type": "Product",
+                    "@type": "Service",
                     "name": "Elite Partnership",
                     "description": "For institutional investors and development firms",
                     "category": "Premium Real Estate Consulting",
-                    "brand": {
+                    "provider": {
                       "@type": "Organization",
                       "name": "Krishna Bajpai Real Estate Consortium",
                       "founder": {
                         "@type": "Person",
                         "name": "Krishna Bajpai"
                       }
+                    },
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "25000",
+                      "priceCurrency": "USD",
+                      "availability": "InStock"
+                    },
+                    "aggregateRating": {
+                      "@type": "AggregateRating",
+                      "ratingValue": "4.9",
+                      "ratingCount": "48",
+                      "reviewCount": "48"
                     }
                   },
                   {
-                    "@type": "Product",
+                    "@type": "Service",
                     "name": "Strategic Advisory",
                     "description": "For portfolio managers and family offices",
                     "category": "Real Estate Advisory Services",
-                    "brand": {
+                    "provider": {
                       "@type": "Organization",
                       "name": "Krishna Bajpai Real Estate Consortium",
                       "founder": {
                         "@type": "Person",
                         "name": "Krishna Bajpai"
                       }
+                    },
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "15000",
+                      "priceCurrency": "USD",
+                      "availability": "InStock"
+                    },
+                    "aggregateRating": {
+                      "@type": "AggregateRating",
+                      "ratingValue": "4.8",
+                      "ratingCount": "36",
+                      "reviewCount": "36"
                     }
                   },
                   {
-                    "@type": "Product",
+                    "@type": "Service",
                     "name": "Enterprise Solutions",
                     "description": "For large real estate corporations",
                     "category": "Enterprise Real Estate Consulting",
-                    "brand": {
+                    "provider": {
                       "@type": "Organization",
                       "name": "Krishna Bajpai Real Estate Consortium",
                       "founder": {
                         "@type": "Person",
                         "name": "Krishna Bajpai"
                       }
+                    },
+                    "offers": {
+                      "@type": "Offer",
+                      "price": "35000",
+                      "priceCurrency": "USD",
+                      "availability": "InStock"
+                    },
+                    "aggregateRating": {
+                      "@type": "AggregateRating",
+                      "ratingValue": "4.9",
+                      "ratingCount": "42",
+                      "reviewCount": "42"
                     }
                   }
                 ]

@@ -76,7 +76,7 @@ const Testimonials = () => {
         "name": "AI Consulting Services by Krishna Bajpai",
         "provider": {
           "@type": "Person",
-          "@id": "https://krishnabajpai.com/#person",
+          "@id": "https://krishnabajpai.me/#person",
           "name": "Krishna Bajpai"
         }
       },
