@@ -1148,40 +1148,42 @@
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
       "name": "AI Project Analyzer",
-      "applicationCategory": "BusinessApplication",
-      "downloadUrl": "https://krishnabajpai.me/tools/ai-analyzer",
+      "applicationCategory": "DeveloperApplication",
+      "applicationSubCategory": "AI Analysis Tool",
       "operatingSystem": ["Windows", "macOS", "Linux"],
+      "downloadUrl": "https://krishnabajpai.me/tools/ai-analyzer",
+      "installUrl": "https://krishnabajpai.me/tools/ai-analyzer/download",
+      "softwareVersion": "2.0.0",
+      "description": "Free AI project analysis tool for enterprises. Analyze AI project performance, costs, and security.",
+      "author": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person"
+      },
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD",
-        "availability": "InStock"
+        "priceCurrency": "USD"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Enterprise AI Weekly"
+        }
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
         "ratingCount": "156",
-        "reviewCount": "156"
-      },
-      "applicationSubCategory": "AI Analysis Tools",
-      "installUrl": "https://krishnabajpai.me/tools/ai-analyzer/download",
-      "screenshot": "https://krishnabajpai.me/tools/ai-analyzer/screenshot.png",
-      "featureList": [
-        "AI Project Assessment",
-        "Performance Analysis",
-        "Cost Optimization",
-        "Architecture Recommendations",
-        "Security Analysis"
-      ],
-      "releaseNotes": "https://krishnabajpai.me/tools/ai-analyzer/changelog",
-      "author": {
-        "@type": "Person",
-        "@id": "https://krishnabajpai.me/#person"
-      },
-      "description": "Free AI project analysis tool for enterprises",
-      "softwareVersion": "2.0.0",
-      "fileSize": "25MB",
-      "permissions": "Minimal system access required"
+        "bestRating": "5",
+        "worstRating": "1"
+      }
     }
     </script>
 
@@ -1294,108 +1296,10 @@
         "MLOps Implementation",
         "Technical Leadership"
       ],
-      "offers": {
-        "@type": "AggregateOffer",
-        "priceCurrency": "USD",
-        "priceRange": "$$$$",
-        "eligibleRegion": {
-          "@type": "Country",
-          "name": "Worldwide"
-        },
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Premium ML Consulting"
-        }
-      },
-      "testimonial": [
-        {
-          "@type": "CreativeWork",
-          "about": {
-            "@type": "Service",
-            "name": "Enterprise AI Solutions",
-            "category": "AI Consulting",
-            "provider": {
-              "@type": "Organization",
-              "name": "Krishna Bajpai Consulting",
-              "founder": {
-                "@type": "Person",
-                "@id": "https://krishnabajpai.me/#person",
-                "name": "Krishna Bajpai"
-              }
-            },
-            "offers": {
-              "@type": "Offer",
-              "price": "45000",
-              "priceCurrency": "USD",
-              "availability": "InStock"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "45",
-              "reviewCount": "45"
-            }
-          },
-          "text": "Outstanding AI consulting services. Krishna's expertise in quantum computing and enterprise AI solutions delivered exceptional results.",
-          "author": {
-            "@type": "Person",
-            "name": "Fortune 500 CTO"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Global Technology Review"
-          },
-          "keywords": ["Enterprise AI", "Quantum Computing", "AI Solutions"]
-        },
-        {
-          "@type": "CreativeWork",
-          "about": {
-            "@type": "Service",
-            "name": "Healthcare AI Solutions",
-            "provider": {
-              "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai"
-            }
-          },
-          "text": "Krishna's AI solutions revolutionized our healthcare operations. His expertise in MLOps and AI architecture is unmatched.",
-          "author": {
-            "@type": "Person",
-            "name": "Healthcare Industry Leader"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "Healthcare Innovation Magazine"
-          },
-          "keywords": ["Healthcare AI", "MLOps", "AI Architecture"]
-        },
-        {
-          "@type": "CreativeWork",
-          "about": {
-            "@type": "Service",
-            "name": "Financial AI Solutions",
-            "provider": {
-              "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai"
-            }
-          },
-          "text": "Exceptional quantum computing expertise. Krishna's innovative solutions helped us achieve unprecedented optimization in our financial models.",
-          "author": {
-            "@type": "Person",
-            "name": "Financial Services Executive"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "FinTech Weekly"
-          },
-          "keywords": ["Financial AI", "Quantum Computing", "Optimization"]
-        }
-      ],
-      "offers": {
-        "@type": "AggregateOffer",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
         "name": "AI & ML Consulting Solutions",
-        "itemOffered": [
+        "itemListElement": [
           {
             "@type": "Service",
             "name": "Enterprise AI Solutions Package",
@@ -1410,11 +1314,117 @@
               "price": "50000",
               "priceCurrency": "USD",
               "availability": "InStock"
+            }
+          }
+        ]
+      },
+      "priceRange": "$$$$",
+      "testimonial": [
+        {
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "Service",
+            "name": "Enterprise AI Solutions",
+            "provider": {
+              "@type": "Organization",
+              "name": "Krishna Bajpai Consulting",
+              "founder": {
+                "@type": "Person",
+                "@id": "https://krishnabajpai.me/#person",
+                "name": "Krishna Bajpai"
+              }
+            }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "text": "Outstanding AI consulting services. Krishna's expertise in quantum computing and enterprise AI solutions delivered exceptional results.",
+          "author": {
+            "@type": "Person",
+            "name": "Fortune 500 CTO"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Global Technology Review"
+          }
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "Service",
+            "name": "Healthcare AI Solutions",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
+              "name": "Krishna Bajpai"
+            }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "text": "Krishna's AI solutions revolutionized our healthcare operations. His expertise in MLOps and AI architecture is unmatched.",
+          "author": {
+            "@type": "Person",
+            "name": "Healthcare Industry Leader"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Healthcare Innovation Magazine"
+          }
+        },
+        {
+          "@type": "Review",
+          "itemReviewed": {
+            "@type": "Service",
+            "name": "Financial AI Solutions",
+            "provider": {
+              "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
+              "name": "Krishna Bajpai"
+            }
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "text": "Exceptional quantum computing expertise. Krishna's innovative solutions helped us achieve unprecedented optimization in our financial models.",
+          "author": {
+            "@type": "Person",
+            "name": "Financial Services Executive"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "FinTech Weekly"
+          }
+        }
+      ],
+        "@type": "AggregateOffer",
+        "name": "AI & ML Consulting Solutions",
+        "priceCurrency": "USD",
+        "itemOffered": [
+          {
+            "@type": "Service",
+            "@id": "https://krishnabajpai.me/services/enterprise-ai",
+            "name": "Enterprise AI Solutions Package",
+            "description": "Enterprise-grade AI system architecture and implementation",
+            "provider": {
+              "@type": "Organization",
+              "name": "Krishna Bajpai Consulting"
             },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "ratingCount": "52",
+            "offers": {
+              "@type": "Offer",
+              "price": "50000",
+              "priceCurrency": "USD",
+              "availability": "InStock"
+            }
               "reviewCount": "52"
             }
           }
@@ -1423,47 +1433,113 @@
     }
     </script>
 
-    <!-- Review Schema -->
+    <!-- Service Reviews Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Review",
-      "itemReviewed": {
-        "@type": "Service",
-        "@id": "https://krishnabajpai.me/services#ml-consulting"
+      "@type": "Service",
+      "@id": "https://krishnabajpai.me/services/ml-consulting",
+      "name": "Machine Learning Consulting",
+      "description": "Transform your business with end-to-end ML solutions tailored to your goals.",
+      "provider": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person"
       },
-      "reviewRating": {
-        "@type": "Rating",
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Fortune 500 CTO"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "TechReview"
+          },
+          "reviewBody": "Exceptional ML consulting service that transformed our business operations."
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
         "ratingValue": "4.9",
         "bestRating": "5",
-        "worstRating": "1"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "Fortune 500 CTO"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "TechReview"
-      },
-      "reviewBody": "Exceptional ML consulting service that transformed our business operations."
+        "worstRating": "1",
+        "ratingCount": "48",
+        "reviewCount": "48"
+      }
     }
     </script>
 
-    <!-- Aggregate Rating Schema -->
+    <!-- Additional Services Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AggregateRating",
-      "itemReviewed": {
-        "@type": "Service",
-        "@id": "https://krishnabajpai.me/services#ml-consulting"
+      "@type": "Service",
+      "@id": "https://krishnabajpai.me/services/ai-architecture",
+      "name": "AI Architecture Design",
+      "description": "Scalable AI systems and MLOps pipelines that grow with your business.",
+      "provider": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person"
       },
-      "ratingValue": "4.9",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "48",
-      "reviewCount": "48"
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "42",
+        "reviewCount": "42"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://krishnabajpai.me/services/technical-leadership",
+      "name": "Technical Leadership",
+      "description": "Expert ML leadership to guide teams and deliver successful projects.",
+      "provider": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "36",
+        "reviewCount": "36"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://krishnabajpai.me/services/data-strategy",
+      "name": "Data Strategy Consulting",
+      "description": "Turn your data into actionable insights with a robust data strategy.",
+      "provider": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "45",
+        "reviewCount": "45"
+      }
     }
     </script>
 
