@@ -320,6 +320,7 @@
         "itemOffered": [
           {
             "@type": "Service",
+            "@id": "https://krishnabajpai.me/services#ml-consulting",
             "name": "Machine Learning Consulting",
             "description": "Transform your business with end-to-end ML solutions tailored to your goals.",
             "category": "AI Consulting Services",
@@ -333,12 +334,6 @@
               "price": "25000",
               "priceCurrency": "USD",
               "availability": "InStock"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "ratingCount": "48",
-              "reviewCount": "48"
             }
           },
           {
@@ -1168,7 +1163,6 @@
         "ratingCount": "156",
         "reviewCount": "156"
       },
-      "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "AI Analysis Tools",
       "installUrl": "https://krishnabajpai.me/tools/ai-analyzer/download",
       "screenshot": "https://krishnabajpai.me/tools/ai-analyzer/screenshot.png",
@@ -1426,6 +1420,50 @@
           }
         ]
       }
+    }
+    </script>
+
+    <!-- Review Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Review",
+      "itemReviewed": {
+        "@type": "Service",
+        "@id": "https://krishnabajpai.me/services#ml-consulting"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Fortune 500 CTO"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TechReview"
+      },
+      "reviewBody": "Exceptional ML consulting service that transformed our business operations."
+    }
+    </script>
+
+    <!-- Aggregate Rating Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AggregateRating",
+      "itemReviewed": {
+        "@type": "Service",
+        "@id": "https://krishnabajpai.me/services#ml-consulting"
+      },
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "48",
+      "reviewCount": "48"
     }
     </script>
 
