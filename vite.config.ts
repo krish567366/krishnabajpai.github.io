@@ -27,20 +27,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'public/_routes.json',
-          dest: ''
-        },
-        ...routes.map(route => ({
-          src: 'index.html',
-          dest: route,
-          rename: 'index.html',
-        }))
-      ]
-    })
-  ].filter(Boolean),
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
