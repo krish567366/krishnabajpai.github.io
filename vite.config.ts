@@ -29,6 +29,10 @@ export default defineConfig(({ mode }) => ({
     react(),
     viteStaticCopy({
       targets: [
+        {
+          src: 'public/_routes.json',
+          dest: ''
+        },
         ...routes.map(route => ({
           src: 'index.html',
           dest: route,
