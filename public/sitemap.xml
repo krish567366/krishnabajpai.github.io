@@ -5,6 +5,7 @@
     <loc>https://krishnabajpai.me/</loc>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
 
   <!-- Main Service Pages -->
@@ -12,16 +13,19 @@
     <loc>https://krishnabajpai.me/services</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
   <url>
     <loc>https://krishnabajpai.me/real-estate-consortium</loc>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
   <url>
     <loc>https://krishnabajpai.me/about</loc>
     <priority>0.9</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
 
   <!-- Key Conversion Pages -->
@@ -29,16 +33,19 @@
     <loc>https://krishnabajpai.me/contact</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
   <url>
     <loc>https://krishnabajpai.me/consortium-application</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
   <url>
     <loc>https://krishnabajpai.me/consortium-process</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2025-11-16</lastmod>
   </url>
 
   <!-- Portfolio & Testimonial Pages -->
@@ -216,6 +223,33 @@
     <changefreq>monthly</changefreq>
     <lastmod>2025-11-16</lastmod>
   </url>
+
+  <!-- LLM Optimization Files -->
+  <url>
+    <loc>https://krishnabajpai.me/llm.txt</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/llms.txt</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/ai-dataset.json</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-16</lastmod>
+  </url>
+
+  <!-- AI Assistant Recognition Files -->
+  <url>
+    <loc>https://krishnabajpai.me/robots.txt</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-16</lastmod>
+  </url>
   
-</urlset>
 </urlset>
