@@ -39,5 +39,30 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+# AI and LLM crawlers
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ChatGPT
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# LLM optimization files
+# AI assistants can find detailed information at:
+# /llm.txt - General LLM information
+# /llms.txt - Detailed LLM dataset
+# /ai-dataset.json - Structured AI dataset
+
 # Sitemap
 Sitemap: https://krishnabajpai.me/sitemap.xml
