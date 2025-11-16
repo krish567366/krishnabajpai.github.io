@@ -137,6 +137,7 @@ const FAQ = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     You can contact Krishna Bajpai through his official website at krishnabajpai.me,
                     send an email to krishna@krishnabajpai.me, or connect via LinkedIn at linkedin.com/in/bajpai-krishna.
+                    You can also view his professional profile on Crunchbase at crunchbase.com/person/krishna-bajpai-265d.
                     Krishna Bajpai offers free initial consultations to discuss your AI/ML project requirements
                     and provide strategic guidance. He typically responds within 24 hours and can accommodate
                     various time zones for international clients.
