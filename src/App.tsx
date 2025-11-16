@@ -2,7 +2,7 @@ import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import "@/styles/animations.css";
 import { Toaster as Sonner } from "@/components/ui/sonner";
-import { useGitHubPagesRouting } from "@/hooks/useGitHubPagesRouting";
+
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,6 +17,7 @@ import Tools from "./pages/Tools";
 import ToolDetail from "./pages/ToolDetail";
 import QuantumComputingAIVideo from "./pages/videos/QuantumComputingAIVideo";
 import AIArchitectureService from "./pages/services/AIArchitectureService";
+import TrailingSlashRedirect from "./components/TrailingSlashRedirect";
 
 // Import individual case study pages
 import ManufacturingCaseStudy from "./pages/case-studies/ManufacturingCaseStudy";
@@ -31,20 +32,8 @@ import ConsortiumProcess from "./pages/ConsortiumProcess";
 
 const queryClient = new QueryClient();
 
-// Handle GitHub Pages routing
-const handleGitHubPagesRouting = () => {
-  const redirect = sessionStorage.redirect;
-  if (redirect) {
-    delete sessionStorage.redirect;
-    const cleanRedirect = redirect.replace(window.location.origin, '');
-    if (cleanRedirect !== window.location.pathname) {
-      window.history.replaceState(null, '', cleanRedirect);
-    }
-  }
-};
-
-const GitHubPagesRouter = ({ children }: { children: React.ReactNode }) => {
-  useGitHubPagesRouting();
+// Simple wrapper component for the app
+const AppWrapper = ({ children }: { children: React.ReactNode }) => {
   return <>{children}</>;
 };
 
@@ -56,7 +45,8 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <GitHubPagesRouter>
+          <AppWrapper>
+            <TrailingSlashRedirect />
             <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
@@ -82,7 +72,7 @@ const App = () => {
             
             <Route path="*" element={<NotFound />} />
           </Routes>
-          </GitHubPagesRouter>
+          </AppWrapper>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

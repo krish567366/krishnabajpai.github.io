@@ -1,1 +1,15 @@
+# Remove trailing slashes to prevent redirect loops
+/about/ /about 301
+/case-studies/ /case-studies 301
+/services/ /services 301
+/tools/ /tools 301
+/testimonials/ /testimonials 301
+/contact/ /contact 301
+/real-estate-consortium/ /real-estate-consortium 301
+/consortium-application/ /consortium-application 301
+/consortium-process/ /consortium-process 301
+/privacy/ /privacy 301
+/terms/ /terms 301
+
+# Handle all SPA routes
 /* /index.html 200
