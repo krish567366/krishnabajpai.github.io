@@ -5,7 +5,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { useGitHubPagesRouting } from "@/hooks/useGitHubPagesRouting";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import CaseStudies from "./pages/CaseStudies";
@@ -52,7 +52,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <HashRouter>
+        <BrowserRouter>
           <GitHubPagesRouter>
             <Routes>
             <Route path="/" element={<Index />} />
@@ -67,7 +67,7 @@ const App = () => {
             <Route path="/case-studies/manufacturing-predictive" element={<ManufacturingCaseStudy />} />
             <Route path="/case-studies/fintech-fraud" element={<FintechFraudCaseStudy />} />
             <Route path="/case-studies/supply-chain" element={<SupplyChainCaseStudy />} />
-            <Route path="/case-studies/healthcare-automation" element={<HealthcareAutomationCaseStudy />} />
+            <Route path="/case-studies/a" element={<HealthcareAutomationCaseStudy />} />
             <Route path="/real-estate-consortium" element={<RealEstateConsortium />} />
             <Route path="/consortium-application" element={<ConsortiumApplication />} />
             <Route path="/consortium-process" element={<ConsortiumProcess />} />
@@ -77,7 +77,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
           </GitHubPagesRouter>
-        </HashRouter>
+        </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );

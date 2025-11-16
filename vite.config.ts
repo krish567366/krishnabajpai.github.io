@@ -11,7 +11,6 @@ const routes = [
   'real-estate-consortium',
   'consortium-application',
   'consortium-process',
-  'tools',
   'case-studies/fintech-fraud-case-study',
   'case-studies/healthcare-automation-case-study',
   'case-studies/manufacturing-case-study',
@@ -27,7 +26,23 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-  ],
+    viteStaticCopy({
+      targets: [
+        ...routes.map(route => ({
+          src: 'index.html',
+          dest: route,
+          rename: 'index.html',
+          transform: (content: string | Buffer) => {
+            // Add prerender meta tag for Cloudflare
+            return content.toString().replace(
+              '</head>',
+              '<meta name="prerender-status-code" content="200"></head>'
+            );
+          }
+        }))
+      ]
+    })
+  ].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
@@ -38,12 +53,6 @@ export default defineConfig(({ mode }) => ({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        ...Object.fromEntries(
-          routes.map(route => [
-            route.replace(/\//g, '-'),
-            path.resolve(__dirname, 'index.html')
-          ])
-        )
       },
       output: {
         manualChunks: {

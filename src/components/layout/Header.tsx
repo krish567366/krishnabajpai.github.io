@@ -54,7 +54,6 @@ const Header = () => {
               >
                 Case Studies
               </Link>
-
               <Link 
                 to="/about" 
                 className={`text-sm ${isActive('/about') ? 'text-foreground font-medium' : 'text-muted-foreground'} hover:text-foreground transition-colors`}

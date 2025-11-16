@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import React from "react";
-import { Link } from "react-router-dom";
+  
 import { Button } from "@/components/ui/button";
 
 // Cache interface
@@ -311,15 +311,15 @@ const PyPIPackages = () => {
         <p className="text-sm text-muted-foreground font-sketch mb-4">
           ↑ These packages power AI systems at Fortune 500 companies
         </p>
-        <Link to="/tools">
-          <Button
-            variant="outline"
-            size="sm"
-            className="hover:bg-accent/5 transition-colors"
-          >
-            Explore All {krishnaPackages.length} Python Tools
+        <a 
+          href="https://pypi.org/user/bajpai__krishna/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          <Button variant="outline" size="sm">
+            View All {krishnaPackages.length} Packages on PyPI
           </Button>
-        </Link>
+        </a>
       </div>
     </div>
   );
