@@ -14,6 +14,9 @@ import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Tools from "./pages/Tools";
+import ToolDetail from "./pages/ToolDetail";
+import QuantumComputingAIVideo from "./pages/videos/QuantumComputingAIVideo";
+import AIArchitectureService from "./pages/services/AIArchitectureService";
 
 // Import individual case study pages
 import ManufacturingCaseStudy from "./pages/case-studies/ManufacturingCaseStudy";
@@ -60,14 +63,17 @@ const App = () => {
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/services" element={<Services />} />
             <Route path="/tools" element={<Tools />} />
+            <Route path="/tools/:slug" element={<ToolDetail />} />
+            <Route path="/videos/quantum-computing-ai" element={<QuantumComputingAIVideo />} />
+            <Route path="/services/ai-architecture" element={<AIArchitectureService />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             
             {/* Individual case study routes */}
-            <Route path="/case-studies/manufacturing-predictive" element={<ManufacturingCaseStudy />} />
-            <Route path="/case-studies/fintech-fraud" element={<FintechFraudCaseStudy />} />
-            <Route path="/case-studies/supply-chain" element={<SupplyChainCaseStudy />} />
-            <Route path="/case-studies/a" element={<HealthcareAutomationCaseStudy />} />
+            <Route path="/case-studies/manufacturing-case-study" element={<ManufacturingCaseStudy />} />
+            <Route path="/case-studies/fintech-fraud-case-study" element={<FintechFraudCaseStudy />} />
+            <Route path="/case-studies/supply-chain-case-study" element={<SupplyChainCaseStudy />} />
+            <Route path="/case-studies/healthcare-automation-case-study" element={<HealthcareAutomationCaseStudy />} />
             <Route path="/real-estate-consortium" element={<RealEstateConsortium />} />
             <Route path="/consortium-application" element={<ConsortiumApplication />} />
             <Route path="/consortium-process" element={<ConsortiumProcess />} />

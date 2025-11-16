@@ -8,13 +8,32 @@ const routes = [
   'services',
   'case-studies',
   'contact',
+  'tools',
+  'testimonials',
   'real-estate-consortium',
   'consortium-application',
   'consortium-process',
+  'privacy',
+  'terms',
+  // Case study routes
   'case-studies/fintech-fraud-case-study',
   'case-studies/healthcare-automation-case-study',
   'case-studies/manufacturing-case-study',
-  'case-studies/supply-chain-case-study'
+  'case-studies/supply-chain-case-study',
+  // Individual tool routes (from manifest)
+  'tools/mrce-plus',
+  'tools/tinyedgellm',
+  'tools/decentralized-ai',
+  'tools/cognito-sim-engine',
+  'tools/automl-self-improvement',
+  'tools/openmlcrawler',
+  'tools/hmai',
+  'tools/alphaforge',
+  'tools/evosphere',
+  // Video routes
+  'videos/quantum-computing-ai',
+  // Service routes
+  'services/ai-architecture'
 ];
 
 // https://vitejs.dev/config/
