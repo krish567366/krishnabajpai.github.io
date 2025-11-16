@@ -20,7 +20,7 @@ const routes = [
   'case-studies/healthcare-automation-case-study',
   'case-studies/manufacturing-case-study',
   'case-studies/supply-chain-case-study',
-  // Individual tool routes (from manifest)
+  // Individual tool routes (from manifest - all 20 unique tools)
   'tools/mrce-plus',
   'tools/tinyedgellm',
   'tools/decentralized-ai',
@@ -30,6 +30,17 @@ const routes = [
   'tools/hmai',
   'tools/alphaforge',
   'tools/evosphere',
+  'tools/vision-agent-framework',
+  'tools/pan-omic-consciousness-engine',
+  'tools/topological-quantum-compiler',
+  'tools/trading-bot-ml',
+  'tools/qmemetic-ai',
+  'tools/quantumlangchain',
+  'tools/entropic-ai',
+  'tools/quantum-data-embedding-suite',
+  'tools/quantum-entangled-knowledge-graphs',
+  'tools/entanglement-enhanced-nlp',
+  'tools/quantum-metalearn',
   // Video routes
   'videos/quantum-computing-ai',
   // Service routes

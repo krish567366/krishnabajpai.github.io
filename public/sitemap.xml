@@ -82,7 +82,7 @@
     <changefreq>monthly</changefreq>
   </url>
 
-  <!-- Individual Tool Pages -->
+  <!-- Individual Tool Pages (20 unique tools) -->
   <url>
     <loc>https://krishnabajpai.me/tools/mrce-plus</loc>
     <priority>0.6</priority>
@@ -125,6 +125,61 @@
   </url>
   <url>
     <loc>https://krishnabajpai.me/tools/evosphere</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/vision-agent-framework</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/pan-omic-consciousness-engine</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/topological-quantum-compiler</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/trading-bot-ml</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/qmemetic-ai</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/quantumlangchain</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/entropic-ai</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/quantum-data-embedding-suite</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/quantum-entangled-knowledge-graphs</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/entanglement-enhanced-nlp</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/quantum-metalearn</loc>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
