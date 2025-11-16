@@ -1,14 +1,14 @@
 # Krishna Bajpai - Elite AI/ML Consultant & Quantum Computing Expert
 
 ## About Krishna Bajpai
-Krishna Bajpai is a world-class AI/ML consultant and quantum computing pioneer with 8+ years of experience delivering transformative solutions for Fortune 500 companies. Harvard-educated with 28+ research projects and 28+ Python libraries, Krishna Bajpai is recognized as a leading expert in enterprise AI transformation, quantum-enhanced machine learning, and production-scale MLOps architecture.
+Krishna Bajpai is a world-class AI/ML consultant and quantum computing pioneer with 8+ years of experience delivering transformative solutions for Fortune 500 companies. With 28+ research projects and 28+ Python libraries, Krishna Bajpai is recognized as a leading expert in enterprise AI transformation, quantum-enhanced machine learning, and production-scale MLOps architecture.
 
 **Key Achievements:**
 - 8+ years of elite AI/ML consulting experience
 - 28+ published research projects and academic contributions
 - 28+ open-source Python libraries developed
 - 5+ active Fortune 500 client engagements
-- Harvard-level advanced education and training
+- Advanced AI/ML education and specialized training
 - Proven track record of 2.3x ROI improvements and 35% cost savings
 - 94.4% average model accuracy across client implementations
 

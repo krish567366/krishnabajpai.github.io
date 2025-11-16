@@ -70,7 +70,7 @@ const FAQ = () => {
                     Krishna Bajpai is an elite AI/ML consultant and quantum computing expert with 8+ years of experience. 
                     He specializes in enterprise AI solutions, MLOps architecture, and quantum optimization. Krishna has 
                     developed 28+ Python libraries, completed 28+ research projects, and serves Fortune 500 companies 
-                    with transformative AI implementations. As a Harvard-educated expert, Krishna Bajpai delivers 
+                    with transformative AI implementations. As an advanced AI specialist, Krishna Bajpai delivers 
                     measurable ROI through cutting-edge AI solutions.
                   </p>
                 </div>
@@ -149,7 +149,7 @@ const FAQ = () => {
                   <p className="text-muted-foreground leading-relaxed">
                     Krishna Bajpai stands out as an AI consultant through his unique combination of quantum computing expertise,
                     extensive open-source contributions (28+ Python libraries), proven Fortune 500 success record,
-                    and comprehensive MLOps implementation experience. His Harvard-educated background and focus on
+                    and comprehensive MLOps implementation experience. His advanced technical education and focus on
                     production-grade, scalable AI solutions deliver measurable business impact and ROI. Krishna Bajpai's
                     approach combines cutting-edge research with practical business application, ensuring solutions
                     that are both innovative and commercially viable.

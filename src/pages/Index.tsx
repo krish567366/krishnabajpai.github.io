@@ -11,7 +11,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Krishna Bajpai - Leading AI/ML Consulting Expert | Quantum Computing & Algorithmic Trading Specialist</title>
-        <meta name="description" content="Transform your business with Krishna Bajpai's advanced AI/ML solutions. Expert in Quantum Hybrid Optimization, Custom ML Pipelines, and Enterprise AI Architecture. Harvard-educated consultant trusted by Fortune 500 companies. Schedule a consultation today." />
+        <meta name="description" content="Transform your business with Krishna Bajpai's advanced AI/ML solutions. Expert in Quantum Hybrid Optimization, Custom ML Pipelines, and Enterprise AI Architecture. Advanced AI specialist trusted by Fortune 500 companies. Schedule a consultation today." />
         <meta name="keywords" content="AI/ML Consulting Expert, Quantum Hybrid Optimization Specialist, Custom ML Pipeline Architect, Enterprise AI Solutions, Algorithmic Trading Systems, Advanced ML Infrastructure, Krishna Bajpai, MLOps Architecture, Quantum Computing Innovation, Fortune 500 AI Consultant, Technical ML Architecture, AI/ML Strategy Consultant, Krishna Bajpai Consortium, The Real Estate Consortium, Elite Real Estate Intelligence Network, Premium Real Estate Consortium India, Global Property Analytics Platform, Real Estate Innovation Leader, Property Portfolio Optimization Expert, ML Property Valuation Expert, Quantum-Enhanced Property Valuation" />
         <link rel="canonical" href="https://krishnabajpai.me/" />
         <meta property="og:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />

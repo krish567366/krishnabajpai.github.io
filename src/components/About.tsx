@@ -27,9 +27,9 @@ const About = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Krishna Bajpai is an elite AI/ML consultant and quantum computing specialist with 8+ years 
-              of experience building production-grade systems that solve complex business challenges. 
-              As a Harvard-educated expert, Krishna Bajpai specializes in enterprise AI transformations, 
+                            Krishna Bajpai is an elite AI, ML, and Quantum Optimization expert with 8+ years 
+              of experience building production systems that solve complex business challenges. 
+              As an advanced AI specialist, Krishna Bajpai specializes in enterprise AI transformations, 
               delivering measurable ROI and transformative solutions for Fortune 500 companies worldwide.
             </p>
           </div>
