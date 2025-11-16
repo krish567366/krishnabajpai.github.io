@@ -27,6 +27,7 @@ import HealthcareAutomationCaseStudy from "./pages/case-studies/HealthcareAutoma
 import RealEstateConsortium from "./pages/RealEstateConsortium";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import FAQ from "./pages/FAQ";
 import ConsortiumApplication from "./pages/ConsortiumApplication";
 import ConsortiumProcess from "./pages/ConsortiumProcess";
 
@@ -69,6 +70,7 @@ const App = () => {
             <Route path="/consortium-process" element={<ConsortiumProcess />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/faq" element={<FAQ />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>

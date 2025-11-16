@@ -15,6 +15,7 @@ const routes = [
   'consortium-process',
   'privacy',
   'terms',
+  'faq',
   // Case study routes
   'case-studies/fintech-fraud-case-study',
   'case-studies/healthcare-automation-case-study',

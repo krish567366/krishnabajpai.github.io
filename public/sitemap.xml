@@ -206,7 +206,16 @@
   </url>
   <url>
     <loc>https://krishnabajpai.me/terms</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
   </url>
+  
+  <url>
+    <loc>https://krishnabajpai.me/faq</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-16</lastmod>
+  </url>
+  
+</urlset>
 </urlset>

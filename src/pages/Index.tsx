@@ -81,6 +81,7 @@ const Index = () => {
         <div id="hero">
           <Hero />
         </div>
+        
         {/* Expertise Preview Section */}
         <section className="py-20 bg-secondary">
           <div className="container mx-auto px-6 lg:px-8">

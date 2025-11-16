@@ -27,9 +27,10 @@ const About = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              I'm an AI, ML, and Quantum Optimization contractor with 8+ years building 
-              production systems that solve real business problems. I focus on measurable 
-              outcomes, not just impressive technology.
+              Krishna Bajpai is an elite AI/ML consultant and quantum computing specialist with 8+ years 
+              of experience building production-grade systems that solve complex business challenges. 
+              As a Harvard-educated expert, Krishna Bajpai specializes in enterprise AI transformations, 
+              delivering measurable ROI and transformative solutions for Fortune 500 companies worldwide.
             </p>
           </div>
 
@@ -39,16 +40,19 @@ const About = () => {
               <div className="border-l-2 border-accent pl-6">
                 <h3 className="text-xl font-medium text-foreground mb-2">ML & AI Model Development</h3>
                 <p className="text-muted-foreground">
-                  Custom predictive models, neural networks, and AI systems that integrate 
-                  seamlessly with your existing infrastructure.
+                  Krishna Bajpai develops custom machine learning models, deep neural networks, and 
+                  enterprise AI systems using TensorFlow and PyTorch. These production-grade solutions 
+                  integrate seamlessly with existing infrastructure, delivering proven ROI and 
+                  measurable business impact for clients.
                 </p>
               </div>
               
               <div className="border-l-2 border-wireframe-medium pl-6">
                 <h3 className="text-xl font-medium text-foreground mb-2">Quantum-Classical Hybrid Optimization</h3>
                 <p className="text-muted-foreground">
-                  Quantum-enhanced algorithms for complex optimization problems that 
-                  classical computers struggle with.
+                  Krishna Bajpai develops quantum-enhanced algorithms for complex optimization problems 
+                  that classical computers struggle with, using frameworks like Qiskit and Cirq to 
+                  deliver breakthrough performance improvements.
                 </p>
               </div>
             </div>
@@ -84,7 +88,8 @@ const About = () => {
           {/* Social Proof Hint */}
           <div className="text-center mt-12">
             <p className="text-sm text-muted-foreground font-sketch">
-              Trusted by Fortune 500 companies and growing startups
+              Krishna Bajpai is trusted by Fortune 500 companies and innovative startups worldwide for 
+              transformative AI solutions and quantum computing expertise
             </p>
           </div>
         </div>
