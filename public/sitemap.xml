@@ -53,24 +53,92 @@
     <changefreq>monthly</changefreq>
   </url>
 
+  <!-- Tools Pages -->
+  <url>
+    <loc>https://krishnabajpai.me/tools</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
   <!-- Individual Case Studies -->
   <url>
-    <loc>https://krishnabajpai.me/case-studies/fintech-fraud</loc>
+    <loc>https://krishnabajpai.me/case-studies/fintech-fraud-case-study</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://krishnabajpai.me/case-studies/healthcare-automation</loc>
+    <loc>https://krishnabajpai.me/case-studies/healthcare-automation-case-study</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://krishnabajpai.me/case-studies/manufacturing</loc>
+    <loc>https://krishnabajpai.me/case-studies/manufacturing-case-study</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://krishnabajpai.me/case-studies/supply-chain</loc>
+    <loc>https://krishnabajpai.me/case-studies/supply-chain-case-study</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Individual Tool Pages -->
+  <url>
+    <loc>https://krishnabajpai.me/tools/mrce-plus</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/tinyedgellm</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/decentralized-ai</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/cognito-sim-engine</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/automl-self-improvement</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/openmlcrawler</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/hmai</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/alphaforge</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/tools/evosphere</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Video Content -->
+  <url>
+    <loc>https://krishnabajpai.me/videos/quantum-computing-ai</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Service Pages -->
+  <url>
+    <loc>https://krishnabajpai.me/services/ai-architecture</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
