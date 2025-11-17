@@ -8,7 +8,7 @@ const NLPSentimentAnalysisEcommerce = () => {
     <>
       <Helmet>
         <title>How I Built a Real-Time NLP Sentiment Analysis System That Increased E-commerce Conversions by 28% | Krishna Bajpai</title>
-        <meta name="description" content="Real-world case study of implementing NLP-powered sentiment analysis for e-commerce platform. BERT-based models, real-time processing, and personalized recommendations boosting sales." />
+        <meta name="description" content="NLP sentiment analysis increased e-commerce conversions 28% using BERT models. Real-time processing, customer insights & personalization. Step-by-step implementation guide." />
         <meta name="keywords" content="NLP sentiment analysis, e-commerce AI, BERT, real-time processing, customer sentiment, personalization, Krishna Bajpai" />
         <link rel="canonical" href="https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce" />
         <meta property="og:title" content="Real-Time NLP Sentiment Analysis System That Increased Conversions by 28%" />

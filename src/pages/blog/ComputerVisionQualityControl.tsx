@@ -8,7 +8,7 @@ const ComputerVisionQualityControl = () => {
     <>
       <Helmet>
         <title>How I Built an AI Quality Control System That Reduced Manufacturing Defects by 67% | Krishna Bajpai</title>
-        <meta name="description" content="Real-world case study of implementing computer vision-powered quality control for automotive manufacturing. YOLO-based defect detection, edge deployment, and 99.7% accuracy achievement." />
+        <meta name="description" content="Computer vision quality control achieved 99.7% accuracy in automotive manufacturing using YOLO defect detection. Edge deployment & production pipeline. Complete guide." />
         <meta name="keywords" content="computer vision, quality control, manufacturing AI, defect detection, YOLO, edge computing, Krishna Bajpai" />
         <link rel="canonical" href="https://krishnabajpai.me/blog/computer-vision-quality-control" />
         <meta property="og:title" content="AI Quality Control System That Reduced Manufacturing Defects by 67%" />

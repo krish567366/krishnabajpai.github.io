@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Krishna Bajpai - AI/ML Blog</title>
+    <description>Expert insights on AI, Machine Learning, and Quantum Computing from Krishna Bajpai - Elite AI/ML Consultant with 28+ research projects and Fortune 500 experience.</description>
+    <link>https://krishnabajpai.me/blog</link>
+    <atom:link href="https://krishnabajpai.me/blog-feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en-US</language>
+    <managingEditor>hello@krishnabajpai.me (Krishna Bajpai)</managingEditor>
+    <webMaster>hello@krishnabajpai.me (Krishna Bajpai)</webMaster>
+    <lastBuildDate>Sun, 17 Nov 2025 12:00:00 GMT</lastBuildDate>
+    <category>Technology</category>
+    <category>Artificial Intelligence</category>
+    <category>Machine Learning</category>
+    <category>Quantum Computing</category>
+    <ttl>1440</ttl>
+    <image>
+      <url>https://krishnabajpai.me/assets/hero-flow.png</url>
+      <title>Krishna Bajpai - AI/ML Blog</title>
+      <link>https://krishnabajpai.me/blog</link>
+      <width>1200</width>
+      <height>630</height>
+    </image>
+
+    <!-- Blog Articles -->
+    <item>
+      <title>How I Reduced Customer Churn by 34% Using Machine Learning</title>
+      <description>ML churn prediction reduced customer churn 34% &amp; saved $2.3M annually. Complete case study: feature engineering, XGBoost model, production deployment. Free code examples.</description>
+      <link>https://krishnabajpai.me/blog/churn-prediction-ml-solution</link>
+      <guid>https://krishnabajpai.me/blog/churn-prediction-ml-solution</guid>
+      <pubDate>Sun, 17 Nov 2025 08:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Machine Learning</category>
+      <category>Churn Prediction</category>
+      <category>Customer Analytics</category>
+    </item>
+
+    <item>
+      <title>Computer Vision Quality Control: 99.7% Accuracy in Manufacturing</title>
+      <description>Computer vision quality control achieved 99.7% accuracy in automotive manufacturing using YOLO defect detection. Edge deployment &amp; production pipeline. Complete guide.</description>
+      <link>https://krishnabajpai.me/blog/computer-vision-quality-control</link>
+      <guid>https://krishnabajpai.me/blog/computer-vision-quality-control</guid>
+      <pubDate>Sun, 17 Nov 2025 08:30:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Computer Vision</category>
+      <category>Quality Control</category>
+      <category>Manufacturing</category>
+    </item>
+
+    <item>
+      <title>Real-Time NLP Sentiment Analysis System That Increased Conversions by 28%</title>
+      <description>NLP sentiment analysis increased e-commerce conversions 28% using BERT models. Real-time processing, customer insights &amp; personalization. Step-by-step implementation guide.</description>
+      <link>https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce</link>
+      <guid>https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce</guid>
+      <pubDate>Sun, 17 Nov 2025 09:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Natural Language Processing</category>
+      <category>Sentiment Analysis</category>
+      <category>E-commerce</category>
+    </item>
+
+    <item>
+      <title>Time Series Forecasting for Supply Chain: 15% Cost Reduction Through ML</title>
+      <description>Machine learning time series forecasting reduced supply chain costs by 15% through demand prediction. LSTM, ARIMA, and production deployment strategies included.</description>
+      <link>https://krishnabajpai.me/blog/time-series-supply-chain-forecasting</link>
+      <guid>https://krishnabajpai.me/blog/time-series-supply-chain-forecasting</guid>
+      <pubDate>Sun, 17 Nov 2025 09:30:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Time Series</category>
+      <category>Supply Chain</category>
+      <category>Demand Forecasting</category>
+    </item>
+
+    <item>
+      <title>Real-Time Fraud Detection: How ML Saved $50M in Prevented Losses</title>
+      <description>Real-time ML fraud detection system prevented $50M in losses with 99.2% accuracy. Graph neural networks, ensemble methods, and production pipeline architecture.</description>
+      <link>https://krishnabajpai.me/blog/fraud-detection-real-time-ml</link>
+      <guid>https://krishnabajpai.me/blog/fraud-detection-real-time-ml</guid>
+      <pubDate>Sun, 17 Nov 2025 10:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Fraud Detection</category>
+      <category>Real-time ML</category>
+      <category>Financial Security</category>
+    </item>
+
+    <item>
+      <title>Scaling Recommendation Systems to 100M+ Users: A Complete Guide</title>
+      <description>Scaled recommendation system to 100M+ users improving engagement 45%. Matrix factorization, deep learning, distributed computing, and real-world architecture patterns.</description>
+      <link>https://krishnabajpai.me/blog/recommendation-system-scaling</link>
+      <guid>https://krishnabajpai.me/blog/recommendation-system-scaling</guid>
+      <pubDate>Sun, 17 Nov 2025 10:30:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Recommendation Systems</category>
+      <category>Scalability</category>
+      <category>Distributed Systems</category>
+    </item>
+
+    <item>
+      <title>Building a Visual Workflow Editor with React Flow and n8n Architecture</title>
+      <description>Complete guide to building visual workflow editors using React Flow. N8n-inspired architecture, node-based interfaces, and production deployment strategies.</description>
+      <link>https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow</link>
+      <guid>https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow</guid>
+      <pubDate>Sat, 16 Nov 2025 08:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>React</category>
+      <category>Workflow Automation</category>
+      <category>Frontend Development</category>
+    </item>
+
+    <item>
+      <title>Production Deployment of NVIDIA Parakeet ASR: Complete Implementation Guide</title>
+      <description>Deploy NVIDIA Parakeet ASR models in production environments. Complete guide covering model optimization, scaling, and enterprise integration strategies.</description>
+      <link>https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment</link>
+      <guid>https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment</guid>
+      <pubDate>Fri, 15 Nov 2025 08:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Speech Recognition</category>
+      <category>NVIDIA</category>
+      <category>Production Deployment</category>
+    </item>
+
+    <item>
+      <title>Hybrid Quantum-Classical Optimization Library: Advanced Implementation</title>
+      <description>Advanced hybrid quantum-classical optimization library implementation. Quantum annealing, variational algorithms, and enterprise applications in logistics and finance.</description>
+      <link>https://krishnabajpai.me/blog/hybrid-quantum-optimization-library</link>
+      <guid>https://krishnabajpai.me/blog/hybrid-quantum-optimization-library</guid>
+      <pubDate>Thu, 14 Nov 2025 08:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>Quantum Computing</category>
+      <category>Optimization</category>
+      <category>Hybrid Algorithms</category>
+    </item>
+
+    <item>
+      <title>AI-Powered HRMS System: Complete Architecture and Implementation</title>
+      <description>Design and implement AI-powered HRMS systems with intelligent automation. Complete architecture covering talent acquisition, performance analytics, and employee insights.</description>
+      <link>https://krishnabajpai.me/blog/ai-hrms-system-design</link>
+      <guid>https://krishnabajpai.me/blog/ai-hrms-system-design</guid>
+      <pubDate>Wed, 13 Nov 2025 08:00:00 GMT</pubDate>
+      <dc:creator>Krishna Bajpai</dc:creator>
+      <category>HR Technology</category>
+      <category>AI Systems</category>
+      <category>Enterprise Software</category>
+    </item>
+
+  </channel>
+</rss>

@@ -6,6 +6,66 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
+      id: "churn-prediction-ml-solution",
+      title: "How I Reduced Customer Churn by 34% Using Machine Learning",
+      excerpt: "ML churn prediction reduced customer churn 34% & saved $2.3M annually. Complete case study: feature engineering, XGBoost model, production deployment. Free code examples.",
+      date: "2025-11-17",
+      readTime: "10 min read",
+      category: "Machine Learning",
+      tags: ["Churn Prediction", "XGBoost", "Customer Analytics", "ML Pipeline"],
+      featured: true
+    },
+    {
+      id: "computer-vision-quality-control",
+      title: "Computer Vision Quality Control: 99.7% Accuracy in Manufacturing",
+      excerpt: "Computer vision quality control achieved 99.7% accuracy in automotive manufacturing using YOLO defect detection. Edge deployment & production pipeline. Complete guide.",
+      date: "2025-11-17",
+      readTime: "12 min read",
+      category: "Computer Vision",
+      tags: ["YOLO", "Quality Control", "Manufacturing", "Edge AI"],
+      featured: true
+    },
+    {
+      id: "nlp-sentiment-analysis-ecommerce",
+      title: "Real-Time NLP Sentiment Analysis System That Increased Conversions by 28%",
+      excerpt: "NLP sentiment analysis increased e-commerce conversions 28% using BERT models. Real-time processing, customer insights & personalization. Step-by-step implementation guide.",
+      date: "2025-11-17",
+      readTime: "12 min read",
+      category: "Natural Language Processing",
+      tags: ["BERT", "Sentiment Analysis", "E-commerce", "Real-time ML"],
+      featured: true
+    },
+    {
+      id: "time-series-supply-chain-forecasting",
+      title: "Time Series Forecasting for Supply Chain: 15% Cost Reduction Through ML",
+      excerpt: "Machine learning time series forecasting reduced supply chain costs by 15% through demand prediction. LSTM, ARIMA, and production deployment strategies included.",
+      date: "2025-11-17",
+      readTime: "11 min read",
+      category: "Time Series Analysis",
+      tags: ["LSTM", "Supply Chain", "Demand Forecasting", "Time Series"],
+      featured: true
+    },
+    {
+      id: "fraud-detection-real-time-ml",
+      title: "Real-Time Fraud Detection: How ML Saved $50M in Prevented Losses",
+      excerpt: "Real-time ML fraud detection system prevented $50M in losses with 99.2% accuracy. Graph neural networks, ensemble methods, and production pipeline architecture.",
+      date: "2025-11-17",
+      readTime: "13 min read",
+      category: "Fraud Detection",
+      tags: ["Graph Neural Networks", "Real-time ML", "Fraud Prevention", "Ensemble Methods"],
+      featured: true
+    },
+    {
+      id: "recommendation-system-scaling",
+      title: "Scaling Recommendation Systems to 100M+ Users: A Complete Guide",
+      excerpt: "Scaled recommendation system to 100M+ users improving engagement 45%. Matrix factorization, deep learning, distributed computing, and real-world architecture patterns.",
+      date: "2025-11-17",
+      readTime: "14 min read",
+      category: "Recommendation Systems",
+      tags: ["Matrix Factorization", "Deep Learning", "Scalability", "Distributed Systems"],
+      featured: true
+    },
+    {
       id: "n8n-workflow-editor-react-flow",
       title: "How I Built a Full n8n-Style Workflow Editor Using React Flow + FastAPI",
       excerpt: "Building a complete workflow automation platform from scratch using React Flow for the frontend and FastAPI for the backend. Learn the architecture decisions, challenges, and solutions that went into creating a production-ready workflow editor.",
@@ -36,7 +96,7 @@ const Blog = () => {
       featured: true
     },
     {
-      id: "ai-hrms-system-architecture",
+      id: "ai-hrms-system-design",
       title: "Designing an AI HRMS System Equal to Keka: Architecture Breakdown",
       excerpt: "Complete architectural breakdown of building an enterprise-grade AI-powered HRMS system. Database design, microservices architecture, AI integration, and scalability considerations for modern HR platforms.",
       date: "2025-11-05",
