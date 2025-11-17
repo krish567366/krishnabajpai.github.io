@@ -1,1 +1,29 @@
-/* /index.html 200
+# Blog routes
+/blog /index.html 200
+/blog/* /index.html 200
+
+# Main pages
+/about /index.html 200
+/services /index.html 200
+/case-studies /index.html 200
+/contact /index.html 200
+/tools /index.html 200
+/testimonials /index.html 200
+
+# Case study pages
+/case-studies/* /index.html 200
+
+# Service pages  
+/services/* /index.html 200
+
+# Tool pages
+/tools/* /index.html 200
+
+# Other pages
+/privacy /index.html 200
+/terms /index.html 200
+/faq /index.html 200
+/real-estate-consortium /index.html 200
+/consortium-application /index.html 200
+/consortium-process /index.html 200
+/videos/* /index.html 200
