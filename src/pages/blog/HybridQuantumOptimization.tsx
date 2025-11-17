@@ -15,6 +15,81 @@ const HybridQuantumOptimization = () => {
         <meta property="og:description" content="Comprehensive quantum-classical optimization library for Python developers" />
         <meta property="og:url" content="https://krishnabajpai.me/blog/hybrid-quantum-optimization-library" />
         <meta property="og:type" content="article" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "100+ Hybrid Quantum Optimization Algorithms in One Python Library",
+            "description": "Open-source Python library implementing 100+ hybrid quantum-classical optimization algorithms. QAOA, VQE, quantum annealing, and more for real-world optimization problems.",
+            "image": "https://krishnabajpai.me/assets/hero-flow.png",
+            "author": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "url": "https://krishnabajpai.me",
+              "sameAs": [
+                "https://www.linkedin.com/in/krishnabajpai/",
+                "https://github.com/krishnabajpai"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "url": "https://krishnabajpai.me"
+            },
+            "datePublished": "2025-11-08T08:00:00Z",
+            "dateModified": "2025-11-17T12:00:00Z",
+            "url": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library"
+            },
+            "articleSection": "Quantum Computing",
+            "wordCount": 4200,
+            "timeRequired": "PT12M",
+            "keywords": ["quantum computing", "optimization algorithms", "QAOA", "VQE", "quantum annealing", "Python library", "hybrid algorithms"],
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Quantum Computing"
+              },
+              {
+                "@type": "Thing", 
+                "name": "Optimization Algorithms"
+              },
+              {
+                "@type": "Thing",
+                "name": "QAOA"
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        `}</script>
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://krishnabajpai.me"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://krishnabajpai.me/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "100+ Hybrid Quantum Optimization Algorithms",
+                "item": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library"
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
       
       <Layout>

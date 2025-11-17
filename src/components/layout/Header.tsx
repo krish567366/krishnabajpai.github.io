@@ -67,6 +67,12 @@ const Header = () => {
                 Testimonials
               </Link>
               <Link 
+                to="/blog" 
+                className={`text-sm ${isActive('/blog') || location.pathname.startsWith('/blog/') ? 'text-foreground font-medium' : 'text-muted-foreground'} hover:text-foreground transition-colors`}
+              >
+                Blog
+              </Link>
+              <Link 
                 to="/real-estate-consortium" 
                 className={`text-sm ${isActive('/real-estate-consortium') ? 'text-foreground font-medium' : 'text-muted-foreground'} hover:text-foreground transition-colors`}
               >
@@ -109,6 +115,13 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Testimonials
+            </Link>
+            <Link 
+              to="/blog" 
+              className={`text-sm ${isActive('/blog') || location.pathname.startsWith('/blog/') ? 'text-foreground font-medium' : 'text-muted-foreground'}`}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Blog
             </Link>
             <div className="space-y-2 border-t border-border pt-2">
               <Link 

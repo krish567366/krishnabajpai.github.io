@@ -15,6 +15,81 @@ const AIHRMSSystemDesign = () => {
         <meta property="og:description" content="Comprehensive technical blueprint for building enterprise-grade AI HRMS" />
         <meta property="og:url" content="https://krishnabajpai.me/blog/ai-hrms-system-design" />
         <meta property="og:type" content="article" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Designing an AI HRMS System Equal to Keka: Complete Architecture Guide",
+            "description": "Complete technical guide to building an AI-powered HRMS system. Microservices architecture, ML models, real-time analytics, and scalable design patterns for modern HR management.",
+            "image": "https://krishnabajpai.me/assets/hero-flow.png",
+            "author": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "url": "https://krishnabajpai.me",
+              "sameAs": [
+                "https://www.linkedin.com/in/krishnabajpai/",
+                "https://github.com/krishnabajpai"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "url": "https://krishnabajpai.me"
+            },
+            "datePublished": "2025-11-05T08:00:00Z",
+            "dateModified": "2025-11-17T12:00:00Z",
+            "url": "https://krishnabajpai.me/blog/ai-hrms-system-design",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://krishnabajpai.me/blog/ai-hrms-system-design"
+            },
+            "articleSection": "System Design",
+            "wordCount": 5800,
+            "timeRequired": "PT15M",
+            "keywords": ["HRMS design", "AI HR system", "Keka alternative", "microservices architecture", "HR analytics", "system architecture"],
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "HRMS System Design"
+              },
+              {
+                "@type": "Thing", 
+                "name": "AI HR Systems"
+              },
+              {
+                "@type": "Thing",
+                "name": "Microservices Architecture"
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        `}</script>
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://krishnabajpai.me"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://krishnabajpai.me/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Designing an AI HRMS System Equal to Keka",
+                "item": "https://krishnabajpai.me/blog/ai-hrms-system-design"
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
       
       <Layout>

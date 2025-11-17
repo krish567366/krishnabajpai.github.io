@@ -15,6 +15,81 @@ const NvidiaParakeetDeployment = () => {
         <meta property="og:description" content="Real-world experience deploying NVIDIA's ASR model at enterprise scale" />
         <meta property="og:url" content="https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment" />
         <meta property="og:type" content="article" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "Deploying NVIDIA Parakeet RNNT 1.1B in Production: Lessons Learned",
+            "description": "Real-world experience deploying NVIDIA's Parakeet RNNT 1.1B model in production. Performance optimization, scaling challenges, and infrastructure decisions for enterprise ASR deployment.",
+            "image": "https://krishnabajpai.me/assets/hero-flow.png",
+            "author": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "url": "https://krishnabajpai.me",
+              "sameAs": [
+                "https://www.linkedin.com/in/krishnabajpai/",
+                "https://github.com/krishnabajpai"
+              ]
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "url": "https://krishnabajpai.me"
+            },
+            "datePublished": "2025-11-12T08:00:00Z",
+            "dateModified": "2025-11-17T12:00:00Z",
+            "url": "https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment"
+            },
+            "articleSection": "MLOps",
+            "wordCount": 3200,
+            "timeRequired": "PT8M",
+            "keywords": ["NVIDIA Parakeet", "RNNT", "ASR deployment", "speech recognition", "production ML", "model optimization", "enterprise AI"],
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "NVIDIA Parakeet"
+              },
+              {
+                "@type": "Thing", 
+                "name": "ASR Deployment"
+              },
+              {
+                "@type": "Thing",
+                "name": "Production ML"
+              }
+            ],
+            "inLanguage": "en-US"
+          }
+        `}</script>
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://krishnabajpai.me"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://krishnabajpai.me/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Deploying NVIDIA Parakeet RNNT 1.1B in Production",
+                "item": "https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment"
+              }
+            ]
+          }
+        `}</script>
       </Helmet>
       
       <Layout>
