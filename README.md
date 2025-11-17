@@ -65,3 +65,4 @@ This project can be deployed using any standard static site hosting service such
 ## Domain Setup
 
 To connect a custom domain, follow the documentation of your chosen hosting provider.
+# Updated Mon Nov 17 22:07:50 IST 2025
