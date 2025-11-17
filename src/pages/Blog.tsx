@@ -118,8 +118,8 @@ const Blog = () => {
         <meta property="og:description" content="Expert insights and practical tutorials on AI, machine learning, quantum computing, and system architecture by Krishna Bajpai." />
         <meta property="og:url" content="https://krishnabajpai.me/blog" />
         <meta property="og:type" content="blog" />
-        <script type="application/ld+json">{`
-          {
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Blog",
             "name": "Krishna Bajpai's AI & Tech Blog",
@@ -130,7 +130,7 @@ const Blog = () => {
               "name": "Krishna Bajpai",
               "url": "https://krishnabajpai.me"
             },
-            "blogPost": ${JSON.stringify(blogPosts.map(post => ({
+            "blogPost": blogPosts.map(post => ({
               "@type": "BlogPosting",
               "headline": post.title,
               "description": post.excerpt,
@@ -141,9 +141,9 @@ const Blog = () => {
               "datePublished": post.date,
               "url": `https://krishnabajpai.me/blog/${post.id}`,
               "keywords": post.tags.join(", ")
-            })))}
-          }
-        `}</script>
+            }))
+          })}
+        </script>
       </Helmet>
       
       <Layout>
