@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroFlow from "@/assets/hero-flow.png";
 
 const Hero = () => {
@@ -39,11 +40,15 @@ const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="text-lg px-8 py-6">
-                See Case Studies
+              <Button size="lg" className="text-lg px-8 py-6" asChild>
+                <Link to="/case-studies">
+                  See Case Studies
+                </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                Book Free Consultation
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6" asChild>
+                <Link to="/contact">
+                  Book Free Consultation
+                </Link>
               </Button>
             </div>
           </div>
