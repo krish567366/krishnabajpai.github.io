@@ -60,6 +60,66 @@ const Services = () => {
       timeline: "3-6 months",
       annotation: "Enterprise ready",
       caseStudy: "FinTech: 99.7% fraud detection"
+    },
+    {
+      title: "AI Platform Development",
+      description: "Custom agents, workflow systems, and enterprise APIs that power your business operations with intelligent automation and scalability.",
+      features: [
+        "Custom AI agent development",
+        "Multi-agent workflow systems",
+        "Enterprise API architecture",
+        "Intelligent task orchestration",
+        "Real-time decision systems"
+      ],
+      pricing: "$40k - $120k",
+      timeline: "3-6 months",
+      annotation: "Revolutionary",
+      caseStudy: "Enterprise Corp: 85% task automation"
+    },
+    {
+      title: "ML/Optimization Implementation",
+      description: "Advanced optimization pipelines with AutoML, hyperparameter tuning, and quantum-inspired search algorithms for maximum performance.",
+      features: [
+        "Automated optimization pipelines",
+        "AutoML framework implementation",
+        "Advanced hyperparameter tuning",
+        "Quantum-inspired search algorithms",
+        "Performance monitoring & scaling"
+      ],
+      pricing: "$35k - $90k",
+      timeline: "2-5 months",
+      annotation: "Next-gen",
+      caseStudy: "Tech Startup: 40% model performance boost"
+    },
+    {
+      title: "AI Infrastructure Setup",
+      description: "GPU servers, Docker/NIM deployments, and scalable inference stacks for production-ready AI systems with enterprise-grade reliability.",
+      features: [
+        "GPU server configuration & optimization",
+        "Docker/NIM deployment automation",
+        "Scalable inference architecture",
+        "Cloud infrastructure optimization",
+        "Load balancing & fault tolerance"
+      ],
+      pricing: "$20k - $60k",
+      timeline: "1-3 months",
+      annotation: "Production ready",
+      caseStudy: "AI Startup: 99.9% uptime achieved"
+    },
+    {
+      title: "Custom AI Model Integration",
+      description: "ASR, NLP, image processing, LLMs, embeddings, and comprehensive monitoring for seamless AI integration across your systems.",
+      features: [
+        "ASR & speech processing integration",
+        "Advanced NLP & language models",
+        "Computer vision & image AI",
+        "LLM integration & fine-tuning",
+        "Embeddings & semantic search"
+      ],
+      pricing: "$30k - $85k",
+      timeline: "2-4 months",
+      annotation: "Comprehensive",
+      caseStudy: "Media Co: 95% content automation"
     }
   ];
 

@@ -45,6 +45,50 @@ const Services = () => {
         "A/B testing frameworks"
       ],
       annotation: "Enterprise ready"
+    },
+    {
+      title: "AI Platform Development",
+      description: "Custom agents, workflow systems, enterprise APIs that power your business operations with intelligent automation.",
+      features: [
+        "Custom AI agents",
+        "Workflow automation systems",
+        "Enterprise API development",
+        "Multi-agent orchestration"
+      ],
+      annotation: "Revolutionary"
+    },
+    {
+      title: "ML/Optimization Implementation",
+      description: "Advanced optimization pipelines with AutoML, hyperparameter tuning, and quantum-inspired search algorithms.",
+      features: [
+        "Optimization pipelines",
+        "AutoML implementation",
+        "Hyperparameter tuning",
+        "Quantum-inspired search"
+      ],
+      annotation: "Next-gen"
+    },
+    {
+      title: "AI Infrastructure Setup",
+      description: "GPU servers, Docker/NIM deployments, and scalable inference stacks for production-ready AI systems.",
+      features: [
+        "GPU server configuration",
+        "Docker/NIM deployments",
+        "Scalable inference stacks",
+        "Cloud infrastructure optimization"
+      ],
+      annotation: "Production ready"
+    },
+    {
+      title: "Custom AI Model Integration",
+      description: "ASR, NLP, image processing, LLMs, embeddings, and comprehensive monitoring for seamless AI integration.",
+      features: [
+        "ASR & speech processing",
+        "NLP & language models",
+        "Computer vision & image AI",
+        "LLMs, embeddings & monitoring"
+      ],
+      annotation: "Comprehensive"
     }
   ];
 
