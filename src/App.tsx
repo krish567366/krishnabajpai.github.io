@@ -37,6 +37,12 @@ import N8nWorkflowEditor from "./pages/blog/N8nWorkflowEditor";
 import NvidiaParakeetDeployment from "./pages/blog/NvidiaParakeetDeployment";
 import HybridQuantumOptimization from "./pages/blog/HybridQuantumOptimization";
 import AIHRMSSystemDesign from "./pages/blog/AIHRMSSystemDesign";
+import ChurnPredictionMLSolution from "./pages/blog/ChurnPredictionMLSolution";
+import ComputerVisionQualityControl from "./pages/blog/ComputerVisionQualityControl";
+import NLPSentimentAnalysisEcommerce from "./pages/blog/NLPSentimentAnalysisEcommerce";
+import TimeSeriesSupplyChainForecasting from "./pages/blog/TimeSeriesSupplyChainForecasting";
+import FraudDetectionRealTimeML from "./pages/blog/FraudDetectionRealTimeML";
+import RecommendationSystemScaling from "./pages/blog/RecommendationSystemScaling";
 
 const queryClient = new QueryClient();
 
@@ -85,6 +91,12 @@ const App = () => {
             <Route path="/blog/nvidia-parakeet-production-deployment" element={<NvidiaParakeetDeployment />} />
             <Route path="/blog/hybrid-quantum-optimization-library" element={<HybridQuantumOptimization />} />
             <Route path="/blog/ai-hrms-system-design" element={<AIHRMSSystemDesign />} />
+            <Route path="/blog/churn-prediction-ml-solution" element={<ChurnPredictionMLSolution />} />
+            <Route path="/blog/computer-vision-quality-control" element={<ComputerVisionQualityControl />} />
+            <Route path="/blog/nlp-sentiment-analysis-ecommerce" element={<NLPSentimentAnalysisEcommerce />} />
+            <Route path="/blog/time-series-supply-chain-forecasting" element={<TimeSeriesSupplyChainForecasting />} />
+            <Route path="/blog/fraud-detection-real-time-ml" element={<FraudDetectionRealTimeML />} />
+            <Route path="/blog/recommendation-system-scaling" element={<RecommendationSystemScaling />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>

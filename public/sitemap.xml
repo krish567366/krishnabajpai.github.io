@@ -283,5 +283,41 @@
     <changefreq>weekly</changefreq>
     <lastmod>2025-11-17</lastmod>
   </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/churn-prediction-ml-solution</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-22</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/computer-vision-quality-control</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-22</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-22</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/time-series-supply-chain-forecasting</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-22</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/fraud-detection-real-time-ml</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-22</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/recommendation-system-scaling</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-01-22</lastmod>
+  </url>
   
 </urlset>
