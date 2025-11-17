@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/Layout";
+import { Link } from "react-router-dom";
 const Services = () => {
   const services = [
     {
@@ -217,9 +218,12 @@ const Services = () => {
                   </div>
 
                   <div className="pt-4 border-t border-border">
-                    <button className="text-accent hover:text-foreground transition-colors font-medium">
+                    <Link 
+                      to="/contact" 
+                      className="text-accent hover:text-foreground transition-colors font-medium inline-block"
+                    >
                       Discuss this service →
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
