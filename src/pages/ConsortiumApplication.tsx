@@ -195,7 +195,7 @@ const ConsortiumApplication = () => {
       <Helmet>
         <title>Consortium Membership Application | Krishna Bajpai</title>
         <meta name="description" content="Apply to join the exclusive Real Estate Intelligence Network. For institutional investors, family offices, and real estate leaders seeking ML-driven market intelligence." />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://krishnabajpai.me/consortium-application" />
       </Helmet>
 
