@@ -251,5 +251,37 @@
     <changefreq>monthly</changefreq>
     <lastmod>2025-11-16</lastmod>
   </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://krishnabajpai.me/blog</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/nvidia-parakeet-production-deployment</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/hybrid-quantum-optimization-library</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/blog/ai-hrms-system-design</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-17</lastmod>
+  </url>
   
 </urlset>

@@ -67,5 +67,8 @@ Allow: /
 # /llms.txt - Detailed LLM dataset
 # /ai-dataset.json - Structured AI dataset
 
+# Technical blog content for thought leadership
+# /blog/ - Technical articles and insights
+
 # Sitemap
 Sitemap: https://krishnabajpai.me/sitemap.xml

@@ -31,6 +31,13 @@ import FAQ from "./pages/FAQ";
 import ConsortiumApplication from "./pages/ConsortiumApplication";
 import ConsortiumProcess from "./pages/ConsortiumProcess";
 
+// Import blog pages
+import Blog from "./pages/Blog";
+import N8nWorkflowEditor from "./pages/blog/N8nWorkflowEditor";
+import NvidiaParakeetDeployment from "./pages/blog/NvidiaParakeetDeployment";
+import HybridQuantumOptimization from "./pages/blog/HybridQuantumOptimization";
+import AIHRMSSystemDesign from "./pages/blog/AIHRMSSystemDesign";
+
 const queryClient = new QueryClient();
 
 // Simple wrapper component for the app
@@ -71,6 +78,13 @@ const App = () => {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/faq" element={<FAQ />} />
+            
+            {/* Blog routes */}
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/n8n-workflow-editor-react-flow" element={<N8nWorkflowEditor />} />
+            <Route path="/blog/nvidia-parakeet-production-deployment" element={<NvidiaParakeetDeployment />} />
+            <Route path="/blog/hybrid-quantum-optimization-library" element={<HybridQuantumOptimization />} />
+            <Route path="/blog/ai-hrms-system-design" element={<AIHRMSSystemDesign />} />
             
             <Route path="*" element={<NotFound />} />
           </Routes>
