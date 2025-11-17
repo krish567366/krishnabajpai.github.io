@@ -1,52 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
-import { viteStaticCopy } from 'vite-plugin-static-copy';
-
-const routes = [
-  'about',
-  'services',
-  'case-studies',
-  'contact',
-  'tools',
-  'testimonials',
-  'real-estate-consortium',
-  'consortium-application',
-  'consortium-process',
-  'privacy',
-  'terms',
-  'faq',
-  // Case study routes
-  'case-studies/fintech-fraud-case-study',
-  'case-studies/healthcare-automation-case-study',
-  'case-studies/manufacturing-case-study',
-  'case-studies/supply-chain-case-study',
-  // Individual tool routes (from manifest - all 20 unique tools)
-  'tools/mrce-plus',
-  'tools/tinyedgellm',
-  'tools/decentralized-ai',
-  'tools/cognito-sim-engine',
-  'tools/automl-self-improvement',
-  'tools/openmlcrawler',
-  'tools/hmai',
-  'tools/alphaforge',
-  'tools/evosphere',
-  'tools/vision-agent-framework',
-  'tools/pan-omic-consciousness-engine',
-  'tools/topological-quantum-compiler',
-  'tools/trading-bot-ml',
-  'tools/qmemetic-ai',
-  'tools/quantumlangchain',
-  'tools/entropic-ai',
-  'tools/quantum-data-embedding-suite',
-  'tools/quantum-entangled-knowledge-graphs',
-  'tools/entanglement-enhanced-nlp',
-  'tools/quantum-metalearn',
-  // Video routes
-  'videos/quantum-computing-ai',
-  // Service routes
-  'services/ai-architecture'
-];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -56,24 +10,8 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
   plugins: [
-    react(),
-    viteStaticCopy({
-      targets: [
-        ...routes.map(route => ({
-          src: 'index.html',
-          dest: route,
-          rename: 'index.html',
-          transform: (content: string | Buffer) => {
-            // Add prerender meta tag for Cloudflare
-            return content.toString().replace(
-              '</head>',
-              '<meta name="prerender-status-code" content="200"></head>'
-            );
-          }
-        }))
-      ]
-    })
-  ].filter(Boolean),
+    react()
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
