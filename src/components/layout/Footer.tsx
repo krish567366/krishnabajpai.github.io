@@ -92,6 +92,13 @@ const Footer = () => {
             <a href="/sitemap.xml" className="hover:text-foreground transition-colors">Sitemap</a>
           </div>
         </div>
+        
+        {/* Developer Credit */}
+        <div className="text-center pt-4 border-t border-border/50 mt-4">
+          <div className="text-xs text-muted-foreground/70">
+            Developed and managed by Vedanshi Gupta
+          </div>
+        </div>
       </div>
     </footer>
   );
