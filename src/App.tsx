@@ -42,6 +42,7 @@ import HealthcareAutomationCaseStudy from "./pages/case-studies/HealthcareAutoma
 
 // Blog Pages
 import Blog from "./pages/Blog";
+import AirportMLOptimization from "./pages/blog/AirportMLOptimization";
 import N8nWorkflowEditor from "./pages/blog/N8nWorkflowEditor";
 import NvidiaParakeetDeployment from "./pages/blog/NvidiaParakeetDeployment";
 import HybridQuantumOptimization from "./pages/blog/HybridQuantumOptimization";
@@ -95,6 +96,7 @@ const App = () => {
             
             {/* Blog Pages */}
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/airport-ml-optimization" element={<AirportMLOptimization />} />
             <Route path="/blog/n8n-workflow-editor-react-flow" element={<N8nWorkflowEditor />} />
             <Route path="/blog/nvidia-parakeet-production-deployment" element={<NvidiaParakeetDeployment />} />
             <Route path="/blog/hybrid-quantum-optimization-library" element={<HybridQuantumOptimization />} />

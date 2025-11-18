@@ -6,6 +6,16 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
+      id: "airport-ml-optimization",
+      title: "How Machine Learning is Revolutionizing Airport Operations: Predictive Analytics for Aviation",
+      excerpt: "ML transforms airport operations with 40% faster processing, predictive maintenance, and smart resource allocation. Complete guide to AI in aviation industry.",
+      date: "2025-11-19",
+      readTime: "12 min read",
+      category: "Machine Learning",
+      tags: ["Airport Operations", "Aviation AI", "Predictive Maintenance", "Resource Optimization"],
+      featured: true
+    },
+    {
       id: "churn-prediction-ml-solution",
       title: "How I Reduced Customer Churn by 34% Using Machine Learning",
       excerpt: "ML churn prediction reduced customer churn 34% & saved $2.3M annually. Complete case study: feature engineering, XGBoost model, production deployment. Free code examples.",
