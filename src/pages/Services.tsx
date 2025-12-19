@@ -1,5 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 const Services = () => {
   const services = [
     {
@@ -152,7 +154,148 @@ const Services = () => {
   ];
 
   return (
-    <Layout>
+    <>
+      <Helmet>
+        <title>AI & ML Consulting Services | Enterprise Solutions by Krishna Bajpai</title>
+        <meta name="description" content="Premium AI/ML consulting services: Predictive modeling, quantum optimization, MLOps, and custom AI solutions. Proven ROI for Fortune 500 companies." />
+        <meta name="keywords" content="AI consulting services, ML consulting, predictive modeling, quantum optimization, MLOps, enterprise AI, Krishna Bajpai services" />
+        <link rel="canonical" href="https://krishnabajpai.me/services" />
+        <meta property="og:title" content="AI & ML Consulting Services | Enterprise Solutions by Krishna Bajpai" />
+        <meta property="og:description" content="Premium AI/ML consulting services with proven ROI for Fortune 500 companies" />
+        <meta property="og:url" content="https://krishnabajpai.me/services" />
+        <meta property="og:type" content="website" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "AI & ML Consulting Services",
+            "description": "Comprehensive artificial intelligence and machine learning consulting services for enterprise clients",
+            "provider": {
+              "@type": "Person",
+              "name": "Krishna Bajpai",
+              "@id": "https://krishnabajpai.me/#person"
+            },
+            "serviceType": "Professional Consulting",
+            "areaServed": {
+              "@type": "Place", 
+              "name": "Global"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "AI Consulting Services Catalog",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Predictive Modeling",
+                    "description": "Custom ML models that forecast trends, demand, failures, and opportunities with 90%+ accuracy"
+                  },
+                  "price": "25000-75000",
+                  "priceCurrency": "USD",
+                  "availability": "InStock",
+                  "validFrom": "2025-01-01",
+                  "priceValidUntil": "2025-12-31"
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Quantum-Enhanced Optimization",
+                    "description": "Breakthrough optimization algorithms combining classical and quantum computing"
+                  },
+                  "price": "50000-150000",
+                  "priceCurrency": "USD",
+                  "availability": "InStock",
+                  "validFrom": "2025-01-01",
+                  "priceValidUntil": "2025-12-31"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "AI Workflow Automation",
+                    "description": "Intelligent automation systems that learn from your processes and adapt continuously"
+                  },
+                  "price": "15000-50000",
+                  "priceCurrency": "USD",
+                  "availability": "InStock",
+                  "validFrom": "2025-01-01",
+                  "priceValidUntil": "2025-12-31"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom MLOps Infrastructure", 
+                    "description": "End-to-end machine learning operations that scale with your business"
+                  },
+                  "price": "30000-100000",
+                  "priceCurrency": "USD",
+                  "availability": "InStock",
+                  "validFrom": "2025-01-01",
+                  "priceValidUntil": "2025-12-31"
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "bestRating": "5", 
+              "worstRating": "1",
+              "ratingCount": "127"
+            }
+          }
+        `}</script>
+
+        {/* LocalBusiness Services Schema */}
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Krishna Bajpai AI Consulting",
+            "alternateName": "KB AI Solutions",
+            "url": "https://krishnabajpai.me/services",
+            "telephone": "+1-555-AI-CONSULT",
+            "email": "krishna@krishnabajpai.me",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "IN"
+            },
+            "areaServed": [
+              {
+                "@type": "Country",
+                "name": "United States"
+              },
+              {
+                "@type": "Country", 
+                "name": "Canada"
+              },
+              {
+                "@type": "Country",
+                "name": "United Kingdom"
+              },
+              {
+                "@type": "Country",
+                "name": "India"
+              }
+            ],
+            "serviceType": [
+              "Artificial Intelligence Consulting",
+              "Machine Learning Development", 
+              "Quantum Computing Solutions",
+              "MLOps Implementation",
+              "Enterprise AI Strategy"
+            ],
+            "priceRange": "$$$$$",
+            "currenciesAccepted": "USD, EUR, GBP, INR"
+          }
+        `}</script>
+      </Helmet>
+      
+      <Layout>
     <div className="min-h-screen bg-background font-body pt-16">
       <div className="container mx-auto px-6 lg:px-8 py-20">
         <div className="max-w-6xl mx-auto">
@@ -332,6 +475,7 @@ const Services = () => {
       </div>
     </div>
     </Layout>
+    </>
   );
 };
 

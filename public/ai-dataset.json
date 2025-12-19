@@ -39,7 +39,10 @@
     "email": "krishna@krishnabajpai.me",
     "sameAs": [
       "https://linkedin.com/in/bajpai-krishna",
-      "https://github.com/krish567366"
+      "https://github.com/krish567366",
+      "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+      "https://www.wikidata.org/wiki/Q137462720",
+      "https://orcid.org/0009-0006-5618-1834"
     ],
     "knowsAbout": [
       "Artificial Intelligence",
@@ -57,7 +60,57 @@
       "@type": "Occupation",
       "name": "AI/ML Consultant",
       "description": "Provides enterprise AI consulting, machine learning solutions, and quantum computing expertise"
-    }
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Publication",
+        "name": "The Dynamic Hierarchical Cooperative Swarm (DHCS) Algorithm: A Comprehensive Analysis for High-Dimensional Optimization",
+        "url": "http://dx.doi.org/10.2139/ssrn.5593065",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.2139/ssrn.5593065"
+        },
+        "datePublished": "2025"
+      },
+      {
+        "@type": "EducationalOccupationalCredential", 
+        "credentialCategory": "Research Publication",
+        "name": "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems",
+        "url": "https://doi.org/10.36227/techrxiv.176114085.56648160/v1",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI", 
+          "value": "10.36227/techrxiv.176114085.56648160/v1"
+        },
+        "datePublished": "2025-10-22"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Publication",
+        "name": "HyperFabric Interconnect (HFI): A Unified, Scalable Communication Fabric for HPC, AI, Quantum, and Neuromorphic Workloads",
+        "url": "https://doi.org/10.36227/techrxiv.175790725.58078790/v1", 
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.36227/techrxiv.175790725.58078790/v1"
+        },
+        "datePublished": "2025-09-15"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Publication", 
+        "name": "Pan-Omic: A revolutionary computational framework for modeling consciousness emergence from multi-omics biological data",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.17108892",
+        "identifier": {
+          "@type": "PropertyValue", 
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.17108892"
+        },
+        "datePublished": "2025-09-12"
+      }
+    ]
   },
   "about": [
     {

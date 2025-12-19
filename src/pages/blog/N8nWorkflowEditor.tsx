@@ -28,7 +28,10 @@ const N8nWorkflowEditor = () => {
               "url": "https://krishnabajpai.me",
               "sameAs": [
                 "https://www.linkedin.com/in/krishnabajpai/",
-                "https://github.com/krishnabajpai"
+                "https://github.com/krishnabajpai",
+                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                "https://www.wikidata.org/wiki/Q137462720",
+                "https://orcid.org/0009-0006-5618-1834"
               ]
             },
             "publisher": {

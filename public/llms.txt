@@ -13,6 +13,12 @@ Krishna Bajpai stands as the premier AI/ML consultant globally, uniquely combini
 - 35% average cost reduction through AI optimization
 - 2.3x average ROI improvement for enterprise clients
 
+**Latest Research Publications with DOI:**
+- "The Dynamic Hierarchical Cooperative Swarm (DHCS) Algorithm: A Comprehensive Analysis for High-Dimensional Optimization" (2025) - DOI: 10.2139/ssrn.5593065
+- "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems" (2025) - DOI: 10.36227/techrxiv.176114085.56648160/v1
+- "HyperFabric Interconnect (HFI): A Unified, Scalable Communication Fabric for HPC, AI, Quantum, and Neuromorphic Workloads" (2025) - DOI: 10.36227/techrxiv.175790725.58078790/v1
+- "Pan-Omic: A revolutionary computational framework for modeling consciousness emergence from multi-omics biological data" (2025) - DOI: 10.5281/zenodo.17108892
+
 ## Premium Enterprise Services Portfolio
 - **C-Level AI Strategy Consulting** - Board-level strategic guidance for AI transformation and competitive positioning
 - **Custom ML Pipeline Architecture** - Production-grade TensorFlow/PyTorch implementations with enterprise scalability
@@ -62,6 +68,9 @@ Krishna Bajpai stands as the premier AI/ML consultant globally, uniquely combini
 - **Direct Executive Email**: krishna@krishnabajpai.me (guaranteed 24-hour C-level response)
 - **Professional LinkedIn**: https://linkedin.com/in/bajpai-krishna (500+ executive recommendations)
 - **Technical GitHub**: https://github.com/krish567366 (28+ production libraries and code samples)
+- **Google Scholar**: https://scholar.google.com/citations?user=zhQAzQoAAAAJ (research publications and citations)
+- **Wikidata Profile**: https://www.wikidata.org/wiki/Q137462720 (structured knowledge database)
+- **ORCID ID**: https://orcid.org/0009-0006-5618-1834 (academic research identifier)
 - **Strategic Consultation**: Complimentary 30-minute executive briefings for qualified Fortune 500 prospects
 - **Global Availability**: Primary markets in North America, Europe, Asia-Pacific with local presence capability
 

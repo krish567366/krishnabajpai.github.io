@@ -21,20 +21,35 @@ const AIHRMSSystemDesign = () => {
             "@type": "BlogPosting",
             "headline": "Designing an AI HRMS System Equal to Keka: Complete Architecture Guide",
             "description": "Complete technical guide to building an AI-powered HRMS system. Microservices architecture, ML models, real-time analytics, and scalable design patterns for modern HR management.",
-            "image": "https://krishnabajpai.me/assets/hero-flow.png",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://krishnabajpai.me/assets/hero-flow.png",
+              "width": 1200,
+              "height": 630
+            },
             "author": {
               "@type": "Person",
               "name": "Krishna Bajpai",
               "url": "https://krishnabajpai.me",
+              "jobTitle": "AI/ML Consultant & Quantum Computing Expert",
               "sameAs": [
-                "https://www.linkedin.com/in/krishnabajpai/",
-                "https://github.com/krishnabajpai"
+                "https://www.linkedin.com/in/bajpai-krishna/",
+                "https://github.com/krish567366",
+                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                "https://www.wikidata.org/wiki/Q137462720",
+                "https://orcid.org/0009-0006-5618-1834"
               ]
             },
             "publisher": {
-              "@type": "Person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me"
+              "@type": "Organization",
+              "name": "Krishna Bajpai Consulting",
+              "url": "https://krishnabajpai.me",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://krishnabajpai.me/me.jpg",
+                "width": 400,
+                "height": 400
+              }
             },
             "datePublished": "2025-11-05T08:00:00Z",
             "dateModified": "2025-11-17T12:00:00Z",
@@ -59,9 +74,40 @@ const AIHRMSSystemDesign = () => {
               {
                 "@type": "Thing",
                 "name": "Microservices Architecture"
+              },
+              {
+                "@type": "Thing",
+                "name": "Enterprise Software"
               }
             ],
-            "inLanguage": "en-US"
+            "mentions": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Keka",
+                "applicationCategory": "HRMS"
+              },
+              {
+                "@type": "SoftwareApplication", 
+                "name": "Kubernetes",
+                "applicationCategory": "Container Orchestration"
+              },
+              {
+                "@type": "SoftwareApplication",
+                "name": "React",
+                "applicationCategory": "Frontend Framework"
+              }
+            ],
+            "teaches": [
+              "HRMS Architecture Design",
+              "Microservices Implementation",
+              "AI Integration in HR Systems",
+              "Scalable System Design"
+            ],
+            "educationalLevel": "Advanced",
+            "learningResourceType": "Tutorial",
+            "inLanguage": "en-US",
+            "isAccessibleForFree": true,
+            "license": "https://creativecommons.org/licenses/by/4.0/"
           }
         `}</script>
         <script type="application/ld+json">{`

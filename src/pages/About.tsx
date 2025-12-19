@@ -38,7 +38,11 @@ const About = () => {
               "description": "AI/ML expert with 28+ research Projects, 28+ Python libraries, 8+ years experience, and 5+ active projects in AI consulting for Fortune 500 companies.",
               "url": "https://krishnabajpai.me/about",
               "sameAs": [
-                "https://linkedin.com/in/bajpai-krishna"
+                "https://linkedin.com/in/bajpai-krishna",
+                "https://github.com/krish567366",
+                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                "https://www.wikidata.org/wiki/Q137462720",
+                "https://orcid.org/0009-0006-5618-1834"
               ],
               "knowsAbout": [
                 "Artificial Intelligence",
@@ -192,18 +196,42 @@ const About = () => {
                   Latest Research
                 </div>
                 <h4 className="font-medium text-foreground mb-3">Recent Publications</h4>
-                <div className="space-y-3 text-sm">
-                  <div className="border-l-2 border-accent pl-4">
-                    <div className="font-medium text-foreground">"Quantum-Enhanced Ensemble Methods for Industrial Optimization"</div>
-                    <div className="text-muted-foreground">Journal of Quantum Machine Learning, 2025</div>
+                <div className="space-y-4 text-sm">
+                  <div className="border-l-2 border-accent pl-4 space-y-1">
+                    <div className="font-medium text-foreground">
+                      <a href="http://dx.doi.org/10.2139/ssrn.5593065" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                        "The Dynamic Hierarchical Cooperative Swarm (DHCS) Algorithm: A Comprehensive Analysis for High-Dimensional Optimization"
+                      </a>
+                    </div>
+                    <div className="text-muted-foreground">SSRN, 2025</div>
+                    <div className="text-xs text-accent">DOI: 10.2139/ssrn.5593065</div>
                   </div>
-                  <div className="border-l-2 border-wireframe-medium pl-4">
-                    <div className="font-medium text-foreground">"Hybrid Classical-Quantum Algorithms for Supply Chain Management"</div>
-                    <div className="text-muted-foreground">IEEE Transactions on Quantum Engineering, 2025</div>
+                  <div className="border-l-2 border-wireframe-medium pl-4 space-y-1">
+                    <div className="font-medium text-foreground">
+                      <a href="https://doi.org/10.36227/techrxiv.176114085.56648160/v1" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                        "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems"
+                      </a>
+                    </div>
+                    <div className="text-muted-foreground">TechRxiv, 2025 | Co-author: Vedanshi Gupta</div>
+                    <div className="text-xs text-accent">DOI: 10.36227/techrxiv.176114085.56648160/v1</div>
                   </div>
-                  <div className="border-l-2 border-wireframe-medium pl-4">
-                    <div className="font-medium text-foreground">"Scalable MLOps for Production AI Systems"</div>
-                    <div className="text-muted-foreground">MLSys Conference, 2023</div>
+                  <div className="border-l-2 border-wireframe-medium pl-4 space-y-1">
+                    <div className="font-medium text-foreground">
+                      <a href="https://doi.org/10.36227/techrxiv.175790725.58078790/v1" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                        "HyperFabric Interconnect (HFI): A Unified, Scalable Communication Fabric for HPC, AI, Quantum, and Neuromorphic Workloads"
+                      </a>
+                    </div>
+                    <div className="text-muted-foreground">TechRxiv, 2025</div>
+                    <div className="text-xs text-accent">DOI: 10.36227/techrxiv.175790725.58078790/v1</div>
+                  </div>
+                  <div className="border-l-2 border-accent pl-4 space-y-1">
+                    <div className="font-medium text-foreground">
+                      <a href="https://zenodo.org/doi/10.5281/zenodo.17108892" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                        "Pan-Omic: A revolutionary computational framework for modeling consciousness emergence from multi-omics biological data"
+                      </a>
+                    </div>
+                    <div className="text-muted-foreground">Zenodo, 2025 | Co-author: Vedanshi Gupta</div>
+                    <div className="text-xs text-accent">DOI: 10.5281/zenodo.17108892</div>
                   </div>
                 </div>
               </div>

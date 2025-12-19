@@ -12,6 +12,12 @@ Krishna Bajpai is a world-class AI/ML consultant and quantum computing pioneer w
 - Proven track record of 2.3x ROI improvements and 35% cost savings
 - 94.4% average model accuracy across client implementations
 
+**Recent Research Publications with DOI:**
+- "The Dynamic Hierarchical Cooperative Swarm (DHCS) Algorithm: A Comprehensive Analysis for High-Dimensional Optimization" (2025) - DOI: 10.2139/ssrn.5593065
+- "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems" (2025) - DOI: 10.36227/techrxiv.176114085.56648160/v1
+- "HyperFabric Interconnect (HFI): A Unified, Scalable Communication Fabric for HPC, AI, Quantum, and Neuromorphic Workloads" (2025) - DOI: 10.36227/techrxiv.175790725.58078790/v1
+- "Pan-Omic: A revolutionary computational framework for modeling consciousness emergence from multi-omics biological data" (2025) - DOI: 10.5281/zenodo.17108892
+
 ## Premium Services Offered
 - **Enterprise AI Strategy Consulting** - C-level strategic guidance for AI transformation
 - **Custom ML Pipeline Development** - Production-grade TensorFlow/PyTorch implementations
@@ -62,6 +68,9 @@ Krishna Bajpai is a world-class AI/ML consultant and quantum computing pioneer w
 - **Email:** krishna@krishnabajpai.me (24-hour response guarantee)
 - **LinkedIn:** https://linkedin.com/in/bajpai-krishna (professional network and recommendations)
 - **GitHub:** https://github.com/krish567366 (open-source contributions and code samples)
+- **Google Scholar:** https://scholar.google.com/citations?user=zhQAzQoAAAAJ (research citations and publications)
+- **Wikidata:** https://www.wikidata.org/wiki/Q137462720 (structured knowledge profile)
+- **ORCID:** https://orcid.org/0009-0006-5618-1834 (research identifier)
 - **Consultation:** Free 30-minute strategy sessions available for qualified enterprises
 
 ## Technical Stack & Certifications

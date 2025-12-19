@@ -28,7 +28,13 @@ const HybridQuantumOptimization = () => {
               "url": "https://krishnabajpai.me",
               "sameAs": [
                 "https://www.linkedin.com/in/krishnabajpai/",
-                "https://github.com/krishnabajpai"
+                "https://github.com/krishnabajpai",
+                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                "https://www.wikidata.org/wiki/Q137462720",
+                "https://orcid.org/0009-0006-5618-1834",
+                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                "https://www.wikidata.org/wiki/Q137462720",
+                "https://orcid.org/0009-0006-5618-1834"
               ]
             },
             "publisher": {
@@ -534,6 +540,59 @@ python -m quantum_opt.benchmarks`}</code>
                       Let's discuss quantum advantage opportunities →
                     </Link>
                   </p>
+                </div>
+
+                {/* Research References */}
+                <div className="bg-accent/5 border border-accent/20 p-8 rounded-lg mt-12">
+                  <h3 className="text-xl font-medium text-foreground mb-6">📚 Research References</h3>
+                  <p className="text-muted-foreground mb-6">
+                    This library is built upon extensive research in hybrid quantum-classical optimization. 
+                    Key theoretical foundations include:
+                  </p>
+                  
+                  <div className="space-y-4 text-sm">
+                    <div className="border-l-2 border-accent pl-4">
+                      <div className="font-medium text-foreground">
+                        <a href="http://dx.doi.org/10.2139/ssrn.5593065" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                          "The Dynamic Hierarchical Cooperative Swarm (DHCS) Algorithm: A Comprehensive Analysis for High-Dimensional Optimization"
+                        </a>
+                      </div>
+                      <div className="text-muted-foreground mt-1">
+                        Bajpai, K. (2025). SSRN. DOI: 10.2139/ssrn.5593065
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-2">
+                        Introduces advanced swarm optimization techniques that complement quantum algorithms in hybrid approaches.
+                      </div>
+                    </div>
+
+                    <div className="border-l-2 border-accent/60 pl-4">
+                      <div className="font-medium text-foreground">
+                        <a href="https://doi.org/10.36227/techrxiv.175790725.58078790/v1" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                          "HyperFabric Interconnect (HFI): A Unified, Scalable Communication Fabric for HPC, AI, Quantum, and Neuromorphic Workloads"
+                        </a>
+                      </div>
+                      <div className="text-muted-foreground mt-1">
+                        Bajpai, K. (2025). TechRxiv. DOI: 10.36227/techrxiv.175790725.58078790/v1
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-2">
+                        Explores quantum-classical communication architectures essential for hybrid algorithm implementations.
+                      </div>
+                    </div>
+
+                    <div className="border-l-2 border-accent/60 pl-4">
+                      <div className="font-medium text-foreground">
+                        <a href="https://doi.org/10.36227/techrxiv.176114085.56648160/v1" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                          "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems"
+                        </a>
+                      </div>
+                      <div className="text-muted-foreground mt-1">
+                        Bajpai, K., & Gupta, V. (2025). TechRxiv. DOI: 10.36227/techrxiv.176114085.56648160/v1
+                      </div>
+                      <div className="text-xs text-muted-foreground mt-2">
+                        Demonstrates optimization frameworks relevant to quantum-enhanced machine learning applications.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </article>
 
