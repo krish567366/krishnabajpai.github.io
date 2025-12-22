@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Krishna Bajpai - Official Website
-# Elite AI/ML Consultant & Quantum Computing Expert
+# Elite AI/ML Consultant, Quantum Computing Expert & Quantitative Finance Researcher
 
 # Block access to sensitive files
 Disallow: /admin/

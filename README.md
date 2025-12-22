@@ -1,8 +1,8 @@
-# AI, ML & Quantum Optimization Contractor Portfolio
+# AI, ML, Quantum Computing & Quantitative Finance Portfolio
 
 ## Project Overview
 
-A professional portfolio website showcasing AI/ML expertise and quantum optimization consulting services.
+A professional portfolio website showcasing elite AI/ML expertise, quantum computing innovations, and cutting-edge quantitative finance research including ultra-low latency trading systems.
 
 ## How to Work with This Project
 
