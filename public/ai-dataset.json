@@ -97,7 +97,7 @@
       {
         "@type": "EducationalOccupationalCredential", 
         "credentialCategory": "Research Publication",
-        "name": "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems",
+        "name": "EcoLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems",
         "url": "https://doi.org/10.36227/techrxiv.176114085.56648160/v1",
         "identifier": {
           "@type": "PropertyValue",
@@ -129,6 +129,49 @@
           "value": "10.5281/zenodo.17108892"
         },
         "datePublished": "2025-09-12"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Publication",
+        "name": "Markets as Adversarial Control Systems: Stability, Metastability, and Feedback-Induced Instability",
+        "description": "Quantitative finance research on market microstructure and HFT systems stability analysis, demonstrating expertise in adversarial control systems and feedback mechanisms in financial markets",
+        "url": "https://doi.org/10.21203/rs.3.rs-8422090/v1",
+        "publisher": "Research Square",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI", 
+          "value": "10.21203/rs.3.rs-8422090/v1"
+        },
+        "datePublished": "2025-12-23",
+        "keywords": "quantitative finance expert, quant finance expert, HFT systems expert, market microstructure, financial engineering, adversarial control systems, market stability, feedback systems, high-frequency trading, financial markets"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Discovery",
+        "name": "Ultra-Low Latency Trading Execution Engine: Breaking the Sub-Microsecond Barrier",
+        "description": "Revolutionary research-grade discovery achieving 890ns median decision latency with deterministic, bit-identical replay capabilities. Pioneering breakthrough in nanosecond-precise quantitative trading systems with lock-free execution paths and zero-allocation hot paths.",
+        "url": "https://doi.org/10.5281/zenodo.18048292",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.18048292"
+        },
+        "datePublished": "2025-12-24",
+        "keywords": "ultra-low latency discovery, sub-microsecond execution, deterministic trading systems, nanosecond precision, quantitative finance breakthrough, HFT systems innovation, lock-free architecture, zero-allocation execution"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Discovery",
+        "name": "BareMetalNIC: Revolutionary Zero-Abstraction Network Driver Framework",
+        "description": "Groundbreaking discovery in network latency optimization achieving 20-50ns packet latency through direct memory-mapped NIC access. Revolutionary framework eliminating all software indirection between application and network hardware, 10× faster than existing solutions.",
+        "url": "https://doi.org/10.5281/zenodo.18048269",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.5281/zenodo.18048269"
+        },
+        "datePublished": "2025-12-24",
+        "keywords": "network latency breakthrough, 20ns packet processing, zero-abstraction networking, memory-mapped NIC discovery, bare metal optimization, deterministic networking innovation, HFT networking revolution"
       }
     ]
   },
@@ -238,14 +281,14 @@
       "description": "Deep learning framework expertise of Krishna Bajpai"
     },
     {
-      "@type": "SoftwareApplication",
-      "name": "Sub-Microsecond Trading Engine",
-      "description": "Ultra-low latency trading system achieving 890ns median execution developed by Krishna Bajpai"
+      "@type": "ResearchProject",
+      "name": "Sub-Microsecond Execution Discovery",
+      "description": "Revolutionary breakthrough achieving 890ns median execution latency in quantitative trading systems, pioneering nanosecond-precise deterministic execution"
     },
     {
-      "@type": "SoftwareApplication",
-      "name": "Bare Metal Network Drivers",
-      "description": "20-50ns network latency system with kernel bypass programming developed by Krishna Bajpai"
+      "@type": "ResearchProject",
+      "name": "20-Nanosecond Network Latency Discovery",
+      "description": "Groundbreaking research discovery achieving 20-50ns packet processing through zero-abstraction memory-mapped NIC architecture, revolutionizing HFT networking"
     }
   ],
   "spatialCoverage": {

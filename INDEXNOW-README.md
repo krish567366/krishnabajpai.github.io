@@ -5,7 +5,7 @@ IndexNow has been successfully implemented for krishnabajpai.me to instantly not
 
 ## Key Details
 - **IndexNow Key**: `26d2159b9aae38e86972e7718d7a22563ccb6b90d40a321ab01d286bcd83de72`
-- **Key File URL**: https://krishnabajpai.me/26d2159b9aae38e86972e7718d7a22563ccb6b90d40a321ab01d286bcd83de72.txt
+- **Key File URL**: https://krishnabajpai.me/26d2159b9aae38e86972e7718d7a22563ccb6b90d40a321ab01d286bcd83de72.txt₹
 - **Total URLs Submitted**: 24 (all main pages + blog posts)
 
 ## Status

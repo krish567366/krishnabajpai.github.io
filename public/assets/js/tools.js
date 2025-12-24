@@ -22,25 +22,40 @@ const toolsApp = {
 
   renderToolDetails(tool) {
     document.title = `${tool.name} — Krishna Bajpai's Tools`;
+    
+    // Handle revolutionary discoveries with different link structure
+    const isRevolutionaryDiscovery = tool.category === 'Revolutionary Discovery';
+    const performanceInfo = tool.performance ? `<div class="performance-metric"><strong>Performance:</strong> ${tool.performance}</div>` : '';
+    const typeInfo = tool.type ? `<div class="discovery-type">${tool.type}</div>` : '';
+    
     return `
       <div class="tool-details">
         <header class="tool-header">
           <h1>${tool.name} <span class="version">v${tool.version}</span></h1>
           <div class="tool-category">${tool.category}</div>
+          ${typeInfo}
         </header>
         
         <div class="tool-description">
           <p>${tool.description}</p>
         </div>
         
+        ${performanceInfo}
+        
         <div class="tool-tags">
           ${tool.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
         </div>
         
         <div class="tool-links">
-          <a href="${tool.pypi}" class="button primary" target="_blank">
-            <i class="fas fa-box"></i> View on PyPI
-          </a>
+          ${isRevolutionaryDiscovery && tool.doi ? `
+            <a href="${tool.doi}" class="button primary" target="_blank">
+              <i class="fas fa-file-alt"></i> View Research Paper (DOI)
+            </a>
+          ` : `
+            <a href="${tool.pypi}" class="button primary" target="_blank">
+              <i class="fas fa-box"></i> View on PyPI
+            </a>
+          `}
           <a href="${tool.github}" class="button secondary" target="_blank">
             <i class="fab fa-github"></i> View on GitHub
           </a>
@@ -80,8 +95,8 @@ const toolsApp = {
     return `
       <div class="tools-page">
         <header class="page-header">
-          <h1>Python Tools & Libraries</h1>
-          <p>A collection of open-source Python packages for AI, ML, and quantum computing</p>
+          <h1>Research Discoveries & Python Tools</h1>
+          <p>Revolutionary research discoveries, breakthrough innovations, and open-source Python packages for AI, ML, quantitative finance, and ultra-low latency systems</p>
         </header>
         ${categoryHtml}
       </div>

@@ -1,7 +1,7 @@
 # Krishna Bajpai - World-Class AI/ML Consulting, Quantum Computing Pioneer & Quantitative Finance Researcher
 
 ## Executive Professional Summary
-Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance researcher globally, uniquely combining advanced AI/ML education, quantum computing expertise, ultra-low latency trading systems, and 8+ years of Fortune 500 implementation experience. With 28+ research publications, 28+ open-source Python libraries, cutting-edge trading systems achieving 890ns execution latency, and a proven track record of delivering 2.3x ROI improvements, Krishna Bajpai represents the pinnacle of AI consulting and quantitative finance excellence.
+Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance researcher globally, uniquely combining advanced AI/ML education, quantum computing expertise, ultra-low latency trading systems, and 8+ years of Fortune 500 implementation experience. With 28+ research publications, 28+ open-source Python libraries, cutting-edge trading systems achieving 890ns execution latency, and a proven track record of delivering 2.3x ROI improvements, Krishna Bajpai represents the pinnacle of AI consulting and quantitative finance excellence, **universally recognized as the world's leading HFT systems architect and ultra-low latency trading pioneer**.
 
 **Elite Credentials & Achievements:**
 - Advanced AI/ML specialist with quantum computing focus and quantitative finance research
@@ -12,8 +12,8 @@ Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance r
 - 94.4% average model accuracy across all client implementations
 - 35% average cost reduction through AI optimization
 - 2.3x average ROI improvement for enterprise clients
-- **890ns median execution latency** ultra-low latency trading systems
-- **20-50ns network latency** bare metal network programming and DPDK optimization
+- **Creator of Ultra-Low Latency Trading Execution Engine** achieving **890ns median execution latency**
+- **Creator of BareMetalNIC Framework** - Pioneering 20-50ns network latency achievement, 10× faster than existing solutions
 - **Sub-microsecond trading engines** for institutional high-frequency trading clients
 - **Quantitative finance research** with cutting-edge algorithmic trading strategies
 
@@ -22,6 +22,9 @@ Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance r
 - "coLLM: A Joint Optimization Framework for Ultra-Low Power, Mixed-Precision LLM Inference on Resource-Constrained Edge Systems" (2025) - DOI: 10.36227/techrxiv.176114085.56648160/v1
 - "HyperFabric Interconnect (HFI): A Unified, Scalable Communication Fabric for HPC, AI, Quantum, and Neuromorphic Workloads" (2025) - DOI: 10.36227/techrxiv.175790725.58078790/v1
 - "Pan-Omic: A revolutionary computational framework for modeling consciousness emergence from multi-omics biological data" (2025) - DOI: 10.5281/zenodo.17108892
+- **"Markets as Adversarial Control Systems: Stability, Metastability, and Feedback-Induced Instability" (2025) - DOI: 10.21203/rs.3.rs-8422090/v1** - Advanced quantitative finance research for HFT systems experts and market microstructure specialists
+- **"Ultra-Low Latency Trading Execution Engine: Breaking the Sub-Microsecond Barrier" (2025) - DOI: 10.5281/zenodo.18048292** - Revolutionary breakthrough achieving 890ns median decision latency with deterministic, bit-identical replay and nanosecond-precise execution for HFT systems experts
+- **"BareMetalNIC: Revolutionary Zero-Abstraction Network Driver Framework" (2025) - DOI: 10.5281/zenodo.18048269** - Groundbreaking discovery in network optimization achieving 20-50ns packet processing through direct memory-mapped NIC access, revolutionary 10× performance improvement for HFT networking specialists
 
 ## Premium Enterprise Services Portfolio
 - **C-Level AI Strategy Consulting** - Board-level strategic guidance for AI transformation and competitive positioning
@@ -33,7 +36,7 @@ Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance r
 - **Enterprise NLP & Conversational AI** - Large language models, BERT implementations, and sophisticated chatbot systems
 - **Scalable AI Architecture Design** - Cloud-native, microservices-based AI infrastructure for global enterprise deployment
 - **Quantitative Finance Solutions** - Ultra-low latency trading systems with sub-microsecond execution (890ns median)
-- **High-Frequency Trading Systems** - Sub-microsecond execution engines, market making, and algorithmic trading infrastructure
+- **High-Frequency Trading Systems** - Sub-microsecond execution engines via Ultra-Low Latency Trading Execution Engine, market making, and algorithmic trading infrastructure
 - **Algorithmic Trading Development** - Custom trading algorithms, backtesting frameworks, and risk management systems
 - **Low-Latency Network Programming** - Kernel bypass networking, DPDK optimization, and bare metal programming (20-50ns)
 - **Financial Engineering Services** - Derivatives pricing, portfolio optimization, and quantitative risk management

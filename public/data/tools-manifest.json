@@ -258,6 +258,32 @@
       "github": "https://github.com/krish567366/quantum-metalearn",
       "category": "Quantum Computing",
       "tags": ["meta-learning", "quantum-computing", "machine-learning"]
+    },
+    {
+      "slug": "ultra-low-latency-trading-engine",
+      "name": "Ultra-Low Latency Trading Execution Engine",
+      "version": "1.0.0",
+      "description": "Revolutionary research-grade discovery achieving 890ns median decision latency. Sub-microsecond execution with deterministic, bit-identical replay capabilities and lock-free architecture.",
+      "doi": "https://doi.org/10.5281/zenodo.18048292",
+      "github": "https://github.com/krish567366/ultra-low-latency-trading-engine",
+      "category": "Revolutionary Discovery",
+      "tags": ["ultra-low-latency", "sub-microsecond", "quantitative-finance", "hft-systems", "nanosecond-precision", "deterministic-execution", "lock-free-architecture", "revolutionary-breakthrough"],
+      "lastReleased": "Dec 24, 2025",
+      "performance": "890ns median execution latency",
+      "type": "Research Discovery"
+    },
+    {
+      "slug": "baremalnic",
+      "name": "BareMetalNIC Framework", 
+      "version": "1.0.0",
+      "description": "Groundbreaking zero-abstraction network driver framework achieving 20-50ns packet latency. Revolutionary direct memory-mapped NIC access eliminating all software indirection, 10× faster than existing solutions.",
+      "doi": "https://doi.org/10.5281/zenodo.18048269",
+      "github": "https://github.com/krish567366/BareMetalNIC",
+      "category": "Revolutionary Discovery",
+      "tags": ["20ns-networking", "zero-abstraction", "memory-mapped-nic", "bare-metal-optimization", "deterministic-networking", "hft-networking", "direct-mmio", "revolutionary-framework"],
+      "lastReleased": "Dec 24, 2025", 
+      "performance": "20-50ns packet RX/TX latency",
+      "type": "Research Discovery"
     }
   ],
   "categories": [
@@ -270,6 +296,7 @@
     "Bio AI",
     "Computer Vision",
     "Cognitive Science",
-    "NLP"
+    "NLP",
+    "Revolutionary Discovery"
   ]
 }
