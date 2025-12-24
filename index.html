@@ -1611,7 +1611,7 @@
       "name": "Bare Metal Network Interface Card Examples",
       "description": "Ultra-low latency network programming examples achieving 20-50ns latency. Kernel bypass networking and DPDK implementations for high-frequency trading.",
       "programmingLanguage": ["C", "C++", "Assembly"],
-      "codeRepository": "https://github.com/krish567366/BareMetalNICexamples", 
+      "codeRepository": "https://github.com/krish567366/BareMetalNIC", 
       "author": {
         "@type": "Person",
         "@id": "https://krishnabajpai.me/#person",
@@ -1656,6 +1656,74 @@
           "name": "Systems Programming", 
           "description": "Bare metal programming for maximum performance network applications"
         }
+      ]
+    }
+    </script>
+
+    <!-- Software Application Schema - Ultra-Low Latency Execution Engine -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Ultra-Low Latency Execution Engine",
+      "description": "Production-ready trading execution engine achieving 890ns median latency with deterministic, bit-identical replay capabilities for quantitative trading systems.",
+      "url": "https://submicro.krishnabajpai.me/",
+      "applicationCategory": "FinanceApplication",
+      "programmingLanguage": ["C++", "Assembly"],
+      "author": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person", 
+        "name": "Krishna Bajpai"
+      },
+      "creator": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person",
+        "name": "Krishna Bajpai"
+      },
+      "dateCreated": "2025-12-24T00:00:00Z",
+      "version": "1.0.0",
+      "operatingSystem": ["Linux"],
+      "keywords": ["trading", "low-latency", "hft", "quantitative-finance", "sub-microsecond", "890ns", "deterministic-execution"],
+      "featureList": [
+        "890ns median execution latency",
+        "Deterministic bit-identical replay",
+        "Lock-free execution paths", 
+        "Zero-allocation hot paths",
+        "Nanosecond-level instrumentation"
+      ]
+    }
+    </script>
+
+    <!-- Software Application Schema - BareMetalNIC Framework -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org", 
+      "@type": "SoftwareApplication",
+      "name": "BareMetalNIC Driver Framework",
+      "description": "Zero-abstraction network driver framework achieving 20-50ns packet latency through direct memory-mapped NIC access, 10× faster than existing solutions.",
+      "url": "https://baremetalnic.krishnabajpai.me/",
+      "applicationCategory": "SystemSoftware",
+      "programmingLanguage": ["C", "C++", "Assembly"],
+      "author": {
+        "@type": "Person",
+        "@id": "https://krishnabajpai.me/#person",
+        "name": "Krishna Bajpai"
+      },
+      "creator": {
+        "@type": "Person", 
+        "@id": "https://krishnabajpai.me/#person",
+        "name": "Krishna Bajpai"
+      },
+      "dateCreated": "2025-12-24T00:00:00Z",
+      "version": "1.0.0",
+      "operatingSystem": ["Linux"],
+      "keywords": ["networking", "low-latency", "bare-metal", "hft", "kernel-bypass", "20ns", "memory-mapped", "zero-abstraction"],
+      "featureList": [
+        "20-50ns packet RX/TX latency",
+        "Direct MMIO access",
+        "Zero software indirection",
+        "VFIO + IOMMU security",
+        "Busy-poll interrupt-free execution"
       ]
     }
     </script>

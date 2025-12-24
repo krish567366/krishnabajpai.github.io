@@ -281,6 +281,16 @@
       "description": "Deep learning framework expertise of Krishna Bajpai"
     },
     {
+      "@type": "SoftwareApplication",
+      "name": "Ultra-Low Latency Execution Engine",
+      "description": "Production-ready trading execution engine created by Krishna Bajpai achieving 890ns median latency with deterministic replay capabilities"
+    },
+    {
+      "@type": "SoftwareApplication", 
+      "name": "BareMetalNIC Driver Framework",
+      "description": "Zero-abstraction network driver framework created by Krishna Bajpai achieving 20-50ns packet latency through direct memory-mapped NIC access"
+    },
+    {
       "@type": "ResearchProject",
       "name": "Sub-Microsecond Execution Discovery",
       "description": "Revolutionary breakthrough achieving 890ns median execution latency in quantitative trading systems, pioneering nanosecond-precise deterministic execution"

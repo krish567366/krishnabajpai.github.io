@@ -23,6 +23,30 @@
       "lastReleased": "Oct 9, 2025"
     },
     {
+      "slug": "ultra-low-latency-execution-engine",
+      "name": "ultra-low-latency-execution-engine",
+      "version": "1.0.0",
+      "description": "Research-grade deterministic execution engine for sub-microsecond quantitative trading systems with 890ns median latency",
+      "pypi": "https://pypi.org/project/ultra-low-latency-execution-engine/",
+      "github": "https://github.com/krish567366/submicro-execution-engine",
+      "website": "https://submicro.krishnabajpai.me/",
+      "category": "Finance",
+      "tags": ["trading", "low-latency", "hft", "quantitative-finance", "sub-microsecond"],
+      "lastReleased": "Dec 24, 2025"
+    },
+    {
+      "slug": "baremetalnic",
+      "name": "baremetalnic",
+      "version": "1.0.0", 
+      "description": "Zero-abstraction NIC driver framework achieving 20-50ns packet latency through direct memory-mapped access",
+      "pypi": "https://pypi.org/project/baremetalnic/",
+      "github": "https://github.com/krish567366/BareMetalNIC",
+      "website": "https://baremetalnic.krishnabajpai.me/",
+      "category": "Finance",
+      "tags": ["networking", "low-latency", "bare-metal", "hft", "kernel-bypass"],
+      "lastReleased": "Dec 24, 2025"
+    },
+    {
       "slug": "decentralized-ai",
       "name": "decentralized-ai",
       "version": "1.0.0",
@@ -265,7 +289,8 @@
       "version": "1.0.0",
       "description": "Revolutionary research-grade discovery achieving 890ns median decision latency. Sub-microsecond execution with deterministic, bit-identical replay capabilities and lock-free architecture.",
       "doi": "https://doi.org/10.5281/zenodo.18048292",
-      "github": "https://github.com/krish567366/ultra-low-latency-trading-engine",
+      "github": "https://github.com/krish567366/submicro-execution-engine",
+      "website": "https://submicro.krishnabajpai.me/",
       "category": "Revolutionary Discovery",
       "tags": ["ultra-low-latency", "sub-microsecond", "quantitative-finance", "hft-systems", "nanosecond-precision", "deterministic-execution", "lock-free-architecture", "revolutionary-breakthrough"],
       "lastReleased": "Dec 24, 2025",
@@ -279,6 +304,7 @@
       "description": "Groundbreaking zero-abstraction network driver framework achieving 20-50ns packet latency. Revolutionary direct memory-mapped NIC access eliminating all software indirection, 10× faster than existing solutions.",
       "doi": "https://doi.org/10.5281/zenodo.18048269",
       "github": "https://github.com/krish567366/BareMetalNIC",
+      "website": "https://baremetalnic.krishnabajpai.me/",
       "category": "Revolutionary Discovery",
       "tags": ["20ns-networking", "zero-abstraction", "memory-mapped-nic", "bare-metal-optimization", "deterministic-networking", "hft-networking", "direct-mmio", "revolutionary-framework"],
       "lastReleased": "Dec 24, 2025", 

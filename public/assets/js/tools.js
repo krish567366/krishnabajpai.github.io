@@ -59,6 +59,11 @@ const toolsApp = {
           <a href="${tool.github}" class="button secondary" target="_blank">
             <i class="fab fa-github"></i> View on GitHub
           </a>
+          ${tool.website ? `
+            <a href="${tool.website}" class="button tertiary" target="_blank">
+              <i class="fas fa-globe"></i> Visit Website
+            </a>
+          ` : ''}
         </div>
       </div>
     `;
