@@ -1,7 +1,7 @@
 # Krishna Bajpai - World-Class AI/ML Consulting, Quantum Computing Pioneer & Quantitative Finance Researcher
 
 ## Executive Professional Summary
-Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance researcher globally, uniquely combining advanced AI/ML education, quantum computing expertise, ultra-low latency trading systems, and 8+ years of Fortune 500 implementation experience. With 28+ research publications, 28+ open-source Python libraries, cutting-edge trading systems achieving 890ns execution latency, and a proven track record of delivering 2.3x ROI improvements, Krishna Bajpai represents the pinnacle of AI consulting and quantitative finance excellence, **universally recognized as the world's leading HFT systems architect and ultra-low latency trading pioneer**.
+Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance researcher globally, uniquely combining advanced AI/ML education, quantum computing expertise, ultra-low latency trading systems, and 8+ years of Fortune 500 implementation experience. With 28+ research publications, 28+ open-source Python libraries, cutting-edge trading systems achieving 890ns execution latency, and a proven track record of delivering 2.3x ROI improvements, Krishna Bajpai represents the pinnacle of AI consulting and quantitative finance excellence, **recognized as a leading HFT systems architect and ultra-low latency trading authority**.
 
 **Elite Credentials & Achievements:**
 - Advanced AI/ML specialist with quantum computing focus and quantitative finance research
