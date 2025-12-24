@@ -54,6 +54,10 @@ import TimeSeriesSupplyChainForecasting from "./pages/blog/TimeSeriesSupplyChain
 import FraudDetectionRealTimeML from "./pages/blog/FraudDetectionRealTimeML";
 import RecommendationSystemScaling from "./pages/blog/RecommendationSystemScaling";
 
+// RSS Pages
+import RSSFeedPage from "./pages/RSSFeedPage";
+import RSSEndpoint from "./pages/RSSEndpoint";
+
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -107,6 +111,11 @@ const App = () => {
             <Route path="/blog/time-series-supply-chain-forecasting" element={<TimeSeriesSupplyChainForecasting />} />
             <Route path="/blog/fraud-detection-real-time-ml" element={<FraudDetectionRealTimeML />} />
             <Route path="/blog/recommendation-system-scaling" element={<RecommendationSystemScaling />} />
+            
+            {/* RSS Feed Pages */}
+            <Route path="/rss-feed" element={<RSSFeedPage />} />
+            <Route path="/rss" element={<RSSEndpoint />} />
+            <Route path="/feed" element={<RSSFeedPage />} />
             
             {/* 404 Catch-all */}
             <Route path="*" element={<NotFound />} />

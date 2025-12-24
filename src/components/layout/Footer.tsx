@@ -89,6 +89,7 @@ const Footer = () => {
           <div className="flex space-x-6 text-sm text-muted-foreground">
             <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
+            <Link to="/rss-feed" className="hover:text-foreground transition-colors">RSS Feed</Link>
             <a href="/sitemap.xml" className="hover:text-foreground transition-colors">Sitemap</a>
           </div>
         </div>
