@@ -475,7 +475,7 @@ export function getAllRSSItems(): RSSItem[] {
       pubDate: new Date(discovery.date).toUTCString(),
       guid: `${baseUrl}/discoveries/${discovery.id}`,
       category: discovery.category,
-      author: 'Krishna Bajpai (krishna@krishnabajpai.me)',
+      author: 'krishna@krishnabajpai.me',
       content: discovery.content
     });
   });
@@ -489,7 +489,7 @@ export function getAllRSSItems(): RSSItem[] {
       pubDate: new Date(paper.date).toUTCString(),
       guid: `${baseUrl}/research/${paper.id}`,
       category: paper.category,
-      author: 'Krishna Bajpai (krishna@krishnabajpai.me)',
+      author: 'krishna@krishnabajpai.me',
       content: paper.content
     });
   });
@@ -503,7 +503,7 @@ export function getAllRSSItems(): RSSItem[] {
       pubDate: new Date(post.date).toUTCString(),
       guid: `${baseUrl}/blog/${post.id}`,
       category: post.category,
-      author: 'Krishna Bajpai (krishna@krishnabajpai.me)',
+      author: 'krishna@krishnabajpai.me',
       content: post.content
     });
   });
@@ -517,7 +517,7 @@ export function getAllRSSItems(): RSSItem[] {
       pubDate: new Date(caseStudy.date).toUTCString(),
       guid: `${baseUrl}/case-studies/${caseStudy.id}`,
       category: caseStudy.category,
-      author: 'Krishna Bajpai (krishna@krishnabajpai.me)',
+      author: 'krishna@krishnabajpai.me',
       content: caseStudy.content
     });
   });
@@ -531,7 +531,7 @@ export function getAllRSSItems(): RSSItem[] {
       pubDate: new Date(service.date).toUTCString(),
       guid: `${baseUrl}/services/${service.id}`,
       category: service.category,
-      author: 'Krishna Bajpai (krishna@krishnabajpai.me)',
+      author: 'krishna@krishnabajpai.me',
       content: service.content
     });
   });
@@ -545,7 +545,7 @@ export function getAllRSSItems(): RSSItem[] {
       pubDate: new Date(tool.date).toUTCString(),
       guid: `${baseUrl}/tools/${tool.id}`,
       category: tool.category,
-      author: 'Krishna Bajpai (krishna@krishnabajpai.me)',
+      author: 'krishna@krishnabajpai.me',
       content: tool.content
     });
   });

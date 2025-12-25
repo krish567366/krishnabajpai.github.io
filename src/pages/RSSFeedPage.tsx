@@ -19,7 +19,7 @@ const RSSFeedPage: React.FC = () => {
     <title>Krishna Bajpai - AI/ML Research &amp; Consulting</title>
     <description>Revolutionary AI discoveries, research publications, case studies, and insights from Krishna Bajpai. Featuring breakthrough systems achieving sub-microsecond performance, quantum optimization, and advanced machine learning solutions.</description>
     <link>https://krishnabajpai.me</link>
-    <atom:link href="https://krishnabajpai.me/rss" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://krishnabajpai.me/rss-feed" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <copyright>© 2025 Krishna Bajpai. All rights reserved.</copyright>
     <managingEditor>krishna@krishnabajpai.me (Krishna Bajpai)</managingEditor>
