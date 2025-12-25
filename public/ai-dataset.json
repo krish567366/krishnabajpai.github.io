@@ -147,6 +147,36 @@
       },
       {
         "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Publication",
+        "name": "The Market Control Illusion: A Separated Control and Controllability Framework for Non-Monotonic Prediction–Profit Dynamics in Financial Markets",
+        "description": "Revolutionary research on market control theory introducing separated control and controllability framework analyzing non-monotonic prediction-profit dynamics in financial markets using stochastic optimal control",
+        "url": "https://doi.org/10.20944/preprints202512.2270.v1",
+        "publisher": "Preprints",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI", 
+          "value": "10.20944/preprints202512.2270.v1"
+        },
+        "datePublished": "2025-12-25",
+        "keywords": "stochastic optimal control, market microstructure, controllability, performative prediction, actuator saturation, financial markets, market control theory, non-monotonic dynamics, quantitative finance expert"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Research Publication",
+        "name": "Strategic Ignorance in Financial Markets: When Not Knowing Improves Alpha and Stability",
+        "description": "Groundbreaking research exploring strategic ignorance in financial markets demonstrating how deliberately limiting information improves alpha generation and market stability through reinforcement learning approaches",
+        "url": "https://doi.org/10.20944/preprints202512.2293.v1",
+        "publisher": "Preprints",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "DOI", 
+          "value": "10.20944/preprints202512.2293.v1"
+        },
+        "datePublished": "2025-12-25",
+        "keywords": "strategic ignorance, financial markets, reinforcement learning, limit order book, alpha generation, market stability, information theory, trading strategies, quantitative finance expert"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
         "credentialCategory": "Research Discovery",
         "name": "Ultra-Low Latency Trading Execution Engine: Breaking the Sub-Microsecond Barrier",
         "description": "Revolutionary research-grade discovery achieving 890ns median decision latency with deterministic, bit-identical replay capabilities. Pioneering breakthrough in nanosecond-precise quantitative trading systems with lock-free execution paths and zero-allocation hot paths.",

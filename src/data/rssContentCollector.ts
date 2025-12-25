@@ -303,6 +303,71 @@ export const revolutionaryDiscoveries = [
 // Research Publications
 export const researchPublications = [
   {
+    id: "strategic-ignorance-financial-markets",
+    title: "Strategic Ignorance in Financial Markets: When Not Knowing Improves Alpha and Stability",
+    description: "Research on strategic ignorance in financial markets using reinforcement learning, demonstrating how limited information can improve alpha generation and market stability.",
+    date: "2025-12-25",
+    category: "Quantitative Finance Research",
+    doi: "https://doi.org/10.20944/preprints202512.2293.v1",
+    journal: "Preprints",
+    keywords: ["strategic ignorance", "financial markets", "reinforcement learning", "limit order book", "alpha generation", "market stability"],
+    content: `<![CDATA[
+    <h3>Research Publication</h3>
+    <p><strong>Author:</strong> Krishna Bajpai</p>
+    <p><strong>Journal:</strong> Preprints</p>
+    <p><strong>DOI:</strong> <a href="https://doi.org/10.20944/preprints202512.2293.v1">10.20944/preprints202512.2293.v1</a></p>
+    <p><strong>Submitted:</strong> December 24, 2025</p>
+    <p><strong>Posted:</strong> December 25, 2025</p>
+    
+    <h3>Abstract:</h3>
+    <p>This paper explores the counterintuitive concept of strategic ignorance in financial markets, demonstrating how deliberately limiting information can improve both alpha generation and market stability through reinforcement learning approaches.</p>
+    
+    <h3>Key Contributions:</h3>
+    <ul>
+      <li>Strategic ignorance framework for financial decision making</li>
+      <li>Reinforcement learning models with information constraints</li>
+      <li>Alpha generation through selective information processing</li>
+      <li>Market stability analysis under limited information regimes</li>
+      <li>Limit order book dynamics with strategic ignorance</li>
+    </ul>
+    
+    <p><strong>Keywords:</strong> strategic ignorance, financial markets, reinforcement learning, limit order book, alpha generation, market stability</p>
+    ]]>`
+  },
+  {
+    id: "market-control-illusion",
+    title: "The Market Control Illusion: A Separated Control and Controllability Framework for Non-Monotonic Prediction–Profit Dynamics in Financial Markets",
+    description: "Novel framework examining the illusion of market control through separated control and controllability analysis, revealing non-monotonic relationships between prediction accuracy and profitability.",
+    date: "2025-12-25",
+    category: "Quantitative Finance Research",
+    doi: "https://doi.org/10.20944/preprints202512.2270.v1",
+    journal: "Preprints",
+    keywords: ["stochastic optimal control", "market microstructure", "controllability", "Performative Prediction", "actuator saturation"],
+    content: `<![CDATA[
+    <h3>Research Publication</h3>
+    <p><strong>Author:</strong> Krishna Bajpai</p>
+    <p><strong>Journal:</strong> Preprints</p>
+    <p><strong>DOI:</strong> <a href="https://doi.org/10.20944/preprints202512.2270.v1">10.20944/preprints202512.2270.v1</a></p>
+    <p><strong>Submitted:</strong> December 24, 2025</p>
+    <p><strong>Posted:</strong> December 25, 2025</p>
+    
+    <h3>Abstract:</h3>
+    <p>This research introduces a separated control and controllability framework to analyze the market control illusion, revealing complex non-monotonic relationships between prediction accuracy and profit generation in financial markets.</p>
+    
+    <h3>Key Innovations:</h3>
+    <ul>
+      <li>Separated control and controllability theoretical framework</li>
+      <li>Non-monotonic prediction-profit dynamics analysis</li>
+      <li>Market microstructure controllability assessment</li>
+      <li>Performative prediction in financial contexts</li>
+      <li>Actuator saturation effects in market control</li>
+      <li>Stochastic optimal control applications</li>
+    </ul>
+    
+    <p><strong>Keywords:</strong> stochastic optimal control, market microstructure, controllability, Performative Prediction, actuator saturation</p>
+    ]]>`
+  },
+  {
     id: "markets-adversarial-control-systems",
     title: "Markets as Adversarial Control Systems: Stability, Metastability, and Feedback-Induced Instability",
     description: "Groundbreaking research on market dynamics using control theory, revealing how feedback mechanisms create systemic instabilities in financial markets.",

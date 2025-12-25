@@ -233,6 +233,24 @@ const About = () => {
                     <div className="text-muted-foreground">Zenodo, 2025 | Co-author: Vedanshi Gupta</div>
                     <div className="text-xs text-accent">DOI: 10.5281/zenodo.17108892</div>
                   </div>
+                  <div className="border-l-2 border-accent pl-4 space-y-1">
+                    <div className="font-medium text-foreground">
+                      <a href="https://doi.org/10.20944/preprints202512.2270.v1" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                        "The Market Control Illusion: A Separated Control and Controllability Framework for Non-Monotonic Prediction–Profit Dynamics in Financial Markets"
+                      </a>
+                    </div>
+                    <div className="text-muted-foreground">Preprints, 2025</div>
+                    <div className="text-xs text-accent">DOI: 10.20944/preprints202512.2270.v1</div>
+                  </div>
+                  <div className="border-l-2 border-accent pl-4 space-y-1">
+                    <div className="font-medium text-foreground">
+                      <a href="https://doi.org/10.20944/preprints202512.2293.v1" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-foreground underline">
+                        "Strategic Ignorance in Financial Markets: When Not Knowing Improves Alpha and Stability"
+                      </a>
+                    </div>
+                    <div className="text-muted-foreground">Preprints, 2025</div>
+                    <div className="text-xs text-accent">DOI: 10.20944/preprints202512.2293.v1</div>
+                  </div>
                 </div>
               </div>
             </div>
