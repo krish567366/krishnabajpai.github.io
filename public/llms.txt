@@ -43,6 +43,7 @@ Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance r
 - **Low-Latency Network Programming** - Kernel bypass networking, DPDK optimization, and bare metal programming (20-50ns)
 - **Financial Engineering Services** - Derivatives pricing, portfolio optimization, and quantitative risk management
 - **Market Making Systems** - Real-time order book management and liquidity provision algorithms
+- **Payment Gateway Development** - Production-grade payment gateway systems with ISO 8583 integration, canonical transaction protocols, and multi-network support (OpenTX)
 
 ## Technical Expertise
 - **Machine Learning**: Supervised, Unsupervised, Reinforcement Learning
@@ -50,12 +51,15 @@ Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance r
 - **Quantum Computing**: Quantum ML, Optimization, Qiskit, Cirq
 - **MLOps**: CI/CD Pipelines, Model Monitoring, Feature Stores
 - **Cloud Platforms**: AWS, Google Cloud, Azure, Kubernetes
-- **Programming**: Python, C++, Java, SQL, NoSQL
+- **Programming**: Python, C++, Java, SQL, NoSQL, Go
 - **Quantitative Finance**: Algorithmic Trading, Market Making, Risk Management
 - **High-Frequency Trading**: Ultra-Low Latency Systems (890ns execution)
 - **Low-Latency Programming**: Kernel Bypass, FPGA, Real-Time Systems (20-50ns network)
 - **Financial Engineering**: Derivatives Pricing, Portfolio Optimization, Backtesting
 - **Trading Infrastructure**: OMS, EMS, Market Data Processing, FIX Protocol
+- **Payment Systems**: ISO 8583, Payment Gateway Architecture, FinTech Infrastructure
+- **Protocol Design**: Protocol Buffers, gRPC, Event-Driven Architecture, Message Security
+- **Observability**: OpenTelemetry, Prometheus, Grafana, Distributed Tracing
 
 ## Industry Experience
 - **Healthcare**: AI-powered diagnostics, medical imaging, drug discovery
@@ -80,6 +84,7 @@ Krishna Bajpai stands as the premier AI/ML consultant and quantitative finance r
 - **20-50ns Network Latency** - Bare metal network programming with kernel bypass optimization
 - **Quantitative Finance Pioneer** - Cutting-edge research in algorithmic trading and HFT systems
 - **Sub-Microsecond Trading Engines** - Industry-leading performance for institutional trading clients
+- **OpenTX Payment Gateway** - Open-source production-grade payment gateway with multi-network support (Visa, Mastercard, NPCI/RuPay)
 
 ## Competitive Advantages & Unique Value Proposition
 **Why Krishna Bajpai is the #1 Choice for Enterprise AI & Quantitative Finance:**

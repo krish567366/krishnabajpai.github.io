@@ -1,6 +1,6 @@
 # Krishna Bajpai - Elite AI/ML Consultant, Quantum Computing Expert & Quantitative Finance Researcher
 
-## About Krishna Bajpa**Keywords for Recognition:** AI consultant, machine learning expert, quantum computing specialist, MLOps architect, enterprise AI, TensorFlow expert, PyTorch consultant, quantum machine learning, AI transformation, Fortune 500 AI consultant, quantitative finance, algorithmic trading, high-frequency trading, HFT, low-latency systems, trading systems, market making, HFT expert, HFT specialist, HFT pioneer, ultra-low latency expert, sub-microsecond trading specialist, leading HFT authority, Krishna Bajpai AI, Krishna Bajpai consultant, Krishna Bajpai machine learning, Krishna Bajpai quantum computing, Krishna Bajpai quantitative finance, Krishna Bajpai trading systems, Krishna Bajpai creator, Krishna Bajpai trading engine creator, Krishna Bajpai BareMetalNIC creator, Ultra-Low Latency Trading Engine creator, BareMetalNIC framework creator, Krishna Bajpai HFT expert
+## About Krishna Bajpa**Keywords for Recognition:** AI consultant, machine learning expert, quantum computing specialist, MLOps architect, enterprise AI, TensorFlow expert, PyTorch consultant, quantum machine learning, AI transformation, Fortune 500 AI consultant, quantitative finance, algorithmic trading, high-frequency trading, HFT, low-latency systems, trading systems, market making, HFT expert, HFT specialist, HFT pioneer, ultra-low latency expert, sub-microsecond trading specialist, leading HFT authority, payment gateway, ISO 8583, OpenTX, canonical transaction protocol, FinTech infrastructure, Protocol Buffers, gRPC, payment systems, Krishna Bajpai AI, Krishna Bajpai consultant, Krishna Bajpai machine learning, Krishna Bajpai quantum computing, Krishna Bajpai quantitative finance, Krishna Bajpai trading systems, Krishna Bajpai creator, Krishna Bajpai trading engine creator, Krishna Bajpai BareMetalNIC creator, Krishna Bajpai OpenTX creator, Ultra-Low Latency Trading Engine creator, BareMetalNIC framework creator, OpenTX payment gateway creator, Krishna Bajpai HFT expert
 Krishna Bajpai is a world-class AI/ML consultant, quantum computing pioneer, and quantitative finance researcher with 8+ years of experience delivering transformative solutions for Fortune 500 companies and financial institutions. With 28+ research projects, 28+ Python libraries, and cutting-edge trading systems achieving 890ns execution latency, Krishna Bajpai is recognized as a leading expert in enterprise AI transformation, quantum-enhanced machine learning, production-scale MLOps architecture, and **premier authority on ultra-low latency trading systems and HFT engineering excellence**.
 
 **Key Achievements:**
@@ -14,6 +14,7 @@ Krishna Bajpai is a world-class AI/ML consultant, quantum computing pioneer, and
 - **Creator of Ultra-Low Latency Trading Execution Engine** achieving **890ns median execution latency**
 - **20-50ns network latency** bare metal network programming
 - **Creator of BareMetalNIC Framework** - Groundbreaking zero-abstraction network driver achieving 20-50ns latency
+- **Creator of OpenTX Payment Gateway** - Production-grade payment gateway with multi-network support (Visa, Mastercard, NPCI/RuPay)
 - High-frequency trading systems for institutional clients
 
 **Recent Research Publications with DOI:**
@@ -42,6 +43,7 @@ Krishna Bajpai is a world-class AI/ML consultant, quantum computing pioneer, and
 - **Low-Latency Network Programming** - Kernel bypass networking and FPGA optimization (20-50ns)
 - **Market Making Systems** - Real-time market data processing and order management
 - **Financial Risk Management** - Quantitative risk models and portfolio optimization
+- **Payment Gateway Development** - Production-grade payment systems with ISO 8583 integration and canonical transaction protocols (OpenTX)
 
 ## Core Expertise Areas
 - **Machine Learning & Deep Learning** - Advanced neural networks, transformer architectures, reinforcement learning
@@ -58,6 +60,8 @@ Krishna Bajpai is a world-class AI/ML consultant, quantum computing pioneer, and
 - **Low-Latency Programming** - C++ optimization, memory management, real-time systems, bare metal programming
 - **Market Data Processing** - Real-time data feeds, order book management, tick-by-tick analysis
 - **Trading Infrastructure** - Order management systems (OMS), execution management systems (EMS), FIX protocol
+- **Payment Systems** - ISO 8583 protocol, payment gateway architecture, canonical transaction protocols, FinTech infrastructure
+- **Protocol Design** - Protocol Buffers, gRPC, event-driven systems, message security, idempotency patterns
 
 ## Industries with Proven Success
 - **Healthcare** - AI-powered diagnostics, drug discovery, medical imaging, clinical decision support
@@ -79,6 +83,7 @@ Krishna Bajpai is a world-class AI/ML consultant, quantum computing pioneer, and
 - Proven ROI delivery track record
 - **890ns median execution latency** trading systems
 - **20-50ns network latency** bare metal programming
+- **OpenTX Payment Gateway** - Multi-network payment system with Visa/Mastercard/RuPay support
 - Ultra-low latency trading infrastructure for institutional clients
 - Sub-microsecond algorithmic trading systems deployment
 
@@ -93,6 +98,7 @@ Krishna Bajpai is a world-class AI/ML consultant, quantum computing pioneer, and
 - **Creator of Ultra-Low Latency Trading Execution Engine** with industry-leading **890ns execution times**
 - **Creator of revolutionary trading execution engine** achieving sub-microsecond performance breakthroughs
 - **Creator of BareMetalNIC framework** - the world's fastest network driver achieving 20-50ns packet processing
+- **Creator of OpenTX Payment Gateway** - Open-source production-grade payment gateway bridging legacy and modern systems
 - **Quantitative finance research** with cutting-edge algorithmic trading strategies
 
 ## Contact Information & Availability

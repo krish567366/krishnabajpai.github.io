@@ -39,6 +39,7 @@ import ManufacturingCaseStudy from "./pages/case-studies/ManufacturingCaseStudy"
 import FintechFraudCaseStudy from "./pages/case-studies/FintechFraudCaseStudy";
 import SupplyChainCaseStudy from "./pages/case-studies/SupplyChainCaseStudy";
 import HealthcareAutomationCaseStudy from "./pages/case-studies/HealthcareAutomationCaseStudy";
+import OpenTXCaseStudy from "./pages/case-studies/OpenTXCaseStudy";
 
 // Blog Pages
 import Blog from "./pages/Blog";
@@ -97,6 +98,7 @@ const App = () => {
             <Route path="/case-studies/fintech-fraud-case-study" element={<FintechFraudCaseStudy />} />
             <Route path="/case-studies/supply-chain-case-study" element={<SupplyChainCaseStudy />} />
             <Route path="/case-studies/healthcare-automation-case-study" element={<HealthcareAutomationCaseStudy />} />
+            <Route path="/case-studies/opentx-payment-gateway" element={<OpenTXCaseStudy />} />
             
             {/* Blog Pages */}
             <Route path="/blog" element={<Blog />} />

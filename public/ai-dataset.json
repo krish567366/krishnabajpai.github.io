@@ -38,7 +38,16 @@
     "market making",
     "financial engineering",
     "sub-microsecond execution",
-    "low-latency programming"
+    "low-latency programming",
+    "payment gateway",
+    "ISO 8583",
+    "OpenTX",
+    "canonical transaction protocol",
+    "payment systems",
+    "fintech infrastructure",
+    "Protocol Buffers",
+    "gRPC",
+    "payment network modernization"
   ],
   "mainEntity": {
     "@type": "Person",
@@ -74,7 +83,18 @@
       "Trading System Architecture",
       "Risk Management",
       "Low-Latency Programming",
-      "FPGA Development"
+      "FPGA Development",
+      "Payment Gateway Systems",
+      "ISO 8583 Protocol",
+      "OpenTX Payment Gateway",
+      "Canonical Transaction Protocol",
+      "Payment Network Integration",
+      "FinTech Infrastructure",
+      "Protocol Buffers",
+      "gRPC Architecture",
+      "Event-Driven Systems",
+      "Message Security",
+      "Idempotency Patterns"
     ],
     "hasOccupation": {
       "@type": "Occupation",
@@ -202,6 +222,20 @@
         },
         "datePublished": "2025-12-24",
         "keywords": "network latency breakthrough, 20ns packet processing, zero-abstraction networking, memory-mapped NIC discovery, bare metal optimization, deterministic networking innovation, HFT networking revolution"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Open Source Project",
+        "name": "OpenTX - Canonical Transaction Protocol & Payment Gateway",
+        "description": "Production-grade open-source payment gateway bridging legacy ISO 8583 networks and modern cloud-native payment systems. Features multi-network support (Visa, Mastercard, NPCI/RuPay), Protobuf-first canonical transaction schema, message-level security, exactly-once semantics, and full observability with OpenTelemetry.",
+        "url": "https://github.com/krish567366/OpenTX",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "GitHub Repository",
+          "value": "krish567366/OpenTX"
+        },
+        "datePublished": "2026-01-24",
+        "keywords": "payment gateway, ISO 8583, canonical transaction protocol, FinTech infrastructure, Protocol Buffers, gRPC, Kafka, OpenTelemetry, payment network modernization, multi-network support, event-driven architecture, message security, idempotency, Go programming"
       }
     ]
   },
@@ -273,6 +307,15 @@
       "@type": "Service", 
       "name": "Low-Latency Programming",
       "description": "Kernel bypass networking, FPGA programming, and bare metal optimization achieving 20-50ns network latency",
+      "provider": {
+        "@type": "Person",
+        "name": "Krishna Bajpai"
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Payment Gateway Development",
+      "description": "Production-grade payment gateway systems with ISO 8583 integration, canonical transaction protocols, and multi-network support for modern FinTech infrastructure",
       "provider": {
         "@type": "Person",
         "name": "Krishna Bajpai"

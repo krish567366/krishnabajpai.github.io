@@ -88,6 +88,12 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://krishnabajpai.me/case-studies/opentx-payment-gateway</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-01-24</lastmod>
+  </url>
 
   <!-- Individual Tool Pages (20 unique tools) -->
   <url>

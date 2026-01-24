@@ -73,6 +73,20 @@ const CaseStudies = () => {
       metricLabel: "conversion increase",
       technologies: ["Python", "TensorFlow", "Redis", "A/B Testing", "Spark"],
       timeline: "5 months"
+    },
+    {
+      id: "opentx-payment-gateway",
+      client: "OpenTX - Open Source",
+      industry: "FinTech",
+      challenge: "Legacy ISO 8583 payment networks lack modern cloud-native integration, making it difficult for fintech companies to connect to card networks. No standardized canonical transaction model across Visa, Mastercard, NPCI/RuPay.",
+      approach: "Built production-grade payment gateway with Protobuf-first canonical transaction protocol, implemented pluggable adapters for multiple networks, added message-level security with encryption/signing, and integrated exactly-once semantics with state machine for idempotency.",
+      results: "Open-source payment gateway bridging legacy and modern systems, full observability with OpenTelemetry and Prometheus, event-driven architecture with Kafka integration, production-ready with circuit breakers and rate limiting.",
+      testimonial: "OpenTX provides a modernization layer that enables cloud-native payment systems to seamlessly integrate with legacy card networks. A game-changer for fintech infrastructure.",
+      testimonialAuthor: "Open Source Community",
+      metric: "Multi-Network",
+      metricLabel: "payment protocol",
+      technologies: ["Go", "Protocol Buffers", "Kafka", "OpenTelemetry", "Docker", "Kubernetes", "gRPC", "ISO 8583"],
+      timeline: "Open Source Project"
     }
   ];
 
@@ -129,6 +143,11 @@ const CaseStudies = () => {
                 "@type": "CreativeWork",
                 "name": "Retail Personalization",
                 "about": "Deep learning recommendations, 340% conversion increase, $4.7M revenue."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "OpenTX Payment Gateway",
+                "about": "Open-source payment gateway bridging legacy ISO 8583 networks and modern cloud-native systems with canonical transaction protocol."
               }
             ]
           }
@@ -677,6 +696,91 @@ const CaseStudies = () => {
                             
                             <path d="M95 165L85 175L95 185" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" />
                             <path d="M95 185L105 175L95 165" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" />
+                          </svg>
+                        </div>
+                      )}
+                      
+                      {case_.id === "opentx-payment-gateway" && (
+                        <div className="absolute inset-0 opacity-20">
+                          {/* Payment gateway doodles */}
+                          <svg width="100%" height="100%" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-accent">
+                            {/* Network nodes */}
+                            <circle cx="50" cy="40" r="15" stroke="currentColor" strokeWidth="1" />
+                            <text x="50" y="45" fontSize="10" textAnchor="middle" fill="currentColor">VISA</text>
+                            
+                            <circle cx="150" cy="40" r="15" stroke="currentColor" strokeWidth="1" />
+                            <text x="150" y="45" fontSize="10" textAnchor="middle" fill="currentColor">MC</text>
+                            
+                            <circle cx="250" cy="40" r="15" stroke="currentColor" strokeWidth="1" />
+                            <text x="250" y="45" fontSize="10" textAnchor="middle" fill="currentColor">RuPay</text>
+                            
+                            {/* ISO 8583 Layer */}
+                            <rect x="20" y="80" width="260" height="40" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
+                            <text x="150" y="105" fontSize="10" textAnchor="middle" fill="currentColor">ISO 8583 Layer</text>
+                            
+                            {/* Canonical Protocol */}
+                            <rect x="30" y="140" width="240" height="35" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                            <text x="150" y="162" fontSize="10" textAnchor="middle" fill="currentColor" fontWeight="bold">Canonical Protocol</text>
+                            
+                            {/* Security Layer */}
+                            <rect x="40" y="195" width="220" height="30" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" />
+                            <text x="150" y="215" fontSize="9" textAnchor="middle" fill="currentColor">Security & Idempotency</text>
+                            
+                            {/* API Layer */}
+                            <rect x="25" y="245" width="50" height="25" stroke="currentColor" strokeWidth="1" />
+                            <text x="50" y="262" fontSize="9" textAnchor="middle" fill="currentColor">gRPC</text>
+                            
+                            <rect x="85" y="245" width="50" height="25" stroke="currentColor" strokeWidth="1" />
+                            <text x="110" y="262" fontSize="9" textAnchor="middle" fill="currentColor">REST</text>
+                            
+                            <rect x="145" y="245" width="50" height="25" stroke="currentColor" strokeWidth="1" />
+                            <text x="170" y="262" fontSize="9" textAnchor="middle" fill="currentColor">Kafka</text>
+                            
+                            <rect x="205" y="245" width="70" height="25" stroke="currentColor" strokeWidth="1" />
+                            <text x="240" y="262" fontSize="9" textAnchor="middle" fill="currentColor">WebSocket</text>
+                            
+                            {/* Connection lines */}
+                            <path d="M50 55L50 80" stroke="currentColor" strokeWidth="1" markerEnd="url(#arrowhead)" />
+                            <path d="M150 55L150 80" stroke="currentColor" strokeWidth="1" markerEnd="url(#arrowhead)" />
+                            <path d="M250 55L250 80" stroke="currentColor" strokeWidth="1" markerEnd="url(#arrowhead)" />
+                            
+                            <path d="M150 120L150 140" stroke="currentColor" strokeWidth="1.5" markerEnd="url(#arrowhead)" />
+                            <path d="M150 175L150 195" stroke="currentColor" strokeWidth="1" markerEnd="url(#arrowhead)" />
+                            <path d="M150 225L150 245" stroke="currentColor" strokeWidth="1" markerEnd="url(#arrowhead)" />
+                            
+                            {/* Data flow indicators */}
+                            <path d="M10 100C20 95 30 100 40 95" stroke="currentColor" strokeWidth="0.5" strokeDasharray="1 1" />
+                            <path d="M260 100C270 95 280 100 290 95" stroke="currentColor" strokeWidth="0.5" strokeDasharray="1 1" />
+                            
+                            {/* Lock/security icons */}
+                            <rect x="10" y="200" width="8" height="10" stroke="currentColor" strokeWidth="0.5" />
+                            <path d="M12 200C12 197 14 195 16 195C18 195 20 197 20 200" stroke="currentColor" strokeWidth="0.5" fill="none" />
+                            
+                            <rect x="282" y="200" width="8" height="10" stroke="currentColor" strokeWidth="0.5" />
+                            <path d="M284 200C284 197 286 195 288 195C290 195 292 197 292 200" stroke="currentColor" strokeWidth="0.5" fill="none" />
+                            
+                            {/* Protobuf symbols */}
+                            <circle cx="15" cy="157" r="4" stroke="currentColor" strokeWidth="0.5" />
+                            <path d="M13 157L17 157" stroke="currentColor" strokeWidth="0.5" />
+                            <path d="M15 155L15 159" stroke="currentColor" strokeWidth="0.5" />
+                            
+                            <circle cx="285" cy="157" r="4" stroke="currentColor" strokeWidth="0.5" />
+                            <path d="M283 157L287 157" stroke="currentColor" strokeWidth="0.5" />
+                            <path d="M285 155L285 159" stroke="currentColor" strokeWidth="0.5" />
+                            
+                            {/* Observability indicators */}
+                            <path d="M5 15C8 12 12 15 15 12" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" />
+                            <circle cx="10" cy="13" r="1.5" fill="currentColor" />
+                            
+                            <path d="M285 15C288 12 292 15 295 12" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" />
+                            <circle cx="290" cy="13" r="1.5" fill="currentColor" />
+                            
+                            {/* Arrow marker definition */}
+                            <defs>
+                              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                              </marker>
+                            </defs>
                           </svg>
                         </div>
                       )}

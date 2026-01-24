@@ -38,6 +38,15 @@ const CaseStudies = () => {
       result: "73% reduction in processing time, 45% fewer errors",
       metric: "73%",
       metricLabel: "faster processing"
+    },
+    {
+      id: "opentx-payment-gateway",
+      client: "OpenTX - Open Source",
+      challenge: "Legacy payment networks lack modern cloud integration",
+      solution: "Canonical transaction protocol bridging ISO 8583 and cloud systems",
+      result: "Multi-network support with full observability and security",
+      metric: "Multi-Network",
+      metricLabel: "payment protocol"
     }
   ];
 
