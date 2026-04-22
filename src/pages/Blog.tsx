@@ -6,6 +6,126 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
+      id: "ai-agents-multi-agent-systems",
+      title: "AI Agents & Multi‑Agent Systems: From Chatbots to Autonomous Teams",
+      excerpt: "A practical guide to agentic workflows and multi-agent architectures: patterns, reliability, and what to build in 2026.",
+      date: "2026-04-22",
+      readTime: "9 min read",
+      category: "AI Agents",
+      tags: ["Agents", "Multi-agent", "Workflows", "Enterprise AI"],
+      featured: true
+    },
+    {
+      id: "domain-specific-ai-dslms",
+      title: "Domain‑Specific AI (DSLMs): Why Industry Models Win in Enterprise",
+      excerpt: "Why industry models beat generic AI: accuracy, cost, governance, and a blueprint to ship domain-grade systems.",
+      date: "2026-04-22",
+      readTime: "8 min read",
+      category: "Enterprise AI",
+      tags: ["DSLM", "RAG", "Governance", "Evaluation"],
+      featured: true
+    },
+    {
+      id: "ai-digital-coworkers",
+      title: "AI as Digital Coworkers: How Small Teams Scale to Enterprise Output",
+      excerpt: "Design digital coworkers with roles, permissions, and KPIs—so AI becomes a teammate, not a toy.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Productivity",
+      tags: ["Digital coworkers", "Ops", "Approvals", "Observability"],
+      featured: true
+    },
+    {
+      id: "quantum-ai-optimization-frontier",
+      title: "Quantum + AI: The Optimization Frontier (Practical Roadmap)",
+      excerpt: "Where quantum helps today: optimization, sampling, and hybrid search—plus a realistic roadmap to production.",
+      date: "2026-04-22",
+      readTime: "8 min read",
+      category: "Quantum Computing",
+      tags: ["Optimization", "Hybrid", "QAOA", "VQE"],
+      featured: true
+    },
+    {
+      id: "climate-tech-sustainability-ai",
+      title: "Climate Tech + Sustainability: Where AI Creates Real Leverage",
+      excerpt: "Energy optimization, carbon accounting, and climate risk modeling—high-ROI climate AI opportunities for 2026.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Climate Tech",
+      tags: ["Energy", "Carbon", "ESG", "Optimization"],
+      featured: true
+    },
+    {
+      id: "ai-cybersecurity-defense",
+      title: "AI Cybersecurity: Threat Detection, Deepfakes, and Defense Automation",
+      excerpt: "AI attacks are scaling—so are defenses. What to build for SOC automation and deepfake protection.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Cybersecurity",
+      tags: ["Threat detection", "Deepfakes", "SOC", "SIEM"],
+      featured: true
+    },
+    {
+      id: "ai-healthcare-biotech",
+      title: "AI in Healthcare & Biotech: Diagnostics, Drug Discovery, and Real Deployments",
+      excerpt: "Where healthcare AI is working today—and how to ship safely with evaluation and compliance.",
+      date: "2026-04-22",
+      readTime: "8 min read",
+      category: "Healthcare",
+      tags: ["Clinical NLP", "Imaging", "Compliance", "Biotech"],
+      featured: true
+    },
+    {
+      id: "no-code-ai-coding",
+      title: "No‑Code + AI Coding: Building Apps with Prompts (Without Chaos)",
+      excerpt: "A reliable workflow to build fast with prompts while keeping security, tests, and maintainability intact.",
+      date: "2026-04-22",
+      readTime: "6 min read",
+      category: "No-Code",
+      tags: ["Prompt-to-app", "Prototyping", "Security", "Testing"],
+      featured: true
+    },
+    {
+      id: "generative-ai-video-3d",
+      title: "Generative AI for Video, Games, and 3D: What’s Real vs Hype",
+      excerpt: "What’s production-ready in video/3D generation, what’s not, and where startups can win right now.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Generative AI",
+      tags: ["Video", "3D", "Creators", "Pipelines"],
+      featured: true
+    },
+    {
+      id: "hyper-personalization-ai",
+      title: "Hyper‑Personalization: AI Products That Adapt in Real Time",
+      excerpt: "Build adaptive UI/content systems with experimentation—without breaking user trust.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Product",
+      tags: ["Personalization", "Bandits", "Feature store", "Trust"],
+      featured: true
+    },
+    {
+      id: "physical-ai-robots-drones",
+      title: "Physical AI: Robots, Drones, and Real‑World Autonomy",
+      excerpt: "The perception→planning→control stack and the real constraints of deploying autonomy in the world.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Robotics",
+      tags: ["Autonomy", "Edge AI", "Control", "Safety"],
+      featured: true
+    },
+    {
+      id: "privacy-confidential-computing-ai",
+      title: "Privacy + Confidential Computing: Secure AI Systems in 2026",
+      excerpt: "Design patterns for privacy-by-design AI, enclaves, scoped retrieval, and audit-ready deployments.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Security",
+      tags: ["Privacy", "Enclaves", "Governance", "Compliance"],
+      featured: true
+    },
+    {
       id: "airport-ml-optimization",
       title: "How Machine Learning is Revolutionizing Airport Operations: Predictive Analytics for Aviation",
       excerpt: "ML transforms airport operations with 40% faster processing, predictive maintenance, and smart resource allocation. Complete guide to AI in aviation industry.",

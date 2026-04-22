@@ -58,6 +58,20 @@ import TimeSeriesSupplyChainForecasting from "./pages/blog/TimeSeriesSupplyChain
 import FraudDetectionRealTimeML from "./pages/blog/FraudDetectionRealTimeML";
 import RecommendationSystemScaling from "./pages/blog/RecommendationSystemScaling";
 
+// 2026 Trend Series
+import AIAgentsMultiAgentSystems from "./pages/blog/AIAgentsMultiAgentSystems";
+import DomainSpecificAI from "./pages/blog/DomainSpecificAI";
+import DigitalCoworkers from "./pages/blog/DigitalCoworkers";
+import QuantumAIOptimization from "./pages/blog/QuantumAIOptimization";
+import ClimateTechSustainabilityAI from "./pages/blog/ClimateTechSustainabilityAI";
+import AICybersecurity from "./pages/blog/AICybersecurity";
+import AIHealthcareBiotech from "./pages/blog/AIHealthcareBiotech";
+import NoCodeAICoding from "./pages/blog/NoCodeAICoding";
+import GenerativeAIVideo3D from "./pages/blog/GenerativeAIVideo3D";
+import HyperPersonalization from "./pages/blog/HyperPersonalization";
+import PhysicalAIRobotsDrones from "./pages/blog/PhysicalAIRobotsDrones";
+import PrivacyConfidentialComputing from "./pages/blog/PrivacyConfidentialComputing";
+
 // RSS Pages
 import RSSFeedPage from "./pages/RSSFeedPage";
 import RSSEndpoint from "./pages/RSSEndpoint";
@@ -115,6 +129,18 @@ const App = () => {
             
             {/* Blog Pages */}
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/ai-agents-multi-agent-systems" element={<AIAgentsMultiAgentSystems />} />
+            <Route path="/blog/domain-specific-ai-dslms" element={<DomainSpecificAI />} />
+            <Route path="/blog/ai-digital-coworkers" element={<DigitalCoworkers />} />
+            <Route path="/blog/quantum-ai-optimization-frontier" element={<QuantumAIOptimization />} />
+            <Route path="/blog/climate-tech-sustainability-ai" element={<ClimateTechSustainabilityAI />} />
+            <Route path="/blog/ai-cybersecurity-defense" element={<AICybersecurity />} />
+            <Route path="/blog/ai-healthcare-biotech" element={<AIHealthcareBiotech />} />
+            <Route path="/blog/no-code-ai-coding" element={<NoCodeAICoding />} />
+            <Route path="/blog/generative-ai-video-3d" element={<GenerativeAIVideo3D />} />
+            <Route path="/blog/hyper-personalization-ai" element={<HyperPersonalization />} />
+            <Route path="/blog/physical-ai-robots-drones" element={<PhysicalAIRobotsDrones />} />
+            <Route path="/blog/privacy-confidential-computing-ai" element={<PrivacyConfidentialComputing />} />
             <Route path="/blog/airport-ml-optimization" element={<AirportMLOptimization />} />
             <Route path="/blog/n8n-workflow-editor-react-flow" element={<N8nWorkflowEditor />} />
             <Route path="/blog/nvidia-parakeet-production-deployment" element={<NvidiaParakeetDeployment />} />
