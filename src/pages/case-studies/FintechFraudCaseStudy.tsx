@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import { Helmet } from "react-helmet";
 
 const FintechFraudCaseStudy = () => {
   return (
     <Layout>
+      <Helmet>
+        <link rel="canonical" href="https://krishnabajpai.me/case-studies/fintech-fraud-case-study" />
+      </Helmet>
       <div className="container mx-auto px-6 lg:px-8 py-16">
         {/* Breadcrumb */}
         <div className="mb-8">

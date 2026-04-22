@@ -68,6 +68,7 @@ const App = () => {
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <TrailingSlashRedirect />
           <Routes>
             {/* Main Pages */}
             <Route path="/" element={<Index />} />
