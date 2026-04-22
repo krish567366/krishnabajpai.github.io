@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // GitHub Pages SPA fallback:
+      // Redirect /some/route -> /?/some/route so index.html can restore it.
+      // Based on the widely-used "spa-github-pages" approach.
+      (function () {
+        var l = window.location;
+        var newUrl =
+          l.protocol +
+          "//" +
+          l.host +
+          "/?/" +
+          l.pathname.slice(1) +
+          l.search.replace(/&/g, "~and~") +
+          l.hash;
+        l.replace(newUrl);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
