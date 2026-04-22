@@ -71,6 +71,11 @@ import GenerativeAIVideo3D from "./pages/blog/GenerativeAIVideo3D";
 import HyperPersonalization from "./pages/blog/HyperPersonalization";
 import PhysicalAIRobotsDrones from "./pages/blog/PhysicalAIRobotsDrones";
 import PrivacyConfidentialComputing from "./pages/blog/PrivacyConfidentialComputing";
+import AIWillReplaceJob2026 from "./pages/blog/AIWillReplaceJob2026";
+import BuiltStartupUsingOnlyAI from "./pages/blog/BuiltStartupUsingOnlyAI";
+import Top5AIToolsNoOneTalkingAbout from "./pages/blog/Top5AIToolsNoOneTalkingAbout";
+import QuantumAIExplained60Seconds from "./pages/blog/QuantumAIExplained60Seconds";
+import FutureOfJobsWithAIAgents from "./pages/blog/FutureOfJobsWithAIAgents";
 
 // RSS Pages
 import RSSFeedPage from "./pages/RSSFeedPage";
@@ -141,6 +146,11 @@ const App = () => {
             <Route path="/blog/hyper-personalization-ai" element={<HyperPersonalization />} />
             <Route path="/blog/physical-ai-robots-drones" element={<PhysicalAIRobotsDrones />} />
             <Route path="/blog/privacy-confidential-computing-ai" element={<PrivacyConfidentialComputing />} />
+            <Route path="/blog/ai-will-replace-x-job-2026" element={<AIWillReplaceJob2026 />} />
+            <Route path="/blog/built-startup-using-only-ai" element={<BuiltStartupUsingOnlyAI />} />
+            <Route path="/blog/top-5-ai-tools-no-one-talking-about" element={<Top5AIToolsNoOneTalkingAbout />} />
+            <Route path="/blog/quantum-ai-explained-60-seconds" element={<QuantumAIExplained60Seconds />} />
+            <Route path="/blog/future-of-jobs-with-ai-agents" element={<FutureOfJobsWithAIAgents />} />
             <Route path="/blog/airport-ml-optimization" element={<AirportMLOptimization />} />
             <Route path="/blog/n8n-workflow-editor-react-flow" element={<N8nWorkflowEditor />} />
             <Route path="/blog/nvidia-parakeet-production-deployment" element={<NvidiaParakeetDeployment />} />

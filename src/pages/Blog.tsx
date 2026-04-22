@@ -6,6 +6,56 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
+      id: "ai-will-replace-x-job-2026",
+      title: "Will AI Replace Your Job in 2026? A Practical Risk Map (and How to Adapt)",
+      excerpt: "A realistic framework to estimate automation risk in 2026—and a concrete plan to future-proof your career.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Future of Work",
+      tags: ["Jobs", "Automation", "AI Agents", "Upskilling"],
+      featured: true
+    },
+    {
+      id: "built-startup-using-only-ai",
+      title: "I Built a Startup Using Only AI: The Real Playbook (No Fluff)",
+      excerpt: "A build loop that actually works: wedge selection, validation, MVP, instrumentation, and guardrails for AI-powered execution.",
+      date: "2026-04-22",
+      readTime: "6 min read",
+      category: "Startups",
+      tags: ["MVP", "Validation", "Automation", "Solo founder"],
+      featured: true
+    },
+    {
+      id: "top-5-ai-tools-no-one-talking-about",
+      title: "Top 5 AI Tools No One Is Talking About (But You Should Use)",
+      excerpt: "Underrated AI tooling: evaluation, observability, privacy middleware, batch inference, and retrieval quality measurement.",
+      date: "2026-04-22",
+      readTime: "6 min read",
+      category: "Tooling",
+      tags: ["Evals", "Observability", "RAG", "Privacy"],
+      featured: true
+    },
+    {
+      id: "quantum-ai-explained-60-seconds",
+      title: "Quantum AI Explained in 60 Seconds (Then the Real Details)",
+      excerpt: "A fast explanation of quantum + AI, followed by the practical truth: where hybrid methods matter and how to evaluate them.",
+      date: "2026-04-22",
+      readTime: "5 min read",
+      category: "Quantum Computing",
+      tags: ["Quantum", "Optimization", "Hybrid", "Roadmap"],
+      featured: true
+    },
+    {
+      id: "future-of-jobs-with-ai-agents",
+      title: "Future of Jobs with AI Agents: Roles That Grow (and Roles That Shrink)",
+      excerpt: "Agents automate workflows, not just writing. How roles evolve, what new jobs appear, and how companies should reorganize in 2026.",
+      date: "2026-04-22",
+      readTime: "7 min read",
+      category: "Future of Work",
+      tags: ["Agents", "Org design", "Workforce", "Productivity"],
+      featured: true
+    },
+    {
       id: "ai-agents-multi-agent-systems",
       title: "AI Agents & Multi‑Agent Systems: From Chatbots to Autonomous Teams",
       excerpt: "A practical guide to agentic workflows and multi-agent architectures: patterns, reliability, and what to build in 2026.",
