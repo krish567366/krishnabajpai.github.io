@@ -69,7 +69,8 @@
     <!-- Fonts and Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kalam:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Kalam:wght@400;700&display=swap"></noscript>
     
     <link rel="preload" href="/assets/hero-flow-C6ssT0-M.png" as="image">
     
@@ -108,7 +109,15 @@
     <link rel="me" href="https://orcid.org/0009-0006-5618-1834" />
     
     <!-- ShareThis Integration -->
-    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=your-property-id' async='async'></script>
+    <script>
+      // Lazy-load ShareThis after page load to avoid blocking LCP.
+      window.addEventListener("load", function () {
+        var s = document.createElement("script");
+        s.src = "https://platform-api.sharethis.com/js/sharethis.js#property=your-property-id";
+        s.async = true;
+        document.head.appendChild(s);
+      });
+    </script>
     
     <!-- Technical SEO Schema -->
     <script type="application/ld+json">
