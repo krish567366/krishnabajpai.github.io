@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
@@ -19,6 +19,9 @@ import Contact from "./pages/Contact";
 import Tools from "./pages/Tools";
 import ToolDetail from "./pages/ToolDetail";
 import NotFound from "./pages/NotFound";
+import ServiceDetail from "./pages/ServiceDetail";
+import ResearchDetail from "./pages/ResearchDetail";
+import DiscoveryDetail from "./pages/DiscoveryDetail";
 
 // Specialized Pages
 import Privacy from "./pages/Privacy";
@@ -93,13 +96,22 @@ const App = () => {
             
             {/* Service Pages */}
             <Route path="/services/ai-architecture" element={<AIArchitectureService />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
             
             {/* Case Study Pages */}
             <Route path="/case-studies/manufacturing-case-study" element={<ManufacturingCaseStudy />} />
+            <Route
+              path="/case-studies/manufacturing-predictive"
+              element={<Navigate to="/case-studies/manufacturing-case-study" replace />}
+            />
             <Route path="/case-studies/fintech-fraud-case-study" element={<FintechFraudCaseStudy />} />
             <Route path="/case-studies/supply-chain-case-study" element={<SupplyChainCaseStudy />} />
             <Route path="/case-studies/healthcare-automation-case-study" element={<HealthcareAutomationCaseStudy />} />
             <Route path="/case-studies/opentx-payment-gateway" element={<OpenTXCaseStudy />} />
+
+            {/* Research & Discoveries */}
+            <Route path="/research/:slug" element={<ResearchDetail />} />
+            <Route path="/discoveries/:slug" element={<DiscoveryDetail />} />
             
             {/* Blog Pages */}
             <Route path="/blog" element={<Blog />} />

@@ -15,6 +15,11 @@ const ROUTES = [
   "/case-studies/manufacturing-case-study",
   "/case-studies/supply-chain-case-study",
   "/case-studies/opentx-payment-gateway",
+  "/services/quantum-optimization",
+  "/research/markets-adversarial-control-systems",
+  "/research/market-control-illusion",
+  "/research/pan-omic-framework",
+  "/discoveries/ultra-low-latency-execution-engine",
 ];
 
 async function ensureDir(dirPath) {
