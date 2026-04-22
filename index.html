@@ -110,13 +110,33 @@
     
     <!-- ShareThis Integration -->
     <script>
-      // Lazy-load ShareThis after page load to avoid blocking LCP.
-      window.addEventListener("load", function () {
-        var s = document.createElement("script");
-        s.src = "https://platform-api.sharethis.com/js/sharethis.js#property=your-property-id";
-        s.async = true;
-        document.head.appendChild(s);
-      });
+      // Defer ShareThis until user intent (keeps it off critical path).
+      (function () {
+        var loaded = false;
+        function loadShareThis() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement("script");
+          s.src = "https://platform-api.sharethis.com/js/sharethis.js#property=your-property-id";
+          s.async = true;
+          document.head.appendChild(s);
+          window.removeEventListener("pointerdown", loadShareThis, true);
+          window.removeEventListener("scroll", loadShareThis, true);
+          window.removeEventListener("keydown", loadShareThis, true);
+        }
+
+        // Load on first interaction.
+        window.addEventListener("pointerdown", loadShareThis, { capture: true, once: true });
+        window.addEventListener("scroll", loadShareThis, { capture: true, once: true, passive: true });
+        window.addEventListener("keydown", loadShareThis, { capture: true, once: true });
+
+        // Also load when browser is idle (best effort).
+        if ("requestIdleCallback" in window) {
+          window.requestIdleCallback(loadShareThis, { timeout: 4000 });
+        } else {
+          setTimeout(loadShareThis, 4000);
+        }
+      })();
     </script>
     
     <!-- Technical SEO Schema -->
