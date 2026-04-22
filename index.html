@@ -1953,19 +1953,6 @@
       "testimonial": [
         {
           "@type": "Review",
-          "itemReviewed": {
-            "@type": "Product",
-            "name": "Enterprise AI Solutions",
-            "provider": {
-              "@type": "Organization",
-              "name": "Krishna Bajpai Consulting",
-              "founder": {
-                "@type": "Person",
-                "@id": "https://krishnabajpai.me/#person",
-                "name": "Krishna Bajpai"
-              }
-            }
-          },
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "4.8",
@@ -1984,15 +1971,6 @@
         },
         {
           "@type": "Review",
-          "itemReviewed": {
-            "@type": "Product",
-            "name": "Healthcare AI Solutions",
-            "provider": {
-              "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai"
-            }
-          },
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "4.9",
@@ -2011,15 +1989,6 @@
         },
         {
           "@type": "Review",
-          "itemReviewed": {
-            "@type": "Product",
-            "name": "Quantitative Finance & Trading Systems",
-            "provider": {
-              "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai"
-            }
-          },
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "4.9",
@@ -2061,11 +2030,6 @@
       "review": [
         {
           "@type": "Review",
-          "itemReviewed": {
-            "@type": "Product",
-            "@id": "https://krishnabajpai.me/services/ml-consulting",
-            "name": "Machine Learning Consulting"
-          },
           "reviewRating": {
             "@type": "Rating",
             "ratingValue": "4.9",
@@ -2091,6 +2055,111 @@
         "ratingCount": "48",
         "reviewCount": "48"
       }
+    }
+    </script>
+
+    <!-- Standalone Review Snippets (avoid nested itemReviewed directional conflicts) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Review",
+          "@id": "https://krishnabajpai.me/#review-enterprise-ai",
+          "itemReviewed": {
+            "@type": "Product",
+            "@id": "https://krishnabajpai.me/#product-enterprise-ai",
+            "name": "Enterprise AI Solutions"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Outstanding AI consulting services. Krishna's expertise in quantum computing and enterprise AI solutions delivered exceptional results.",
+          "author": {
+            "@type": "Person",
+            "name": "Fortune 500 CTO"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Global Technology Review"
+          }
+        },
+        {
+          "@type": "Review",
+          "@id": "https://krishnabajpai.me/#review-healthcare-ai",
+          "itemReviewed": {
+            "@type": "Product",
+            "@id": "https://krishnabajpai.me/#product-healthcare-ai",
+            "name": "Healthcare AI Solutions"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Krishna's AI solutions revolutionized our healthcare operations. His expertise in MLOps and AI architecture is unmatched.",
+          "author": {
+            "@type": "Person",
+            "name": "Healthcare Industry Leader"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Healthcare Innovation Magazine"
+          }
+        },
+        {
+          "@type": "Review",
+          "@id": "https://krishnabajpai.me/#review-quant-finance",
+          "itemReviewed": {
+            "@type": "Product",
+            "@id": "https://krishnabajpai.me/#product-quant-finance",
+            "name": "Quantitative Finance & Trading Systems"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "reviewBody": "Krishna's ultra-low latency trading systems achieved extraordinary 890ns execution times. His expertise in quantitative finance and algorithmic trading delivered unprecedented performance for our high-frequency trading operations.",
+          "author": {
+            "@type": "Person",
+            "name": "Institutional Trading Executive"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Quantitative Finance Review"
+          }
+        },
+        {
+          "@type": "Review",
+          "@id": "https://krishnabajpai.me/#review-ml-consulting",
+          "itemReviewed": {
+            "@type": "Product",
+            "@id": "https://krishnabajpai.me/services/ml-consulting",
+            "name": "Machine Learning Consulting"
+          },
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.9",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Fortune 500 CTO"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "TechReview"
+          },
+          "reviewBody": "Exceptional ML consulting service that transformed our business operations."
+        }
+      ]
     }
     </script>
 
