@@ -64,6 +64,7 @@
     <loc>https://krishnabajpai.me/testimonials</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
+    <lastmod>2026-04-22</lastmod>
   </url>
 
   <!-- Tools Pages -->
@@ -71,6 +72,7 @@
     <loc>https://krishnabajpai.me/tools</loc>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
+    <lastmod>2026-04-22</lastmod>
   </url>
 
   <!-- Individual Case Studies -->
