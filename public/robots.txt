@@ -9,6 +9,9 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /cache/
+Disallow: /cdn-cgi/
+Disallow: /search
+Disallow: /search/
 
 # Sitemap
 Sitemap: https://krishnabajpai.me/sitemap.xml
