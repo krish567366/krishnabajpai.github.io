@@ -197,6 +197,36 @@ const AICybersecurity = () => {
                     <strong>Low-noise</strong>: if it increases alert volume, it will be removed.
                   </li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A SOC uses an AI copilot to triage EDR + SIEM alerts and draft incident tickets. Actions (like isolation) require
+                  explicit approval until confidence is proven.
+                </p>
+                <ul>
+                  <li><strong>Lower triage time</strong> per alert via summarization + evidence linking</li>
+                  <li><strong>Reduced noise</strong> by clustering duplicate alerts into incidents</li>
+                  <li><strong>Fewer mistakes</strong> by forcing citations and approval gates</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Telemetry</strong>: SIEM + EDR + IAM + ticket system</li>
+                  <li><strong>Normalization</strong>: common incident schema + enrichment</li>
+                  <li><strong>Playbooks</strong>: curated runbooks + safe action templates</li>
+                  <li><strong>Safety</strong>: redaction + least privilege + approvals for high-risk actions</li>
+                  <li><strong>Evaluation</strong>: labeled incidents + precision@k + false-positive cost tracking</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Ingest alerts</li>
+                  <li>Cluster into incidents</li>
+                  <li>Enrich + retrieve runbooks</li>
+                  <li>Draft summary + recommended steps</li>
+                  <li>Human approve containment</li>
+                  <li>Execute + log evidence</li>
+                </ol>
               </article>
             </div>
           </div>

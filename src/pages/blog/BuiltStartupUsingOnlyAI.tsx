@@ -178,6 +178,36 @@ const BuiltStartupUsingOnlyAI = () => {
                     <strong>Supportability</strong>: traces + error reporting so you can debug quickly.
                   </li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A solo founder builds a “sales ops copilot” for a niche (e.g., agencies): lead intake → enrichment → follow-ups → CRM updates,
+                  with human approval for outbound messaging in the beginning.
+                </p>
+                <ul>
+                  <li><strong>Faster iteration</strong>: ship weekly experiments instead of monthly</li>
+                  <li><strong>Clear ROI</strong>: time saved per rep and improved follow-up consistency</li>
+                  <li><strong>Lower chaos</strong>: specs + tests + audit logs prevent “AI surprises”</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Product loop</strong>: analytics + experiments + feedback capture</li>
+                  <li><strong>Core app</strong>: auth, DB migrations, role/tenant controls</li>
+                  <li><strong>AI</strong>: extraction/drafting with schemas + evaluation sets</li>
+                  <li><strong>Integrations</strong>: CRM/email/calendar via a tool gateway</li>
+                  <li><strong>Ops</strong>: tracing, rate limits, cost budgets, and rollbacks</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Pick wedge workflow + KPI</li>
+                  <li>Validate with calls + pre-sell</li>
+                  <li>Spec + scaffold MVP</li>
+                  <li>Add guardrails + tests</li>
+                  <li>Launch + measure</li>
+                  <li>Automate low-risk steps first</li>
+                </ol>
               </article>
             </div>
           </div>

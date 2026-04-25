@@ -235,6 +235,36 @@ const AIAgentsMultiAgentSystems = () => {
                   <li>Instrument everything: traces, costs, acceptance tests, and human feedback.</li>
                   <li>Automate low-risk steps first; keep approvals for risky actions.</li>
                 </ol>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A support team deploys an agent for triage + draft responses, with human approval for anything that can affect
+                  billing, cancellations, or compliance.
+                </p>
+                <ul>
+                  <li><strong>Faster time-to-first-response</strong> (often the first KPI that improves)</li>
+                  <li><strong>Lower backlog</strong> by automating classification/routing and drafting</li>
+                  <li><strong>Safe automation</strong> by restricting tool permissions and requiring approvals</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Orchestration</strong>: state machine + retries + budgets + step caps</li>
+                  <li><strong>Tools</strong>: typed wrappers (ticket API, KB search, CRM) with allowlists</li>
+                  <li><strong>Memory</strong>: short-term task state + controlled long-term context</li>
+                  <li><strong>Evaluation</strong>: golden tickets + policy tests + regression suite</li>
+                  <li><strong>Observability</strong>: traces, costs, tool-call logs, and approvals</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Ingest ticket + context</li>
+                  <li>Classify + retrieve KB</li>
+                  <li>Draft response + action plan</li>
+                  <li>Verify (policy + confidence)</li>
+                  <li>Human approve (if needed)</li>
+                  <li>Act + log evidence</li>
+                </ol>
               </article>
             </div>
           </div>

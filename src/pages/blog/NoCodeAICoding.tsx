@@ -170,6 +170,36 @@ const NoCodeAICoding = () => {
                     <strong>Maintainability</strong>: prompts/config live in one place; changes are testable.
                   </li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A founder builds an internal “Ops Request” app (intake → approval → fulfillment) with AI-assisted extraction and drafting.
+                  A realistic win looks like:
+                </p>
+                <ul>
+                  <li><strong>2–5× faster</strong> time-to-first-usable MVP</li>
+                  <li><strong>Fewer back-and-forths</strong> by extracting structured fields from messy requests</li>
+                  <li><strong>Stable maintenance</strong> because permissions and schemas are explicit</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Spec</strong>: acceptance criteria + edge cases (single source of truth)</li>
+                  <li><strong>Data</strong>: SQL DB with migrations + constraints</li>
+                  <li><strong>Auth</strong>: SSO or standard auth with roles + row-level checks</li>
+                  <li><strong>AI layer</strong>: extraction + drafting with schemas and tests</li>
+                  <li><strong>Ops</strong>: error reporting, audit logs, backups, and rate limits</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Define job-to-be-done + KPI</li>
+                  <li>Design data model + permissions</li>
+                  <li>Generate scaffold</li>
+                  <li>Add guardrails + tests</li>
+                  <li>Ship + instrument</li>
+                  <li>Iterate safely</li>
+                </ol>
               </article>
             </div>
           </div>
