@@ -61,35 +61,85 @@ const Top5AIToolsNoOneTalkingAbout = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    The underrated “AI tools” are not model wrappers—they’re the tools that make AI{" "}
+                    <strong>measurable, debuggable, and safe</strong>.
+                  </li>
+                  <li>
+                    If you implement only one thing this week, build a tiny{" "}
+                    <strong>evaluation harness</strong>.
+                  </li>
+                </ul>
+
                 <h2>1) Evaluation harnesses (the real moat)</h2>
                 <p>
-                  If you can’t measure quality, you can’t improve it. Build a regression suite for your
-                  prompts, tools, and workflows.
+                  Teams fail with AI because they can’t tell if they improved or broke the system. An
+                  evaluation harness is a regression suite for prompts, RAG, and agent workflows.
                 </p>
+                <ul>
+                  <li>
+                    <strong>Golden tasks</strong>: 50–200 representative inputs with expected outputs.
+                  </li>
+                  <li>
+                    <strong>Scoring</strong>: exact match where possible, rubric scoring where not.
+                  </li>
+                  <li>
+                    <strong>Failure buckets</strong>: retrieval miss, tool error, reasoning error, policy violation.
+                  </li>
+                </ul>
 
                 <h2>2) Observability + traces for agents</h2>
                 <p>
-                  You need step-level traces to debug loops, tool errors, and cost spikes—especially with
-                  multi-step agents.
+                  Multi-step agents are basically distributed systems. If you can’t see each step, you
+                  can’t debug loops, tool misuse, or cost spikes.
                 </p>
+                <ul>
+                  <li><strong>Step traces</strong>: prompt → tool call → tool result → next step.</li>
+                  <li><strong>Costs</strong>: tokens, retries, tool latencies, cache hit rate.</li>
+                  <li><strong>Outcome tags</strong>: success, escalated, refused, policy blocked.</li>
+                </ul>
 
                 <h2>3) Privacy + redaction middleware</h2>
                 <p>
-                  A thin layer that strips PHI/PII, injects policy, and logs access will save your future
-                  self (and your customers).
+                  This is “boring” engineering that saves enterprise deals. A middleware layer should
+                  redact PII/PHI, enforce tenant boundaries, and log access.
                 </p>
+                <ul>
+                  <li><strong>Redaction</strong>: remove secrets/PII before model calls.</li>
+                  <li><strong>Policy injection</strong>: add rules (what the model must not do).</li>
+                  <li><strong>Audit</strong>: who accessed what, when, and why.</li>
+                </ul>
 
                 <h2>4) Offline batch inference pipelines</h2>
                 <p>
-                  Don’t run everything online. Batch jobs for extraction/classification can cut cost by an
-                  order of magnitude.
+                  If you’re using an LLM online for everything, you’ll pay a premium. Many workloads
+                  (classification, extraction, enrichment) are cheaper as batch jobs.
                 </p>
+                <ul>
+                  <li><strong>Use cases</strong>: tagging, summarization, entity extraction, enrichment.</li>
+                  <li><strong>Benefits</strong>: lower cost, better throughput, easier monitoring.</li>
+                  <li><strong>Tip</strong>: store outputs with versioned prompts/model IDs for reprocessing.</li>
+                </ul>
 
-                <h2>5) Retrieval quality tooling</h2>
+                <h2>5) Retrieval quality tooling (RAG reality)</h2>
                 <p>
-                  Most “RAG failures” are retrieval failures. Use tools that measure recall, chunk
-                  overlap, and answer coverage.
+                  Most “RAG failures” are retrieval failures. Measure retrieval like you’d measure search.
                 </p>
+                <ul>
+                  <li><strong>Recall@k</strong>: did the right chunk appear in the top-k results?</li>
+                  <li><strong>Chunking audits</strong>: overlap, boundaries, and “answer coverage”.</li>
+                  <li><strong>Query rewriting</strong>: track whether rewriting improved recall or added noise.</li>
+                </ul>
+
+                <h2>A simple upgrade path (in order)</h2>
+                <ol>
+                  <li>Start with evaluation (you need a scoreboard).</li>
+                  <li>Add tracing (you need to see what happened).</li>
+                  <li>Add safety middleware (you need to prevent disasters).</li>
+                  <li>Then optimize cost with batch + caching.</li>
+                </ol>
               </article>
             </div>
           </div>

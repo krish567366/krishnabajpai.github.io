@@ -61,26 +61,122 @@ const BuiltStartupUsingOnlyAI = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    You can build “with AI” extremely fast, but <strong>you still need judgment</strong>:
+                    what to build, for whom, and what “success” means.
+                  </li>
+                  <li>
+                    The fastest path is a <strong>wedge workflow</strong> + measurable ROI + a tiny MVP.
+                  </li>
+                  <li>
+                    The difference between leverage and chaos is <strong>specs, guardrails, and tests</strong>.
+                  </li>
+                </ul>
+
                 <h2>The “AI-only” reality</h2>
                 <p>
-                  AI can accelerate everything, but you still need product judgment: what to build, for
-                  whom, and how you’ll measure success.
+                  AI can write code, copy, and workflows. It cannot decide what customers will pay for,
+                  or what trade-offs you should accept. Your job as the founder is to reduce uncertainty.
                 </p>
+                <ul>
+                  <li>
+                    <strong>Product</strong>: what is the one painful job-to-be-done?
+                  </li>
+                  <li>
+                    <strong>Distribution</strong>: where do those users already live (Slack, LinkedIn, marketplaces)?
+                  </li>
+                  <li>
+                    <strong>Economics</strong>: is the payback obviously positive (time saved, revenue gained, risk reduced)?
+                  </li>
+                </ul>
 
-                <h2>Build loop (fast and repeatable)</h2>
+                <h2>Pick the right idea (filters that work)</h2>
+                <p>
+                  Avoid “AI wrapper” ideas where anyone can ship the same thing. Pick problems with real
+                  data, workflows, and integration requirements.
+                </p>
+                <ul>
+                  <li>
+                    <strong>High frequency</strong>: the workflow happens daily/weekly.
+                  </li>
+                  <li>
+                    <strong>High pain</strong>: it blocks revenue, compliance, or customer satisfaction.
+                  </li>
+                  <li>
+                    <strong>Clear KPI</strong>: time-to-value, conversion, churn, resolution time, fraud loss.
+                  </li>
+                  <li>
+                    <strong>Data advantage</strong>: you can access better context than a generic chatbot.
+                  </li>
+                </ul>
+
+                <h2>Validation in 48 hours (no excuses)</h2>
                 <ol>
-                  <li><strong>Pick a wedge</strong>: one painful workflow with a measurable KPI.</li>
-                  <li><strong>Validate</strong>: 10 user calls, payback math, and a landing page test.</li>
-                  <li><strong>Ship MVP</strong>: one workflow end-to-end (no “platform”).</li>
-                  <li><strong>Instrument</strong>: usage, retention, and time-to-value.</li>
-                  <li><strong>Systemize</strong>: add agent automations with approvals and logs.</li>
+                  <li>
+                    <strong>Write a one-page pitch</strong>: problem, ICP, promise, proof, price.
+                  </li>
+                  <li>
+                    <strong>Do 10 calls</strong>: ask about current workflow, tools, cost of failure, budget owner.
+                  </li>
+                  <li>
+                    <strong>Run a landing test</strong>: short demo + waitlist + “book a call” CTA.
+                  </li>
+                  <li>
+                    <strong>Pre-sell</strong>: even a small paid pilot beats 1,000 “looks cool” comments.
+                  </li>
                 </ol>
 
-                <h2>Guardrails that matter</h2>
+                <h2>Build loop (fast, repeatable, not fragile)</h2>
+                <ol>
+                  <li>
+                    <strong>Pick a wedge</strong>: one workflow end-to-end (no “platform”).
+                  </li>
+                  <li>
+                    <strong>Spec first</strong>: 15–25 acceptance criteria + edge cases.
+                  </li>
+                  <li>
+                    <strong>Scaffold</strong>: auth, data model, CRUD, UI; keep it boring.
+                  </li>
+                  <li>
+                    <strong>Ship</strong>: deploy early; instrument activation, retention, time-to-value.
+                  </li>
+                  <li>
+                    <strong>Systemize</strong>: add AI where it reduces steps (drafting, triage, extraction).
+                  </li>
+                </ol>
+
+                <h2>Where AI gives true leverage (examples)</h2>
                 <ul>
-                  <li><strong>Tests</strong> for core logic and auth boundaries</li>
-                  <li><strong>Cost controls</strong>: budgets, rate limits, caching</li>
-                  <li><strong>Safety</strong>: PII redaction + prompt injection defenses</li>
+                  <li>
+                    <strong>Extraction</strong>: turn emails/docs into structured fields automatically.
+                  </li>
+                  <li>
+                    <strong>Triage</strong>: prioritize, route, and summarize work for humans.
+                  </li>
+                  <li>
+                    <strong>Decision support</strong>: show options with evidence and risk flags.
+                  </li>
+                  <li>
+                    <strong>Automation with approvals</strong>: execute low-risk actions; escalate risky ones.
+                  </li>
+                </ul>
+
+                <h2>Guardrails that matter (so you don’t ship chaos)</h2>
+                <ul>
+                  <li>
+                    <strong>Tests</strong>: auth boundaries + core calculations + a small regression suite.
+                  </li>
+                  <li>
+                    <strong>Cost controls</strong>: budgets, caching, rate limits, and step caps for agents.
+                  </li>
+                  <li>
+                    <strong>Safety</strong>: redact PII, defend against prompt injection, log all tool calls.
+                  </li>
+                  <li>
+                    <strong>Supportability</strong>: traces + error reporting so you can debug quickly.
+                  </li>
                 </ul>
               </article>
             </div>

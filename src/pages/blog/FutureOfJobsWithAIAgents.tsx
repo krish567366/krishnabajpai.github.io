@@ -61,32 +61,99 @@ const FutureOfJobsWithAIAgents = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    AI agents don’t just “assist”—they <strong>execute workflows</strong>. That shifts
+                    headcount from repetitive tasks to ownership, QA, and operations.
+                  </li>
+                  <li>
+                    The biggest change is <strong>accountability</strong>: teams need to define what
+                    “good” looks like (KPIs + guardrails) before automation.
+                  </li>
+                  <li>
+                    Winners reorganize around <strong>workflows</strong>, not job titles.
+                  </li>
+                </ul>
+
                 <h2>The shift: from “assist” to “execute”</h2>
                 <p>
-                  Agents don’t just draft text—they complete tasks across tools. That changes how teams
-                  allocate work and where accountability sits.
+                  Most previous automation needed engineering time. Agents reduce that cost and make it
+                  viable to automate the “last mile”: triage, reconciliation, follow-ups, and coordination
+                  across tools. The result is not “everyone replaced”—it’s that the unit of work changes.
                 </p>
 
-                <h2>Roles that expand</h2>
+                <h2>What gets automated first (predictable pattern)</h2>
                 <ul>
-                  <li><strong>Workflow owners</strong> (define KPIs, guardrails, and success conditions)</li>
-                  <li><strong>AI operations</strong> (cost, latency, quality, monitoring)</li>
-                  <li><strong>Domain QA</strong> (evaluation sets and safe deployment)</li>
+                  <li>
+                    <strong>High-volume, low-risk</strong>: tier-1 support triage, report generation, tagging/routing.
+                  </li>
+                  <li>
+                    <strong>Structured decisions</strong>: approve/deny with clear rules + evidence.
+                  </li>
+                  <li>
+                    <strong>Cross-tool coordination</strong>: create tickets, update CRM, send summaries, schedule follow-ups.
+                  </li>
                 </ul>
 
-                <h2>Roles that compress</h2>
+                <h2>Roles that expand (new leverage points)</h2>
                 <ul>
-                  <li>Routine reporting and manual reconciliation</li>
-                  <li>Basic tier-1 support triage</li>
-                  <li>Repetitive content variations</li>
+                  <li>
+                    <strong>Workflow owners</strong>: define KPIs, guardrails, escalation rules, and acceptance tests.
+                  </li>
+                  <li>
+                    <strong>AI operations</strong>: cost, latency, quality monitoring, incident response, rollbacks.
+                  </li>
+                  <li>
+                    <strong>Domain QA / evaluators</strong>: build evaluation sets, red-team, validate changes.
+                  </li>
+                  <li>
+                    <strong>Data stewards</strong>: improve data quality so agents don’t operate on garbage.
+                  </li>
+                  <li>
+                    <strong>Security & compliance</strong>: tool permissions, audit trails, retention, policy enforcement.
+                  </li>
                 </ul>
 
-                <h2>Org design for 2026</h2>
+                <h2>Roles that compress (but don’t disappear)</h2>
+                <p>
+                  Compression usually means fewer people doing repetitive steps—while the remaining people move up
+                  the stack into exception handling, oversight, and higher-value work.
+                </p>
+                <ul>
+                  <li>Manual reconciliation and routine reporting</li>
+                  <li>Basic tier‑1 triage and template responses</li>
+                  <li>Repetitive content variations and simple research summaries</li>
+                </ul>
+
+                <h2>How teams should reorganize (practical org design)</h2>
                 <ol>
-                  <li><strong>Central platform</strong>: tool access, security, logging.</li>
-                  <li><strong>Distributed ownership</strong>: each team owns their agent workflows.</li>
-                  <li><strong>Measured rollouts</strong>: eval gates before broad access.</li>
+                  <li>
+                    <strong>Central platform team</strong>: tool access, security controls, logging/observability, shared eval harness.
+                  </li>
+                  <li>
+                    <strong>Distributed ownership</strong>: each function (support, sales, ops) owns its workflows and metrics.
+                  </li>
+                  <li>
+                    <strong>Release gates</strong>: eval before rollout; canary deployments; human approvals for risky actions.
+                  </li>
+                  <li>
+                    <strong>Exception playbooks</strong>: when the agent is uncertain, it must escalate in a consistent way.
+                  </li>
                 </ol>
+
+                <h2>Personal strategy (how to stay valuable)</h2>
+                <ul>
+                  <li>
+                    Learn to define <strong>systems</strong>: requirements, metrics, edge cases, and safeguards.
+                  </li>
+                  <li>
+                    Become the person who can <strong>debug workflows</strong> (not just write prompts).
+                  </li>
+                  <li>
+                    Build taste: distinguish “cool demo” from “reliable product”.
+                  </li>
+                </ul>
               </article>
             </div>
           </div>
