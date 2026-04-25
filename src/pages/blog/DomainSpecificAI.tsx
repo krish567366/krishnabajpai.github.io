@@ -90,6 +90,35 @@ const DomainSpecificAI = () => {
                   <li><strong>Data flywheel</strong>: feedback → triage → retrain/retrieve.</li>
                   <li><strong>Guardrails</strong>: policy, PII redaction, citations, approvals.</li>
                 </ol>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A legal team builds a contract-review assistant for NDAs and MSAs. The model doesn’t “decide”; it extracts clauses,
+                  flags risks, and cites evidence.
+                </p>
+                <ul>
+                  <li><strong>Faster review</strong> for standard agreements</li>
+                  <li><strong>Lower risk</strong> because outputs are citation-backed and auditable</li>
+                  <li><strong>Continuous improvement</strong> via a feedback loop on flagged clauses</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Retrieval</strong>: scoped RAG over approved templates + policies</li>
+                  <li><strong>Extraction</strong>: schema-based outputs (clauses, risks, obligations)</li>
+                  <li><strong>Evaluation</strong>: golden contracts + clause-level scoring</li>
+                  <li><strong>Governance</strong>: access controls, retention, and audit logs</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Ingest contract</li>
+                  <li>Extract clauses (schema)</li>
+                  <li>Retrieve policy + precedent</li>
+                  <li>Flag risks with citations</li>
+                  <li>Human review/approve</li>
+                  <li>Store feedback for improvement</li>
+                </ol>
               </article>
             </div>
           </div>

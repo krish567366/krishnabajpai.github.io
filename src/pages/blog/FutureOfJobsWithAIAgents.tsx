@@ -154,6 +154,34 @@ const FutureOfJobsWithAIAgents = () => {
                     Build taste: distinguish “cool demo” from “reliable product”.
                   </li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A finance ops team automates invoice reconciliation and exception routing using agents, with approvals for payments and audit logging for every action.
+                  A realistic win looks like:
+                </p>
+                <ul>
+                  <li><strong>Lower cycle time</strong> for month-end close</li>
+                  <li><strong>Fewer manual touches</strong> on routine reconciliation</li>
+                  <li><strong>Clear accountability</strong>: humans own the KPI, agents execute scoped steps</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Platform layer</strong>: tool gateway + permissions + audit logs</li>
+                  <li><strong>Workflow ownership</strong>: KPIs + acceptance tests + escalation rules</li>
+                  <li><strong>Evaluation</strong>: regression suite before rollout</li>
+                  <li><strong>Operations</strong>: canary deploys + monitoring + rollback</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Pick one high-volume workflow</li>
+                  <li>Define KPIs and guardrails</li>
+                  <li>Deploy with approvals</li>
+                  <li>Measure and iterate</li>
+                  <li>Scale to adjacent workflows</li>
+                </ol>
               </article>
             </div>
           </div>

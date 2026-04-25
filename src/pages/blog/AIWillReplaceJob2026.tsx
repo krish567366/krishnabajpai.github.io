@@ -151,6 +151,34 @@ const AIWillReplaceJob2026 = () => {
                   <li>Add measurement (time saved, error rate, escalation rate).</li>
                   <li>Publish the before/after as a portfolio artifact.</li>
                 </ol>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A customer support associate moves from answering repetitive questions to owning an “agent-assisted” workflow: triage, draft, verify, and escalation.
+                  A realistic win looks like:
+                </p>
+                <ul>
+                  <li><strong>More leverage</strong>: you handle exceptions and improve the workflow, not just tickets</li>
+                  <li><strong>Higher quality</strong>: fewer policy mistakes via checklists and approvals</li>
+                  <li><strong>Career insurance</strong>: you become the person who can measure and improve systems</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Agents</strong>: scoped tool access + step caps + budget limits</li>
+                  <li><strong>Evaluation</strong>: golden set of tasks + regression tests</li>
+                  <li><strong>Observability</strong>: traces + cost tracking + escalation analytics</li>
+                  <li><strong>Portfolio</strong>: publish writeups showing before/after metrics</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Identify repetitive tasks</li>
+                  <li>Define definition-of-done</li>
+                  <li>Automate low-risk steps</li>
+                  <li>Measure outcomes</li>
+                  <li>Iterate and document</li>
+                </ol>
               </article>
             </div>
           </div>

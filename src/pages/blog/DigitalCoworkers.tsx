@@ -88,6 +88,33 @@ const DigitalCoworkers = () => {
                   <li>Agent “workflow runner” with approvals and audit logging.</li>
                   <li>Startup-friendly “AI team in a box” for &lt;5 person teams.</li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A sales ops “digital coworker” updates CRM fields, drafts follow-ups, and schedules reminders. Humans approve outbound messages at first.
+                </p>
+                <ul>
+                  <li><strong>More consistency</strong>: fewer leads fall through the cracks</li>
+                  <li><strong>Faster cycle time</strong>: quicker follow-ups and cleaner CRM</li>
+                  <li><strong>Safer automation</strong>: approvals + audit logs prevent mistakes</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Tool gateway</strong>: CRM/email/calendar with allowlists and scopes</li>
+                  <li><strong>Policies</strong>: what can be sent, when, and to whom</li>
+                  <li><strong>Evaluation</strong>: golden workflows + regression tests</li>
+                  <li><strong>Observability</strong>: step traces + costs + success rates</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Ingest lead + context</li>
+                  <li>Draft follow-up + next steps</li>
+                  <li>Human approve outbound</li>
+                  <li>Update CRM + schedule reminders</li>
+                  <li>Measure conversion + iterate</li>
+                </ol>
               </article>
             </div>
           </div>
