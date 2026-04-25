@@ -137,6 +137,34 @@ const GenerativeAIVideo3D = () => {
                   <li><strong>Model drift</strong>: outputs change; templates and approval rules keep teams stable.</li>
                   <li><strong>Overpromising</strong>: sell “faster workflow” not “fully automated studio”.</li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A creator team turns one 20‑minute video into shorts for three platforms. A realistic “win” looks like:
+                </p>
+                <ul>
+                  <li><strong>3–6× faster</strong> repurposing (cut selection + captions + hooks)</li>
+                  <li><strong>Lower revision cycles</strong> by standardizing templates and brand rules</li>
+                  <li><strong>Fewer compliance misses</strong> using automated checks before publishing</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Ingest</strong>: upload + transcript + scene segmentation</li>
+                  <li><strong>Editing copilot</strong>: cut proposals + captioning + title variants</li>
+                  <li><strong>Brand/IP layer</strong>: banned claims list + style templates + approval gates</li>
+                  <li><strong>Asset library</strong>: searchable storage with provenance metadata</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Transcribe + segment</li>
+                  <li>Propose hooks and cuts</li>
+                  <li>Generate captions + variants</li>
+                  <li>Run brand/IP checks</li>
+                  <li>Human approve</li>
+                  <li>Publish + measure</li>
+                </ol>
               </article>
             </div>
           </div>

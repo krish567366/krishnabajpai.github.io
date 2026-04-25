@@ -158,6 +158,36 @@ const AIHealthcareBiotech = () => {
                   <li><strong>Review</strong>: clinician/ops approval UI</li>
                   <li><strong>Audit</strong>: immutable logs for who approved what and why</li>
                 </ol>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A mid-size provider automates <strong>prior auth intake</strong> and <strong>clinical note summarization</strong>.
+                  A safe “good” outcome looks like:
+                </p>
+                <ul>
+                  <li><strong>30–60% reduction</strong> in manual data entry time for selected workflows</li>
+                  <li><strong>&lt;1%</strong> critical error rate after human review gates</li>
+                  <li><strong>Audit-ready</strong> outputs: every field maps back to a source document/snippet</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Data</strong>: secure connectors to EHR/claims + document store</li>
+                  <li><strong>RAG</strong>: scoped retrieval with access checks + citation requirement</li>
+                  <li><strong>Redaction</strong>: PII/PHI minimization layer before model calls</li>
+                  <li><strong>Evaluation</strong>: golden sets + cohort dashboards + drift alerts</li>
+                  <li><strong>Ops</strong>: tracing, cost controls, and human approval UI</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Ingest request + documents</li>
+                  <li>Extract structured fields</li>
+                  <li>Retrieve policy/coverage rules</li>
+                  <li>Generate draft + citations</li>
+                  <li>Human review/approve</li>
+                  <li>Submit + log everything</li>
+                </ol>
               </article>
             </div>
           </div>

@@ -131,6 +131,36 @@ const PhysicalAIRobotsDrones = () => {
                   capture data (images/video/LiDAR), detect issues, and generate an auditable report. It creates
                   value even before full autonomy.
                 </p>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A warehouse deploys autonomous inspection (not picking) to detect safety and maintenance issues.
+                  A realistic success case looks like:
+                </p>
+                <ul>
+                  <li><strong>50–80%</strong> reduction in manual inspection time for covered zones</li>
+                  <li><strong>Lower incident risk</strong> via faster detection of blocked aisles and spill hazards</li>
+                  <li><strong>Intervention rate</strong> declines over time as maps and policies mature</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Compute</strong>: edge GPU/CPU with thermal monitoring and watchdogs</li>
+                  <li><strong>Perception</strong>: detection + tracking + mapping (with uncertainty estimates)</li>
+                  <li><strong>Planning/control</strong>: safety constraints independent of ML</li>
+                  <li><strong>Ops</strong>: incident replay, logs, and fleet management</li>
+                  <li><strong>Simulation</strong>: scenario testing for sim-to-real and regression</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Collect sensor data</li>
+                  <li>Perceive + localize</li>
+                  <li>Plan safe action</li>
+                  <li>Execute with fail-safes</li>
+                  <li>Log + replay incidents</li>
+                  <li>Improve via simulation + retraining</li>
+                </ol>
               </article>
             </div>
           </div>

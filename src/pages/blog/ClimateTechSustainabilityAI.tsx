@@ -146,6 +146,36 @@ const ClimateTechSustainabilityAI = () => {
                     <strong>Too much UI</strong>: operators want recommendations inside existing tools, not new dashboards.
                   </li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  An industrial site deploys HVAC + load scheduling optimization with human approvals for the first month.
+                  A realistic success case looks like:
+                </p>
+                <ul>
+                  <li><strong>5–15%</strong> energy cost reduction on controllable loads (season dependent)</li>
+                  <li><strong>Zero</strong> safety/comfort SLA violations (guardrails matter more than the model)</li>
+                  <li><strong>High adoption</strong>: operators accept recommendations &gt;60% after tuning</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Telemetry</strong>: meters + BMS/SCADA ingestion + weather forecasts</li>
+                  <li><strong>Optimization</strong>: baseline + constrained optimizer + simulation checks</li>
+                  <li><strong>Verification</strong>: savings measurement with confidence intervals</li>
+                  <li><strong>Audit</strong>: provenance for emission factors and calculation methods</li>
+                  <li><strong>Integration</strong>: push recommendations into existing ops tools</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Collect telemetry + constraints</li>
+                  <li>Compute baseline</li>
+                  <li>Generate recommendations</li>
+                  <li>Human approve / auto-execute low-risk changes</li>
+                  <li>Measure impact + learn</li>
+                  <li>Report with audit trail</li>
+                </ol>
               </article>
             </div>
           </div>
