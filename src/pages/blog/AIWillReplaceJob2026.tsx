@@ -61,25 +61,95 @@ const AIWillReplaceJob2026 = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    AI will replace <strong>tasks</strong> before it replaces entire jobs.
+                  </li>
+                  <li>
+                    Your risk is high if your work is <strong>text-heavy, repetitive, and easy to verify</strong>.
+                  </li>
+                  <li>
+                    The best defense is moving “up the stack”: own <strong>workflows</strong>,{" "}
+                    <strong>evaluation</strong>, and <strong>domain accountability</strong>.
+                  </li>
+                </ul>
+
                 <h2>AI replaces tasks before it replaces jobs</h2>
                 <p>
                   Most roles are bundles of tasks. In 2026, automation pressure concentrates on tasks
                   that are repetitive, text-heavy, and easy to verify.
                 </p>
 
-                <h2>Risk map: what’s most exposed</h2>
+                <h2>A practical risk score (quick self-check)</h2>
+                <p>
+                  Give yourself 1 point for each “yes”. Higher score = higher automation pressure.
+                </p>
                 <ul>
-                  <li><strong>High risk</strong>: basic content rewriting, simple support triage, routine reporting.</li>
-                  <li><strong>Medium</strong>: ops coordination, junior analysis, QA/checklists (with oversight).</li>
-                  <li><strong>Lower</strong>: high-stakes decisions, domain accountability, relationship-heavy work.</li>
+                  <li>Do you mostly transform existing information (summaries, rewrites, reports)?</li>
+                  <li>Are outputs judged by speed/volume more than judgment/accountability?</li>
+                  <li>Is the work based on standardized rules or checklists?</li>
+                  <li>Can a manager easily verify the output without deep context?</li>
+                  <li>Do you use the same 10–20 templates repeatedly?</li>
+                  <li>Is your work mostly in tools that agents can operate (email/CRM/tickets/sheets)?</li>
                 </ul>
 
-                <h2>How to adapt (fast)</h2>
+                <h2>Risk map: what’s most exposed (and why)</h2>
+                <ul>
+                  <li>
+                    <strong>Higher risk</strong>: basic content rewriting, simple support triage, routine reporting
+                    (easy to generate + easy to verify).
+                  </li>
+                  <li>
+                    <strong>Medium</strong>: ops coordination, junior analysis, QA/checklists
+                    (agents help a lot, but humans still own exceptions).
+                  </li>
+                  <li>
+                    <strong>Lower</strong>: high-stakes decisions, regulated work, deep domain ownership,
+                    relationship-heavy roles (harder to verify, higher accountability).
+                  </li>
+                </ul>
+
+                <h2>What actually becomes more valuable</h2>
+                <ul>
+                  <li>
+                    <strong>Problem framing</strong>: turning messy goals into clear requirements and constraints.
+                  </li>
+                  <li>
+                    <strong>Judgment under uncertainty</strong>: picking trade-offs when data is incomplete.
+                  </li>
+                  <li>
+                    <strong>Owning outcomes</strong>: being responsible for a KPI, not just producing artifacts.
+                  </li>
+                  <li>
+                    <strong>Systems thinking</strong>: designing workflows that survive edge cases.
+                  </li>
+                </ul>
+
+                <h2>How to adapt (fast, actionable)</h2>
                 <ol>
-                  <li><strong>Become a workflow owner</strong>: design the system, not just the output.</li>
-                  <li><strong>Learn evaluation</strong>: tests, metrics, and “definition of done”.</li>
-                  <li><strong>Own domain context</strong>: regulated constraints + real business trade-offs.</li>
-                  <li><strong>Use agents</strong>: treat AI as coworkers with permissions and checklists.</li>
+                  <li>
+                    <strong>Become a workflow owner</strong>: map your process end-to-end and identify steps that can
+                    be automated safely.
+                  </li>
+                  <li>
+                    <strong>Learn evaluation</strong>: build a tiny “golden set” of examples + define what “good” means.
+                  </li>
+                  <li>
+                    <strong>Own domain context</strong>: specialize in constraints (compliance, risk, SLAs, pricing).
+                  </li>
+                  <li>
+                    <strong>Use agents deliberately</strong>: give them scoped permissions, checklists, and escalation rules.
+                  </li>
+                </ol>
+
+                <h2>A simple 30‑day plan</h2>
+                <ol>
+                  <li>Pick one recurring workflow you do weekly.</li>
+                  <li>Write down inputs, outputs, edge cases, and “definition of done”.</li>
+                  <li>Automate one low-risk step (drafting, extraction, triage).</li>
+                  <li>Add measurement (time saved, error rate, escalation rate).</li>
+                  <li>Publish the before/after as a portfolio artifact.</li>
                 </ol>
               </article>
             </div>

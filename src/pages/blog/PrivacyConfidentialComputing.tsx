@@ -61,6 +61,21 @@ const PrivacyConfidentialComputing = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    Enterprises want AI value without data leakage. The winning approach is{" "}
+                    <strong>privacy-by-design</strong> plus strong <strong>governance</strong>.
+                  </li>
+                  <li>
+                    Confidential computing protects data <strong>in use</strong>, but you still need
+                    access controls, logging, redaction, and retention rules.
+                  </li>
+                  <li>
+                    If you can’t answer “who accessed what, when, and why?” you won’t pass procurement.
+                  </li>
+                </ul>
+
                 <h2>Why this trend is accelerating</h2>
                 <ul>
                   <li><strong>Regulation</strong>: privacy laws + industry compliance</li>
@@ -73,6 +88,19 @@ const PrivacyConfidentialComputing = () => {
                   It’s about protecting data <em>while in use</em> (not just at rest or in transit),
                   typically using hardware-backed secure enclaves.
                 </p>
+                <p>
+                  Think of it as: “Even the cloud provider can’t peek into memory while the workload is running”
+                  (subject to the enclave’s threat model and your implementation).
+                </p>
+
+                <h2>Threat model checklist (what you’re defending against)</h2>
+                <ul>
+                  <li><strong>Accidental leakage</strong>: prompts/logs containing secrets or PII</li>
+                  <li><strong>Over-broad retrieval</strong>: users pulling documents they shouldn’t see</li>
+                  <li><strong>Prompt injection</strong>: untrusted text steering tool calls</li>
+                  <li><strong>Insider risk</strong>: overly privileged operators</li>
+                  <li><strong>Vendor exposure</strong>: third-party model/API data handling</li>
+                </ul>
 
                 <h2>Secure AI design patterns</h2>
                 <ul>
@@ -80,6 +108,37 @@ const PrivacyConfidentialComputing = () => {
                   <li><strong>Redaction</strong>: PHI/PII removal before model calls</li>
                   <li><strong>Audit logging</strong>: who accessed what, when, why</li>
                   <li><strong>Key management</strong>: rotation, separation of duties</li>
+                </ul>
+
+                <h2>Reference architecture (battle-tested)</h2>
+                <ol>
+                  <li>
+                    <strong>Identity & RBAC/ABAC</strong>: enforce tenant boundaries and role-based access.
+                  </li>
+                  <li>
+                    <strong>Data classification</strong>: tag sources (public, internal, confidential, regulated).
+                  </li>
+                  <li>
+                    <strong>Retrieval gateway</strong>: document allowlists, filters, and per-user access checks.
+                  </li>
+                  <li>
+                    <strong>Redaction & minimization</strong>: send the model only what it needs.
+                  </li>
+                  <li>
+                    <strong>Model execution</strong>: private model hosting or confidential computing enclaves where needed.
+                  </li>
+                  <li>
+                    <strong>Audit + retention</strong>: immutable logs, retention windows, and deletion workflows.
+                  </li>
+                </ol>
+
+                <h2>What to document for enterprise buyers (procurement)</h2>
+                <ul>
+                  <li><strong>Data flow</strong>: where data travels (ingest → storage → retrieval → model → logs)</li>
+                  <li><strong>Isolation</strong>: tenant boundaries and encryption keys per tenant</li>
+                  <li><strong>Training policy</strong>: whether customer data is used for training (ideally: no)</li>
+                  <li><strong>Logging policy</strong>: what is logged, how it’s redacted, who can access logs</li>
+                  <li><strong>Incident response</strong>: breach handling, rotation, and customer notification</li>
                 </ul>
               </article>
             </div>

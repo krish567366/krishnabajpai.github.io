@@ -61,6 +61,20 @@ const HyperPersonalization = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    Hyper‑personalization means adapting <strong>content, UI, and workflow</strong> per user
+                    based on behavior and context—not just “recommended items”.
+                  </li>
+                  <li>
+                    The moat is <strong>data + experimentation + trust</strong>.
+                  </li>
+                  <li>
+                    Done badly, it becomes creepy, biased, and unstable. You need transparency and controls.
+                  </li>
+                </ul>
+
                 <h2>What changes in hyper-personalized products</h2>
                 <ul>
                   <li><strong>Content</strong>: explanations, examples, recommendations</li>
@@ -68,11 +82,53 @@ const HyperPersonalization = () => {
                   <li><strong>Workflow</strong>: suggested next actions and automation</li>
                 </ul>
 
+                <h2>Concrete examples (so this isn’t vague)</h2>
+                <ul>
+                  <li>
+                    <strong>Onboarding</strong>: developers see API-first steps; non-technical users see templates.
+                  </li>
+                  <li>
+                    <strong>Pricing page</strong>: enterprise visitors see compliance + SLAs; startups see speed-to-value.
+                  </li>
+                  <li>
+                    <strong>In-product guidance</strong>: the app suggests the next action based on “where users get stuck”.
+                  </li>
+                </ul>
+
                 <h2>Core building blocks</h2>
                 <ul>
-                  <li>Identity + event tracking (privacy-safe)</li>
-                  <li>Feature store + real-time inference</li>
-                  <li>Experimentation framework (A/B + bandits)</li>
+                  <li><strong>Identity + event tracking</strong> (privacy-safe, minimal)</li>
+                  <li><strong>Segmentation</strong>: “new vs power user”, “industry”, “intent”, “risk level”</li>
+                  <li><strong>Feature store</strong>: consistent features for online + offline</li>
+                  <li><strong>Real-time inference</strong>: low-latency decisions</li>
+                  <li><strong>Experimentation</strong>: A/B tests + multi-armed bandits</li>
+                </ul>
+
+                <h2>How to build it (reference architecture)</h2>
+                <ol>
+                  <li>
+                    <strong>Collect</strong>: events (page views, clicks, completions) with consent boundaries.
+                  </li>
+                  <li>
+                    <strong>Define features</strong>: 10–30 features that represent intent and maturity.
+                  </li>
+                  <li>
+                    <strong>Decide</strong>: a policy layer chooses what variant a user should see.
+                  </li>
+                  <li>
+                    <strong>Measure</strong>: conversion, retention, task completion, and negative signals.
+                  </li>
+                  <li>
+                    <strong>Iterate</strong>: ship improvements via experiments, not intuition.
+                  </li>
+                </ol>
+
+                <h2>Metrics that matter</h2>
+                <ul>
+                  <li><strong>Activation</strong>: time-to-first-value and onboarding completion</li>
+                  <li><strong>Retention</strong>: week-4 retention, frequency of core action</li>
+                  <li><strong>Task success</strong>: completion rate, error rate, drop-off points</li>
+                  <li><strong>Trust metrics</strong>: opt-outs, “hide this”, complaints, support tickets</li>
                 </ul>
 
                 <h2>Trust and governance</h2>
@@ -80,6 +136,22 @@ const HyperPersonalization = () => {
                   <li><strong>Transparency</strong>: “why am I seeing this?”</li>
                   <li><strong>Controls</strong>: user preference overrides</li>
                   <li><strong>Safety</strong>: avoid manipulation, protect vulnerable users</li>
+                </ul>
+
+                <h2>Common pitfalls (and how to avoid them)</h2>
+                <ul>
+                  <li>
+                    <strong>Overfitting</strong>: personalization that works for one segment but hurts overall metrics.
+                  </li>
+                  <li>
+                    <strong>Feedback loops</strong>: recommendations that narrow user exposure and reduce discovery.
+                  </li>
+                  <li>
+                    <strong>Creepiness</strong>: personalization that feels invasive—fix with consent, transparency, and limits.
+                  </li>
+                  <li>
+                    <strong>Unstable UX</strong>: too many variants—limit changes and keep core UI consistent.
+                  </li>
                 </ul>
               </article>
             </div>
