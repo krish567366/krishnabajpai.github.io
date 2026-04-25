@@ -148,6 +148,35 @@ const QuantumAIExplained60Seconds = () => {
                   <li>Try quantum-inspired/hybrid methods only if the baseline hits limits.</li>
                   <li>Ship only if you get repeatable gains under realistic constraints and cost.</li>
                 </ol>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A company tries to optimize workforce scheduling with many constraints (availability, skills, shift rules).
+                  A realistic win looks like:
+                </p>
+                <ul>
+                  <li><strong>Fewer constraint violations</strong> and less manual fixing</li>
+                  <li><strong>Small but repeatable</strong> quality improvements on hard schedules</li>
+                  <li><strong>Clear ROI</strong>: fewer overtime hours or higher utilization</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Baseline</strong>: CP-SAT/MILP + domain heuristics</li>
+                  <li><strong>Benchmarking</strong>: fixed datasets + seeds + repeatable scoring</li>
+                  <li><strong>Hybrid trials</strong>: quantum-inspired methods for hard subproblems</li>
+                  <li><strong>Operations</strong>: feasibility checks, audit logs, and continuous comparison vs baseline</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Define problem + constraints</li>
+                  <li>Ship classical baseline</li>
+                  <li>Benchmark repeatedly</li>
+                  <li>Try hybrid for hard cases</li>
+                  <li>Validate feasibility + ROI</li>
+                  <li>Deploy with monitoring</li>
+                </ol>
               </article>
             </div>
           </div>

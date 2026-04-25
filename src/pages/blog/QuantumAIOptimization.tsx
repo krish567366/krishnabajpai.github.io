@@ -147,6 +147,34 @@ const QuantumAIOptimization = () => {
                   <li><strong>Ignoring constraints</strong>: the “best” solution is useless if infeasible.</li>
                   <li><strong>No reproducibility</strong>: without seeds, versions, and tracking, you can’t ship.</li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A logistics team optimizes daily routing with time windows and capacity constraints. A realistic win looks like:
+                </p>
+                <ul>
+                  <li><strong>1–5%</strong> cost reduction over a strong classical baseline on hard days</li>
+                  <li><strong>Higher feasibility</strong>: fewer constraint violations and manual fixes</li>
+                  <li><strong>Stable performance</strong> across seeds/days, not one cherry-picked run</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Classical baseline</strong>: OR-Tools / MILP / CP-SAT + heuristics</li>
+                  <li><strong>Experiment tracking</strong>: version inputs, seeds, solver configs, and results</li>
+                  <li><strong>Hybrid trials</strong>: quantum-inspired solvers / hybrid subproblem solvers</li>
+                  <li><strong>Validation</strong>: feasibility checks + constraint repair + audit logs</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Define objective + constraints</li>
+                  <li>Ship strong classical baseline</li>
+                  <li>Identify hard subproblem</li>
+                  <li>Try hybrid/quantum-inspired approach</li>
+                  <li>Validate feasibility + stability</li>
+                  <li>Continuously compare vs baseline</li>
+                </ol>
               </article>
             </div>
           </div>

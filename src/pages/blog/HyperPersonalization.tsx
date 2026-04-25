@@ -153,6 +153,36 @@ const HyperPersonalization = () => {
                     <strong>Unstable UX</strong>: too many variants—limit changes and keep core UI consistent.
                   </li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A B2B SaaS personalizes onboarding and in-product guidance by role (developer vs ops vs exec).
+                  A realistic win looks like:
+                </p>
+                <ul>
+                  <li><strong>10–25%</strong> improvement in onboarding completion for targeted segments</li>
+                  <li><strong>Faster time-to-first-value</strong> (minutes/hours saved, depending on product)</li>
+                  <li><strong>No trust regression</strong>: opt-outs and complaints remain stable</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Events</strong>: privacy-safe analytics + consent boundaries</li>
+                  <li><strong>Feature store</strong>: consistent features for online/offline</li>
+                  <li><strong>Decisioning</strong>: rules + model scoring + experiment assignment</li>
+                  <li><strong>Experimentation</strong>: A/B + bandits with guardrail metrics</li>
+                  <li><strong>Governance</strong>: “why am I seeing this”, preferences, and easy opt-out</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>Collect events (with consent)</li>
+                  <li>Compute features</li>
+                  <li>Select variant (experiment + policy)</li>
+                  <li>Render personalized UI/content</li>
+                  <li>Measure impact + guardrails</li>
+                  <li>Iterate or roll back</li>
+                </ol>
               </article>
             </div>
           </div>

@@ -140,6 +140,35 @@ const PrivacyConfidentialComputing = () => {
                   <li><strong>Logging policy</strong>: what is logged, how it’s redacted, who can access logs</li>
                   <li><strong>Incident response</strong>: breach handling, rotation, and customer notification</li>
                 </ul>
+
+                <h2>Example scenario (illustrative)</h2>
+                <p>
+                  A company builds a “private RAG assistant” over internal policies and contracts. A realistic success case:
+                </p>
+                <ul>
+                  <li><strong>Access-safe answers</strong>: users only see documents they’re allowed to see</li>
+                  <li><strong>Evidence-first</strong>: every answer includes citations to the exact source</li>
+                  <li><strong>Audit-ready</strong>: you can prove which docs were retrieved and what was sent to the model</li>
+                </ul>
+
+                <h2>Tooling stack (suggested)</h2>
+                <ul>
+                  <li><strong>Identity</strong>: SSO + RBAC/ABAC enforcement</li>
+                  <li><strong>Retrieval gateway</strong>: per-user access checks + allowlists</li>
+                  <li><strong>Redaction</strong>: PII/secret minimization before model calls</li>
+                  <li><strong>Key management</strong>: rotation + separation of duties</li>
+                  <li><strong>Audit</strong>: immutable logs + retention controls</li>
+                </ul>
+
+                <h2>Workflow (at a glance)</h2>
+                <ol>
+                  <li>User query (authenticated)</li>
+                  <li>Scoped retrieval (permission-checked)</li>
+                  <li>Redact/minimize context</li>
+                  <li>Generate answer with citations</li>
+                  <li>Log evidence + access</li>
+                  <li>Monitor drift/abuse</li>
+                </ol>
               </article>
             </div>
           </div>
