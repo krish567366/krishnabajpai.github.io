@@ -68,19 +68,86 @@ const QuantumAIExplained60Seconds = () => {
                   methods struggle with huge search spaces.
                 </p>
 
-                <h2>The practical truth</h2>
+                <h2>What “Quantum AI” really means</h2>
+                <p>
+                  In practice, “Quantum AI” usually means one of three things:
+                </p>
+                <ol>
+                  <li>
+                    <strong>Quantum optimization</strong>: using quantum or quantum-inspired methods to
+                    solve constrained optimization (routing, scheduling, portfolio constraints).
+                  </li>
+                  <li>
+                    <strong>Quantum sampling</strong>: generating samples from complex distributions
+                    (useful in some probabilistic models).
+                  </li>
+                  <li>
+                    <strong>Quantum ML research</strong>: theoretical speedups that often don’t translate
+                    to near-term business value yet.
+                  </li>
+                </ol>
+
+                <h2>The practical truth (what works in 2026)</h2>
                 <ul>
-                  <li><strong>Hybrid wins</strong>: quantum subroutines + classical heuristics.</li>
-                  <li><strong>Measure</strong>: quality vs cost vs reproducibility.</li>
-                  <li><strong>Start with constraints</strong>: define the real optimization objective.</li>
+                  <li>
+                    <strong>Hybrid wins</strong>: classical heuristics do most work; quantum is a
+                    subroutine (when it helps at all).
+                  </li>
+                  <li>
+                    <strong>Most ROI is “quantum-inspired”</strong>: better classical solvers, better
+                    formulations, better constraints handling.
+                  </li>
+                  <li>
+                    <strong>Formulation matters more than hardware</strong>: if your objective and
+                    constraints are wrong, any solver will look bad.
+                  </li>
                 </ul>
 
-                <h2>When to use it</h2>
+                <h2>How to evaluate without hype</h2>
+                <p>
+                  If someone claims a quantum advantage, ask for a comparison that is fair and
+                  reproducible.
+                </p>
                 <ul>
-                  <li>Complex scheduling and routing with constraints</li>
-                  <li>Portfolio optimization under risk bounds</li>
-                  <li>Drug discovery ranking / candidate search pipelines</li>
+                  <li>
+                    <strong>Baselines</strong>: compare against strong classical solvers (not naive
+                    greedy).
+                  </li>
+                  <li>
+                    <strong>Cost</strong>: include wall-clock time, cloud cost, and engineering complexity.
+                  </li>
+                  <li>
+                    <strong>Stability</strong>: does performance hold across random seeds and datasets?
+                  </li>
+                  <li>
+                    <strong>Constraints</strong>: does the solution satisfy real constraints (SLAs,
+                    risk bounds, regulatory limits)?
+                  </li>
                 </ul>
+
+                <h2>When to use it (good candidates)</h2>
+                <ul>
+                  <li>
+                    <strong>Scheduling</strong>: workforce, manufacturing, delivery windows.
+                  </li>
+                  <li>
+                    <strong>Routing</strong>: fleet routing with constraints and dynamic updates.
+                  </li>
+                  <li>
+                    <strong>Portfolio optimization</strong>: risk constraints, transaction costs, exposure limits.
+                  </li>
+                  <li>
+                    <strong>R&D pipelines</strong>: candidate ranking where exploration vs exploitation matters.
+                  </li>
+                </ul>
+
+                <h2>Starter playbook (simple and useful)</h2>
+                <ol>
+                  <li>Write the objective and constraints in plain English.</li>
+                  <li>Implement a classical baseline and define success metrics.</li>
+                  <li>Try quantum-inspired/hybrid methods only if the baseline hits limits.</li>
+                  <li>Ship only if you get repeatable gains under realistic constraints and cost.</li>
+                </ol>
               </article>
             </div>
           </div>

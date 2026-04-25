@@ -61,27 +61,115 @@ const NoCodeAICoding = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
-                <h2>The opportunity</h2>
+                <h2>TL;DR</h2>
                 <ul>
-                  <li>Faster iteration cycles for startups and internal tools</li>
-                  <li>Lower skill barrier for non-technical builders</li>
-                  <li>AI-assisted debugging, docs, and scaffolding</li>
+                  <li>
+                    “No‑code + AI” is great for <strong>speed</strong>, but the main risks are{" "}
+                    <strong>security</strong>, <strong>data integrity</strong>, and{" "}
+                    <strong>maintainability</strong>.
+                  </li>
+                  <li>
+                    The winning pattern is: <strong>spec → scaffold → guardrails → tests → ship</strong>.
+                  </li>
+                  <li>
+                    If you can’t explain your data model and permissions in 2 minutes, the app will
+                    collapse in week 2.
+                  </li>
                 </ul>
 
-                <h2>The risk</h2>
+                <h2>What “prompt-to-app” is actually good for</h2>
                 <ul>
-                  <li><strong>Security</strong>: secrets leakage, unsafe defaults</li>
-                  <li><strong>Maintainability</strong>: “prompt spaghetti”</li>
-                  <li><strong>Correctness</strong>: no test coverage</li>
+                  <li>
+                    <strong>Internal tools</strong>: dashboards, ops portals, back-office workflows.
+                  </li>
+                  <li>
+                    <strong>Prototype-to-proof</strong>: validate demand and UX before hardening.
+                  </li>
+                  <li>
+                    <strong>Automation layers</strong>: connecting SaaS tools with a thin UI.
+                  </li>
+                </ul>
+                <p>
+                  It’s <em>not</em> great for complex multi-tenant systems unless you add standard
+                  engineering discipline.
+                </p>
+
+                <h2>The failure modes (why “no‑code apps” break)</h2>
+                <ul>
+                  <li>
+                    <strong>Secret leakage</strong>: API keys in client code, logs, or prompts.
+                  </li>
+                  <li>
+                    <strong>Auth holes</strong>: weak row-level access control (“anyone can read anyone”).
+                  </li>
+                  <li>
+                    <strong>Data drift</strong>: tables change without migrations and everything silently breaks.
+                  </li>
+                  <li>
+                    <strong>Prompt spaghetti</strong>: behavior scattered across many prompts with no tests.
+                  </li>
                 </ul>
 
-                <h2>A 1‑day SaaS build workflow (reliable)</h2>
+                <h2>The guardrails that make it safe</h2>
                 <ol>
-                  <li><strong>Define</strong> the single KPI + core workflow</li>
-                  <li><strong>Generate</strong> scaffold + database schema</li>
-                  <li><strong>Add tests</strong> for core logic and auth boundaries</li>
-                  <li><strong>Ship</strong> with analytics + error reporting + rate limits</li>
+                  <li>
+                    <strong>Single source of truth</strong>: define entities (User, Org, Project, Billing) and relationships.
+                  </li>
+                  <li>
+                    <strong>Permission model</strong>: explicit roles (admin/member/viewer) + row-level checks.
+                  </li>
+                  <li>
+                    <strong>Server-only secrets</strong>: never put keys in the browser; proxy via a backend.
+                  </li>
+                  <li>
+                    <strong>Typed API</strong>: schemas for every request/response so “AI code” can’t drift.
+                  </li>
+                  <li>
+                    <strong>Logs + alerts</strong>: errors, auth failures, unusual usage patterns.
+                  </li>
                 </ol>
+
+                <h2>A 1‑day SaaS workflow (that doesn’t create chaos)</h2>
+                <p>
+                  You can move fast and still be disciplined. Here’s a reliable 1‑day build flow that
+                  keeps you out of the most common traps.
+                </p>
+                <ol>
+                  <li>
+                    <strong>Define</strong> one user, one job-to-be-done, one KPI (e.g., “time saved per week”).
+                  </li>
+                  <li>
+                    <strong>Write the spec</strong>: 10–15 bullet acceptance criteria + edge cases.
+                  </li>
+                  <li>
+                    <strong>Design the data</strong>: tables + constraints + indexes (even if it’s tiny).
+                  </li>
+                  <li>
+                    <strong>Generate scaffold</strong>: UI + API + auth + CRUD; keep it boring.
+                  </li>
+                  <li>
+                    <strong>Add guardrails</strong>: roles, rate limits, input validation, safe defaults.
+                  </li>
+                  <li>
+                    <strong>Add tests</strong>: auth boundaries + core calculations + 2–3 “golden paths”.
+                  </li>
+                  <li>
+                    <strong>Ship</strong>: analytics, error reporting, backup/restore, and a rollback plan.
+                  </li>
+                </ol>
+
+                <h2>How to know if it’s “good enough”</h2>
+                <ul>
+                  <li>
+                    <strong>Security</strong>: no secrets in client, no cross-tenant reads, rate limits in place.
+                  </li>
+                  <li>
+                    <strong>Reliability</strong>: core flows work under bad inputs and network failures.
+                  </li>
+                  <li>
+                    <strong>Maintainability</strong>: prompts/config live in one place; changes are testable.
+                  </li>
+                </ul>
               </article>
             </div>
           </div>

@@ -65,36 +65,176 @@ const AIAgentsMultiAgentSystems = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
-                <h2>What is an AI agent?</h2>
+                <h2>TL;DR</h2>
                 <ul>
-                  <li><strong>Goal-driven</strong>: works toward an objective, not just a reply.</li>
-                  <li><strong>Tool-using</strong>: can call APIs, search, run workflows, write drafts.</li>
-                  <li><strong>Stateful</strong>: keeps memory/plan across steps.</li>
-                  <li><strong>Evaluated</strong>: success measured by outcomes and constraints.</li>
+                  <li>
+                    <strong>Agents</strong> are LLM-powered systems that plan, take actions via tools,
+                    and iterate until a goal is met.
+                  </li>
+                  <li>
+                    <strong>Multi-agent</strong> setups help when a task benefits from roles
+                    (planner, executor, reviewer) or parallel work.
+                  </li>
+                  <li>
+                    In production, the hard parts are <strong>tool safety</strong>,{" "}
+                    <strong>state</strong>, <strong>evaluation</strong>, and{" "}
+                    <strong>human controls</strong>—not the prompt.
+                  </li>
                 </ul>
 
-                <h2>When multi-agent systems beat a single model</h2>
+                <h2>What is an AI agent (practical definition)</h2>
+                <p>
+                  An “agent” isn’t just a chat interface. It’s a loop that converts an objective into
+                  a sequence of steps, calls tools to change the outside world, and checks whether it
+                  achieved the outcome.
+                </p>
                 <ul>
-                  <li><strong>Decomposition</strong>: planner → executors → verifier.</li>
-                  <li><strong>Specialization</strong>: domain agents (finance, legal, ops).</li>
-                  <li><strong>Parallelism</strong>: multiple sub-tasks run simultaneously.</li>
-                  <li><strong>Reliability</strong>: cross-checks reduce silent failures.</li>
+                  <li>
+                    <strong>Goal</strong>: “Reduce support backlog by 30%” not “answer questions”.
+                  </li>
+                  <li>
+                    <strong>Actions</strong>: API calls, DB reads, search, code edits, ticket updates.
+                  </li>
+                  <li>
+                    <strong>State</strong>: it remembers the plan + intermediate results across
+                    steps.
+                  </li>
+                  <li>
+                    <strong>Constraints</strong>: policies, budgets, permission scopes, SLAs.
+                  </li>
+                  <li>
+                    <strong>Verification</strong>: it checks results (tests, rules, reviewers) before
+                    finalizing.
+                  </li>
                 </ul>
 
-                <h2>Reference architecture (enterprise-ready)</h2>
+                <h2>When multi-agent systems beat a single agent</h2>
+                <p>
+                  Multi-agent is not “better” by default. It’s better when roles reduce errors or
+                  speed up work.
+                </p>
+                <ul>
+                  <li>
+                    <strong>Decomposition</strong>: a planner breaks the task into subtasks with clear
+                    acceptance criteria.
+                  </li>
+                  <li>
+                    <strong>Specialization</strong>: a “security agent” reasons with your policies
+                    while a “data agent” focuses on SQL/metrics.
+                  </li>
+                  <li>
+                    <strong>Parallelism</strong>: three agents research options, compare trade-offs,
+                    and converge.
+                  </li>
+                  <li>
+                    <strong>Cross-checking</strong>: a verifier agent catches hallucinations and
+                    unsafe actions.
+                  </li>
+                </ul>
+                <p>
+                  If the task is small and can be done with a single tool call, multi-agent often
+                  adds cost and failure modes. Start simple.
+                </p>
+
+                <h2>Enterprise reference architecture (what you actually need)</h2>
+                <p>Here’s the minimum architecture that tends to survive real traffic and audits.</p>
                 <ol>
-                  <li><strong>Orchestrator</strong>: routes tasks, enforces policies, retries.</li>
-                  <li><strong>Tools layer</strong>: typed wrappers, rate limits, audit logs.</li>
-                  <li><strong>Memory</strong>: short-term (task) + long-term (profile/knowledge).</li>
-                  <li><strong>Evaluation</strong>: unit tests for prompts, golden sets, red-teaming.</li>
+                  <li>
+                    <strong>Orchestrator</strong>: state machine + retries + timeouts + budget
+                    enforcement.
+                  </li>
+                  <li>
+                    <strong>Tool gateway</strong>: typed tools, allowlists, rate limits, audit logs,
+                    deterministic inputs/outputs.
+                  </li>
+                  <li>
+                    <strong>Memory</strong>: short-term scratchpad for the task; long-term memory for
+                    user/org context with retention controls.
+                  </li>
+                  <li>
+                    <strong>Policy & permissions</strong>: the agent runs with least-privilege; risky
+                    actions require approval.
+                  </li>
+                  <li>
+                    <strong>Evaluation</strong>: golden tasks, regression tests, red-team prompts,
+                    and “canary” rollouts.
+                  </li>
+                  <li>
+                    <strong>Observability</strong>: trace every step, cost, tool call, and final
+                    output; attach evidence.
+                  </li>
                 </ol>
 
-                <h2>Build ideas (high ROI)</h2>
+                <h2>Example workflow: “Support triage agent” (concrete)</h2>
+                <p>
+                  Suppose you want an agent that reads new tickets, drafts replies, and routes to the
+                  right team.
+                </p>
+                <ol>
+                  <li>
+                    <strong>Ingest</strong>: pull tickets + user history + product metadata.
+                  </li>
+                  <li>
+                    <strong>Classify</strong>: intent, priority, SLA risk, sentiment.
+                  </li>
+                  <li>
+                    <strong>Retrieve</strong>: search internal KB + past resolutions.
+                  </li>
+                  <li>
+                    <strong>Draft</strong>: propose response + ask clarifying question if needed.
+                  </li>
+                  <li>
+                    <strong>Verify</strong>: check for policy violations (PII, pricing, legal) +
+                    confidence threshold.
+                  </li>
+                  <li>
+                    <strong>Act</strong>: post draft, assign team, add tags; auto-send only for
+                    low-risk categories.
+                  </li>
+                </ol>
+
+                <h2>Metrics that matter (so it’s not “vibes”)</h2>
                 <ul>
-                  <li>AI workflow automation SaaS (tickets, sales ops, finance ops).</li>
-                  <li>Personal AI assistant (email, scheduling, coding, research).</li>
-                  <li>Agent “ops layer”: approvals, observability, and cost controls.</li>
+                  <li>
+                    <strong>Resolution time</strong> (median + p90), not just “agent accuracy”.
+                  </li>
+                  <li>
+                    <strong>Escalation rate</strong>: how often humans override the agent.
+                  </li>
+                  <li>
+                    <strong>Cost per successful outcome</strong>: tokens + tool calls + retries.
+                  </li>
+                  <li>
+                    <strong>Policy violations</strong>: any unsafe output/action is a Sev-1 metric.
+                  </li>
                 </ul>
+
+                <h2>Common failure modes (and fixes)</h2>
+                <ul>
+                  <li>
+                    <strong>Tool misuse</strong>: fix with strict schemas, allowlists, and
+                    idempotent actions.
+                  </li>
+                  <li>
+                    <strong>Overconfidence</strong>: add a verifier, require citations/evidence, and
+                    force “ask a human” paths.
+                  </li>
+                  <li>
+                    <strong>Prompt injection</strong>: treat inputs as untrusted; isolate tools; strip
+                    instructions from retrieved text.
+                  </li>
+                  <li>
+                    <strong>Runaway loops</strong>: cap steps, cap cost, and add timeouts + early-stop
+                    rules.
+                  </li>
+                </ul>
+
+                <h2>Where to start (fastest path to value)</h2>
+                <ol>
+                  <li>Start with a single workflow that already has SOPs and measurable outcomes.</li>
+                  <li>Instrument everything: traces, costs, acceptance tests, and human feedback.</li>
+                  <li>Automate low-risk steps first; keep approvals for risky actions.</li>
+                </ol>
               </article>
             </div>
           </div>
