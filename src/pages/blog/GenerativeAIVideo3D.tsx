@@ -61,11 +61,36 @@ const GenerativeAIVideo3D = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    Generative video/3D is best today as a <strong>co-pilot for creation</strong>, not a fully autonomous studio.
+                  </li>
+                  <li>
+                    The winning products optimize <strong>workflow speed</strong> (storyboarding, editing, repurposing)
+                    and <strong>brand/IP safety</strong>.
+                  </li>
+                  <li>
+                    Long-form consistency is still hard; build wedges where humans naturally review.
+                  </li>
+                </ul>
+
                 <h2>Production-ready workflows</h2>
                 <ul>
                   <li><strong>Asset generation</strong>: thumbnails, b-roll, concept art</li>
                   <li><strong>Editing copilots</strong>: cut detection, captions, repurposing</li>
                   <li><strong>3D pipelines</strong>: texture + material generation</li>
+                </ul>
+
+                <h2>What “ready” actually looks like</h2>
+                <p>
+                  “Production-ready” means the output is usable with a predictable amount of human review. The best
+                  tools reduce time-to-publish even if they don’t get to 100% automation.
+                </p>
+                <ul>
+                  <li><strong>Creators</strong>: 1-click captions, shorts from long video, hook generation</li>
+                  <li><strong>Studios</strong>: concept variants, background plates, rough animatics</li>
+                  <li><strong>Enterprises</strong>: compliant templates + approvals + audit trails</li>
                 </ul>
 
                 <h2>Hard problems (still unsolved)</h2>
@@ -75,11 +100,42 @@ const GenerativeAIVideo3D = () => {
                   <li><strong>Real-time</strong> interactive generation at scale</li>
                 </ul>
 
+                <h2>Where startups can win (strong wedges)</h2>
+                <ul>
+                  <li>
+                    <strong>Editing + repurposing</strong>: turn one long video into 10 shorts with titles, captions, and cuts.
+                  </li>
+                  <li>
+                    <strong>Brand-safe generation</strong>: templates, style constraints, banned claims, approval workflows.
+                  </li>
+                  <li>
+                    <strong>3D assist</strong>: textures/materials, retopology helpers, asset tagging and search.
+                  </li>
+                  <li>
+                    <strong>Game pipelines</strong>: NPC dialogue drafts + quest variants + localization, with strict tooling.
+                  </li>
+                </ul>
+
                 <h2>Startup wedges</h2>
                 <ul>
                   <li>Creator workflows: script → storyboard → publish automation</li>
                   <li>Game studios: 3D asset tooling with human review</li>
                   <li>Enterprise marketing: brand-safe content generation + approvals</li>
+                </ul>
+
+                <h2>Metrics that matter</h2>
+                <ul>
+                  <li><strong>Time-to-publish</strong>: minutes saved per asset or campaign</li>
+                  <li><strong>Revision rate</strong>: how often humans re-edit outputs</li>
+                  <li><strong>Compliance issues</strong>: flagged claims, brand violations, rights issues</li>
+                  <li><strong>Adoption</strong>: repeat usage per creator/team per week</li>
+                </ul>
+
+                <h2>Pitfalls (don’t ship yourself into legal trouble)</h2>
+                <ul>
+                  <li><strong>No provenance</strong>: you need source tracking and export metadata for enterprises.</li>
+                  <li><strong>Model drift</strong>: outputs change; templates and approval rules keep teams stable.</li>
+                  <li><strong>Overpromising</strong>: sell “faster workflow” not “fully automated studio”.</li>
                 </ul>
               </article>
             </div>

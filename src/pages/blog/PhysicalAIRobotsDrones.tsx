@@ -61,12 +61,38 @@ const PhysicalAIRobotsDrones = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    Physical AI is “sense → decide → act” in the real world, under hard constraints:{" "}
+                    <strong>safety, latency, and uncertainty</strong>.
+                  </li>
+                  <li>
+                    Most value comes from <strong>reliable autonomy in narrow domains</strong> (warehouses,
+                    inspection, agriculture), not general-purpose robots.
+                  </li>
+                  <li>
+                    The real engineering is in <strong>deployment</strong>: calibration, monitoring, fail-safes, and sim-to-real.
+                  </li>
+                </ul>
+
                 <h2>The autonomy stack</h2>
                 <ol>
                   <li><strong>Perception</strong>: cameras/LiDAR, detection, tracking, mapping</li>
                   <li><strong>Planning</strong>: goals, constraints, safe trajectories</li>
                   <li><strong>Control</strong>: low-level actuation, stability, latency</li>
                 </ol>
+
+                <h2>What autonomy looks like in production</h2>
+                <p>
+                  Most deployments are not “fully autonomous”. They’re <strong>assistance + automation</strong>{" "}
+                  with clear operating envelopes and escalation paths.
+                </p>
+                <ul>
+                  <li><strong>Operating domain</strong>: where the system is allowed to run (maps, speed, weather)</li>
+                  <li><strong>Uncertainty handling</strong>: slow down, stop, or ask for help</li>
+                  <li><strong>Safety layer</strong>: always-on constraints independent of ML</li>
+                </ul>
 
                 <h2>What makes physical AI hard</h2>
                 <ul>
@@ -75,12 +101,36 @@ const PhysicalAIRobotsDrones = () => {
                   <li><strong>Data</strong>: long-tail environments and sim-to-real gaps</li>
                 </ul>
 
+                <h2>Evaluation metrics (don’t ship on “accuracy”)</h2>
+                <ul>
+                  <li><strong>Intervention rate</strong>: human takeovers per hour / per mission</li>
+                  <li><strong>Near-miss rate</strong>: safety buffer violations</li>
+                  <li><strong>MTBF</strong>: mean time between failures</li>
+                  <li><strong>Task success</strong>: completion rate under real conditions</li>
+                  <li><strong>Latency budget</strong>: end-to-end perception→control timing</li>
+                </ul>
+
+                <h2>Deployment checklist (what kills pilots)</h2>
+                <ul>
+                  <li><strong>Calibration drift</strong>: sensors change over time; you need routines and alerts</li>
+                  <li><strong>Edge compute</strong>: power/thermal constraints; model size matters</li>
+                  <li><strong>Observability</strong>: logs, video snippets, and event traces for debugging</li>
+                  <li><strong>Fail-safes</strong>: safe stop, geofencing, and watchdog timers</li>
+                </ul>
+
                 <h2>Where to build</h2>
                 <ul>
                   <li>Warehouse automation and inspection</li>
                   <li>Precision agriculture drones</li>
                   <li>Industrial safety monitoring with edge inference</li>
                 </ul>
+
+                <h2>Best startup wedge (practical)</h2>
+                <p>
+                  The most defensible wedge is often “<strong>inspection + reporting</strong>”:
+                  capture data (images/video/LiDAR), detect issues, and generate an auditable report. It creates
+                  value even before full autonomy.
+                </p>
               </article>
             </div>
           </div>

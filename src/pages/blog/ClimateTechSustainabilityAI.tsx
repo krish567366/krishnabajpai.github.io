@@ -61,11 +61,38 @@ const ClimateTechSustainabilityAI = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    The fastest climate ROI comes from <strong>optimization</strong> (energy, logistics,
+                    industrial scheduling) and <strong>measurement</strong> (auditable carbon accounting).
+                  </li>
+                  <li>
+                    Your moat is rarely the model. It’s <strong>data pipelines + credibility + workflow adoption</strong>.
+                  </li>
+                  <li>
+                    Climate products win when they connect to operational systems and show savings in dollars and emissions.
+                  </li>
+                </ul>
+
                 <h2>Where AI helps immediately</h2>
                 <ul>
                   <li><strong>Energy optimization</strong>: HVAC, industrial loads, grid-aware scheduling.</li>
                   <li><strong>Carbon tracking</strong>: automated measurement + supplier reconciliation.</li>
                   <li><strong>Climate risk</strong>: asset-level exposure modeling and reporting.</li>
+                </ul>
+
+                <h2>Opportunity map (what customers pay for)</h2>
+                <ul>
+                  <li>
+                    <strong>Cut energy cost</strong>: reduce kWh without hurting comfort/throughput.
+                  </li>
+                  <li>
+                    <strong>Prove compliance</strong>: auditable reporting for regulations and buyer requirements.
+                  </li>
+                  <li>
+                    <strong>Reduce risk</strong>: quantify asset exposure and plan mitigations.
+                  </li>
                 </ul>
 
                 <h2>Startup ideas</h2>
@@ -75,11 +102,49 @@ const ClimateTechSustainabilityAI = () => {
                   <li>Climate-aware logistics optimization (cost + emissions trade-offs)</li>
                 </ul>
 
+                <h2>Blueprint: energy optimization (what to build)</h2>
+                <ol>
+                  <li><strong>Telemetry</strong>: meter data, equipment status, occupancy, weather forecasts</li>
+                  <li><strong>Baseline</strong>: model “expected energy” given conditions</li>
+                  <li><strong>Control</strong>: recommend setpoints/schedules (human approval at first)</li>
+                  <li><strong>Verification</strong>: measure savings vs baseline with confidence intervals</li>
+                  <li><strong>Operations</strong>: alerts for anomalies, equipment faults, and overrides</li>
+                </ol>
+
+                <h2>Blueprint: carbon accounting that survives audits</h2>
+                <ul>
+                  <li><strong>Sources</strong>: invoices, procurement, ERP, logistics, IoT meters</li>
+                  <li><strong>Mapping</strong>: match suppliers/items to emission factors with provenance</li>
+                  <li><strong>Reconciliation</strong>: detect gaps, duplicates, and inconsistent units</li>
+                  <li><strong>Audit trail</strong>: show exactly how each number was computed</li>
+                </ul>
+
+                <h2>Metrics that matter (avoid vanity dashboards)</h2>
+                <ul>
+                  <li><strong>Energy savings</strong>: kWh + cost reduction with confidence</li>
+                  <li><strong>Emissions</strong>: tons CO₂e reduced and verified method</li>
+                  <li><strong>Adoption</strong>: how often operators accept recommendations</li>
+                  <li><strong>Time-to-close</strong>: speed of reporting cycles and audit readiness</li>
+                </ul>
+
                 <h2>Moat checklist</h2>
                 <ul>
                   <li><strong>Data pipelines</strong> (hard to replicate)</li>
                   <li><strong>Measurement credibility</strong> (auditable methods)</li>
                   <li><strong>Workflow adoption</strong> (integrates with ops, not dashboards only)</li>
+                </ul>
+
+                <h2>Common pitfalls</h2>
+                <ul>
+                  <li>
+                    <strong>No baseline</strong>: you can’t prove savings without a credible counterfactual.
+                  </li>
+                  <li>
+                    <strong>Un-auditable numbers</strong>: if the CFO can’t trace it, it won’t be used.
+                  </li>
+                  <li>
+                    <strong>Too much UI</strong>: operators want recommendations inside existing tools, not new dashboards.
+                  </li>
                 </ul>
               </article>
             </div>

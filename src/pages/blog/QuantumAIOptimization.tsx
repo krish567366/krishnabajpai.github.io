@@ -61,11 +61,37 @@ const QuantumAIOptimization = () => {
               </header>
 
               <article className="prose prose-lg max-w-none text-foreground">
+                <h2>TL;DR</h2>
+                <ul>
+                  <li>
+                    The practical “quantum + AI” value is mostly in <strong>optimization</strong> and{" "}
+                    <strong>sampling</strong>, usually via <strong>hybrid</strong> workflows.
+                  </li>
+                  <li>
+                    You should start with strong classical baselines; quantum only matters if it provides
+                    repeatable gains under real constraints and cost.
+                  </li>
+                  <li>
+                    The biggest win is often better <strong>problem formulation</strong>, not new hardware.
+                  </li>
+                </ul>
+
                 <h2>Where quantum adds value today</h2>
                 <ul>
                   <li><strong>Combinatorial optimization</strong>: routing, scheduling, allocation.</li>
                   <li><strong>Sampling</strong>: probabilistic models, generative workflows.</li>
                   <li><strong>Hybrid search</strong>: classical heuristics + quantum subroutines.</li>
+                </ul>
+
+                <h2>Step 0: formulate the problem correctly</h2>
+                <p>
+                  Almost every “quantum project” fails because the objective and constraints were vague.
+                  Write them in plain English first, then translate to a solver-friendly form.
+                </p>
+                <ul>
+                  <li><strong>Objective</strong>: what exactly are you minimizing/maximizing?</li>
+                  <li><strong>Constraints</strong>: hard constraints vs soft penalties</li>
+                  <li><strong>Operational reality</strong>: time windows, capacity, SLAs, risk bounds</li>
                 </ul>
 
                 <h2>Use cases that pay</h2>
@@ -75,6 +101,22 @@ const QuantumAIOptimization = () => {
                   <li>Drug discovery and candidate ranking</li>
                 </ul>
 
+                <h2>How to evaluate “quantum advantage” without hype</h2>
+                <ul>
+                  <li>
+                    <strong>Baselines</strong>: compare against OR-Tools/MILP/CP-SAT and solid heuristics.
+                  </li>
+                  <li>
+                    <strong>Cost</strong>: include wall-clock, cloud cost, and engineering complexity.
+                  </li>
+                  <li>
+                    <strong>Stability</strong>: does performance hold across seeds and data slices?
+                  </li>
+                  <li>
+                    <strong>Constraints</strong>: are solutions feasible under real rules, not relaxed versions?
+                  </li>
+                </ul>
+
                 <h2>Practical roadmap</h2>
                 <ol>
                   <li><strong>Baseline</strong> with classical solvers (OR-Tools, MILP, heuristics).</li>
@@ -82,6 +124,29 @@ const QuantumAIOptimization = () => {
                   <li><strong>Measure</strong>: solution quality, time, cost, stability.</li>
                   <li><strong>Operationalize</strong>: reproducibility, audit logs, monitoring.</li>
                 </ol>
+
+                <h2>What “hybrid” looks like (concrete pattern)</h2>
+                <ol>
+                  <li>
+                    Classical system does preprocessing: data cleaning, constraints, decomposition.
+                  </li>
+                  <li>
+                    Quantum component attempts a hard core (small subproblem) or provides samples.
+                  </li>
+                  <li>
+                    Classical post-processing repairs feasibility and improves solution quality.
+                  </li>
+                  <li>
+                    The final output is audited, versioned, and compared against baseline continuously.
+                  </li>
+                </ol>
+
+                <h2>Common pitfalls</h2>
+                <ul>
+                  <li><strong>Comparing to weak baselines</strong>: makes results look better than they are.</li>
+                  <li><strong>Ignoring constraints</strong>: the “best” solution is useless if infeasible.</li>
+                  <li><strong>No reproducibility</strong>: without seeds, versions, and tracking, you can’t ship.</li>
+                </ul>
               </article>
             </div>
           </div>
