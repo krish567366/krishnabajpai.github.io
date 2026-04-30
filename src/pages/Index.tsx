@@ -349,21 +349,6 @@ const Index = () => {
           </div>
         </section>
 
-      {/* Footer */}
-      <footer className="py-8 bg-secondary border-t border-border">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="font-sketch text-foreground mb-4 md:mb-0">
-              Krishna Bajpai © 2025
-            </div>
-            <div className="flex space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
-              <a href="#" className="hover:text-foreground transition-colors">Terms</a>
-              <a href="#" className="hover:text-foreground transition-colors">LinkedIn</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </Layout>
       </>
   );
