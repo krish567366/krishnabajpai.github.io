@@ -9,10 +9,12 @@ const INDEX_HTML = path.join(DIST_DIR, "index.html");
 const ROUTES = [
   "/real-estate-consortium",
   "/consortium-process",
+  "/press",
   "/case-studies",
   "/services",
   "/testimonials",
   "/tools",
+  "/about/krishna-bajpai",
   "/blog",
   "/blog/ai-agents-multi-agent-systems",
   "/blog/domain-specific-ai-dslms",

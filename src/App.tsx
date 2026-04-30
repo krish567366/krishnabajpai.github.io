@@ -22,6 +22,8 @@ import NotFound from "./pages/NotFound";
 import ServiceDetail from "./pages/ServiceDetail";
 import ResearchDetail from "./pages/ResearchDetail";
 import DiscoveryDetail from "./pages/DiscoveryDetail";
+import Press from "./pages/Press";
+import AboutKrishnaBajpai from "./pages/AboutKrishnaBajpai";
 
 // Specialized Pages
 import Privacy from "./pages/Privacy";
@@ -95,12 +97,14 @@ const App = () => {
             {/* Main Pages */}
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about/krishna-bajpai" element={<AboutKrishnaBajpai />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/services" element={<Services />} />
             <Route path="/tools" element={<Tools />} />
             <Route path="/tools/:slug" element={<ToolDetail />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/press" element={<Press />} />
             
             {/* Specialized Pages */}
             <Route path="/privacy" element={<Privacy />} />

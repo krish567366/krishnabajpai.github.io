@@ -1,0 +1,141 @@
+import React from "react";
+import Layout from "@/components/layout/Layout";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
+
+const Press = () => {
+  const title = "Press & Mentions | Krishna Bajpai";
+  const description =
+    "Independent press and public mentions featuring Krishna Bajpai: press releases, event highlights, and public coverage. Built to help search engines connect coverage to the same person entity.";
+  const canonical = "https://krishnabajpai.me/press";
+
+  const mentions = [
+    {
+      id: "qwoted-890ns",
+      type: "NewsArticle",
+      headline:
+        "19-Year-Old Developer Unveils 890-Nanosecond Execution Engine, Challenging HFT Industry Standards",
+      url: "https://app.qwoted.com/press_releases/19-year-old-developer-unveils-890-nanosecond-execution-engine-challenging-hft-industry-standards",
+      datePublished: "2026-04-24",
+      publisher: { name: "Qwoted", url: "https://app.qwoted.com/" },
+    },
+    {
+      id: "stpi-instagram-reel",
+      type: "SocialMediaPosting",
+      headline: "STPI AI Summit 2026 — reel featuring Krishna Bajpai (Instagram)",
+      url: "https://www.instagram.com/p/DVqSofckez5/",
+      datePublished: "2026-03-09",
+      publisher: { name: "STPI", url: "https://www.linkedin.com/company/stpiindia/posts/?feedView=all" },
+    },
+    {
+      id: "stpi-linkedin-post",
+      type: "SocialMediaPosting",
+      headline: "STPI AI Summit 2026 — reel featuring Krishna Bajpai (LinkedIn)",
+      url: "https://www.linkedin.com/posts/stpiindia_indiaaiimpactsummit2026-indiaai-digitalindia-activity-7436723695202697216-0A60",
+      datePublished: "2026-03-09",
+      publisher: { name: "STPI", url: "https://www.linkedin.com/company/stpiindia/posts/?feedView=all" },
+    },
+  ] as const;
+
+  return (
+    <>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta
+          name="keywords"
+          content="Krishna Bajpai press, Krishna Bajpai mentions, press release, Qwoted, STPI, AI Summit 2026, coverage"
+        />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": `${canonical}#press`,
+            url: canonical,
+            name: title,
+            description,
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: mentions.map((m, idx) => ({
+                "@type": "ListItem",
+                position: idx + 1,
+                item: {
+                  "@type": m.type,
+                  "@id": `${m.url}#mention`,
+                  headline: m.headline,
+                  url: m.url,
+                  datePublished: m.datePublished,
+                  publisher: {
+                    "@type": "Organization",
+                    name: m.publisher.name,
+                    url: m.publisher.url,
+                  },
+                  about: {
+                    "@type": "Person",
+                    "@id": "https://krishnabajpai.me/#person",
+                    name: "Krishna Bajpai",
+                  },
+                },
+              })),
+            },
+            about: { "@type": "Person", "@id": "https://krishnabajpai.me/#person" },
+            isPartOf: { "@type": "WebSite", "@id": "https://krishnabajpai.me/#website" },
+          })}
+        </script>
+      </Helmet>
+
+      <Layout>
+        <div className="py-20">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <nav className="mb-8">
+                <Link to="/" className="text-accent hover:text-foreground">
+                  ← Back to Home
+                </Link>
+              </nav>
+
+              <header className="mb-10">
+                <h1 className="text-4xl font-light text-foreground mb-4 leading-tight">Press & Mentions</h1>
+                <p className="text-lg text-muted-foreground leading-relaxed">{description}</p>
+              </header>
+
+              <section className="space-y-4">
+                {mentions.map((m) => (
+                  <a
+                    key={m.id}
+                    href={m.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-xl border border-border bg-background/40 p-5 hover:bg-background/60 transition-colors"
+                  >
+                    <div className="text-sm text-muted-foreground mb-2">
+                      {m.publisher.name} • {m.datePublished}
+                    </div>
+                    <div className="text-lg text-foreground">{m.headline}</div>
+                  </a>
+                ))}
+              </section>
+
+              <div className="mt-10 text-sm text-muted-foreground">
+                For identity context, see{" "}
+                <Link to="/about/krishna-bajpai" className="text-accent hover:text-foreground underline">
+                  the canonical entity page
+                </Link>
+                .
+              </div>
+            </div>
+          </div>
+        </div>
+      </Layout>
+    </>
+  );
+};
+
+export default Press;
+

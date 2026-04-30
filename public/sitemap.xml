@@ -33,6 +33,18 @@
     <changefreq>monthly</changefreq>
     <lastmod>2025-12-25</lastmod>
   </url>
+  <url>
+    <loc>https://krishnabajpai.me/about/krishna-bajpai</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-30</lastmod>
+  </url>
+  <url>
+    <loc>https://krishnabajpai.me/press</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-30</lastmod>
+  </url>
 
   <!-- Key Conversion Pages -->
   <url>

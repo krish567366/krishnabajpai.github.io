@@ -52,8 +52,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="text-sm text-muted-foreground">
+                <Link to="/about/krishna-bajpai" className="hover:text-foreground transition-colors">
+                  Official Entity Page
+                </Link>
+              </li>
+              <li className="text-sm text-muted-foreground">
                 <Link to="/testimonials" className="hover:text-foreground transition-colors">
                   Testimonials
+                </Link>
+              </li>
+              <li className="text-sm text-muted-foreground">
+                <Link to="/press" className="hover:text-foreground transition-colors">
+                  Press & Mentions
                 </Link>
               </li>
                             <li className="text-sm text-muted-foreground">
