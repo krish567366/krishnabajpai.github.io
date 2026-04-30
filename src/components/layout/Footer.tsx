@@ -66,6 +66,11 @@ const Footer = () => {
                   Press & Mentions
                 </Link>
               </li>
+              <li className="text-sm text-muted-foreground">
+                <Link to="/profiles" className="hover:text-foreground transition-colors">
+                  Profiles & Identifiers
+                </Link>
+              </li>
                             <li className="text-sm text-muted-foreground">
                 <Link to="/real-estate-consortium" className="hover:text-foreground transition-colors">
                   The Consortium

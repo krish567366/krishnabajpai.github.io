@@ -10,6 +10,7 @@ const ROUTES = [
   "/real-estate-consortium",
   "/consortium-process",
   "/press",
+  "/profiles",
   "/case-studies",
   "/services",
   "/testimonials",

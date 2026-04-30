@@ -24,6 +24,7 @@ import ResearchDetail from "./pages/ResearchDetail";
 import DiscoveryDetail from "./pages/DiscoveryDetail";
 import Press from "./pages/Press";
 import AboutKrishnaBajpai from "./pages/AboutKrishnaBajpai";
+import Profiles from "./pages/Profiles";
 
 // Specialized Pages
 import Privacy from "./pages/Privacy";
@@ -105,6 +106,7 @@ const App = () => {
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/press" element={<Press />} />
+            <Route path="/profiles" element={<Profiles />} />
             
             {/* Specialized Pages */}
             <Route path="/privacy" element={<Privacy />} />

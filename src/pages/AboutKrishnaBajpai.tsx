@@ -14,6 +14,13 @@ const AboutKrishnaBajpai = () => {
       <Helmet>
         <title>{title} | Krishna Bajpai</title>
         <meta name="description" content={description} />
+        <link rel="me" href="https://krishnabajpai.me/" />
+        <link rel="me" href="https://www.wikidata.org/wiki/Q137462720" />
+        <link rel="me" href="https://orcid.org/0009-0006-5618-1834" />
+        <link rel="me" href="https://scholar.google.com/citations?user=zhQAzQoAAAAJ" />
+        <link rel="me" href="https://linkedin.com/in/bajpai-krishna" />
+        <link rel="me" href="https://github.com/krish567366" />
+        <link rel="me" href="https://www.instagram.com/bajpai__krishna/" />
         <meta
           name="keywords"
           content="Krishna Bajpai, Krishna Bajpai official, Krishna Bajpai entity, ORCID, Wikidata, Google Scholar, knowledge graph"
@@ -94,8 +101,27 @@ const AboutKrishnaBajpai = () => {
                     url: "https://krishnabajpai.me/press",
                     name: "Press & Mentions",
                   },
+                  {
+                    "@type": "SoftwareSourceCode",
+                    "@id": "https://github.com/krish567366/submicro-execution-engine#repo",
+                    name: "Sub-Microsecond Trading Execution Engine",
+                    codeRepository: "https://github.com/krish567366/submicro-execution-engine",
+                    url: "https://github.com/krish567366/submicro-execution-engine",
+                    programmingLanguage: ["C++", "Assembly", "Python"],
+                    author: { "@type": "Person", "@id": "https://krishnabajpai.me/#person" },
+                  },
                 ],
               },
+            ],
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://krishnabajpai.me/" },
+              { "@type": "ListItem", position: 2, name: "Official Entity Page", item: canonical },
             ],
           })}
         </script>
