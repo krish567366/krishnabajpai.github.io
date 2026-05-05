@@ -18,7 +18,7 @@ const Hero = () => {
                 <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mt-4">
-                Expert in building production-grade machine learning systems with TensorFlow and PyTorch. Specializing in MLOps, deep learning architectures, and scalable AI solutions for enterprise applications.
+                <span className="text-foreground font-medium">Krishna Bajpai</span> builds production-grade machine learning systems with TensorFlow and PyTorch. Specializing in MLOps, deep learning architectures, and scalable AI solutions for enterprise applications.
               </p>
             </div>
 

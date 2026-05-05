@@ -48,12 +48,12 @@ const Footer = () => {
               </li>
               <li className="text-sm text-muted-foreground">
                 <Link to="/about" className="hover:text-foreground transition-colors">
-                  About Me
+                  About Krishna Bajpai
                 </Link>
               </li>
               <li className="text-sm text-muted-foreground">
                 <Link to="/about/krishna-bajpai" className="hover:text-foreground transition-colors">
-                  Official Entity Page
+                  Krishna Bajpai — Wikidata, ORCID &amp; Scholar
                 </Link>
               </li>
               <li className="text-sm text-muted-foreground">

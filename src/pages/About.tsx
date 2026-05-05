@@ -11,101 +11,51 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Krishna Bajpai | ML Engineering Portfolio & Technical Expertise</title>
-        <meta name="description" content="Explore Krishna Bajpai's machine learning engineering portfolio, featuring deep learning projects, MLOps implementations, and technical ML solutions. Specialist in TensorFlow, PyTorch, and scalable AI architectures." />
-        <meta name="keywords" content="Krishna Bajpai ML portfolio, machine learning projects, deep learning implementations, MLOps architecture, TensorFlow projects, PyTorch solutions, ML system design, AI engineering, technical ML lead, Krishna Bajpai engineer" />
+        <title>Krishna Bajpai — About | Portfolio, ML Engineering &amp; Technical Background</title>
+        <meta name="description" content="Krishna Bajpai — portfolio and technical background: machine learning engineering, deep learning, MLOps, TensorFlow and PyTorch, and scalable AI architecture. Official /about page on krishnabajpai.me." />
+        <meta name="keywords" content="Krishna Bajpai, Krishna Bajpai about, Krishna Bajpai portfolio, Krishna Bajpai engineer, machine learning consultant, MLOps, TensorFlow, PyTorch, AI consultant India" />
         <link rel="canonical" href="https://krishnabajpai.me/about" />
-        <meta property="og:title" content="About Krishna Bajpai | ML Engineering Portfolio & Technical Expertise" />
-        <meta property="og:description" content="Explore Krishna Bajpai's machine learning engineering portfolio, featuring deep learning projects, MLOps implementations, and technical ML solutions. Specialist in TensorFlow, PyTorch, and scalable AI architectures." />
+        <meta property="og:title" content="Krishna Bajpai — About | Portfolio &amp; Technical Expertise" />
+        <meta property="og:description" content="Krishna Bajpai: ML engineering portfolio, MLOps, deep learning, and enterprise AI architecture. Official biography and project highlights." />
         <meta property="og:url" content="https://krishnabajpai.me/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consultant & Quantum Optimization Expert" />
+        <meta property="og:image:alt" content="Krishna Bajpai — AI/ML consultant and researcher" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krishna Bajpai - AI/ML & Quantum Expert | 28+ Research Projects, 28+ Python Libraries" />
-        <meta name="twitter:description" content="Krishna Bajpai - AI/ML & Quantum Optimization expert with 28+ research Projects, 28+ Python libraries, 8+ years experience, and 5+ active projects. Trusted by Fortune 500, FinTech, Healthcare, and Supply Chain leaders." />
+        <meta name="twitter:title" content="Krishna Bajpai — About | AI/ML &amp; Quantum" />
+        <meta name="twitter:description" content="Krishna Bajpai: ML portfolio, research, libraries, and enterprise AI experience. Official /about page." />
         <link rel="alternate" href="https://krishnabajpai.me/about" hrefLang="en" />
-        <script type="application/ld+json">{`
-          {
+        <script type="application/ld+json">
+          {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ProfilePage",
-            "mainEntity": {
-              "@type": "Person",
-              "name": "Krishna Bajpai",
-              "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
-              "description": "AI/ML expert with 28+ research Projects, 28+ Python libraries, 8+ years experience, and 5+ active projects in AI consulting for Fortune 500 companies.",
-              "url": "https://krishnabajpai.me/about",
-              "sameAs": [
-                "https://linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834"
-              ],
-              "knowsAbout": [
-                "Artificial Intelligence",
-                "Machine Learning",
-                "Quantum Optimization",
-                "Predictive Analytics",
-                "Healthcare AI",
-                "Fintech AI",
-                "Supply Chain AI",
-                "Retail AI Solutions",
-                "MLOps",
-                "Python Programming",
-                "Data Science",
-                "Automation Solutions"
-              ],
-              "hasOccupation": {
-                "@type": "Occupation",
-                "name": "AI/ML Consultant",
-                "occupationLocation": {
-                  "@type": "Country",
-                  "name": "Global"
-                },
-                "experienceRequirements": "8+ years in AI/ML consulting",
-                "responsibilities": [
-                  "Developing AI/ML solutions for Fortune 500 companies",
-                  "Quantum optimization implementations",
-                  "Predictive modeling and analytics",
-                  "Healthcare AI solutions",
-                  "Fintech AI implementations",
-                  "Supply chain optimization",
-                  "Retail AI solutions",
-                  "MLOps and automation"
-                ]
+            "@graph": [
+              {
+                "@type": "ProfilePage",
+                "@id": "https://krishnabajpai.me/about#profilepage",
+                url: "https://krishnabajpai.me/about",
+                name: "Krishna Bajpai — About",
+                description:
+                  "Portfolio and technical background for Krishna Bajpai: machine learning engineering, MLOps, and enterprise AI.",
+                isPartOf: { "@id": "https://krishnabajpai.me/#website" },
+                mainEntity: { "@id": "https://krishnabajpai.me/#person" },
               },
-              "alumniOf": {
-                "@type": "EducationalOrganization",
-                "name": "Research Institution"
+              {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://krishnabajpai.me/" },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "About Krishna Bajpai",
+                    item: "https://krishnabajpai.me/about",
+                  },
+                ],
               },
-              "award": [
-                "28+ Research Projects Published",
-                "28+ Python Libraries Developed",
-                "Fortune 500 Client Experience"
-              ]
-            },
-            "breadcrumb": {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://krishnabajpai.me/"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "About",
-                  "item": "https://krishnabajpai.me/about"
-                }
-              ]
-            }
-          }
-        `}</script>
+            ],
+          })}
+        </script>
       </Helmet>
       <Layout>
         <div className="min-h-screen bg-background font-body pt-16">
@@ -116,7 +66,7 @@ const About = () => {
                 <h1 className="text-5xl font-light text-foreground mb-6">About Krishna Bajpai</h1>
                 <h2 className="text-3xl font-light text-foreground mb-6">AI/ML & Quantum Optimization Expert</h2>
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                  An experienced AI/ML expert who focuses on creating practical and impactful solutions. I combine deep technical expertise with a clear understanding of business objectives to ensure AI implementations drive tangible results.
+                  <span className="text-foreground font-medium">Krishna Bajpai</span> focuses on practical AI/ML: deep technical work tied to clear business outcomes. I combine hands-on engineering with architecture decisions so implementations ship reliably and drive measurable results.
                 </p>
               </div>
 

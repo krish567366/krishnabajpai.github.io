@@ -56,9 +56,10 @@ const Header = () => {
               </Link>
               <Link 
                 to="/about" 
+                title="About Krishna Bajpai"
                 className={`text-sm ${isActive('/about') ? 'text-foreground font-medium' : 'text-muted-foreground'} hover:text-foreground transition-colors`}
               >
-                About
+                About Krishna Bajpai
               </Link>
               <Link 
                 to="/testimonials" 
@@ -104,10 +105,11 @@ const Header = () => {
             </Link>
             <Link 
               to="/about" 
+              title="About Krishna Bajpai"
               className={`text-sm ${isActive('/about') ? 'text-foreground font-medium' : 'text-muted-foreground'}`}
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              About Krishna Bajpai
             </Link>
             <Link 
               to="/testimonials" 

@@ -294,7 +294,7 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai Blog - AI, ML & Tech Insights | Expert Analysis & Tutorials</title>
+        <title>Krishna Bajpai Blog — AI, ML &amp; Technical Writing</title>
         <meta name="description" content="Krishna Bajpai's technical blog featuring in-depth articles on AI, machine learning, quantum computing, system architecture, and production deployment experiences. Expert insights and practical tutorials." />
         <meta name="keywords" content="Krishna Bajpai blog, AI blog, machine learning tutorials, quantum computing articles, system architecture, MLOps, technical writing, AI expert insights" />
         <link rel="canonical" href="https://krishnabajpai.me/blog" />

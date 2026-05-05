@@ -10,72 +10,22 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai - Leading AI/ML Consulting Expert | Quantum Computing & Algorithmic Trading Specialist</title>
-        <meta name="description" content="Transform your business with Krishna Bajpai's advanced AI/ML solutions. Expert in Quantum Hybrid Optimization, Custom ML Pipelines, and Enterprise AI Architecture. Advanced AI specialist trusted by Fortune 500 companies. Schedule a consultation today." />
-        <meta name="keywords" content="AI/ML Consulting Expert, Quantum Hybrid Optimization Specialist, Custom ML Pipeline Architect, Enterprise AI Solutions, Algorithmic Trading Systems, Advanced ML Infrastructure, Krishna Bajpai, MLOps Architecture, Quantum Computing Innovation, Fortune 500 AI Consultant, Technical ML Architecture, AI/ML Strategy Consultant, Krishna Bajpai Consortium, The Real Estate Consortium, Elite Real Estate Intelligence Network, Premium Real Estate Consortium India, Global Property Analytics Platform, Real Estate Innovation Leader, Property Portfolio Optimization Expert, ML Property Valuation Expert, Quantum-Enhanced Property Valuation" />
+        <title>Krishna Bajpai — Official Site | AI/ML Consultant, Quantum &amp; Quantitative Finance</title>
+        <meta name="description" content="Krishna Bajpai is an AI/ML consultant, quantum computing specialist, and quantitative finance researcher. Official site for enterprise AI, MLOps, research, and ultra-low latency systems. India-based, working with teams worldwide." />
+        <meta name="keywords" content="Krishna Bajpai, Krishna Bajpai consultant, Krishna Bajpai AI, Krishna Bajpai machine learning, Krishna Bajpai quantum, Krishna Bajpai quant finance, AI consultant India, enterprise AI, MLOps, quantum computing consulting, quantitative finance researcher, algorithmic trading, Krishna Bajpai official" />
         <link rel="canonical" href="https://krishnabajpai.me/" />
-        <meta property="og:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />
-        <meta property="og:description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
+        <meta property="og:title" content="Krishna Bajpai — Official Site | AI/ML, Quantum &amp; Quant Finance" />
+        <meta property="og:description" content="Official site of Krishna Bajpai: AI/ML consulting, quantum optimization, MLOps, and quantitative finance research. Explore services, case studies, blog, and verified profiles (Wikidata, ORCID, Scholar)." />
         <meta property="og:url" content="https://krishnabajpai.me/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Krishna Bajpai - AI/ML Consultant & Quantum Optimization Expert" />
+        <meta property="og:image:alt" content="Krishna Bajpai — AI/ML consultant and quantitative finance researcher" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krishna Bajpai - AI & ML Consulting | Quantum Optimization Expert" />
-        <meta name="twitter:description" content="Krishna Bajpai - Expert AI/ML consultant specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, Retail AI, MLOps, and Automation solutions." />
+        <meta name="twitter:title" content="Krishna Bajpai — Official Site | AI/ML &amp; Quantum" />
+        <meta name="twitter:description" content="Krishna Bajpai: AI/ML consultant, quantum computing, MLOps, and quantitative finance. Official website — services, research, blog, press." />
         <link rel="alternate" href="https://krishnabajpai.me/" hrefLang="en" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "AI & ML Consulting | Krishna Bajpai",
-            "description": "AI, ML, Quantum, Automation, Predictive Modeling, Supply Chain, Fintech, Healthcare, Retail, E-Commerce, MLOps, and more. Results-driven solutions for business growth.",
-            "url": "https://krishnabajpai.me/",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Krishna Bajpai AI/ML Consulting",
-              "description": "Expert AI/ML consulting services specializing in Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply Chain AI, and Retail AI solutions.",
-              "url": "https://krishnabajpai.me/",
-              "founder": {
-                "@type": "Person",
-                "name": "Krishna Bajpai",
-                "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
-                "description": "AI/ML expert with 28+ research Projects, 28+ Python libraries, and 8+ years experience in AI consulting for Fortune 500 companies."
-              },
-              "serviceType": [
-                "AI Consulting",
-                "Machine Learning Consulting",
-                "Quantum Optimization",
-                "Predictive Analytics",
-                "Healthcare AI Solutions",
-                "Fintech AI Solutions",
-                "Supply Chain AI",
-                "Retail AI Solutions",
-                "MLOps",
-                "Automation Solutions"
-              ],
-              "areaServed": "Global",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Customer Service",
-                "url": "https://krishnabajpai.me/contact"
-              }
-            },
-            "breadcrumb": {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://krishnabajpai.me/"
-                }
-              ]
-            }
-          }
-        `}</script>
       </Helmet>
       <Layout>
         <div id="hero">
