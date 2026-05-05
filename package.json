@@ -9,6 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "wikidata:article": "node scripts/wikidata-quickstatements.mjs",
+    "wikidata:scholar": "node scripts/wikidata-scholar-sync.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"
