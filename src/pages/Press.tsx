@@ -9,31 +9,42 @@ const Press = () => {
     "Independent press and public mentions featuring Krishna Bajpai: press releases, event highlights, and public coverage. Built to help search engines connect coverage to the same person entity.";
   const canonical = "https://krishnabajpai.me/press";
 
+  /** SocialMediaPosting / NewsArticle: include author + full ISO8601 dates for Google's discussion/social parsers */
+  function orgAuthor(name: string, url: string) {
+    return { "@type": "Organization" as const, name, url };
+  }
+  function datePublishedIso(ymd: string) {
+    return ymd.includes("T") ? ymd : `${ymd}T12:00:00.000Z`;
+  }
+
   const mentions = [
     {
       id: "qwoted-890ns",
-      type: "NewsArticle",
+      type: "NewsArticle" as const,
       headline:
         "19-Year-Old Developer Unveils 890-Nanosecond Execution Engine, Challenging HFT Industry Standards",
       url: "https://app.qwoted.com/press_releases/19-year-old-developer-unveils-890-nanosecond-execution-engine-challenging-hft-industry-standards",
       datePublished: "2026-04-24",
       publisher: { name: "Qwoted", url: "https://app.qwoted.com/" },
+      authorOrg: orgAuthor("Qwoted", "https://app.qwoted.com/"),
     },
     {
       id: "stpi-instagram-reel",
-      type: "SocialMediaPosting",
+      type: "SocialMediaPosting" as const,
       headline: "STPI AI Summit 2026 — reel featuring Krishna Bajpai (Instagram)",
       url: "https://www.instagram.com/p/DVqSofckez5/",
       datePublished: "2026-03-09",
-      publisher: { name: "STPI", url: "https://www.linkedin.com/company/stpiindia/posts/?feedView=all" },
+      publisher: { name: "STPI", url: "https://www.linkedin.com/company/stpiindia/" },
+      authorOrg: orgAuthor("STPI", "https://www.linkedin.com/company/stpiindia/"),
     },
     {
       id: "stpi-linkedin-post",
-      type: "SocialMediaPosting",
+      type: "SocialMediaPosting" as const,
       headline: "STPI AI Summit 2026 — reel featuring Krishna Bajpai (LinkedIn)",
       url: "https://www.linkedin.com/posts/stpiindia_indiaaiimpactsummit2026-indiaai-digitalindia-activity-7436723695202697216-0A60",
       datePublished: "2026-03-09",
-      publisher: { name: "STPI", url: "https://www.linkedin.com/company/stpiindia/posts/?feedView=all" },
+      publisher: { name: "STPI", url: "https://www.linkedin.com/company/stpiindia/" },
+      authorOrg: orgAuthor("STPI", "https://www.linkedin.com/company/stpiindia/"),
     },
   ] as const;
 
@@ -77,7 +88,8 @@ const Press = () => {
                   "@id": `${m.url}#mention`,
                   headline: m.headline,
                   url: m.url,
-                  datePublished: m.datePublished,
+                  datePublished: datePublishedIso(m.datePublished),
+                  author: m.authorOrg,
                   publisher: {
                     "@type": "Organization",
                     name: m.publisher.name,
