@@ -13,6 +13,42 @@ const SITE_HOSTS = new Set(["krishnabajpai.me", "www.krishnabajpai.me"]);
 const SKIP_PATH_RE =
   /\.(txt|xml|json|ico|png|jpe?g|gif|webp|svg|css|js|mjs|cjs|map|woff2?|ttf|eot|pdf|zip)$/i;
 
+const ORIGIN = "https://krishnabajpai.me";
+
+/**
+ * Homepage uses trailing slash; deep routes match sitemap / Helmet (no trailing slash).
+ */
+function canonicalUrlForRoute(pathname) {
+  if (pathname === "/") return `${ORIGIN}/`;
+  return `${ORIGIN}${pathname.replace(/\/+$/, "")}`;
+}
+
+/**
+ * Root index.html is copied to every prerender path; fix head signals so crawlers
+ * do not see every URL as canonical to the homepage (GSC "Page with redirect").
+ */
+function patchPrerenderHtml(html, pathname) {
+  if (pathname === "/") return html;
+  const c = canonicalUrlForRoute(pathname);
+  let out = html.replace(
+    /<link rel="canonical" href="[^"]*"\s*\/>/,
+    `<link rel="canonical" href="${c}" />`,
+  );
+  out = out.replaceAll(
+    /<meta property="og:url" content="[^"]*"\s*\/>/gi,
+    `<meta property="og:url" content="${c}" />`,
+  );
+  out = out.replace(
+    /<link rel="alternate" hreflang="en" href="[^"]*"\s*\/>/,
+    `<link rel="alternate" hreflang="en" href="${c}" />`,
+  );
+  out = out.replace(
+    /<link rel="alternate" hreflang="x-default" href="[^"]*"\s*\/>/,
+    `<link rel="alternate" hreflang="x-default" href="${c}" />`,
+  );
+  return out;
+}
+
 /** Extra SPA routes advertised in structured data but not always present in sitemap. */
 const EXTRA_ROUTES = [
   "/search",
@@ -87,7 +123,8 @@ async function main() {
       if (route === "/") return;
       const targetDir = path.join(DIST_DIR, route.replace(/^\//, ""));
       await ensureDir(targetDir);
-      await fs.writeFile(path.join(targetDir, "index.html"), index, "utf8");
+      const html = patchPrerenderHtml(index, route);
+      await fs.writeFile(path.join(targetDir, "index.html"), html, "utf8");
     }),
   );
 
