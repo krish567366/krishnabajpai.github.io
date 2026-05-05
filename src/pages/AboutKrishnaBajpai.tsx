@@ -59,6 +59,28 @@ const AboutKrishnaBajpai = () => {
                 inLanguage: "en-US",
               },
               {
+                "@type": "Organization",
+                "@id": "https://krishnabajpai.me/#organization",
+                name: "PragyaaAI",
+                alternateName: ["Krishna Bajpai Consulting", "Krishna Bajpai Elite AI Solutions"],
+                url: "https://krishnabajpai.me",
+                description:
+                  "Boutique enterprise AI and quantitative systems practice: architecture, MLOps, quantum optimization, and ultra-low latency trading infrastructure.",
+                founder: { "@type": "Person", "@id": "https://krishnabajpai.me/#person" },
+                employee: { "@type": "Person", "@id": "https://krishnabajpai.me/#person" },
+                foundingDate: "2024",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://krishnabajpai.me/me.jpg",
+                  caption: "PragyaaAI",
+                },
+                sameAs: [
+                  "https://www.wikidata.org/wiki/Q137462720",
+                  "https://www.linkedin.com/in/bajpai-krishna",
+                  "https://github.com/krish567366",
+                ],
+              },
+              {
                 "@type": "Person",
                 "@id": "https://krishnabajpai.me/#person",
                 name: "Krishna Bajpai",
@@ -81,11 +103,7 @@ const AboutKrishnaBajpai = () => {
                   "Quantum Computing Specialist",
                   "Quantitative Finance Researcher",
                 ],
-                worksFor: {
-                  "@type": "Organization",
-                  name: "PragyaaAI",
-                  url: "https://rocketreach.co/pragyaaai-management_b7681ff6c53c6602",
-                },
+                worksFor: { "@type": "Organization", "@id": "https://krishnabajpai.me/#organization" },
                 homeLocation: {
                   "@type": "Place",
                   name: "Kanpur, Uttar Pradesh, India",

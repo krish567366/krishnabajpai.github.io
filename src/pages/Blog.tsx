@@ -309,8 +309,11 @@ const Blog = () => {
             "name": "Krishna Bajpai's AI & Tech Blog",
             "description": "Expert insights and practical tutorials on AI, machine learning, quantum computing, and system architecture",
             "url": "https://krishnabajpai.me/blog",
+            "isPartOf": { "@type": "WebSite", "@id": "https://krishnabajpai.me/#website" },
+            "publisher": { "@type": "Organization", "@id": "https://krishnabajpai.me/#organization" },
             "author": {
               "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
               "name": "Krishna Bajpai",
               "url": "https://krishnabajpai.me"
             },
@@ -325,9 +328,10 @@ const Blog = () => {
                 "url": "https://krishnabajpai.me"
               },
               "publisher": {
-                "@type": "Person",
-                "@id": "https://krishnabajpai.me/#person",
-                "name": "Krishna Bajpai"
+                "@type": "Organization",
+                "@id": "https://krishnabajpai.me/#organization",
+                "name": "PragyaaAI",
+                "url": "https://krishnabajpai.me"
               },
               "datePublished": blogPostingDateIso(post.date),
               "url": `https://krishnabajpai.me/blog/${post.id}`,

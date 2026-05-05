@@ -24,23 +24,28 @@ const NLPSentimentAnalysisEcommerce = () => {
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
               "name": "Krishna Bajpai",
               "url": "https://krishnabajpai.me",
               "sameAs": [
-                "https://www.linkedin.com/in/krishnabajpai/",
-                "https://github.com/krishnabajpai",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
                 "https://www.wikidata.org/wiki/Q137462720",
                 "https://orcid.org/0009-0006-5618-1834",
                 "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834"
+                "https://www.linkedin.com/in/bajpai-krishna",
+                "https://github.com/krish567366"
               ]
             },
             "publisher": {
-              "@type": "Person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me"
+              "@type": "Organization",
+              "@id": "https://krishnabajpai.me/#organization",
+              "name": "PragyaaAI",
+              "url": "https://krishnabajpai.me",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://krishnabajpai.me/me.jpg",
+                "width": 512,
+                "height": 512
+              }
             },
             "datePublished": "2025-11-20T08:00:00Z",
             "dateModified": "2025-11-20T12:00:00Z",

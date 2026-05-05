@@ -29,20 +29,22 @@ const AIHRMSSystemDesign = () => {
             },
             "author": {
               "@type": "Person",
+              "@id": "https://krishnabajpai.me/#person",
               "name": "Krishna Bajpai",
               "url": "https://krishnabajpai.me",
               "jobTitle": "AI/ML Consultant & Quantum Computing Expert",
               "sameAs": [
-                "https://www.linkedin.com/in/bajpai-krishna/",
-                "https://github.com/krish567366",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
                 "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834"
+                "https://orcid.org/0009-0006-5618-1834",
+                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                "https://www.linkedin.com/in/bajpai-krishna",
+                "https://github.com/krish567366"
               ]
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Krishna Bajpai Consulting",
+              "@id": "https://krishnabajpai.me/#organization",
+              "name": "PragyaaAI",
               "url": "https://krishnabajpai.me",
               "logo": {
                 "@type": "ImageObject",

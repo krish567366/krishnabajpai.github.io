@@ -30,7 +30,7 @@ const AIHealthcareBiotech = () => {
           headline: title,
           description,
           author: { "@type": "Person", "@id": "https://krishnabajpai.me/#person", name: "Krishna Bajpai", url: "https://krishnabajpai.me" },
-          publisher: { "@type": "Person", name: "Krishna Bajpai", url: "https://krishnabajpai.me" },
+          publisher: { "@type": "Organization", "@id": "https://krishnabajpai.me/#organization", name: "PragyaaAI", url: "https://krishnabajpai.me" },
           datePublished: "2026-04-22T12:00:00.000Z",
           dateModified: "2026-04-22T12:00:00.000Z",
           url: canonical,
