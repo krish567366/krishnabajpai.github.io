@@ -37,62 +37,96 @@ const AboutKrishnaBajpai = () => {
             "@context": "https://schema.org",
             "@graph": [
               {
-                "@type": "WebPage",
-                "@id": `${canonical}#webpage`,
+                /**
+                 * ProfilePage is the primary KG signal — Google uses this type to
+                 * create / anchor the knowledge panel for a person entity.
+                 * mainEntity links the page to the canonical Person @id.
+                 */
+                "@type": "ProfilePage",
+                "@id": `${canonical}#profilepage`,
                 url: canonical,
                 name: title,
                 description,
+                dateCreated: "2025-01-01T00:00:00Z",
+                dateModified: "2026-04-22T12:00:00.000Z",
                 isPartOf: { "@type": "WebSite", "@id": "https://krishnabajpai.me/#website" },
-                about: { "@type": "Person", "@id": "https://krishnabajpai.me/#person" },
-                primaryImageOfPage: { "@type": "ImageObject", url: "https://krishnabajpai.me/me.jpg" },
+                mainEntity: { "@type": "Person", "@id": "https://krishnabajpai.me/#person" },
+                primaryImageOfPage: {
+                  "@type": "ImageObject",
+                  url: "https://krishnabajpai.me/me.jpg",
+                  caption: "Krishna Bajpai — AI/ML consultant and quantitative finance researcher",
+                },
                 inLanguage: "en-US",
               },
               {
                 "@type": "Person",
                 "@id": "https://krishnabajpai.me/#person",
                 name: "Krishna Bajpai",
+                description:
+                  "Krishna Bajpai is an AI/ML consultant, quantum computing specialist, and quantitative finance researcher. He delivers enterprise AI architecture, MLOps, and ultra-low latency trading systems (890 ns median execution).",
                 url: "https://krishnabajpai.me",
-                image: "https://krishnabajpai.me/me.jpg",
+                mainEntityOfPage: `${canonical}#profilepage`,
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://krishnabajpai.me/me.jpg",
+                  width: 800,
+                  height: 800,
+                  caption: "Krishna Bajpai",
+                },
+                email: "krishna@krishnabajpai.me",
+                nationality: { "@type": "Country", name: "India" },
                 jobTitle: [
                   "AI & ML Solutions Architect",
                   "Senior Machine Learning Consultant",
                   "Quantum Computing Specialist",
                   "Quantitative Finance Researcher",
                 ],
+                worksFor: {
+                  "@type": "Organization",
+                  name: "PragyaaAI",
+                  url: "https://rocketreach.co/pragyaaai-management_b7681ff6c53c6602",
+                },
                 homeLocation: {
                   "@type": "Place",
                   name: "Kanpur, Uttar Pradesh, India",
+                  address: {
+                    "@type": "PostalAddress",
+                    addressLocality: "Kanpur",
+                    addressRegion: "Uttar Pradesh",
+                    addressCountry: "IN",
+                  },
                 },
+                alumniOf: {
+                  "@type": "CollegeOrUniversity",
+                  name: "Indian Institute of Technology",
+                  sameAs: "https://www.iit.ac.in/",
+                },
+                knowsAbout: [
+                  { "@type": "DefinedTerm", name: "Artificial Intelligence", sameAs: "https://www.wikidata.org/wiki/Q11660" },
+                  { "@type": "DefinedTerm", name: "Machine Learning", sameAs: "https://www.wikidata.org/wiki/Q2539" },
+                  { "@type": "DefinedTerm", name: "Quantum Computing", sameAs: "https://www.wikidata.org/wiki/Q207958" },
+                  { "@type": "DefinedTerm", name: "Quantitative Finance", sameAs: "https://www.wikidata.org/wiki/Q748349" },
+                  { "@type": "DefinedTerm", name: "High-Frequency Trading", sameAs: "https://www.wikidata.org/wiki/Q1068258" },
+                  { "@type": "DefinedTerm", name: "Deep Learning", sameAs: "https://www.wikidata.org/wiki/Q197536" },
+                  { "@type": "DefinedTerm", name: "MLOps", sameAs: "https://www.wikidata.org/wiki/Q110588591" },
+                  { "@type": "DefinedTerm", name: "Natural Language Processing", sameAs: "https://www.wikidata.org/wiki/Q30642" },
+                  { "@type": "DefinedTerm", name: "Computer Vision", sameAs: "https://www.wikidata.org/wiki/Q1156518" },
+                ],
                 identifier: [
-                  {
-                    "@type": "PropertyValue",
-                    propertyID: "Wikidata",
-                    value: "Q137462720",
-                    url: "https://www.wikidata.org/wiki/Q137462720",
-                  },
-                  {
-                    "@type": "PropertyValue",
-                    propertyID: "ORCID",
-                    value: "0009-0006-5618-1834",
-                    url: "https://orcid.org/0009-0006-5618-1834",
-                  },
-                  {
-                    "@type": "PropertyValue",
-                    propertyID: "Google Scholar",
-                    value: "zhQAzQoAAAAJ",
-                    url: "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                  },
+                  { "@type": "PropertyValue", propertyID: "Wikidata", value: "Q137462720", url: "https://www.wikidata.org/wiki/Q137462720" },
+                  { "@type": "PropertyValue", propertyID: "ORCID", value: "0009-0006-5618-1834", url: "https://orcid.org/0009-0006-5618-1834" },
+                  { "@type": "PropertyValue", propertyID: "Google Scholar", value: "zhQAzQoAAAAJ", url: "https://scholar.google.com/citations?user=zhQAzQoAAAAJ" },
                 ],
                 sameAs: [
-                  "https://krishnabajpai.me",
-                  "https://linkedin.com/in/bajpai-krishna",
-                  "https://github.com/krish567366",
-                  "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
                   "https://www.wikidata.org/wiki/Q137462720",
                   "https://orcid.org/0009-0006-5618-1834",
-                  "https://www.crunchbase.com/person/krishna-bajpai-265d",
+                  "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                  "https://www.linkedin.com/in/bajpai-krishna",
+                  "https://github.com/krish567366",
                   "https://medium.com/@krishnabajpai",
+                  "https://www.crunchbase.com/person/krishna-bajpai-265d",
                   "https://www.instagram.com/bajpai__krishna/",
+                  "https://krishnabajpai.me",
                 ],
                 subjectOf: [
                   {

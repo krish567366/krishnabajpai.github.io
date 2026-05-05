@@ -29,7 +29,7 @@ const DigitalCoworkers = () => {
           "@type": "BlogPosting",
           headline: title,
           description,
-          author: { "@type": "Person", name: "Krishna Bajpai", url: "https://krishnabajpai.me" },
+          author: { "@type": "Person", "@id": "https://krishnabajpai.me/#person", name: "Krishna Bajpai", url: "https://krishnabajpai.me" },
           publisher: { "@type": "Person", name: "Krishna Bajpai", url: "https://krishnabajpai.me" },
           datePublished: "2026-04-22T12:00:00.000Z",
           dateModified: "2026-04-22T12:00:00.000Z",

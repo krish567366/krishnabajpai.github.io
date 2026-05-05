@@ -320,10 +320,18 @@ const Blog = () => {
               "description": post.excerpt,
               "author": {
                 "@type": "Person",
+                "@id": "https://krishnabajpai.me/#person",
+                "name": "Krishna Bajpai",
+                "url": "https://krishnabajpai.me"
+              },
+              "publisher": {
+                "@type": "Person",
+                "@id": "https://krishnabajpai.me/#person",
                 "name": "Krishna Bajpai"
               },
               "datePublished": blogPostingDateIso(post.date),
               "url": `https://krishnabajpai.me/blog/${post.id}`,
+              "mainEntityOfPage": { "@type": "WebPage", "@id": `https://krishnabajpai.me/blog/${post.id}` },
               "keywords": post.tags.join(", ")
             }))
           })}
