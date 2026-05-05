@@ -3,6 +3,10 @@ import Layout from "@/components/layout/Layout";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
+function blogPostingDateIso(ymd: string) {
+  return ymd.includes("T") ? ymd : `${ymd}T12:00:00.000Z`;
+}
+
 const Blog = () => {
   const blogPosts = [
     {
@@ -318,7 +322,7 @@ const Blog = () => {
                 "@type": "Person",
                 "name": "Krishna Bajpai"
               },
-              "datePublished": post.date,
+              "datePublished": blogPostingDateIso(post.date),
               "url": `https://krishnabajpai.me/blog/${post.id}`,
               "keywords": post.tags.join(", ")
             }))

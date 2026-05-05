@@ -33,7 +33,7 @@ const OpenTXCaseStudy = () => {
             "programmingLanguage": "Go",
             "codeRepository": "https://github.com/krish567366/OpenTX",
             "license": "https://opensource.org/licenses/MIT",
-            "datePublished": "2026-01-24",
+            "datePublished": "2026-01-24T12:00:00.000Z",
             "keywords": "payment gateway, ISO 8583, Protocol Buffers, gRPC, Kafka, OpenTelemetry, FinTech, multi-network support"
           }
         `}</script>

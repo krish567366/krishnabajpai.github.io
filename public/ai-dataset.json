@@ -124,7 +124,7 @@
           "propertyID": "DOI", 
           "value": "10.36227/techrxiv.176114085.56648160/v1"
         },
-        "datePublished": "2025-10-22"
+        "datePublished": "2025-10-22T12:00:00.000Z"
       },
       {
         "@type": "EducationalOccupationalCredential",
@@ -136,7 +136,7 @@
           "propertyID": "DOI",
           "value": "10.36227/techrxiv.175790725.58078790/v1"
         },
-        "datePublished": "2025-09-15"
+        "datePublished": "2025-09-15T12:00:00.000Z"
       },
       {
         "@type": "EducationalOccupationalCredential",
@@ -148,7 +148,7 @@
           "propertyID": "DOI",
           "value": "10.5281/zenodo.17108892"
         },
-        "datePublished": "2025-09-12"
+        "datePublished": "2025-09-12T12:00:00.000Z"
       },
       {
         "@type": "EducationalOccupationalCredential",
@@ -162,7 +162,7 @@
           "propertyID": "DOI", 
           "value": "10.21203/rs.3.rs-8422090/v1"
         },
-        "datePublished": "2025-12-23",
+        "datePublished": "2025-12-23T12:00:00.000Z",
         "keywords": "quantitative finance expert, quant finance expert, HFT systems expert, market microstructure, financial engineering, adversarial control systems, market stability, feedback systems, high-frequency trading, financial markets"
       },
       {
@@ -177,7 +177,7 @@
           "propertyID": "DOI", 
           "value": "10.20944/preprints202512.2270.v1"
         },
-        "datePublished": "2025-12-25",
+        "datePublished": "2025-12-25T12:00:00.000Z",
         "keywords": "stochastic optimal control, market microstructure, controllability, performative prediction, actuator saturation, financial markets, market control theory, non-monotonic dynamics, quantitative finance expert"
       },
       {
@@ -192,7 +192,7 @@
           "propertyID": "DOI", 
           "value": "10.20944/preprints202512.2293.v1"
         },
-        "datePublished": "2025-12-25",
+        "datePublished": "2025-12-25T12:00:00.000Z",
         "keywords": "strategic ignorance, financial markets, reinforcement learning, limit order book, alpha generation, market stability, information theory, trading strategies, quantitative finance expert"
       },
       {
@@ -206,7 +206,7 @@
           "propertyID": "DOI",
           "value": "10.5281/zenodo.18048292"
         },
-        "datePublished": "2025-12-24",
+        "datePublished": "2025-12-24T12:00:00.000Z",
         "keywords": "ultra-low latency discovery, sub-microsecond execution, deterministic trading systems, nanosecond precision, quantitative finance breakthrough, HFT systems innovation, lock-free architecture, zero-allocation execution"
       },
       {
@@ -220,7 +220,7 @@
           "propertyID": "DOI",
           "value": "10.5281/zenodo.18048269"
         },
-        "datePublished": "2025-12-24",
+        "datePublished": "2025-12-24T12:00:00.000Z",
         "keywords": "network latency breakthrough, 20ns packet processing, zero-abstraction networking, memory-mapped NIC discovery, bare metal optimization, deterministic networking innovation, HFT networking revolution"
       },
       {
@@ -234,7 +234,7 @@
           "propertyID": "GitHub Repository",
           "value": "krish567366/OpenTX"
         },
-        "datePublished": "2026-01-24",
+        "datePublished": "2026-01-24T12:00:00.000Z",
         "keywords": "payment gateway, ISO 8583, canonical transaction protocol, FinTech infrastructure, Protocol Buffers, gRPC, Kafka, OpenTelemetry, payment network modernization, multi-network support, event-driven architecture, message security, idempotency, Go programming"
       }
     ]

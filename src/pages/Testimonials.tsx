@@ -90,7 +90,7 @@ const Testimonials = () => {
         "name": t.company
       },
       "keywords": [t.industry, t.project, "AI Consulting", "Machine Learning"],
-      "datePublished": new Date().toISOString().split('T')[0] // Current date in YYYY-MM-DD
+      "datePublished": new Date().toISOString(),
     }))
   };
 
