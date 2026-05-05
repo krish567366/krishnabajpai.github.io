@@ -73,21 +73,21 @@ const Contact = () => {
     <>
       {/* SEO Meta Tags & Structured Data */}
       <Helmet>
-        <title>Contact Krishna Bajpai - AI & ML Consultant | Book Strategy Call</title>
-        <meta name="description" content="Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more. Book a strategy call to discuss your business challenges and project needs." />
-        <meta name="keywords" content="Contact, AI consulting, ML consulting, Quantum optimization, Predictive analytics, Healthcare AI, Fintech AI, Supply chain AI, MLOps, Automation, Krishna Bajpai" />
+        <title>Contact Krishna Bajpai — AI Systems Architect (Kanpur, India) | Book a Call</title>
+        <meta name="description" content="Contact Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India — for enterprise AI architecture, MLOps, quantitative finance systems, automation, and predictive modeling. Book a strategy call." />
+        <meta name="keywords" content="Contact Krishna Bajpai, Krishna Bajpai Kanpur, AI systems architect, enterprise AI, MLOps, quantitative finance systems, Krishna Bajpai email" />
         <link rel="canonical" href="https://krishnabajpai.me/contact" />
-        <meta property="og:title" content="Contact Krishna Bajpai - AI & ML Consultant | Book Strategy Call" />
-        <meta property="og:description" content="Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more. Book a strategy call to discuss your business challenges and project needs." />
+        <meta property="og:title" content="Contact Krishna Bajpai — AI Systems Architect | Book a Call" />
+        <meta property="og:description" content="Reach Krishna Bajpai (AI systems architect, Kanpur, India) for architecture reviews, MLOps, and quantitative systems. Book a strategy call." />
         <meta property="og:url" content="https://krishnabajpai.me/contact" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Contact Krishna Bajpai - AI/ML Consultant" />
+        <meta property="og:image:alt" content="Contact Krishna Bajpai — AI systems architect" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact Krishna Bajpai - AI & ML Consultant | Book Strategy Call" />
-        <meta name="twitter:description" content="Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more. Book a strategy call to discuss your business challenges and project needs." />
+        <meta name="twitter:title" content="Contact Krishna Bajpai — AI Systems Architect | Book a Call" />
+        <meta name="twitter:description" content="Contact Krishna Bajpai (Kanpur, Uttar Pradesh, India) for enterprise AI architecture, MLOps, and quantitative systems." />
         <link rel="alternate" href="https://krishnabajpai.me/contact" hrefLang="en" />
         {/* Structured Data: ContactPage */}
         <script type="application/ld+json">{`
@@ -96,7 +96,7 @@ const Contact = () => {
             "@type": "ContactPage",
             "name": "Contact Krishna Bajpai",
             "url": "https://krishnabajpai.me/contact",
-            "description": "Contact Krishna Bajpai for AI, ML, Quantum, Automation, Predictive Modeling, and more.",
+            "description": "Contact Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India — for enterprise AI architecture, MLOps, quantitative systems, and automation.",
             "contactOption": [
               {
                 "@type": "ContactPoint",

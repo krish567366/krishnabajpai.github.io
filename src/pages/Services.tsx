@@ -156,12 +156,12 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>AI & ML Consulting Services | Enterprise Solutions by Krishna Bajpai</title>
-        <meta name="description" content="Premium AI/ML consulting services: Predictive modeling, quantum optimization, MLOps, and custom AI solutions. Proven ROI for Fortune 500 companies." />
-        <meta name="keywords" content="AI consulting services, ML consulting, predictive modeling, quantum optimization, MLOps, enterprise AI, Krishna Bajpai services" />
+        <title>Enterprise AI Architecture &amp; ML Services | Krishna Bajpai (Kanpur, India)</title>
+        <meta name="description" content="Premium enterprise AI architecture and ML delivery: predictive modeling, quantum-assisted optimization, MLOps, and custom systems. Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India; global clients." />
+        <meta name="keywords" content="enterprise AI architecture, ML services, predictive modeling, quantum optimization, MLOps, Krishna Bajpai Kanpur, AI systems architect" />
         <link rel="canonical" href="https://krishnabajpai.me/services" />
-        <meta property="og:title" content="AI & ML Consulting Services | Enterprise Solutions by Krishna Bajpai" />
-        <meta property="og:description" content="Premium AI/ML consulting services with proven ROI for Fortune 500 companies" />
+        <meta property="og:title" content="Enterprise AI Architecture &amp; ML Services | Krishna Bajpai" />
+        <meta property="og:description" content="Enterprise AI architecture, MLOps, and optimization — Krishna Bajpai (Kanpur, India); proven delivery for global teams." />
         <meta property="og:url" content="https://krishnabajpai.me/services" />
         <meta property="og:type" content="website" />
         
@@ -170,14 +170,14 @@ const Services = () => {
           {
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "AI & ML Consulting Services",
-            "description": "Comprehensive artificial intelligence and machine learning consulting services for enterprise clients",
+            "name": "Enterprise AI Architecture & ML Services",
+            "description": "Enterprise artificial intelligence and machine learning architecture, implementation, and MLOps for global clients",
             "provider": {
               "@type": "Person",
               "name": "Krishna Bajpai",
               "@id": "https://krishnabajpai.me/#person"
             },
-            "serviceType": "Professional Consulting",
+            "serviceType": "Enterprise AI architecture and delivery",
             "areaServed": {
               "@type": "Place", 
               "name": "Global"
@@ -255,13 +255,15 @@ const Services = () => {
           {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            "name": "Krishna Bajpai AI Consulting",
-            "alternateName": "KB AI Solutions",
+            "name": "PragyaaAI — Enterprise AI Practice (Krishna Bajpai)",
+            "alternateName": "Krishna Bajpai AI Services",
             "url": "https://krishnabajpai.me/services",
             "telephone": "+1-555-AI-CONSULT",
             "email": "krishna@krishnabajpai.me",
             "address": {
               "@type": "PostalAddress",
+              "addressLocality": "Kanpur",
+              "addressRegion": "Uttar Pradesh",
               "addressCountry": "IN"
             },
             "areaServed": [

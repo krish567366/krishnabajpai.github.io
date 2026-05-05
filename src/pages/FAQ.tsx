@@ -123,11 +123,8 @@ const FAQ = () => {
                 <div className="space-y-4">
                   <h2 className="text-2xl font-semibold text-foreground">Where is Krishna Bajpai located?</h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Krishna Bajpai is based in India and provides AI/ML consulting services globally. He works
-                    remotely with clients worldwide, including Fortune 500 companies in North America, Europe,
-                    and Asia-Pacific regions. Krishna Bajpai offers both remote consulting and on-site engagement
-                    for enterprise AI transformation projects, ensuring flexible collaboration regardless of
-                    geographic location.
+                    Krishna Bajpai is based in <strong>Kanpur, Uttar Pradesh, India</strong> (use the same wording on LinkedIn and GitHub for consistent name–address–profession signals). He provides AI systems architecture and delivery globally: remote-first with Fortune 500 and startup clients across North America, Europe,
+                    and Asia-Pacific. On-site engagements are available where needed for enterprise transformation programs.
                   </p>
                 </div>
 

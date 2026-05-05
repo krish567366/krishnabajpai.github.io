@@ -10,21 +10,21 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai — Official Site | AI/ML Consultant, Quantum &amp; Quantitative Finance</title>
-        <meta name="description" content="Krishna Bajpai is an AI/ML consultant, quantum computing specialist, and quantitative finance researcher. Official site for enterprise AI, MLOps, research, and ultra-low latency systems. India-based, working with teams worldwide." />
-        <meta name="keywords" content="Krishna Bajpai, Krishna Bajpai consultant, Krishna Bajpai AI, Krishna Bajpai machine learning, Krishna Bajpai quantum, Krishna Bajpai quant finance, AI consultant India, enterprise AI, MLOps, quantum computing consulting, quantitative finance researcher, algorithmic trading, Krishna Bajpai official" />
+        <title>Krishna Bajpai — Official Site | AI Systems Architect (Kanpur, India)</title>
+        <meta name="description" content="Krishna Bajpai — AI systems architect in Kanpur, Uttar Pradesh, India. Official site: enterprise AI architecture, MLOps, quantitative finance systems, and ultra-low latency infrastructure. Works with teams worldwide." />
+        <meta name="keywords" content="Krishna Bajpai, Krishna Bajpai Kanpur, Krishna Bajpai Uttar Pradesh, Krishna Bajpai AI systems architect, Krishna Bajpai machine learning, enterprise AI architecture, MLOps, quantitative finance systems, quantum-assisted optimization, Krishna Bajpai official" />
         <link rel="canonical" href="https://krishnabajpai.me/" />
-        <meta property="og:title" content="Krishna Bajpai — Official Site | AI/ML, Quantum &amp; Quant Finance" />
-        <meta property="og:description" content="Official site of Krishna Bajpai: AI/ML consulting, quantum optimization, MLOps, and quantitative finance research. Explore services, case studies, blog, and verified profiles (Wikidata, ORCID, Scholar)." />
+        <meta property="og:title" content="Krishna Bajpai — Official Site | AI Systems Architect" />
+        <meta property="og:description" content="Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India. Enterprise AI architecture, MLOps, quantitative finance systems. Services, case studies, blog, verified profiles (Wikidata, ORCID, Scholar)." />
         <meta property="og:url" content="https://krishnabajpai.me/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Krishna Bajpai — AI/ML consultant and quantitative finance researcher" />
+        <meta property="og:image:alt" content="Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krishna Bajpai — Official Site | AI/ML &amp; Quantum" />
-        <meta name="twitter:description" content="Krishna Bajpai: AI/ML consultant, quantum computing, MLOps, and quantitative finance. Official website — services, research, blog, press." />
+        <meta name="twitter:title" content="Krishna Bajpai — Official Site | AI Systems Architect" />
+        <meta name="twitter:description" content="Krishna Bajpai — AI systems architect, Kanpur, India. Enterprise AI, MLOps, quantitative finance systems. Official site: services, research, blog, press." />
         <link rel="alternate" href="https://krishnabajpai.me/" hrefLang="en" />
       </Helmet>
       <Layout>
@@ -37,7 +37,7 @@ const Index = () => {
           <div className="container mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
               <h1 className="text-5xl font-light text-foreground mb-6">
-                Krishna Bajpai - AI & ML Consulting Expert
+                Krishna Bajpai — AI Systems Architect
               </h1>
               <h2 className="text-3xl font-light text-foreground mb-6">
                 What I <span className="font-sketch font-bold relative">Do<div className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent transform rotate-1"></div></span>

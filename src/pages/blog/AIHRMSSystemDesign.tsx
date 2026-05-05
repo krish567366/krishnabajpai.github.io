@@ -32,7 +32,7 @@ const AIHRMSSystemDesign = () => {
               "@id": "https://krishnabajpai.me/#person",
               "name": "Krishna Bajpai",
               "url": "https://krishnabajpai.me",
-              "jobTitle": "AI/ML Consultant & Quantum Computing Expert",
+              "jobTitle": "AI Systems Architect",
               "sameAs": [
                 "https://www.wikidata.org/wiki/Q137462720",
                 "https://orcid.org/0009-0006-5618-1834",

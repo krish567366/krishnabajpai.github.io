@@ -16,8 +16,8 @@ const RSSFeed: React.FC<RSSFeedProps> = ({ limit = 50 }) => {
       const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Krishna Bajpai - AI/ML Research &amp; Consulting</title>
-    <description>Revolutionary AI discoveries, research publications, case studies, and insights from Krishna Bajpai. Featuring breakthrough systems achieving sub-microsecond performance, quantum optimization, and advanced machine learning solutions.</description>
+    <title>Krishna Bajpai - AI Systems Architecture &amp; Research</title>
+    <description>Research publications, case studies, and insights from Krishna Bajpai — AI systems architect (Kanpur, Uttar Pradesh, India). Quantitative finance systems, ultra-low latency, quantum-assisted optimization, and production ML.</description>
     <link>https://krishnabajpai.me</link>
     <atom:link href="https://krishnabajpai.me/rss" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
@@ -34,11 +34,11 @@ const RSSFeed: React.FC<RSSFeedProps> = ({ limit = 50 }) => {
     <generator>React RSS Generator by Krishna Bajpai</generator>
     <image>
       <url>https://krishnabajpai.me/assets/me.jpg</url>
-      <title>Krishna Bajpai - AI/ML Research &amp; Consulting</title>
+      <title>Krishna Bajpai - AI Systems Architecture &amp; Research</title>
       <link>https://krishnabajpai.me</link>
       <width>144</width>
       <height>144</height>
-      <description>Krishna Bajpai - AI/ML Expert, Researcher, and Consultant</description>
+      <description>Krishna Bajpai — AI systems architect (Kanpur, India): research, case studies, and production systems.</description>
     </image>
 
 ${items.map(item => `    <item>

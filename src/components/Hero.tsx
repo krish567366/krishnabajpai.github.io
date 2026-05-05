@@ -14,11 +14,11 @@ const Hero = () => {
                 Krishna Bajpai
               </h1>
               <h2 className="text-3xl lg:text-4xl font-sketch font-bold relative mt-2">
-                Machine Learning Engineer & AI Solutions Architect
+                AI Systems Architect
                 <div className="absolute -bottom-0.5 left-0 w-full h-0.5 bg-accent transform -rotate-1"></div>
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mt-4">
-                <span className="text-foreground font-medium">Krishna Bajpai</span> builds production-grade machine learning systems with TensorFlow and PyTorch. Specializing in MLOps, deep learning architectures, and scalable AI solutions for enterprise applications.
+                <span className="text-foreground font-medium">Krishna Bajpai</span> is based in Kanpur, Uttar Pradesh, India, and builds production-grade ML systems with TensorFlow and PyTorch — MLOps, deep learning, and scalable AI architecture for enterprise deployments (remote and global).
               </p>
             </div>
 

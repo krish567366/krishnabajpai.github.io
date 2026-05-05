@@ -11,20 +11,20 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai — About | Portfolio, ML Engineering &amp; Technical Background</title>
-        <meta name="description" content="Krishna Bajpai — portfolio and technical background: machine learning engineering, deep learning, MLOps, TensorFlow and PyTorch, and scalable AI architecture. Official /about page on krishnabajpai.me." />
-        <meta name="keywords" content="Krishna Bajpai, Krishna Bajpai about, Krishna Bajpai portfolio, Krishna Bajpai engineer, machine learning consultant, MLOps, TensorFlow, PyTorch, AI consultant India" />
+        <title>Krishna Bajpai — About | AI Systems Architect, Kanpur</title>
+        <meta name="description" content="Krishna Bajpai — about page: AI systems architect based in Kanpur, Uttar Pradesh, India. Portfolio, MLOps, deep learning, TensorFlow and PyTorch, scalable AI architecture on krishnabajpai.me." />
+        <meta name="keywords" content="Krishna Bajpai, Krishna Bajpai about, Krishna Bajpai Kanpur, AI systems architect, MLOps, TensorFlow, PyTorch, enterprise AI architecture" />
         <link rel="canonical" href="https://krishnabajpai.me/about" />
-        <meta property="og:title" content="Krishna Bajpai — About | Portfolio &amp; Technical Expertise" />
-        <meta property="og:description" content="Krishna Bajpai: ML engineering portfolio, MLOps, deep learning, and enterprise AI architecture. Official biography and project highlights." />
+        <meta property="og:title" content="Krishna Bajpai — About | AI Systems Architect" />
+        <meta property="og:description" content="Krishna Bajpai — AI systems architect, Kanpur, India. Portfolio, MLOps, deep learning, enterprise AI architecture." />
         <meta property="og:url" content="https://krishnabajpai.me/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://krishnabajpai.me/me.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Krishna Bajpai — AI/ML consultant and researcher" />
+        <meta property="og:image:alt" content="Krishna Bajpai — AI systems architect" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Krishna Bajpai — About | AI/ML &amp; Quantum" />
+        <meta name="twitter:title" content="Krishna Bajpai — About | AI Systems Architect" />
         <meta name="twitter:description" content="Krishna Bajpai: ML portfolio, research, libraries, and enterprise AI experience. Official /about page." />
         <link rel="alternate" href="https://krishnabajpai.me/about" hrefLang="en" />
         <script type="application/ld+json">
@@ -37,7 +37,7 @@ const About = () => {
                 url: "https://krishnabajpai.me/about",
                 name: "Krishna Bajpai — About",
                 description:
-                  "Portfolio and technical background for Krishna Bajpai: machine learning engineering, MLOps, and enterprise AI.",
+                  "Portfolio and technical background for Krishna Bajpai: AI systems architect (Kanpur, Uttar Pradesh, India); MLOps and enterprise AI architecture.",
                 isPartOf: { "@id": "https://krishnabajpai.me/#website" },
                 mainEntity: { "@id": "https://krishnabajpai.me/#person" },
               },
@@ -64,9 +64,9 @@ const About = () => {
               {/* Header */}
               <div className="text-center mb-16">
                 <h1 className="text-5xl font-light text-foreground mb-6">About Krishna Bajpai</h1>
-                <h2 className="text-3xl font-light text-foreground mb-6">AI/ML & Quantum Optimization Expert</h2>
+                <h2 className="text-3xl font-light text-foreground mb-6">AI Systems Architect</h2>
                 <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
-                  <span className="text-foreground font-medium">Krishna Bajpai</span> focuses on practical AI/ML: deep technical work tied to clear business outcomes. I combine hands-on engineering with architecture decisions so implementations ship reliably and drive measurable results.
+                  <span className="text-foreground font-medium">Krishna Bajpai</span> — Kanpur, Uttar Pradesh, India — focuses on practical AI systems: architecture and engineering tied to clear business outcomes so implementations ship reliably and drive measurable results.
                 </p>
               </div>
 
@@ -90,7 +90,7 @@ const About = () => {
                   
                   <div className="text-center space-y-2">
                     <h2 className="text-2xl font-light text-foreground">Krishna Bajpai</h2>
-                    <p className="text-muted-foreground">AI/ML & Quantum Optimization Expert</p>
+                    <p className="text-muted-foreground">AI Systems Architect — Kanpur, India</p>
                   </div>
 
                   <div className="space-y-4">

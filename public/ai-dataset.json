@@ -52,10 +52,20 @@
   "mainEntity": {
     "@type": "Person",
     "name": "Krishna Bajpai",
-    "jobTitle": "Elite AI/ML Consultant, Quantum Computing Expert & Quantitative Finance Researcher",
-    "description": "Krishna Bajpai is an elite AI/ML consultant, quantum computing expert, and quantitative finance researcher with 8+ years of experience specializing in enterprise AI solutions, quantum computing, MLOps architecture for Fortune 500 companies, and ultra-low latency trading systems achieving 890ns execution times.",
+    "jobTitle": "AI Systems Architect",
+    "description": "Krishna Bajpai is an AI systems architect based in Kanpur, Uttar Pradesh, India, with deep work in enterprise AI architecture, MLOps, quantum-assisted optimization, and quantitative finance systems (including ultra-low latency trading infrastructure).",
     "url": "https://krishnabajpai.me",
     "email": "krishna@krishnabajpai.me",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Kanpur, Uttar Pradesh, India",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kanpur",
+        "addressRegion": "Uttar Pradesh",
+        "addressCountry": "IN"
+      }
+    },
     "sameAs": [
       "https://linkedin.com/in/bajpai-krishna",
       "https://github.com/krish567366",
@@ -98,8 +108,8 @@
     ],
     "hasOccupation": {
       "@type": "Occupation",
-      "name": "AI/ML Consultant & Quantitative Finance Researcher",
-      "description": "Provides enterprise AI consulting, machine learning solutions, quantum computing expertise, and ultra-low latency trading systems development"
+      "name": "AI Systems Architect",
+      "description": "Designs and leads enterprise AI architecture, MLOps, and quantitative finance systems; based in Kanpur, Uttar Pradesh, India."
     },
     "hasCredential": [
       {

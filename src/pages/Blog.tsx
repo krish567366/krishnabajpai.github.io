@@ -294,12 +294,12 @@ const Blog = () => {
   return (
     <>
       <Helmet>
-        <title>Krishna Bajpai Blog — AI, ML &amp; Technical Writing</title>
-        <meta name="description" content="Krishna Bajpai's technical blog featuring in-depth articles on AI, machine learning, quantum computing, system architecture, and production deployment experiences. Expert insights and practical tutorials." />
+    <title>Krishna Bajpai Blog — AI Systems Architecture &amp; Technical Writing</title>
+        <meta name="description" content="Technical blog by Krishna Bajpai — AI systems architect (Kanpur, Uttar Pradesh, India): machine learning, quantum-assisted optimization, system architecture, and production deployment." />
         <meta name="keywords" content="Krishna Bajpai blog, AI blog, machine learning tutorials, quantum computing articles, system architecture, MLOps, technical writing, AI expert insights" />
         <link rel="canonical" href="https://krishnabajpai.me/blog" />
         <meta property="og:title" content="Krishna Bajpai Blog - AI, ML & Tech Insights" />
-        <meta property="og:description" content="Expert insights and practical tutorials on AI, machine learning, quantum computing, and system architecture by Krishna Bajpai." />
+        <meta property="og:description" content="Articles on AI systems architecture, ML, and production practice by Krishna Bajpai." />
         <meta property="og:url" content="https://krishnabajpai.me/blog" />
         <meta property="og:type" content="blog" />
         <script type="application/ld+json">

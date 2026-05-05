@@ -145,7 +145,7 @@ const RealEstateConsortium = () => {
               "founder": {
                 "@type": "Person",
                 "name": "Krishna Bajpai",
-                "jobTitle": "AI/ML Consultant & Quantum Optimization Expert",
+                "jobTitle": "AI Systems Architect",
                 "description": "AI/ML expert with 8+ years experience in enterprise consulting",
                 "sameAs": [
                   "https://krishnabajpai.me",

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AboutKrishnaBajpai = () => {
   const title = "Krishna Bajpai (Official Entity Page)";
   const description =
-    "Official entity page for Krishna Bajpai. This page consolidates authoritative identifiers (Wikidata, ORCID, Google Scholar) and profiles to help search engines resolve the correct person entity.";
+    "Official entity page for Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India. Consolidates Wikidata, ORCID, Google Scholar, and primary profiles so search engines resolve the correct person entity.";
   const canonical = "https://krishnabajpai.me/about/krishna-bajpai";
 
   return (
@@ -54,7 +54,7 @@ const AboutKrishnaBajpai = () => {
                 primaryImageOfPage: {
                   "@type": "ImageObject",
                   url: "https://krishnabajpai.me/me.jpg",
-                  caption: "Krishna Bajpai — AI/ML consultant and quantitative finance researcher",
+                  caption: "Krishna Bajpai — AI systems architect, Kanpur, Uttar Pradesh, India",
                 },
                 inLanguage: "en-US",
               },
@@ -85,7 +85,7 @@ const AboutKrishnaBajpai = () => {
                 "@id": "https://krishnabajpai.me/#person",
                 name: "Krishna Bajpai",
                 description:
-                  "Krishna Bajpai is an AI/ML consultant, quantum computing specialist, and quantitative finance researcher. He delivers enterprise AI architecture, MLOps, and ultra-low latency trading systems (890 ns median execution).",
+                  "Krishna Bajpai is an AI systems architect in Kanpur, Uttar Pradesh, India. He designs enterprise AI architecture, MLOps, quantum-assisted optimization, and quantitative finance / ultra-low latency systems (890 ns median execution).",
                 url: "https://krishnabajpai.me",
                 mainEntityOfPage: `${canonical}#profilepage`,
                 image: {
@@ -93,16 +93,11 @@ const AboutKrishnaBajpai = () => {
                   url: "https://krishnabajpai.me/me.jpg",
                   width: 800,
                   height: 800,
-                  caption: "Krishna Bajpai",
+                  caption: "Krishna Bajpai — AI systems architect",
                 },
                 email: "krishna@krishnabajpai.me",
                 nationality: { "@type": "Country", name: "India" },
-                jobTitle: [
-                  "AI & ML Solutions Architect",
-                  "Senior Machine Learning Consultant",
-                  "Quantum Computing Specialist",
-                  "Quantitative Finance Researcher",
-                ],
+                jobTitle: "AI Systems Architect",
                 worksFor: { "@type": "Organization", "@id": "https://krishnabajpai.me/#organization" },
                 homeLocation: {
                   "@type": "Place",
@@ -231,6 +226,31 @@ const AboutKrishnaBajpai = () => {
                       </a>
                     </li>
                   </ul>
+                </div>
+
+                <div className="rounded-xl border border-border bg-background/40 p-6">
+                  <h2 className="text-xl text-foreground mb-3">Location (NAP consistency)</h2>
+                  <p className="text-muted-foreground leading-relaxed">
+                    <strong>Kanpur, Uttar Pradesh, India</strong> — use this same locality on{" "}
+                    <a
+                      href="https://linkedin.com/in/bajpai-krishna"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent hover:text-foreground underline"
+                    >
+                      LinkedIn
+                    </a>{" "}
+                    and{" "}
+                    <a
+                      href="https://github.com/krish567366"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent hover:text-foreground underline"
+                    >
+                      GitHub
+                    </a>{" "}
+                    so your <abbr title="Name, Address, Profession">NAP</abbr> matches research profiles and this site.
+                  </p>
                 </div>
 
                 <div className="rounded-xl border border-border bg-background/40 p-6">

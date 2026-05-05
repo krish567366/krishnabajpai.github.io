@@ -398,7 +398,7 @@ const AirportMLOptimization = () => {
                   <div>
                     <h4 className="font-medium text-foreground mb-2">Krishna Bajpai</h4>
                     <p className="text-muted-foreground text-sm mb-3">
-                      Machine Learning Engineer and AI Solutions Architect specializing in enterprise ML systems 
+                      AI Systems Architect specializing in enterprise ML systems 
                       and predictive analytics. Expert in aviation industry optimization and quantum-enhanced algorithms.
                     </p>
                     <Link to="/about" className="text-accent hover:text-foreground text-sm transition-colors">
