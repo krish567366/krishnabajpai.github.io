@@ -56,7 +56,8 @@ function printHelp() {
 Generate QuickStatements TSV (default) or create a Wikidata item via API (--submit).
 
 For Google Scholar → DOI → skip-if-exists → create many items, use:
-  node scripts/wikidata-scholar-sync.mjs --user YOUR_SCHOLAR_USER_ID --about Q137462720
+  npm run wikidata:scholar
+  (defaults to profile https://scholar.google.com/citations?user=zhQAzQoAAAAJ&hl=en&oi=ao )
 
 Required:
   --url / -u           Page URL (article, paper landing page, or video page)

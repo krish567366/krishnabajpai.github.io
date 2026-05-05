@@ -4,12 +4,18 @@
  * hints in the snippet + Crossref + OpenAlex, skip items already on Wikidata (P356 or P973),
  * then print QuickStatements batches or create items (--submit).
  *
- * Usage:
- *   node scripts/wikidata-scholar-sync.mjs --user zhQAzQoAAAAJ --about Q137462720
- *   node scripts/wikidata-scholar-sync.mjs --user zhQAzQoAAAAJ --about Q137462720 --submit
- *   node scripts/wikidata-scholar-sync.mjs --user zhQAzQoAAAAJ --limit 3 --delay-ms 2000
+ * Default profile matches:
+ *   https://scholar.google.com/citations?user=zhQAzQoAAAAJ&hl=en&oi=ao
  *
- * Env (--submit): WIKIDATA_USERNAME, WIKIDATA_PASSWORD (bot password)
+ * Usage:
+ *   node scripts/wikidata-scholar-sync.mjs
+ *   node scripts/wikidata-scholar-sync.mjs --submit
+ *   node scripts/wikidata-scholar-sync.mjs --user OTHER_ID
+ *   node scripts/wikidata-scholar-sync.mjs --profile-url "https://scholar.google.com/citations?user=…"
+ *
+ * Env:
+ *   SCHOLAR_USER_ID     Override default Scholar user id
+ *   (--submit) WIKIDATA_USERNAME, WIKIDATA_PASSWORD
  *
  * Notes:
  * - Google may rate-limit; use --delay-ms between Crossref/OpenAlex/Wikidata calls.
@@ -26,6 +32,9 @@ import {
   submitNewItem,
 } from "./lib/wikidata-item-core.mjs";
 
+/** Default: Krishna Bajpai — https://scholar.google.com/citations?user=zhQAzQoAAAAJ&hl=en&oi=ao */
+const DEFAULT_SCHOLAR_USER = "zhQAzQoAAAAJ";
+
 const SCHOLAR_UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36";
 const API_UA =
@@ -41,32 +50,48 @@ function getArg(flag) {
   return process.argv[idx + 1];
 }
 
-function requireArg(flag, value) {
-  if (!value) {
-    console.error(`Missing required arg ${flag}.`);
+function resolveScholarUserId() {
+  const explicit = getArg("--user") || getArg("--scholar-user");
+  if (explicit) return explicit.trim();
+  const profileUrl = getArg("--profile-url");
+  if (profileUrl) {
+    try {
+      const u = new URL(profileUrl);
+      const id = u.searchParams.get("user");
+      if (id) return id.trim();
+    } catch {
+      console.error("Invalid --profile-url (expected full https://scholar.google.com/citations?... URL).");
+      process.exit(1);
+    }
+    console.error("--profile-url must include ?user=…");
     process.exit(1);
   }
+  return (process.env.SCHOLAR_USER_ID || DEFAULT_SCHOLAR_USER).trim();
 }
 
 function printHelp() {
   console.log(`wikidata-scholar-sync.mjs
 
-Required:
-  --user USER_ID      Google Scholar user id (from citations?user=___)
+Default Scholar profile: ${DEFAULT_SCHOLAR_USER} (oi=ao — “Articles” tab, same as):
+  https://scholar.google.com/citations?user=${DEFAULT_SCHOLAR_USER}&hl=en&oi=ao
+Override with --user, --profile-url, or env SCHOLAR_USER_ID.
 
 Optional:
-  --about Q123        Author item to link as P50 (default Q137462720)
-  --pagesize N        Scholar page size per request (default 80, max ~100)
-  --limit N           Stop after N new items (for testing)
-  --submit            Create missing items via Wikidata API
-  --allow-no-doi      Create even when no DOI was resolved (scholar URL as P973 only)
-  --no-crossref       Skip Crossref lookup
-  --no-openalex       Skip OpenAlex lookup
-  --delay-ms MS       Pause between external calls (default 800)
-  --summary TEXT      Edit summary for --submit
+  --user USER_ID       Scholar user id (from citations?user=___)
+  --profile-url URL    Full citations URL (extracts user=)
+  --about Q123         Author item for P50 (default Q137462720)
+  --pagesize N         Page size per request (default 80, max ~100)
+  --limit N            Stop after N new items (testing)
+  --submit             Create missing items via Wikidata API
+  --allow-no-doi       Create without DOI (Scholar URL as P973 only)
+  --no-crossref        Skip Crossref
+  --no-openalex        Skip OpenAlex
+  --delay-ms MS        Pause between calls (default 800)
+  --summary TEXT       Edit summary (--submit)
 
-Environment (--submit):
-  WIKIDATA_USERNAME, WIKIDATA_PASSWORD
+Environment:
+  SCHOLAR_USER_ID
+  (--submit) WIKIDATA_USERNAME, WIKIDATA_PASSWORD
 `);
 }
 
@@ -159,6 +184,7 @@ async function fetchScholarPage(user, cstart, pagesize) {
   const url = new URL("https://scholar.google.com/citations");
   url.searchParams.set("user", user);
   url.searchParams.set("hl", "en");
+  url.searchParams.set("oi", "ao");
   url.searchParams.set("cstart", String(cstart));
   url.searchParams.set("pagesize", String(pagesize));
   url.searchParams.set("json", "1");
@@ -328,7 +354,7 @@ async function main() {
     process.exit(0);
   }
 
-  const userId = getArg("--user") || getArg("--scholar-user");
+  const userId = resolveScholarUserId();
   const about = getArg("--about") || "Q137462720";
   const pagesize = Math.min(100, Math.max(10, parseInt(getArg("--pagesize") || "80", 10)));
   const limit = getArg("--limit") ? parseInt(getArg("--limit"), 10) : Infinity;
@@ -340,7 +366,9 @@ async function main() {
   const summaryArg = getArg("--summary");
   const retrievedArg = getArg("--retrieved");
 
-  requireArg("--user", userId);
+  console.error(
+    `Scholar: user=${userId} oi=ao | https://scholar.google.com/citations?user=${encodeURIComponent(userId)}&hl=en&oi=ao`,
+  );
 
   const apiUrl = process.env.WIKIDATA_API_URL || API_URL_DEFAULT;
   const lgUser = process.env.WIKIDATA_USERNAME || process.env.WIKIMEDIA_USERNAME;
