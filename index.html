@@ -210,7 +210,12 @@
               "thumbnailUrl": ["https://krishnabajpai.me/me.jpg"],
               "uploadDate": "2026-03-09T00:00:00Z",
               "publisher": { "@type": "Organization", "name": "STPI", "sameAs": ["https://www.linkedin.com/company/stpiindia/posts/?feedView=all"] },
-              "about": { "@type": "Event", "name": "AI Summit 2026", "startDate": "2026-03-09T12:00:00.000Z", "location": { "@type": "Place", "name": "India" } },
+              "about": {
+                "@type": "Thing",
+                "name": "AI Summit 2026",
+                "description": "India AI leadership and industry summit context for STPI-hosted coverage featuring Krishna Bajpai.",
+                "sameAs": "https://www.linkedin.com/company/stpiindia/"
+              },
               "isPartOf": { "@type": "WebSite", "name": "Instagram", "url": "https://www.instagram.com/" }
             },
             {
@@ -224,7 +229,12 @@
               "sameAs": ["https://www.linkedin.com/posts/stpiindia_indiaaiimpactsummit2026-indiaai-digitalindia-activity-7436723695202697216-0A60?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhmOo8BDZ_O1PVM5bexEe3_aWPeQ6IAM3k"],
               "uploadDate": "2026-03-09T00:00:00Z",
               "publisher": { "@type": "Organization", "name": "STPI", "sameAs": ["https://www.linkedin.com/company/stpiindia/posts/?feedView=all"] },
-              "about": { "@type": "Event", "name": "AI Summit 2026", "startDate": "2026-03-09T12:00:00.000Z", "location": { "@type": "Place", "name": "India" } },
+              "about": {
+                "@type": "Thing",
+                "name": "AI Summit 2026",
+                "description": "India AI leadership and industry summit context for STPI-hosted coverage featuring Krishna Bajpai.",
+                "sameAs": "https://www.linkedin.com/company/stpiindia/"
+              },
               "isPartOf": { "@type": "WebSite", "name": "LinkedIn", "url": "https://www.linkedin.com/" }
             },
             {
@@ -1359,25 +1369,50 @@
       "description": "Monthly webinar series on advanced AI topics by Krishna Bajpai",
       "organizer": {
         "@type": "Person",
-        "@id": "https://krishnabajpai.me/#person"
+        "@id": "https://krishnabajpai.me/#person",
+        "name": "Krishna Bajpai",
+        "url": "https://krishnabajpai.me"
       },
-      "event": [
+      "subEvent": [
         {
           "@type": "Event",
+          "@id": "https://krishnabajpai.me/webinars#enterprise-ai-architecture-2026",
           "name": "Enterprise AI Architecture 2026",
+          "description": "Online briefing on enterprise AI architecture: platform boundaries, governance, and pragmatic rollout patterns teams can use in 2026.",
+          "image": ["https://krishnabajpai.me/me.jpg"],
           "startDate": "2025-11-15T10:00:00.000Z",
           "endDate": "2025-11-15T11:30:00.000Z",
           "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
           "eventStatus": "https://schema.org/EventScheduled",
           "location": {
-            "@type": "VirtualLocation",
-            "url": "https://krishnabajpai.me/webinars"
+            "@type": "Place",
+            "name": "Online — AI Leadership Webinars",
+            "url": "https://krishnabajpai.me/webinars",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Online event",
+              "addressLocality": "Remote",
+              "addressCountry": "IN"
+            }
           },
           "offers": {
             "@type": "Offer",
+            "url": "https://krishnabajpai.me/contact",
             "price": "0",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock"
+          },
+          "organizer": {
+            "@type": "Person",
+            "@id": "https://krishnabajpai.me/#person",
+            "name": "Krishna Bajpai",
+            "url": "https://krishnabajpai.me"
+          },
+          "performer": {
+            "@type": "Person",
+            "@id": "https://krishnabajpai.me/#person",
+            "name": "Krishna Bajpai",
+            "url": "https://krishnabajpai.me"
           }
         }
       ]
