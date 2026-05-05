@@ -1,6 +1,17 @@
 {
   "tools": [
     {
+      "slug": "ai-analyzer",
+      "name": "AI Project Analyzer",
+      "version": "2.0.0",
+      "description": "Free AI project analysis tool for enterprises. Analyze AI project performance, costs, and security.",
+      "pypi": "https://pypi.org/project/ai-analyzer/",
+      "github": "https://github.com/krish567366/ai-analyzer",
+      "category": "Developer Tools",
+      "tags": ["analysis", "enterprise", "mlops"],
+      "lastReleased": "Oct 31, 2025"
+    },
+    {
       "slug": "mrce-plus",
       "name": "mrce-plus",
       "version": "1.0.0",

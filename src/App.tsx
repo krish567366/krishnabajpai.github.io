@@ -33,9 +33,13 @@ import FAQ from "./pages/FAQ";
 import RealEstateConsortium from "./pages/RealEstateConsortium";
 import ConsortiumApplication from "./pages/ConsortiumApplication";
 import ConsortiumProcess from "./pages/ConsortiumProcess";
+import SiteSearch from "./pages/SiteSearch";
+import Webinars from "./pages/Webinars";
 
 // Video Pages
 import QuantumComputingAIVideo from "./pages/videos/QuantumComputingAIVideo";
+import EnterpriseAIMasterclassVideo from "./pages/videos/EnterpriseAIMasterclassVideo";
+import VideoEmbedPage from "./pages/videos/VideoEmbedPage";
 
 // Service Pages
 import AIArchitectureService from "./pages/services/AIArchitectureService";
@@ -105,6 +109,8 @@ const App = () => {
             <Route path="/tools/:slug" element={<ToolDetail />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/search" element={<SiteSearch />} />
+            <Route path="/webinars" element={<Webinars />} />
             <Route path="/press" element={<Press />} />
             <Route path="/profiles" element={<Profiles />} />
             
@@ -118,6 +124,8 @@ const App = () => {
             
             {/* Video Pages */}
             <Route path="/videos/quantum-computing-ai" element={<QuantumComputingAIVideo />} />
+            <Route path="/videos/enterprise-ai-masterclass" element={<EnterpriseAIMasterclassVideo />} />
+            <Route path="/videos/embed/:slug" element={<VideoEmbedPage />} />
             
             {/* Service Pages */}
             <Route path="/services/ai-architecture" element={<AIArchitectureService />} />

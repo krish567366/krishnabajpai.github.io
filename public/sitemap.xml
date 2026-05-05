@@ -257,6 +257,20 @@
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://krishnabajpai.me/videos/enterprise-ai-masterclass</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-06</lastmod>
+  </url>
+
+  <!-- Webinars hub (matches Event VirtualLocation URLs in structured data) -->
+  <url>
+    <loc>https://krishnabajpai.me/webinars</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2026-05-06</lastmod>
+  </url>
 
   <!-- Service Pages -->
   <url>

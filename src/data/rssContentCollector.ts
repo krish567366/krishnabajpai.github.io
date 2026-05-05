@@ -235,7 +235,74 @@ export const services = [
     
     <p><strong>Investment:</strong> $50k - $150k | <strong>Timeline:</strong> 3-6 months</p>
     ]]>`
-  }
+  },
+  {
+    id: "ml-consulting",
+    title: "Machine Learning Consulting",
+    description:
+      "Transform your business with end-to-end ML solutions tailored to your goals—from problem framing through production rollout and observability.",
+    date: "2025-12-25",
+    category: "Machine Learning Services",
+    features: [
+      "Model design and evaluation pipelines",
+      "Feature engineering & data readiness",
+      "Deployment, monitoring & MLOps",
+      "Responsible AI review & risk controls",
+    ],
+    pricing: "Engagement-based",
+    timeline: "Typically 8–24 weeks depending on scope",
+    caseStudy: "Fortune-scale delivery references available on consultation",
+    content: `<![CDATA[
+    <p>End-to-end machine learning engagements that connect business outcomes with reliable production systems—not just notebooks.</p>
+    <h3>Typical pillars</h3>
+    <ul>
+      <li>Problem formulation, KPIs, labeling/collection strategy</li>
+      <li>Offline evaluation that matches deployment constraints</li>
+      <li>Launch playbooks &amp; rollout (shadow, canary, progressive)</li>
+      <li>Monitoring: drift, data quality and model staleness alarms</li>
+    </ul>
+    ]]>`,
+  },
+  {
+    id: "technical-leadership",
+    title: "Technical Leadership for AI Teams",
+    description:
+      "Fractional CTO / Principal ML engineer leadership to unblock teams on architecture decisions, hiring bar, roadmap sequencing, and delivery governance.",
+    date: "2025-12-25",
+    category: "AI Leadership",
+    features: ["Architecture council & design reviews", "Mentoring senior ICs", "Vendor/stack decisions"],
+    pricing: "Retainer-based",
+    timeline: "Ongoing engagements",
+    caseStudy: "Fortune-scale delivery governance",
+    content: `<![CDATA[
+    <p>Hands-on executive technical leadership aimed at shortening decision cycles without sacrificing correctness or reliability.</p>
+    <ul>
+      <li>Cadenced architecture reviews tied to measurable risk reductions</li>
+      <li>Quality bar for experimentation vs production-worthy work</li>
+      <li>Cross-functional alignment between data, infra and product</li>
+    </ul>
+    ]]>`,
+  },
+  {
+    id: "data-strategy",
+    title: "Data Strategy Consulting",
+    description:
+      "Turn your raw data estates into repeatable assets: ingestion contracts, catalogs, lineage, privacy boundaries, and feature lifecycle management.",
+    date: "2025-12-25",
+    category: "Data Strategy",
+    features: ["Assessment & modernization roadmap", "Cataloging / contracts", "Feature lifecycle design"],
+    pricing: "Workshop-first",
+    timeline: "Typically 4–16 weeks depending on breadth",
+    caseStudy: "Enterprise reference designs",
+    content: `<![CDATA[
+    <p>Pragmatic strategies that reconcile regulatory, privacy and ML training needs behind a coherent data contract.</p>
+    <ul>
+      <li>Domain-driven data modeling for ML-critical entities</li>
+      <li>Pipeline SLAs paired with anomaly detection hooks</li>
+      <li>Cost-aware storage tiers for iterative experimentation</li>
+    </ul>
+    ]]>`,
+  },
 ];
 
 // Revolutionary Discoveries
