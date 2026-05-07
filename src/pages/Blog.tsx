@@ -313,31 +313,32 @@ const Blog = () => {
             "publisher": { "@type": "Organization", "@id": "https://krishnabajpai.me/#organization" },
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me"
+              "@id": "https://krishnabajpai.me/#person"
             },
-            "blogPost": blogPosts.map(post => ({
-              "@type": "BlogPosting",
-              "headline": post.title,
-              "description": post.excerpt,
-              "author": {
-                "@type": "Person",
-                "@id": "https://krishnabajpai.me/#person",
-                "name": "Krishna Bajpai",
-                "url": "https://krishnabajpai.me"
-              },
-              "publisher": {
-                "@type": "Organization",
-                "@id": "https://krishnabajpai.me/#organization",
-                "name": "PragyaaAI",
-                "url": "https://krishnabajpai.me"
-              },
-              "datePublished": blogPostingDateIso(post.date),
-              "url": `https://krishnabajpai.me/blog/${post.id}`,
-              "mainEntityOfPage": { "@type": "WebPage", "@id": `https://krishnabajpai.me/blog/${post.id}` },
-              "keywords": post.tags.join(", ")
-            }))
+            "blogPost": blogPosts.map((post) => {
+              const articleUrl = `https://krishnabajpai.me/blog/${post.id}`;
+              return {
+                "@type": "BlogPosting",
+                "@id": articleUrl,
+                "headline": post.title,
+                "description": post.excerpt,
+                "author": {
+                  "@type": "Person",
+                  "@id": "https://krishnabajpai.me/#person"
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "@id": "https://krishnabajpai.me/#organization"
+                },
+                "datePublished": blogPostingDateIso(post.date),
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": articleUrl,
+                  "url": articleUrl
+                },
+                "keywords": post.tags.join(", ")
+              };
+            })
           })}
         </script>
       </Helmet>

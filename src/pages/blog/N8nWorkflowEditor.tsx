@@ -19,45 +19,29 @@ const N8nWorkflowEditor = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow",
             "headline": "How I Built a Full n8n-Style Workflow Editor Using React Flow + FastAPI",
             "description": "Complete guide to building a workflow automation platform from scratch using React Flow and FastAPI. Architecture decisions, challenges, and solutions for a production-ready workflow editor.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
-              "@id": "https://krishnabajpai.me/#organization",
-              "name": "PragyaaAI",
-              "url": "https://krishnabajpai.me",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://krishnabajpai.me/me.jpg",
-                "width": 512,
-                "height": 512
-              }
+              "@id": "https://krishnabajpai.me/#organization"
             },
             "datePublished": "2025-11-15T08:00:00Z",
             "dateModified": "2025-11-17T12:00:00Z",
-            "url": "https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow"
+              "@id": "https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow",
+              "url": "https://krishnabajpai.me/blog/n8n-workflow-editor-react-flow"
             },
             "articleSection": "Web Development",
             "wordCount": 2800,
             "timeRequired": "PT12M",
-            "keywords": ["n8n", "workflow editor", "React Flow", "FastAPI", "automation", "drag and drop", "workflow automation"],
+            "keywords": "n8n, workflow editor, React Flow, FastAPI, automation, drag and drop, workflow automation",
             "about": [
               {
                 "@type": "Thing",
