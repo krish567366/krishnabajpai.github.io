@@ -19,6 +19,7 @@ const AIHRMSSystemDesign = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/ai-hrms-system-design",
             "headline": "Designing an AI HRMS System Equal to Keka: Complete Architecture Guide",
             "description": "Complete technical guide to building an AI-powered HRMS system. Microservices architecture, ML models, real-time analytics, and scalable design patterns for modern HR management.",
             "image": {
@@ -29,17 +30,7 @@ const AIHRMSSystemDesign = () => {
             },
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "jobTitle": "AI Systems Architect",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -55,15 +46,15 @@ const AIHRMSSystemDesign = () => {
             },
             "datePublished": "2025-11-05T08:00:00Z",
             "dateModified": "2025-11-17T12:00:00Z",
-            "url": "https://krishnabajpai.me/blog/ai-hrms-system-design",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/ai-hrms-system-design"
+              "@id": "https://krishnabajpai.me/blog/ai-hrms-system-design",
+              "url": "https://krishnabajpai.me/blog/ai-hrms-system-design"
             },
             "articleSection": "System Design",
             "wordCount": 5800,
             "timeRequired": "PT15M",
-            "keywords": ["HRMS design", "AI HR system", "Keka alternative", "microservices architecture", "HR analytics", "system architecture"],
+            "keywords": "HRMS design, AI HR system, Keka alternative, microservices architecture, HR analytics, system architecture",
             "about": [
               {
                 "@type": "Thing",

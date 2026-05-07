@@ -36,21 +36,13 @@ const ChurnPredictionMLSolution = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/churn-prediction-ml-solution",
             "headline": "How I Reduced Customer Churn by 34% Using Machine Learning",
             "description": "Real-world case study of implementing ML-powered churn prediction system for SaaS company. Feature engineering, model selection, and production deployment that saved $2.3M annually.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -66,15 +58,15 @@ const ChurnPredictionMLSolution = () => {
             },
             "datePublished": "2025-11-18T08:00:00Z",
             "dateModified": "2025-11-18T12:00:00Z",
-            "url": "https://krishnabajpai.me/blog/churn-prediction-ml-solution",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/churn-prediction-ml-solution"
+              "@id": "https://krishnabajpai.me/blog/churn-prediction-ml-solution",
+              "url": "https://krishnabajpai.me/blog/churn-prediction-ml-solution"
             },
             "articleSection": "Machine Learning",
             "wordCount": 3400,
             "timeRequired": "PT10M",
-            "keywords": ["churn prediction", "machine learning", "customer retention", "SaaS analytics", "ML pipeline"],
+            "keywords": "churn prediction, machine learning, customer retention, SaaS analytics, ML pipeline",
             "about": [
               {
                 "@type": "Thing",

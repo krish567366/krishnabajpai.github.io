@@ -19,21 +19,13 @@ const NLPSentimentAnalysisEcommerce = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce",
             "headline": "How I Built a Real-Time NLP Sentiment Analysis System That Increased E-commerce Conversions by 28%",
             "description": "Real-world case study of implementing NLP-powered sentiment analysis for e-commerce platform. BERT-based models, real-time processing, and personalized recommendations boosting sales.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -49,15 +41,15 @@ const NLPSentimentAnalysisEcommerce = () => {
             },
             "datePublished": "2025-11-20T08:00:00Z",
             "dateModified": "2025-11-20T12:00:00Z",
-            "url": "https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce"
+              "@id": "https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce",
+              "url": "https://krishnabajpai.me/blog/nlp-sentiment-analysis-ecommerce"
             },
             "articleSection": "Natural Language Processing",
             "wordCount": 3600,
             "timeRequired": "PT12M",
-            "keywords": ["NLP", "sentiment analysis", "e-commerce AI", "BERT", "real-time processing", "personalization"],
+            "keywords": "NLP, sentiment analysis, e-commerce AI, BERT, real-time processing, personalization",
             "about": [
               {
                 "@type": "Thing",

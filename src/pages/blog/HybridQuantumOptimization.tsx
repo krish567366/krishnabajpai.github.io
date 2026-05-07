@@ -19,21 +19,13 @@ const HybridQuantumOptimization = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library",
             "headline": "100+ Hybrid Quantum Optimization Algorithms in One Python Library",
             "description": "Open-source Python library implementing 100+ hybrid quantum-classical optimization algorithms. QAOA, VQE, quantum annealing, and more for real-world optimization problems.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -49,15 +41,15 @@ const HybridQuantumOptimization = () => {
             },
             "datePublished": "2025-11-08T08:00:00Z",
             "dateModified": "2025-11-17T12:00:00Z",
-            "url": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library"
+              "@id": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library",
+              "url": "https://krishnabajpai.me/blog/hybrid-quantum-optimization-library"
             },
             "articleSection": "Quantum Computing",
             "wordCount": 4200,
             "timeRequired": "PT12M",
-            "keywords": ["quantum computing", "optimization algorithms", "QAOA", "VQE", "quantum annealing", "Python library", "hybrid algorithms"],
+            "keywords": "quantum computing, optimization algorithms, QAOA, VQE, quantum annealing, Python library, hybrid algorithms",
             "about": [
               {
                 "@type": "Thing",

@@ -19,21 +19,13 @@ const TimeSeriesSupplyChainForecasting = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/time-series-supply-chain-forecasting",
             "headline": "How I Reduced Supply Chain Costs by 42% Using LSTM-Based Time Series Forecasting",
             "description": "Real-world implementation of LSTM time series forecasting for supply chain optimization. Demand prediction, inventory management, and cost reduction case study.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -49,15 +41,15 @@ const TimeSeriesSupplyChainForecasting = () => {
             },
             "datePublished": "2025-11-20T09:00:00Z",
             "dateModified": "2025-11-20T13:00:00Z",
-            "url": "https://krishnabajpai.me/blog/time-series-supply-chain-forecasting",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/time-series-supply-chain-forecasting"
+              "@id": "https://krishnabajpai.me/blog/time-series-supply-chain-forecasting",
+              "url": "https://krishnabajpai.me/blog/time-series-supply-chain-forecasting"
             },
             "articleSection": "Machine Learning",
             "wordCount": 3700,
             "timeRequired": "PT14M",
-            "keywords": ["time series forecasting", "LSTM", "supply chain", "demand prediction", "inventory optimization"],
+            "keywords": "time series forecasting, LSTM, supply chain, demand prediction, inventory optimization",
             "about": [
               {
                 "@type": "Thing",

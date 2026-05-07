@@ -36,21 +36,13 @@ const AirportMLOptimization = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/airport-ml-optimization",
             "headline": "How Machine Learning is Revolutionizing Airport Operations: Predictive Analytics for Aviation",
             "description": "Real-world case study of implementing ML-powered systems for airport operations. Predictive maintenance, passenger flow optimization, and resource allocation that reduced delays by 40%.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -68,7 +60,8 @@ const AirportMLOptimization = () => {
             "dateModified": "2025-11-19T12:00:00Z",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/airport-ml-optimization"
+              "@id": "https://krishnabajpai.me/blog/airport-ml-optimization",
+              "url": "https://krishnabajpai.me/blog/airport-ml-optimization"
             },
             "keywords": "airport machine learning, aviation AI, predictive maintenance, airport operations optimization, passenger flow, resource allocation",
             "articleSection": "Machine Learning",

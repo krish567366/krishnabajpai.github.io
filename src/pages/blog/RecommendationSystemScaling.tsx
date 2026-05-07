@@ -19,21 +19,13 @@ const RecommendationSystemScaling = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/recommendation-system-scaling",
             "headline": "How I Scaled a Recommendation System to Handle 100M+ Users with 35% Engagement Boost",
             "description": "Real-world case study of scaling collaborative filtering recommendation systems. Distributed computing, matrix factorization, and neural collaborative filtering handling massive user bases.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -49,15 +41,15 @@ const RecommendationSystemScaling = () => {
             },
             "datePublished": "2025-11-20T11:00:00Z",
             "dateModified": "2025-11-20T15:00:00Z",
-            "url": "https://krishnabajpai.me/blog/recommendation-system-scaling",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/recommendation-system-scaling"
+              "@id": "https://krishnabajpai.me/blog/recommendation-system-scaling",
+              "url": "https://krishnabajpai.me/blog/recommendation-system-scaling"
             },
             "articleSection": "Machine Learning",
             "wordCount": 3800,
             "timeRequired": "PT15M",
-            "keywords": ["recommendation systems", "collaborative filtering", "distributed computing", "neural networks", "streaming platform"],
+            "keywords": "recommendation systems, collaborative filtering, distributed computing, neural networks, streaming platform",
             "about": [
               {
                 "@type": "Thing",

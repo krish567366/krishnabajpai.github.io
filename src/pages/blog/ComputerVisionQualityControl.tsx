@@ -19,21 +19,13 @@ const ComputerVisionQualityControl = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/computer-vision-quality-control",
             "headline": "How I Built an AI Quality Control System That Reduced Manufacturing Defects by 67%",
             "description": "Real-world case study of implementing computer vision-powered quality control for automotive manufacturing. YOLO-based defect detection, edge deployment, and 99.7% accuracy achievement.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -49,15 +41,15 @@ const ComputerVisionQualityControl = () => {
             },
             "datePublished": "2025-11-19T08:00:00Z",
             "dateModified": "2025-11-19T12:00:00Z",
-            "url": "https://krishnabajpai.me/blog/computer-vision-quality-control",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/computer-vision-quality-control"
+              "@id": "https://krishnabajpai.me/blog/computer-vision-quality-control",
+              "url": "https://krishnabajpai.me/blog/computer-vision-quality-control"
             },
             "articleSection": "Computer Vision",
             "wordCount": 3800,
             "timeRequired": "PT11M",
-            "keywords": ["computer vision", "quality control", "manufacturing AI", "defect detection", "YOLO", "edge computing"],
+            "keywords": "computer vision, quality control, manufacturing AI, defect detection, YOLO, edge computing",
             "about": [
               {
                 "@type": "Thing",

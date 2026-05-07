@@ -19,21 +19,13 @@ const FraudDetectionRealTimeML = () => {
           {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
+            "@id": "https://krishnabajpai.me/blog/fraud-detection-real-time-ml",
             "headline": "How I Built a Real-Time Fraud Detection System That Saves $15M Annually Using Ensemble ML",
             "description": "Real-world implementation of ensemble ML for fraud detection. XGBoost, neural networks, and real-time processing stopping 99.4% of fraudulent transactions.",
             "image": "https://krishnabajpai.me/assets/hero-flow.png",
             "author": {
               "@type": "Person",
-              "@id": "https://krishnabajpai.me/#person",
-              "name": "Krishna Bajpai",
-              "url": "https://krishnabajpai.me",
-              "sameAs": [
-                "https://www.wikidata.org/wiki/Q137462720",
-                "https://orcid.org/0009-0006-5618-1834",
-                "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
-                "https://www.linkedin.com/in/bajpai-krishna",
-                "https://github.com/krish567366"
-              ]
+              "@id": "https://krishnabajpai.me/#person"
             },
             "publisher": {
               "@type": "Organization",
@@ -49,15 +41,15 @@ const FraudDetectionRealTimeML = () => {
             },
             "datePublished": "2025-11-20T10:00:00Z",
             "dateModified": "2025-11-20T14:00:00Z",
-            "url": "https://krishnabajpai.me/blog/fraud-detection-real-time-ml",
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": "https://krishnabajpai.me/blog/fraud-detection-real-time-ml"
+              "@id": "https://krishnabajpai.me/blog/fraud-detection-real-time-ml",
+              "url": "https://krishnabajpai.me/blog/fraud-detection-real-time-ml"
             },
             "articleSection": "Machine Learning",
             "wordCount": 3200,
             "timeRequired": "PT12M",
-            "keywords": ["fraud detection", "real-time ML", "ensemble methods", "XGBoost", "transaction processing"],
+            "keywords": "fraud detection, real-time ML, ensemble methods, XGBoost, transaction processing",
             "about": [
               {
                 "@type": "Thing",
