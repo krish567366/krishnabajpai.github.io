@@ -57,6 +57,7 @@ const Press = () => {
         <link rel="me" href="https://www.wikidata.org/wiki/Q137462720" />
         <link rel="me" href="https://orcid.org/0009-0006-5618-1834" />
         <link rel="me" href="https://scholar.google.com/citations?user=zhQAzQoAAAAJ" />
+        <link rel="me" href="https://sciprofiles.com/profile/bajpaikrishna" />
         <link rel="me" href="https://linkedin.com/in/bajpai-krishna" />
         <link rel="me" href="https://github.com/krish567366" />
         <link rel="me" href="https://www.instagram.com/bajpai__krishna/" />

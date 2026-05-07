@@ -18,6 +18,7 @@ const AboutKrishnaBajpai = () => {
         <link rel="me" href="https://www.wikidata.org/wiki/Q137462720" />
         <link rel="me" href="https://orcid.org/0009-0006-5618-1834" />
         <link rel="me" href="https://scholar.google.com/citations?user=zhQAzQoAAAAJ" />
+        <link rel="me" href="https://sciprofiles.com/profile/bajpaikrishna" />
         <link rel="me" href="https://linkedin.com/in/bajpai-krishna" />
         <link rel="me" href="https://github.com/krish567366" />
         <link rel="me" href="https://www.instagram.com/bajpai__krishna/" />
@@ -98,6 +99,18 @@ const AboutKrishnaBajpai = () => {
                 email: "krishna@krishnabajpai.me",
                 nationality: { "@type": "Country", name: "India" },
                 jobTitle: "AI Systems Architect",
+                hasOccupation: [
+                  {
+                    "@type": "Occupation",
+                    name: "AI Systems Architect",
+                    sameAs: "https://www.wikidata.org/wiki/Q3789906",
+                  },
+                  {
+                    "@type": "Occupation",
+                    name: "Researcher",
+                    sameAs: "https://www.wikidata.org/wiki/Q1650915",
+                  },
+                ],
                 worksFor: { "@type": "Organization", "@id": "https://krishnabajpai.me/#organization" },
                 homeLocation: {
                   "@type": "Place",
@@ -129,11 +142,13 @@ const AboutKrishnaBajpai = () => {
                   { "@type": "PropertyValue", propertyID: "Wikidata", value: "Q137462720", url: "https://www.wikidata.org/wiki/Q137462720" },
                   { "@type": "PropertyValue", propertyID: "ORCID", value: "0009-0006-5618-1834", url: "https://orcid.org/0009-0006-5618-1834" },
                   { "@type": "PropertyValue", propertyID: "Google Scholar", value: "zhQAzQoAAAAJ", url: "https://scholar.google.com/citations?user=zhQAzQoAAAAJ" },
+                  { "@type": "PropertyValue", propertyID: "SciProfiles", value: "bajpaikrishna", url: "https://sciprofiles.com/profile/bajpaikrishna" },
                 ],
                 sameAs: [
                   "https://www.wikidata.org/wiki/Q137462720",
                   "https://orcid.org/0009-0006-5618-1834",
                   "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+                  "https://sciprofiles.com/profile/bajpaikrishna",
                   "https://www.linkedin.com/in/bajpai-krishna",
                   "https://github.com/krish567366",
                   "https://medium.com/@krishnabajpai",
@@ -223,6 +238,16 @@ const AboutKrishnaBajpai = () => {
                         className="hover:text-foreground transition-colors underline"
                       >
                         Google Scholar: zhQAzQoAAAAJ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://sciprofiles.com/profile/bajpaikrishna"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-foreground transition-colors underline"
+                      >
+                        SciProfiles
                       </a>
                     </li>
                   </ul>

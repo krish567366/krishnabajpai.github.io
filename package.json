@@ -10,6 +10,9 @@
     "lint": "eslint .",
     "wikidata:article": "node scripts/wikidata-quickstatements.mjs",
     "wikidata:scholar": "node scripts/wikidata-scholar-sync.mjs",
+    "wikidata:github": "node scripts/wikidata-github-sync.mjs",
+    "wikidata:pypi": "node scripts/wikidata-pypi-sync.mjs",
+    "wikidata:person": "node scripts/wikidata-person-enrich.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "preview": "vite preview"

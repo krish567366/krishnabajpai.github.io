@@ -70,6 +70,7 @@
       "https://linkedin.com/in/bajpai-krishna",
       "https://github.com/krish567366",
       "https://scholar.google.com/citations?user=zhQAzQoAAAAJ",
+      "https://sciprofiles.com/profile/bajpaikrishna",
       "https://www.wikidata.org/wiki/Q137462720",
       "https://orcid.org/0009-0006-5618-1834"
     ],
@@ -106,11 +107,19 @@
       "Message Security",
       "Idempotency Patterns"
     ],
-    "hasOccupation": {
-      "@type": "Occupation",
-      "name": "AI Systems Architect",
-      "description": "Designs and leads enterprise AI architecture, MLOps, and quantitative finance systems; based in Kanpur, Uttar Pradesh, India."
-    },
+    "hasOccupation": [
+      {
+        "@type": "Occupation",
+        "name": "AI Systems Architect",
+        "sameAs": "https://www.wikidata.org/wiki/Q3789906",
+        "description": "Designs and leads enterprise AI architecture, MLOps, and quantitative finance systems; based in Kanpur, Uttar Pradesh, India."
+      },
+      {
+        "@type": "Occupation",
+        "name": "Researcher",
+        "sameAs": "https://www.wikidata.org/wiki/Q1650915"
+      }
+    ],
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",

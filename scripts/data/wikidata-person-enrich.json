@@ -1,0 +1,64 @@
+{
+  "itemId": "Q137462720",
+  "siteOrigin": "https://krishnabajpai.me",
+  "appRoutesFile": "../src/App.tsx",
+  "excludeRoutePrefixes": [
+    "/privacy",
+    "/terms",
+    "/faq",
+    "/rss",
+    "/feed",
+    "/rss-feed",
+    "/search",
+    "/webinars",
+    "/consortium-application",
+    "/consortium-process"
+  ],
+  "contentLanguageQ": "Q7979",
+  "referenceProfileUrl": "https://krishnabajpai.me/about/krishna-bajpai",
+  "crunchbaseUrl": "https://www.crunchbase.com/person/krishna-bajpai-265d",
+  "referenceExtraP854": [
+    "https://doi.org/10.2139/ssrn.5593065",
+    "https://doi.org/10.36227/techrxiv.176114085.56648160/v1",
+    "https://doi.org/10.36227/techrxiv.175790725.58078790/v1",
+    "https://doi.org/10.5281/zenodo.17108892",
+    "https://doi.org/10.21203/rs.3.rs-8422090/v1",
+    "https://doi.org/10.20944/preprints202512.2270.v1",
+    "https://doi.org/10.20944/preprints202512.2293/v1",
+    "https://doi.org/10.5281/zenodo.18048292",
+    "https://doi.org/10.5281/zenodo.18048269"
+  ],
+  "enDescription": "Indian researcher in artificial intelligence, quantum computing, and quantitative finance",
+  "officialWebsite": "https://krishnabajpai.me/",
+  "describedAt": [
+    "https://krishnabajpai.me/about/krishna-bajpai",
+    "https://krishnabajpai.me/profiles",
+    "https://krishnabajpai.me/press",
+    "https://www.linkedin.com/in/bajpai-krishna",
+    "https://sciprofiles.com/profile/bajpaikrishna",
+    "https://pypi.org/user/bajpai__krishna/",
+    "https://medium.com/@krishnabajpai"
+  ],
+  "identifiers": {
+    "P496": "0009-0006-5618-1834",
+    "P1960": "zhQAzQoAAAAJ",
+    "P2037": "krish567366",
+    "P2003": "bajpai__krishna",
+    "P2087": "krishna-bajpai-265d",
+    "P6634": "bajpai-krishna",
+    "P11534": "bajpai__krishna"
+  },
+  "fieldOfWork": [
+    "Q207958",
+    "Q748349",
+    "Q1068258",
+    "Q197536",
+    "Q110588591",
+    "Q30642",
+    "Q1156518"
+  ],
+  "occupation": [
+    "Q1650915",
+    "Q3789906"
+  ]
+}

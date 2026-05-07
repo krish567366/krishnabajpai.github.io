@@ -3,6 +3,7 @@
  * Pull publications from a Google Scholar profile (json=1 API), resolve DOI via
  * hints in the snippet + Crossref + OpenAlex, skip items already on Wikidata (P356 or P973),
  * then print QuickStatements batches or create items (--submit).
+ * With --submit, ensures P800 (notable work) on --about for each work (existing P973/P356 or newly created), unless --no-notable-work.
  *
  * Default profile matches:
  *   https://scholar.google.com/citations?user=zhQAzQoAAAAJ&hl=en&oi=ao
@@ -21,6 +22,7 @@
  * - Google may rate-limit; use --delay-ms between Crossref/OpenAlex/Wikidata calls.
  * - Respect Google Scholar Terms of Service; prefer moderate pagesize and personal profiles only.
  */
+import { writeSync } from "node:fs";
 import process from "node:process";
 import {
   API_URL_DEFAULT,
@@ -29,7 +31,10 @@ import {
   normalizeTitleForWikidata,
   buildQuickStatementsLines,
   buildWikibaseEntity,
-  submitNewItem,
+  scholarWorkNotableRefSnaks,
+  submitAddP800NotableWorkIfMissing,
+  submitNewItemWithRetry,
+  wikidataDuplicateItemIdFromErrorMessage,
 } from "./lib/wikidata-item-core.mjs";
 
 /** Default: Krishna Bajpai — https://scholar.google.com/citations?user=zhQAzQoAAAAJ&hl=en&oi=ao */
@@ -39,6 +44,16 @@ const SCHOLAR_UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36";
 const API_UA =
   "KrishnaBajpaiPortfolio/1.0 (https://krishnabajpai.me; mailto:krishna@krishnabajpai.me)";
+
+/** Ensure progress lines show before long Wikidata calls (stderr can be fully buffered when not a TTY). */
+function stderrLineSync(msg) {
+  const line = msg.endsWith("\n") ? msg : `${msg}\n`;
+  try {
+    writeSync(2, line);
+  } catch {
+    console.error(line.trimEnd());
+  }
+}
 
 function hasFlag(flag) {
   return process.argv.includes(flag);
@@ -87,6 +102,7 @@ Optional:
   --no-crossref        Skip Crossref
   --no-openalex        Skip OpenAlex
   --delay-ms MS        Pause between calls (default 800)
+  --no-notable-work    Do not add P800 on --about (default: link each work item)
   --summary TEXT       Edit summary (--submit)
 
 Environment:
@@ -385,6 +401,7 @@ async function main() {
   const rawRetrieved =
     retrievedArg ||
     `${new Date().getUTCFullYear()}-${String(new Date().getUTCMonth() + 1).padStart(2, "0")}-${String(new Date().getUTCDate()).padStart(2, "0")}`;
+  const retrievedWbTime = toWbTimeValue(rawRetrieved);
 
   for (;;) {
     const json = await fetchScholarPage(userId, cstart, pagesize);
@@ -405,6 +422,31 @@ async function main() {
       const existingScholar = await wikidataItemForScholarUrl(row.scholarUrl);
       if (existingScholar) {
         console.error(`  skip: P973 already → ${existingScholar}`);
+        if (submit && !hasFlag("--no-notable-work")) {
+          try {
+            stderrLineSync(
+              "  P800: calling Wikidata (existing P973) — typically 10–40s…",
+            );
+            const ref = scholarWorkNotableRefSnaks(row.scholarUrl, retrievedWbTime, null);
+            const p800 = await submitAddP800NotableWorkIfMissing(
+              apiUrl,
+              lgUser,
+              lgPass,
+              about,
+              existingScholar,
+              ref,
+              summaryArg || `P800 notable work: Scholar P973 ${existingScholar}`,
+            );
+            console.error(
+              p800.added
+                ? `  P800 on ${about}: added → ${existingScholar}`
+                : `  P800 on ${about}: already lists ${existingScholar}`,
+            );
+            await sleep(Math.max(delayMs, 800));
+          } catch (e) {
+            console.error(`  P800 failed: ${e?.message || e}`);
+          }
+        }
         await sleep(delayMs);
         continue;
       }
@@ -437,6 +479,32 @@ async function main() {
         await sleep(delayMs);
         if (existingDoi) {
           console.error(`  skip: DOI ${doi} → ${existingDoi}`);
+          if (submit && !hasFlag("--no-notable-work")) {
+            try {
+              stderrLineSync(
+                "  P800: calling Wikidata (existing DOI) — typically 10–40s…",
+              );
+              const ref = scholarWorkNotableRefSnaks(row.scholarUrl, retrievedWbTime, doi);
+              const p800 = await submitAddP800NotableWorkIfMissing(
+                apiUrl,
+                lgUser,
+                lgPass,
+                about,
+                existingDoi,
+                ref,
+                summaryArg || `P800 notable work: Scholar DOI ${doi} → ${existingDoi}`,
+              );
+              console.error(
+                p800.added
+                  ? `  P800 on ${about}: added → ${existingDoi}`
+                  : `  P800 on ${about}: already lists ${existingDoi}`,
+              );
+              await sleep(Math.max(delayMs, 800));
+            } catch (e) {
+              console.error(`  P800 failed: ${e?.message || e}`);
+            }
+          }
+          await sleep(delayMs);
           continue;
         }
       } else if (!allowNoDoi) {
@@ -456,20 +524,82 @@ async function main() {
 
       try {
         const entity = buildWikibaseEntity(ctx);
-        const { id } = await submitNewItem(
+        const { id } = await submitNewItemWithRetry(
           apiUrl,
           lgUser,
           lgPass,
           entity,
           summaryArg ||
             `Create work from Google Scholar list (scholar user ${userId})`,
+          { maxAttempts: 5, baseDelayMs: Math.max(1200, delayMs) },
         );
         console.error(`  created https://www.wikidata.org/wiki/${id}`);
         console.log(id);
         created++;
+        if (!hasFlag("--no-notable-work")) {
+          try {
+            stderrLineSync(
+              "  P800: calling Wikidata (new work item) — typically 10–40s…",
+            );
+            const ref = scholarWorkNotableRefSnaks(row.scholarUrl, retrievedWbTime, doi || null);
+            const p800 = await submitAddP800NotableWorkIfMissing(
+              apiUrl,
+              lgUser,
+              lgPass,
+              about,
+              id,
+              ref,
+              summaryArg || `P800 notable work: new Scholar item ${id}`,
+            );
+            console.error(
+              p800.added
+                ? `  P800 on ${about}: added → ${id}`
+                : `  P800 on ${about}: already lists ${id}`,
+            );
+          } catch (e) {
+            console.error(`  P800 failed: ${e?.message || e}`);
+          }
+        }
         await sleep(Math.max(delayMs, 1500));
       } catch (e) {
-        console.error(`  wbeditentity failed: ${e.message || e}`);
+        const msg = String(e?.message || e);
+        console.error(`  wbeditentity failed: ${msg}`);
+        const dupQ = wikidataDuplicateItemIdFromErrorMessage(msg);
+        if (dupQ) {
+          console.error(
+            `  existing item ${dupQ} (label/description conflict — linking P800 on ${about} if missing)`,
+          );
+          if (!submit) {
+            stderrLineSync(
+              "  P800: skipped (no --submit; cannot edit person item)",
+            );
+          } else if (hasFlag("--no-notable-work")) {
+            stderrLineSync("  P800: skipped (--no-notable-work)");
+          } else {
+            stderrLineSync(
+              "  P800: calling Wikidata (duplicate work id; fetch claims + login + wbeditentity) — typically 10–40s…",
+            );
+            try {
+              const ref = scholarWorkNotableRefSnaks(row.scholarUrl, retrievedWbTime, doi || null);
+              const p800 = await submitAddP800NotableWorkIfMissing(
+                apiUrl,
+                lgUser,
+                lgPass,
+                about,
+                dupQ,
+                ref,
+                summaryArg || `P800 notable work: Scholar (existing) ${dupQ}`,
+              );
+              console.error(
+                p800.added
+                  ? `  P800 on ${about}: added → ${dupQ}`
+                  : `  P800 on ${about}: already lists ${dupQ}`,
+              );
+            } catch (e2) {
+              console.error(`  P800 failed: ${e2?.message || e2}`);
+            }
+          }
+        }
         await sleep(delayMs);
       }
     }

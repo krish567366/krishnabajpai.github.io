@@ -15,6 +15,7 @@ const Profiles = () => {
     { name: "Wikidata (Q137462720)", url: "https://www.wikidata.org/wiki/Q137462720" },
     { name: "ORCID (0009-0006-5618-1834)", url: "https://orcid.org/0009-0006-5618-1834" },
     { name: "Google Scholar (zhQAzQoAAAAJ)", url: "https://scholar.google.com/citations?user=zhQAzQoAAAAJ" },
+    { name: "SciProfiles", url: "https://sciprofiles.com/profile/bajpaikrishna" },
     { name: "LinkedIn", url: "https://linkedin.com/in/bajpai-krishna" },
     { name: "GitHub", url: "https://github.com/krish567366" },
     { name: "Medium", url: "https://medium.com/@krishnabajpai" },
